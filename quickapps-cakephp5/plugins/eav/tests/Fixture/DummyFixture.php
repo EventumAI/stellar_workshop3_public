@@ -24,14 +24,14 @@ class DummyFixture extends TestFixture
      *
      * @var string
      */
-    public $table = 'dummy';
+    public string $table = 'dummy'; // TODO: Refactor for CakePHP 5 patterns
 
     /**
      * Table columns.
      *
      * @var array
      */
-    public $fields = [
+    public array $fields = [ // TODO: Refactor for CakePHP 5 patterns
         '_constraints' => [
             'primary' => [
                 'type' => 'primary',
@@ -68,7 +68,7 @@ class DummyFixture extends TestFixture
      *
      * @var array
      */
-    public $records = [
+    public array $records = [ // TODO: Refactor for CakePHP 5 patterns
         ['id' => 1, 'name' => 'Lorem'],
         ['id' => 2, 'name' => 'Ipsum'],
         ['id' => 3, 'name' => 'dolor'],

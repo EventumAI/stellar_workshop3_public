@@ -104,7 +104,7 @@ class EavBehavior extends Behavior implements PropertyMarshalInterface
      *
      * @var array
      */
-    protected $_defaultConfig = [
+    protected  $_defaultConfig = [
         'status' => true,
         'cache' => false,
         'hydrator' => null,
@@ -634,12 +634,12 @@ class EavBehavior extends Behavior implements PropertyMarshalInterface
     /**
      * Ensures that virtual properties are included in the marshalling process.
      *
-     * @param \Cake\ORM\Marhshaller $marshaller The marhshaller of the table the behavior is attached to.
+     * @param \Cake\ORM\Marshaller $marshaller The marshaller of the table the behavior is attached to.
      * @param array $map The property map being built.
      * @param array $options The options array used in the marshalling call.
      * @return array A map of `[property => callable]` of additional properties to marshal.
      */
-    public function buildMarshalMap($marshaller, $map, $options)
+    public function buildMarshalMap(\Cake\ORM\Marshaller $marshaller, array $map, array $options)
     {
         $bundle = !empty($options['bundle']) ? $options['bundle'] : null;
         $attrs = $this->_toolbox->attributes($bundle);

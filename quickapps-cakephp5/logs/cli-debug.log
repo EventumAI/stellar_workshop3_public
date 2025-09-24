@@ -1,2 +1,53 @@
 2025-09-24 10:33:59 debug: Reading migrations status for test...
 2025-09-24 10:38:29 debug: Reading migrations status for test...
+2025-09-24 10:49:23 debug: Reading migrations status for test...
+2025-09-24 10:54:17 debug: Reading migrations status for test...
+2025-09-24 10:57:14 debug: Reading migrations status for test...
+2025-09-24 11:04:39 debug: Reading migrations status for test...
+2025-09-24 11:05:05 debug: Reading migrations status for test...
+2025-09-24 11:14:02 debug: Reading migrations status for test...
+2025-09-24 11:14:02 notice: fwrite(): Write of 1841 bytes failed with errno=32 Broken pipe in /var/www/html/vendor/phpunit/phpunit/src/TextUI/Output/Printer/DefaultPrinter.php on line 111
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/var/www/html/vendor/phpunit/phpunit/src/TextUI/Output/Printer/DefaultPrinter.php /var/www/html/vendor/phpunit/phpunit/src/TextUI/Output/Printer/DefaultPrinter.php, line 111
+PHPUnit\TextUI\Output\DefaultPrinter->print() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Output/Default/ResultPrinter.php, line 487
+PHPUnit\TextUI\Output\Default\ResultPrinter->printListElement() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Output/Default/ResultPrinter.php, line 477
+PHPUnit\TextUI\Output\Default\ResultPrinter->printList() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Output/Default/ResultPrinter.php, line 263
+PHPUnit\TextUI\Output\Default\ResultPrinter->printTestsWithErrors() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Output/Default/ResultPrinter.php, line 102
+PHPUnit\TextUI\Output\Default\ResultPrinter->print() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Output/Facade.php, line 99
+PHPUnit\TextUI\Output\Facade::printResult() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Application.php, line 255
+PHPUnit\TextUI\Application->run() /var/www/html/vendor/phpunit/phpunit/phpunit, line 104
+/var/www/html/vendor/bin/phpunit /var/www/html/vendor/bin/phpunit, line 122
+[main]
+
+2025-09-24 11:14:37 debug: Reading migrations status for test...
+2025-09-24 11:14:50 debug: Reading migrations status for test...
+2025-09-24 11:14:50 notice: fwrite(): Write of 7 bytes failed with errno=32 Broken pipe in /var/www/html/vendor/phpunit/phpunit/src/TextUI/Output/Printer/DefaultPrinter.php on line 111
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/var/www/html/vendor/phpunit/phpunit/src/TextUI/Output/Printer/DefaultPrinter.php /var/www/html/vendor/phpunit/phpunit/src/TextUI/Output/Printer/DefaultPrinter.php, line 111
+PHPUnit\TextUI\Output\DefaultPrinter->print() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Output/SummaryPrinter.php, line 138
+PHPUnit\TextUI\Output\SummaryPrinter->printWithColor() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Output/SummaryPrinter.php, line 83
+PHPUnit\TextUI\Output\SummaryPrinter->print() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Output/Facade.php, line 103
+PHPUnit\TextUI\Output\Facade::printResult() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Application.php, line 255
+PHPUnit\TextUI\Application->run() /var/www/html/vendor/phpunit/phpunit/phpunit, line 104
+/var/www/html/vendor/bin/phpunit /var/www/html/vendor/bin/phpunit, line 122
+[main]
+
+2025-09-24 11:19:12 debug: Reading migrations status for test...
+2025-09-24 11:20:52 debug: Reading migrations status for test...
+2025-09-24 11:21:39 debug: Reading migrations status for test...
+2025-09-24 11:21:39 notice: fwrite(): Write of 476 bytes failed with errno=32 Broken pipe in /var/www/html/vendor/phpunit/phpunit/src/TextUI/Output/Printer/DefaultPrinter.php on line 111
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/var/www/html/vendor/phpunit/phpunit/src/TextUI/Output/Printer/DefaultPrinter.php /var/www/html/vendor/phpunit/phpunit/src/TextUI/Output/Printer/DefaultPrinter.php, line 111
+PHPUnit\TextUI\Output\DefaultPrinter->print() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Output/Default/ResultPrinter.php, line 487
+PHPUnit\TextUI\Output\Default\ResultPrinter->printListElement() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Output/Default/ResultPrinter.php, line 477
+PHPUnit\TextUI\Output\Default\ResultPrinter->printList() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Output/Default/ResultPrinter.php, line 263
+PHPUnit\TextUI\Output\Default\ResultPrinter->printTestsWithErrors() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Output/Default/ResultPrinter.php, line 102
+PHPUnit\TextUI\Output\Default\ResultPrinter->print() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Output/Facade.php, line 99
+PHPUnit\TextUI\Output\Facade::printResult() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Application.php, line 255
+PHPUnit\TextUI\Application->run() /var/www/html/vendor/phpunit/phpunit/phpunit, line 104
+/var/www/html/vendor/bin/phpunit /var/www/html/vendor/bin/phpunit, line 122
+[main]
+

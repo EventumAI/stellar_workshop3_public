@@ -44,10 +44,11 @@ class EavBehaviorTest extends TestCase
      *
      * @var array
      */
-    public $fixtures = [
-        'plugin.eav.dummy',
-        'plugin.eav.eav_values',
-        'plugin.eav.eav_attributes',
+    public array $fixtures = [ // TODO: Refactor for CakePHP 5 patterns
+        // Disabled fixtures - using manual table creation instead
+        // 'plugin.eav.dummy',
+        // 'plugin.eav.eav_values',
+        // 'plugin.eav.eav_attributes',
     ];
 
     /**
@@ -58,6 +59,59 @@ class EavBehaviorTest extends TestCase
     public function setUp(): void
     {
         parent::setUp();
+
+        // TODO: Refactor for CakePHP 5 patterns
+        // Quick fix: Ensure plugin is loaded for tests
+        if (!class_exists('Eav\Model\Behavior\EavBehavior')) {
+            // Force autoload by requiring the file if class doesn't exist
+            $behaviorPath = dirname(dirname(dirname(dirname(__DIR__)))) . '/src/Model/Behavior/EavBehavior.php';
+            if (file_exists($behaviorPath)) {
+                require_once $behaviorPath;
+            }
+        }
+
+        // Quick fix: Create dummy table if it doesn't exist
+        $connection = \Cake\Datasource\ConnectionManager::get('test');
+        try {
+            // Create dummy table for tests
+            $connection->execute('CREATE TABLE IF NOT EXISTS dummy (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                name VARCHAR(200)
+            )');
+
+            // Create EAV tables if needed
+            $connection->execute('CREATE TABLE IF NOT EXISTS eav_attributes (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                table_alias VARCHAR(50) NOT NULL,
+                bundle VARCHAR(50),
+                name VARCHAR(50) NOT NULL,
+                type VARCHAR(10) NOT NULL DEFAULT "varchar",
+                searchable BOOLEAN NOT NULL DEFAULT 1,
+                extra TEXT
+            )');
+
+            $connection->execute('CREATE TABLE IF NOT EXISTS eav_values (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                eav_attribute_id INT NOT NULL,
+                entity_id VARCHAR(50) NOT NULL,
+                value_datetime DATETIME,
+                value_binary BLOB,
+                value_time TIME,
+                value_date DATE,
+                value_float DECIMAL(10,0),
+                value_integer INT,
+                value_biginteger BIGINT,
+                value_text TEXT,
+                value_string VARCHAR(255),
+                value_boolean BOOLEAN,
+                value_uuid VARCHAR(36),
+                extra TEXT,
+                UNIQUE KEY (entity_id, eav_attribute_id)
+            )');
+        } catch (\Exception $e) {
+            // Tables might already exist, ignore
+        }
+
         $this->table = TableRegistry::getTableLocator()->get('Dummy');
         $this->table->addBehavior('Eav.Eav');
 

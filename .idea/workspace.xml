@@ -5,28 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="548c33a4-3618-484a-ac7b-4627ba0b0a8e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/README.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/config/bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/config/eav-mysql.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Locale/eav.pot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/EavBehavior.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/EavToolbox.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/QueryScope/OrderScope.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/QueryScope/QueryScopeInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/QueryScope/SelectScope.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/QueryScope/WhereScope.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Entity/CachedColumn.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Entity/EavValue.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Table/EavAttributesTable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Table/EavValuesTable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Shell/TableShell.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Shell/Task/InfoTask.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Shell/Task/SchemaTask.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/tests/Fixture/DummyFixture.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/tests/Fixture/EavAttributesFixture.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/tests/Fixture/EavValuesFixture.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/logs/cli-debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/logs/cli-debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/EavBehavior.php" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/EavBehavior.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/tests/Fixture/DummyFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/tests/Fixture/DummyFixture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/tests/Fixture/EavAttributesFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/tests/Fixture/EavAttributesFixture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/tests/Fixture/EavValuesFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/tests/Fixture/EavValuesFixture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/tmp/tests.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/tmp/tests.sqlite" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1758564127477</updated>
-      <workItem from="1758564128501" duration="39103000" />
+      <workItem from="1758564128501" duration="42142000" />
     </task>
     <servers />
   </component>

@@ -21,14 +21,14 @@ class EavAttributesFixture extends TestFixture
      *
      * @var string
      */
-    public $table = 'eav_attributes';
+    public string $table = 'eav_attributes'; // TODO: Refactor for CakePHP 5 patterns
 
     /**
      * Table columns.
      *
      * @var array
      */
-    public $fields = [
+    public array $fields = [ // TODO: Refactor for CakePHP 5 patterns
         '_constraints' => [
             'primary' => [
                 'type' => 'primary',
@@ -125,7 +125,7 @@ class EavAttributesFixture extends TestFixture
      *
      * @var array
      */
-    public $records = [
+    public array $records = [ // TODO: Refactor for CakePHP 5 patterns
         [
             'id' => 1,
             'table_alias' => 'dummy',
