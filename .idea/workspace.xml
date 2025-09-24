@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="548c33a4-3618-484a-ac7b-4627ba0b0a8e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/config/bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/config/routes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Auth/AnonymousAuthenticate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Auth/CachedAuthorize.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Auth/FormAuthenticate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Controller/Admin/FieldsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Controller/Admin/ManageController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Controller/Admin/PermissionsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Controller/Admin/RolesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Controller/GatewayController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Controller/UserSignTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Error/UserNotLoggedInException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Event/UserHook.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Locale/user.pot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Model/Behavior/WhoDidItBehavior.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Model/Entity/AccessibleEntityTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Model/Entity/Aco.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Model/Entity/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Model/Table/AcosTable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Model/Table/PermissionsTable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Model/Table/RolesTable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Model/Table/UsersTable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Notification/Message/ActivatedMessage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Notification/Message/BaseMessage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Notification/Message/BlockedMessage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Notification/Message/CancelRequestMessage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Notification/Message/CanceledMessage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Notification/Message/PasswordRequestMessage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Notification/Message/WelcomeMessage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Notification/NotificationManager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Template/Admin/Manage/add.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Template/Admin/Manage/edit.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Template/Admin/Manage/index.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Template/Admin/Permissions/aco.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Template/Admin/Permissions/index.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Template/Admin/Roles/add.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Template/Admin/Roles/edit.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Template/Admin/Roles/index.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Template/Element/Help/help.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Template/Element/index_submenu.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Template/Element/password_help.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Template/Element/settings.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Template/Element/user_menu_widget_render.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Template/Gateway/activate.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Template/Gateway/activation_email.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Template/Gateway/forgot.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Template/Gateway/me.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Template/Gateway/profile.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Template/Gateway/register.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Utility/AcoManager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/tests/TestCase/Model/Behavior/WhoDidItBehaviorTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/tests/TestCase/Notification/NotificationManagerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/webroot/css/acos.tree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/webroot/css/jstree-themes/default/32px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/webroot/css/jstree-themes/default/40px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/webroot/css/jstree-themes/default/style.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/webroot/css/jstree-themes/default/throbber.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/webroot/js/acos.tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/webroot/js/jstree.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/README.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/VERSION.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/config/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/config/app_site.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/config/bootstrap.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/config/bootstrap_cli.php" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Controller/Admin/GatewayController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/config/bootstrap_site.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/config/functions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/config/paths.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Controller/AppController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/config/routes_site.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Aspect/AppAspect.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Aspect/Aspect.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Aspect/FormHelperAspect.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Console/WebConsoleInput.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Console/WebConsoleOutput.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Console/WebShellDispatcher.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Controller/Controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Core/Package/BasePackage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Core/Package/Composer/JsonSchema.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Core/Package/Composer/Package/BasePackage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Core/Package/Composer/Package/Link.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Core/Package/Composer/Package/LinkConstraint/EmptyConstraint.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Core/Package/Composer/Package/LinkConstraint/LinkConstraintInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Core/Package/Composer/Package/LinkConstraint/MultiConstraint.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Core/Package/Composer/Package/LinkConstraint/SpecificConstraint.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Core/Package/Composer/Package/LinkConstraint/VersionConstraint.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Core/Package/Composer/Package/PackageInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Core/Package/Composer/Package/Version/VersionParser.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Core/Package/GenericPackage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Core/Package/LibraryPackage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Core/Package/PackageFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Core/Package/PluginPackage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Core/Package/Rule/Constraint.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Core/Package/Rule/Rule.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Core/Package/Rule/RuleChecker.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Core/Package/ThirdPartyPackage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Core/Plugin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Core/StaticCacheTrait.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Database/Type/SerializedType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Error/ExceptionRenderer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Error/SiteUnderMaintenanceException.php" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Error/InvalidUserMessageException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Event/EventDispatcher.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Event/EventDispatcherTrait.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Locale/cms.pot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Model/Behavior/SerializableBehavior.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Model/Behavior/SluggableBehavior.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Routing/Filter/LanguageFilter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Shell/CommandListShell.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Shortcode/ShortcodeParser.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Shortcode/ShortcodeTrait.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Template/Element/Flash/danger.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Template/Element/Flash/info.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Template/Element/Flash/success.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Template/Element/Flash/warning.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Template/Element/layout_head.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Template/Email/html/default.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Widget/UserMenuWidget.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Template/Email/text/default.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Model/Entity/Permission.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Template/Error/error400.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Template/Error/error500.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Template/Error/maintenance.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Template/Layout/Email/html/default.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Controller/Component/AuthComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Template/Layout/Email/text/default.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Model/Entity/Role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Template/Layout/ajax.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Template/Gateway/unauthorized.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Template/Layout/default.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Template/Layout/error.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Template/Layout/login.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Template/Gateway/login.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Template/Layout/maintenance.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/Template/Layout/rss/default.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/TestSuite/IntegrationTestCase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/View/Helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/user/src/Model/Entity/UserSession.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/View/Helper/FormHelper.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/View/Helper/HtmlHelper.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/View/View.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/View/ViewModeAwareTrait.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/View/ViewModeRegistry.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/View/Widget/ColorPickerWidget.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/src/View/Widget/FontPanelWidget.php" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/opt/homebrew/Cellar/php/8.4.5_1/bin/php" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="3346iw8FouxjIKhnfnflUKTWFIi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "user__plugin",
+    "last_opened_file_path": "/Users/cadukiz/Desktop/dev/workshops/W3/quickapps-cakephp5/plugins",
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/quickapps-cakephp5/plugins" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-PS-252.23892.419" />
+        <option value="bundled-php-predefined-a98d8de5180a-c72577f2c82f-com.jetbrains.php.sharedIndexes-PS-252.23892.419" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="548c33a4-3618-484a-ac7b-4627ba0b0a8e" name="Changes" comment="" />
+      <created>1758564127477</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1758564127477</updated>
+      <workItem from="1758564128501" duration="36655000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
