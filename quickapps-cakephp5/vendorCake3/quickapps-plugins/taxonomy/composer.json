@@ -1,0 +1,24 @@
+{
+    "name": "quickapps-plugins/taxonomy",
+    "description": "Enables the categorization of content created using QuickAppsCMS.",
+    "type": "cakephp-plugin",
+    "keywords": ["framework", "cms", "cmf", "quickapps", "plugin"],
+    "homepage": "http://quickappscms.org",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Christopher Castro",
+            "email": "chris@quickapps.es"
+        }
+    ],
+    "require": {
+        "quickapps-plugins/cms": "*",
+        "quickapps-plugins/field": "*",
+        "quickapps-plugins/block": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Taxonomy\\": "src"
+        }
+    }
+}

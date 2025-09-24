@@ -9,7 +9,7 @@ services:
     ports:
       - "8090:80"
     volumes:
-      - ./src:/var/www/html
+      - .:/var/www/html
       - ./docker/apache-config.conf:/etc/apache2/sites-available/000-default.conf
     environment:
       - APACHE_RUN_USER=www-data

@@ -1,0 +1,23 @@
+{
+    "name": "quickapps-plugins/locale",
+    "description": "Adds language handling functionality and enables the translation of the user interface to languages other than English.",
+    "type": "cakephp-plugin",
+    "keywords": ["framework", "cms", "cmf", "quickapps", "plugin"],
+    "homepage": "http://quickappscms.org",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Christopher Castro",
+            "email": "chris@quickapps.es"
+        }
+    ],
+    "require": {
+        "quickapps-plugins/cms": "*",
+        "quickapps-plugins/block": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Locale\\": "src"
+        }
+    }
+}

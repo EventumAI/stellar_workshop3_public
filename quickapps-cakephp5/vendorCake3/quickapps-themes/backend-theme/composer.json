@@ -1,0 +1,43 @@
+{
+    "name": "quickapps-themes/backend-theme",
+    "description": "QuickAppsCMS’s default backend theme based on AdminLTE.",
+    "type": "cakephp-plugin",
+    "keywords": [
+        "framework",
+        "cms",
+        "cmf",
+        "quickapps",
+        "theme",
+        "backend",
+        "responsive layout",
+        "full width template",
+        "rtl language"
+    ],
+    "homepage": "https://almsaeedstudio.com/",
+    "license": "GPL-3.0",
+    "require": {
+        "quickapps-plugins/cms": "*"
+    },
+    "authors": [
+        {
+            "name": "Almsaeed Studio"
+        },
+        {
+            "name": "Christopher Castro",
+            "email": "chris@quickapps.es"
+        }
+    ],
+    "extra": {
+        "admin": true,
+        "regions": {
+            "main-menu": "Main Menu",
+            "dashboard-main": "Dashboard Main",
+            "dashboard-sidebar": "Dashboard Sidebar"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "BackendTheme\\": "src"
+        }
+    }
+}

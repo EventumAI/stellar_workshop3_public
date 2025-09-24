@@ -1,0 +1,327 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2015-05-27 21:25+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Controller/Admin/ManageController.php:39
+msgid "Blocks ordering updated!"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Controller/Admin/ManageController.php:49
+msgid "Site Blocks"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Controller/Admin/ManageController.php:52;88;132
+msgid "Manage Blocks"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Controller/Admin/ManageController.php:71
+msgid "Block created."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Controller/Admin/ManageController.php:74;77
+msgid "Block could not be created, please check your information."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Controller/Admin/ManageController.php:85;89
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/index.ctp:20
+msgid "Create New Block"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Controller/Admin/ManageController.php:115
+msgid "Block updated!"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Controller/Admin/ManageController.php:118
+msgid "Your information could not be saved, please try again."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Controller/Admin/ManageController.php:121
+msgid "Block could not be updated, please check your information."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Controller/Admin/ManageController.php:129;133
+msgid "Editing Block"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Controller/Admin/ManageController.php:159
+msgid "Block was successfully removed!"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Controller/Admin/ManageController.php:161
+msgid "Block could not be removed"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Controller/Admin/ManageController.php:164
+msgid "Block not found!"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Controller/Admin/ManageController.php:167
+msgid "Delete Block"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Controller/Admin/ManageController.php:188
+msgid "Block has been duplicated, it can be found under the \"Unused or Unassigned\" section."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Controller/Admin/ManageController.php:190
+msgid "Block could not be duplicated, please try again."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Controller/Admin/ManageController.php:193
+msgid "Duplicate Block"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Model/Table/BlockRegionsTable.php:51
+msgid "This block is already assigned to this theme."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Model/Table/BlockRegionsTable.php:73
+msgid "Invalid theme for region."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Model/Table/BlocksTable.php:182
+msgid "You need to provide a title."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Model/Table/BlocksTable.php:186
+msgid "Title need to be at least 3 characters long."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Model/Table/BlocksTable.php:193
+msgid "You need to provide a description."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Model/Table/BlocksTable.php:197
+msgid "Description need to be at least 3 characters long."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Model/Table/BlocksTable.php:204
+msgid "Invalid visibility."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Model/Table/BlocksTable.php:214
+msgid "Invalid PHP code, make sure that tags \"<?php\" & \"?>\" are present."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Model/Table/BlocksTable.php:216
+msgid "This field is required."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Model/Table/BlocksTable.php:220
+msgid "Invalid block handler"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Model/Table/BlocksTable.php:241
+msgid "You need to provide a content for block's body."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Model/Table/BlocksTable.php:245
+msgid "Block's body need to be at least 3 characters long."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/add.ctp:18
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/edit.ctp:20
+msgid "Block Information"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/add.ctp:20
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/edit.ctp:22
+msgid "Title *"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/add.ctp:21
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/edit.ctp:23
+msgid "The title of the block as shown to the user."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/add.ctp:23
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/edit.ctp:25
+msgid "Description *"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/add.ctp:24
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/edit.ctp:26
+msgid "A brief description of your block. Used on the Blocks administration page."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/add.ctp:26
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/edit.ctp:28
+msgid "Published"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/add.ctp:27
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/edit.ctp:29
+msgid "Check this to enable this block."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/add.ctp:29
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/edit.ctp:32
+msgid "Body *"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/add.ctp:30
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/edit.ctp:33
+msgid "The content of the block as shown to the user."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/add.ctp:32
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/edit.ctp:51
+msgid "Language"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/add.ctp:33
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/edit.ctp:52
+msgid "Show this block for these languages. If no language is selected, block will show regardless of language."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/add.ctp:38
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/edit.ctp:57
+msgid "Theme Region"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/add.ctp:39
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/edit.ctp:58
+msgid "Specify in which themes and regions this block is displayed."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/add.ctp:49
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/edit.ctp:68
+msgid "- NONE -"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/add.ctp:57
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/edit.ctp:76
+msgid "Visibility Settings"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/add.ctp:61
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/edit.ctp:80
+msgid "All pages except those listed"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/add.ctp:62
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/edit.ctp:81
+msgid "Only the listed pages"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/add.ctp:63
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/edit.ctp:82
+msgid "Pages on which this PHP code returns TRUE (experts only)"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/add.ctp:66
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/edit.ctp:85
+msgid "Pages"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/add.ctp:72
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/edit.ctp:91
+msgid "Specify pages by using their paths, enter one path per line. The <code>*</code> character is a wildcard. <code>/</code> is the front page."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/add.ctp:73
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/edit.ctp:92
+msgid "If the PHP option is chosen, enter PHP code between <code>&lt;?php ... ?&gt;</code> tags. Examples:"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/add.ctp:74
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/edit.ctp:93
+msgid "<code>/product/*.html</code> Matches any product page."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/add.ctp:75
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/edit.ctp:94
+msgid "<code>/find/*type:article*</code> Matches any search result containing articles."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/add.ctp:76
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/edit.ctp:95
+msgid "<code>/</code> Matches site's front page (a.k.a. site's index)."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/add.ctp:79
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/edit.ctp:98
+msgid "Show Block For Specific Roles"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/add.ctp:80
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/edit.ctp:99
+msgid "Show this block only for the selected role(s). If you select no roles, the block will be visible to all users."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/add.ctp:83
+msgid "Create Block"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/edit.ctp:42
+msgid "Widget Settings"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/edit.ctp:102
+msgid "Update Block"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/index.ctp:39;118
+msgid "Theme: {0}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/index.ctp:65;144;218
+msgid "Edit"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/index.ctp:76;155;229
+msgid "Duplicate"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/index.ctp:78
+msgid "Duplicate this block, are you sure?"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/index.ctp:89;167;241
+msgid "Delete"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/index.ctp:91;169;243
+msgid "Delete this block, are you sure?"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/index.ctp:101;179
+msgid "There are no blocks in this region yet."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/index.ctp:107
+msgid "Drag and drop blocks to reorder within a region. To move a block to a different region use block editing form by clicking in the <span class=\"btn btn-default btn-xs glyphicon glyphicon-pencil\"></span> button."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/index.ctp:108;186
+msgid "Save Order"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/index.ctp:185
+msgid "Drag and drop blocks to reorder within a region. To move a block to a different region use block editing form by clicking in the \"Edit\" button."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Admin/Manage/index.ctp:196
+msgid "Unused or Unassigned Blocks"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Element/Help/help.ctp:18;28;41
+msgid "Blocks administration page"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps/vendor/quickapps/cms/plugins/Block/src/Template/Element/Help/help.ctp:40
+msgid "add custom blocks"
+msgstr ""
+

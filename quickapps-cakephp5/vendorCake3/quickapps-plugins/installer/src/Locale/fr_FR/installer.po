@@ -1,0 +1,6360 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CakePHP\n"
+"POT-Creation-Date: 2015-04-11 23:23+0000\n"
+"PO-Revision-Date: \n"
+"Last-Translator: romain <composant@gires.net>\n"
+"Language-Team: Cakephp-fr.org <contact@cakephp-fr.org>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n==1? 0 : 1);\n"
+"X-Generator: Poedit 1.7.5\n"
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:139
+msgid "Welcome to QuickAppsCMS"
+msgstr "Bienvenue sur QuickAppsCMS"
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:140
+msgid "Click here to install in English"
+msgstr "Cliquez ici pour l'installer en Français"
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:172
+msgid "Server Requirements"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:188;388
+msgid "License Agreement"
+msgstr "Contrat de licence"
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:242
+msgid "Account created you can now login!"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:246
+msgid "Account could not be created, please check your information."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:273
+msgid ""
+"Unable to continue, check write permission for the \"/config\" directory."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:313
+msgid ""
+"Your php version is not supported. check that your version is 5.4.19 or "
+"newer."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:314;315;316;317;329
+msgid "Missing extension: {0}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:318;319;320;321;322
+msgid "\"{0}\" folder is not writable."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:338
+msgid "Your server has SafeMode on, please turn it off before continuing."
+msgstr ""
+"Votre serveur possède SafeMode, s'il vous plaît éteindre avant de continuer"
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:380
+msgid "Welcome"
+msgstr "Accueil"
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:384
+msgid "System Requirements"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:392
+msgid "Database Setup"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:396
+msgid "Your Account"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:400
+msgid "Finish"
+msgstr "Terminer"
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:77
+msgid "<info>Plugins Shell</info>"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:79
+msgid "[I]nstall new plugin"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:80
+msgid "[R]emove an existing plugin"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:81
+msgid "[E]nable plugin"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:82
+msgid "[D]isable plugin"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:83
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:82
+msgid "[H]elp"
+msgstr "[H] Aide"
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:84
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:83
+msgid "[Q]uit"
+msgstr "[Q]uitter"
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:86
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:85
+msgid "What would you like to do?"
+msgstr "Que Voulez-vous faire ?"
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:106
+msgid ""
+"You have made an invalid selection. Please choose a command to execute by "
+"entering I, R, E, D, H, or Q."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:149
+msgid ""
+"Please provide a plugin source, it can be either an URL or a filesystem path "
+"to a ZIP/directory within your server?\n"
+"[Q]uit"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:153
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:150
+msgid "Installation aborted"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:156
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:153
+msgid "Starting installation..."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:160
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:157
+msgid "Starting installation... successfully installed!"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:164
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:161
+msgid "Starting installation... failed!"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:189
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:186
+msgid "[{index, number}] {name}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:194
+msgid ""
+"Which plugin would you like to uninstall?\n"
+"[Q]uit"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:198;267;320
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:195;263
+msgid "Operation aborted"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:201;270;323
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:198;266
+msgid "Invalid option"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:205
+msgid "<info>The following plugin will be UNINSTALLED</info>"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:207;329
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:204
+msgid "Name:        {0}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:208;330
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:205
+msgid "Description: {0}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:209;331
+msgid "Status:      {0, select, active={Active} other{Disabled}}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:210;332
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:206
+msgid "Path:        {0}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:214
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:210
+msgid "Please type in \"{0}\" to uninstall"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:219
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:215
+msgid "Plugin uninstalled!"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:222
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:218
+msgid "Plugin could not be uninstalled."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:226
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:222
+msgid "Confirmation failure, operation aborted!"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:249
+msgid "<info>There are no disabled plugins!</info>"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:258;311
+msgid "[{index, number, integer}] {name}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:263
+msgid ""
+"Which plugin would you like to activate?\n"
+"[Q]uit"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:275
+msgid "Plugin enabled!"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:278
+msgid "Plugin could not be enabled."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:302
+msgid "<info>There are no active plugins!</info>"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:316
+msgid ""
+"Which plugin would you like to disable?\n"
+"[Q]uit"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:327
+msgid "<info>The following plugin will be DISABLED</info>"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:336
+msgid "Please type in \"{0}\" to disable this plugin"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:341
+msgid "Plugin disabled!"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:344
+msgid "Plugin could not be disabled."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:77
+msgid "<info>Themes Shell</info>"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:79
+msgid "[I]nstall new theme"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:80
+msgid "[R]emove an existing theme"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:81
+msgid "[C]hange site theme"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:102
+msgid ""
+"You have made an invalid selection. Please choose a command to execute by "
+"entering I, R, C, H, or Q."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:145
+msgid ""
+"Please provide a theme source, it can be either an URL or a filesystem path "
+"to a ZIP/directory within your server?\n"
+"[Q]uit"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:191
+msgid ""
+"Which theme would you like to uninstall?\n"
+"[Q]uit"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:202
+msgid "<info>The following theme will be uninstalled</info>"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:245
+msgid "<info>There are no disabled themes!</info>"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:254
+msgid ""
+"[{index, number, integer}] {name} [{theme_type, select, front{frontend} "
+"other{backend}}]"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:259
+msgid ""
+"Which theme would you like to activate?\n"
+"[Q]uit"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:271
+msgid "Theme changed!"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:274
+msgid "Theme could not be changed."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:113
+msgid "Install a new plugin or theme."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:116
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUpdateTask.php:42
+msgid ""
+"Either a full path within filesystem to a ZIP file, or path to a directory "
+"representing an extracted ZIP file, or an URL from where download plugin "
+"package."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:120
+msgid "Indicates that the plugin being installed should be treated as a theme."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:126
+msgid "Enables the plugin after installation."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:132
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginToggleTask.php:62
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:66
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUpdateTask.php:46
+msgid "Plugin events will not be trigged."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:151
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:85
+msgid "Something went wrong. Details: {0}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:189
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:162
+msgid ""
+"Task was explicitly rejected by the {type, select, theme{theme} "
+"other{plugin}}."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:193
+msgid ""
+"Internal error, {type, select, theme{theme} other{plugin}} did not respond "
+"to \"beforeInstall\" callback correctly."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:235
+msgid ""
+"{type, select, theme{The theme} other{The plugin}} was installed but some "
+"errors occur."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:269
+msgid ""
+"Unable to register {type, select, theme{theme} other{plugin}} option, "
+"invalid option #{index}."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:282
+msgid "Unable to register option \"{name}\"."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:287
+msgid ""
+"Some errors were found while trying to register {type, select, theme{theme} "
+"other{plugin}} options values, see below:"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:289
+msgid "  - {error}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:368
+msgid ""
+"Destination directory already exists, please delete manually this directory: "
+"{0}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:373
+msgid ""
+"Destination directory could not be cleared, please check write permissions: "
+"{0}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:382
+msgid "Error when moving package content."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:412
+msgid "Unable to resolve the given source ({source})."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:439;476
+msgid "Unable to extract the package."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:480
+msgid ""
+"Unable to download the file, check write permission on \"{path}\" directory."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:484
+msgid ""
+"Could not download the package, no .ZIP file was found at the given URL."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:522
+msgid "Unzip error: {error}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:539
+msgid "Invalid package, missing \"src\" directory."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:543
+msgid "Invalid package, missing \"composer.json\" file."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:547
+msgid "Invalid \"composer.json\"."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:555
+msgid "The given package is not a valid theme."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:558
+msgid "The given package is not a valid plugin."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:572
+msgid ""
+"{type, select, theme{The theme} other{The plugin}} \"{name}\" is already "
+"installed."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:574
+msgid ""
+"{type, select, theme{The theme} other{The plugin}} \"{name}\" is already "
+"installed but disabled, maybe you want try to enable it?."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:581
+msgid "Missing \"screenshot.png\" file."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:587
+msgid ""
+"{type, select, theme{The theme} other{The plugin}} \"{name}\" depends on "
+"other packages, plugins or libraries that were not found: {depends}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:597
+msgid "Write permissions required for directory: {path}."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginToggleTask.php:49
+msgid "Enables or disables a plugin."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginToggleTask.php:52
+msgid "Name of the plugin to enable/disable."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginToggleTask.php:56
+msgid "Whether to \"enable\" or \"disable\" the given plugin."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginToggleTask.php:89
+msgid "Plugin \"{0}\" was not found."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginToggleTask.php:94
+msgid ""
+"Plugin \"{0}\" is a core plugin, you cannot enable or disable core's plugins."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginToggleTask.php:115
+msgid ""
+"Plugin \"{0}\" cannot be enabled as some dependencies are disabled or not "
+"installed: {1}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginToggleTask.php:142
+msgid "Plugin \"{0}\" cannot be disabled as it is required by: {1}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginToggleTask.php:173
+msgid "Plugin \"{0}\" could not be enabled due to an internal error."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginToggleTask.php:175
+msgid "Plugin \"{0}\" could not be disabled due to an internal error."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginToggleTask.php:202
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUpdateTask.php:71
+msgid "Task was explicitly rejected by the plugin."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginToggleTask.php:206
+msgid ""
+"Internal error, plugin did not respond to \"before{0}\" callback properly."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginToggleTask.php:226
+msgid "Plugin did not respond to \"after{0}\" callback properly."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:59
+msgid "Uninstall an existing plugin."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:62
+msgid "Name of the plugin to uninstall."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:109
+msgid ""
+"Enable write permissions in /tmp directory before uninstall any plugin or "
+"theme."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:114
+msgid "No plugin/theme was given to remove."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:132
+msgid "Plugin \"{name}\" was not found."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:139
+msgid ""
+"{type, select, theme{The theme} other{The plugin}} \"{name}\" is currently "
+"being used and cannot be removed."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:144
+msgid ""
+"{type, select, theme{The theme} other{The plugin}} \"{name}\" is a core "
+"plugin, you cannot remove core's plugins."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:150
+msgid ""
+"{type, select, theme{The theme} other{The plugin}} \"{name}\" cannot be "
+"removed as it is required by: {required}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:166
+msgid ""
+"Internal error, the {type, select, theme{theme} other{plugin}} did not "
+"respond to \"beforeUninstall\" callback correctly."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:172
+msgid ""
+"{type, select, theme{The theme} other{The plugin}} \"{name}\" could not be "
+"unregistered from DB."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:186
+msgid ""
+"{type, select, theme{The theme} other{The plugin}} did not respond to "
+"\"afterUninstall\" callback."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:249
+msgid ""
+"{type, select, theme{Theme's} other{Plugin's}} directory was not found: "
+"{path}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:266
+msgid ""
+"Some {type, select, theme{theme's} other{plugin's}} files or directories "
+"cannot be removed from your server, please check write permissions of:"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:268
+msgid "  - {path}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUpdateTask.php:39
+msgid "Install a new plugin."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUpdateTask.php:76
+msgid ""
+"Internal error, plugin did not respond to \"beforeUpdate\" callback "
+"correctly."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUpdateTask.php:91
+msgid "Plugin was installed but some errors occur."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUpdateTask.php:111
+msgid ""
+"The plugin \"{0}\" is not installed, you cannot update a plugin that is not "
+"installed in your system."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUpdateTask.php:116
+msgid ""
+"Plugin \"{0}\" is a core plugin, you cannot update system's core using this "
+"method."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUpdateTask.php:119
+msgid "Unable to update, please check write permissions for \"{0}\"."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUpdateTask.php:138
+msgid "Plugin's directory was not found: "
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUpdateTask.php:155
+msgid "Some plugin's files or directories cannot be removed from your server:"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUpdateTask.php:157
+msgid "  -{0}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/ThemeActivationTask.php:46
+msgid "Changes site's theme."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/ThemeActivationTask.php:49
+msgid "Name of the theme to change to."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/ThemeActivationTask.php:53
+msgid "Theme events will not be trigged."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/ThemeActivationTask.php:68
+msgid "You must provide a theme."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/ThemeActivationTask.php:73
+msgid "Theme \"{0}\" was not found."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/ThemeActivationTask.php:79
+msgid "\"{0}\" is not a theme."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/ThemeActivationTask.php:84
+msgid "Theme \"{0}\" is already active."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/ThemeActivationTask.php:96
+msgid "Task was explicitly rejected by the theme."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/ThemeActivationTask.php:101
+msgid ""
+"Internal error, theme did not respond to \"beforeActivate\" callback "
+"properly."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/ThemeActivationTask.php:119
+msgid "Internal error, the option \"{0}\" could not be persisted on database."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/ThemeActivationTask.php:128
+msgid "Theme did not respond to \"afterActivate\" callback."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/account.ctp:16;60
+msgid "Create Account"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/account.ctp:17
+msgid ""
+"Complete the following information for create a new user account, you can "
+"login later and administer your website   ."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/account.ctp:30
+msgid "Name"
+msgstr "Nom"
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/account.ctp:31
+msgid "Your real name, e.g. John Locke."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/account.ctp:35
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:59
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/account.ctp:36
+msgid "The username you will use to login to QuickApps CMS."
+msgstr ""
+"Le nom d'utilisateur que vous utilisez pour vous connecter à QuickApps CMS."
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/account.ctp:40
+msgid "e-Mail"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/account.ctp:41
+msgid "In case you forget your login details."
+msgstr "Dans le cas où vous avez oublié vos informations de connexion."
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/account.ctp:47
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:64
+msgid "Password"
+msgstr "Mot de passe"
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/account.ctp:48
+msgid "The password you will use to login to QuickApps CMS."
+msgstr ""
+"Le mot de passe que vous utiliserez pour vous connecter à QuickApps CMS."
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/account.ctp:52
+msgid "Confirm password"
+msgstr "Confirmation mot de passe"
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/account.ctp:53
+msgid "Confirm your password."
+msgstr "Confirmez votre mot de passe."
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:16
+msgid "Database Connection"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:17
+msgid ""
+"Enter connection data for your database. Note: your database must already "
+"exist before completing this step."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:30
+msgid "Host"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:30
+msgid "ex. localhost"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:31
+msgid "ex. mysql.server.com or localhost"
+msgstr "ex. mysql.server.com ou localhost"
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:35
+msgid "Database Name"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:35
+msgid "ex. quickappscms_db"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:36
+msgid "Database must already exist!"
+msgstr "Base de données doit déjà exister !"
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:49
+msgid "Database Type"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:53
+msgid "The type of database your QuickAppsCMS data will be stored in."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:60
+msgid "Username used to log into this database."
+msgstr "Nom d'utilisateur utilisé pour se connecter à cette base de données."
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:65
+msgid "Password used to log into this database."
+msgstr "Mot de passe utilisé pour se connecter à cette base de données."
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:74
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/requirements.ctp:17
+msgid "Continue"
+msgstr "Continuer"
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:80
+msgid "This might take a few minutes, please be patient"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/finish.ctp:18
+msgid "Thanks!"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/finish.ctp:19
+msgid ""
+"Thanks for choosing QuickApps CMS!, you can login into the administration "
+"section or go to your site's home page"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/finish.ctp:20
+msgid "Links of Interest"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/finish.ctp:23
+msgid "Official Site"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/finish.ctp:24
+msgid "GitHub"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/finish.ctp:25
+msgid "API 2.0"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/finish.ctp:26
+msgid "Issue Tracker"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/finish.ctp:27
+msgid "Google Group"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/finish.ctp:34
+msgid "Visit my website"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/finish.ctp:35
+msgid "Administer my website"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/license.ctp:23
+msgid "I Agree"
+msgstr "je suis d'accord"
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/requirements.ctp:16
+msgid ""
+"<strong>Congratulations!</strong> Your server meets the basic software "
+"requirements."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/requirements.ctp:21
+msgid ""
+"<strong>Uh oh.</strong> There's a server compatibility issue. See below."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Utility/DatabaseInstaller.php:153
+msgid "Nothing installed"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Utility/DatabaseInstaller.php:176
+msgid "Invalid database information in file \"{0}\""
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Utility/DatabaseInstaller.php:191
+msgid "Invalid database type ({0})."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Utility/DatabaseInstaller.php:208
+msgid "Database engine cannot be empty."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Utility/DatabaseInstaller.php:219
+msgid ""
+"Unable to connect to database, please check your information. Details: {0}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Utility/DatabaseInstaller.php:240
+msgid "Error importing \"{0}\"."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Utility/DatabaseInstaller.php:248
+msgid "Unable to import database information. Details: {0}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Utility/DatabaseInstaller.php:269
+msgid ""
+"A previous installation of QuickAppsCMS already exists, please drop your "
+"database tables before continue."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Utility/DatabaseInstaller.php:351
+msgid "Unable to create table \"{0}\". Details: {1}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Utility/DatabaseInstaller.php:400
+msgid "Error while importing data for table \"{0}\". Details: {1}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Utility/PackageUploader.php:62
+msgid "Invalid package."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Utility/PackageUploader.php:65
+msgid "Invalid package format, it is not a ZIP package."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Utility/PackageUploader.php:80
+msgid ""
+"Package could not be uploaded, please check write permissions on /tmp "
+"directory."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Utility/ServerTest.php:109;121
+msgid "Test failed"
+msgstr ""
+
+#~ msgid "Welcome to QuickApps CMS"
+#~ msgstr "Bienvenue sur QuickApps CMS"
+
+#~ msgid ""
+#~ "Your php version is not supported. check that your version is 5.2.8 or "
+#~ "newer."
+#~ msgstr ""
+#~ "Votre version de PHP n'est pas pris en charge. Que vérifier votre version "
+#~ "est 5.2.8 ou plus récent."
+
+#~ msgid "MySQL extension is not loaded on your server."
+#~ msgstr "L'extension MySQL n'est pas chargé sur votre serveur."
+
+#~ msgid "tmp folder is not writable."
+#~ msgstr "le dossier top n'est pas accessible en écriture."
+
+#~ msgid "tmp/cache folder is not writable."
+#~ msgstr "le dossier tmp/cache n'est pas accessible en écriture."
+
+#~ msgid "tmp/cache/installer folder is not writable."
+#~ msgstr "le dossier tmp/cache/installer n'est pas accessible en écriture."
+
+#~ msgid "tmp/cache/models folder is not writable."
+#~ msgstr "le dossier tmp/cache/models  n'est pas accessible en écriture."
+
+#~ msgid "tmp/cache/persistent folder is not writable."
+#~ msgstr "le dossier tmp/cache/persistent  n'est pas accessible en écriture."
+
+#~ msgid "tmp/cache/i18n folder is not writable."
+#~ msgstr "le dossier tmp/cache/i18n  n'est pas accessible en écriture."
+
+#~ msgid "Config folder is not writable."
+#~ msgstr "le dossier Config n'est pas accessible en écriture."
+
+#~ msgid "Config/core.php file is not writable."
+#~ msgstr "le fichier Config/core.php  n'est pas accessible en écriture."
+
+#~ msgid "Could not connect to database."
+#~ msgstr "Impossible de se connecter à la base de données."
+
+#~ msgid ""
+#~ "A previous installation of QuickApps CMS already exists, please drop your "
+#~ "database or change the prefix."
+#~ msgstr ""
+#~ "Une installation précédente de QuickApps CMS existe déjà, s'il vous plaît "
+#~ "supprimer votre base de données ou modifier le préfixe."
+
+#~ msgid "Could not dump database."
+#~ msgstr "Impossible de déverser la base de données."
+
+#~ msgid "Could not write database.php file."
+#~ msgstr "Impossible d'écrire dans le fichier database.php. "
+
+#~ msgid "Could not create new user, please try again."
+#~ msgstr ""
+#~ "Impossible de créer le nouvel utilisateur, s'il vous plaît essayez de "
+#~ "nouveau."
+
+#~ msgid ""
+#~ "Could not write 'install' file. Check file/folder permissions and refresh "
+#~ "this page."
+#~ msgstr ""
+#~ "Impossible d'écrire dans le fichier 'install'. Vérifiez les autorisations "
+#~ "sur les dossiers/fichiers et rafraîchir cette page."
+
+#~ msgid "Could not download package file."
+#~ msgstr "Impossible de télécharger le fichier package."
+
+#~ msgid "Package upload error."
+#~ msgstr "Erreur de téléchargement des paquets."
+
+#~ msgid "Unzip error."
+#~ msgstr "Erreur de décompression."
+
+#~ msgid "Invalid package structure after unzip."
+#~ msgstr "Structure invalide du paquet après décompression."
+
+#~ msgid "Forbidden Names"
+#~ msgstr "Noms interdits"
+
+#~ msgid "Forbidden module name \"%s\""
+#~ msgstr "Nom du module interdit \"%s\""
+
+#~ msgid "Theme name"
+#~ msgstr "Nom du thème"
+
+#~ msgid "Invalid module name (got \"%s\", expected: \"%s\")"
+#~ msgstr "Nom du module non valide (j'ai eu \"%s\", attendu: \"%s\")"
+
+#~ msgid "Already installed"
+#~ msgstr "Déjà installée"
+
+#~ msgid "This module is already installed"
+#~ msgstr "Ce module est déjà installé"
+
+#~ msgid "Config Folder"
+#~ msgstr "Dossier Config"
+
+#~ msgid "\"Config\" folder not found"
+#~ msgstr "\"Config\" introuvable"
+
+#~ msgid "Bootstrap File"
+#~ msgstr "Fichier Bootstrap"
+
+#~ msgid "\"Config/bootstrap.php\" file not found"
+#~ msgstr "\"Config/bootstrap.php\" fichier non trouvé"
+
+#~ msgid "Routes File"
+#~ msgstr "Fichier Routes"
+
+#~ msgid "\"Config/routes.php\" file not found"
+#~ msgstr "\"Config/routes.php\"  introuvable"
+
+#~ msgid "Controller Folder"
+#~ msgstr "Dossier Controller"
+
+#~ msgid "\"Controller\" folder not found"
+#~ msgstr "Le dossier \"Controller\" est introuvable"
+
+#~ msgid "Component Folder"
+#~ msgstr "Dossier Component"
+
+#~ msgid "\"Component\" folder not found"
+#~ msgstr "Le dossier \"Component\" est introuvable"
+
+#~ msgid "Installer File"
+#~ msgstr "Fichier d'installation"
+
+#~ msgid "Installer file (InstallComponent.php) not found"
+#~ msgstr "Fichier d'installation (InstallComponent.php) introuvable"
+
+#~ msgid "YAML File"
+#~ msgstr "Fichier YAML"
+
+#~ msgid "YAML File (%s) not found"
+#~ msgstr "Le fichier YAML (%s) est introuvable"
+
+#~ msgid "Invalid theme name (got \"%s\", expected: \"%s\")"
+#~ msgstr "Nom du thème invalide (j'ai eu \"%s\", attendu: \"%s\")"
+
+#~ msgid "Already Installed"
+#~ msgstr "Déjà installée"
+
+#~ msgid "This theme is already installed"
+#~ msgstr "Ce thème est déjà installé"
+
+#~ msgid "Layouts Folder"
+#~ msgstr "Dossier Layouts"
+
+#~ msgid "\"Layouts\" folder not found"
+#~ msgstr "Le dossier \"Layouts\" est introuvable"
+
+#~ msgid "app Folder"
+#~ msgstr "Dossier app"
+
+#~ msgid "\"app\" folder not found"
+#~ msgstr "Le dossier \"app\" est introuvable"
+
+#~ msgid "Plugin app"
+#~ msgstr "Plugin app"
+
+#~ msgid "Module app (\"%s\") folder not found"
+#~ msgstr "Module app (\"%s\") dossier introuvable"
+
+#~ msgid "webroot Folder"
+#~ msgstr "Dossier webroot"
+
+#~ msgid "\"webroot\" folder not found"
+#~ msgstr "Le dossier \"webroot\" est introuvable"
+
+#~ msgid "Theme thumbnail"
+#~ msgstr "Images miniature du Thème"
+
+#~ msgid "Thumbnail image (\"%s\") not found"
+#~ msgstr "Images miniature du Thème (\"%s\") introuvable"
+
+#~ msgid "YAML Validation"
+#~ msgstr "Validation YAML"
+
+#~ msgid "Module configuration file (%s) appears to be invalid."
+#~ msgstr "Le fichier de configuration du module (%s) semble être invalide."
+
+#~ msgid "Theme configuration file (%s) appears to be invalid."
+#~ msgstr "Le fichier de configuration Thème (% s) semble être invalide."
+
+#~ msgid "Required regions"
+#~ msgstr "Régions obligatoires"
+
+#~ msgid ""
+#~ "Missing theme region(s) \"toolbar\" and/or \"help\". Are required for "
+#~ "backend themes."
+#~ msgstr ""
+#~ "Il manque dans le thème, la région(s) \"barre d'outils \" et / ou \"help "
+#~ "\". Elle sont nécessaires pour le \"«backend thèmes"
+
+#~ msgid "Invalid information file (.yaml)"
+#~ msgstr "Fichier des informations non valides (.yaml)"
+
+#~ msgid "This module is incompatible with your QuickApps version."
+#~ msgstr "Ce module n'est pas compatible avec votre version QuickApps."
+
+#~ msgid "This theme is incompatible with your QuickApps version."
+#~ msgstr "Ce thème est incompatible avec votre version QuickApps."
+
+#~ msgid ""
+#~ "This theme depends on other modules that you do not have or doesn't meet "
+#~ "the version required: %s"
+#~ msgstr ""
+#~ "Ce thème dépend d'autres modules que vous n'avez pas ou ne répond pas à "
+#~ "la version souhaitée:%s"
+
+#~ msgid "invalid information file (.yaml). Field \"%s\""
+#~ msgstr "informations de fichier invalides (. yawl). Champ \"%s\""
+
+#~ msgid "Invalid field \"%s\". Information file (.yaml) not found."
+#~ msgstr ""
+#~ "Champ non valide \"%s\". information de fichier (.yaml) introuvable."
+
+#~ msgid "Invalid field name \"%s\"."
+#~ msgstr "nom du champ invalide"
+
+#~ msgid "Module does not exist."
+#~ msgstr "Module n'existe pas."
+
+#~ msgid "Core modules can not be uninstalled."
+#~ msgstr "Modules de base ne peut pas être désinstallé"
+
+#~ msgid "This module can not be uninstalled, because it is required by: %s"
+#~ msgstr "Ce module ne peut pas être désinstallé, car il est requis par : %s"
+
+#~ msgid ""
+#~ "This module can not be uninstalled because some files/folder can not be "
+#~ "deleted, please check the permissions."
+#~ msgstr ""
+#~ "Ce module ne peut pas être désinstallé car certains fichiers/dossiers ne "
+#~ "peut pas être supprimé, s'il vous plaît vérifier les autorisations."
+
+#~ msgid "path: %s, not writable"
+#~ msgstr "Chemin : %s non enregistrable"
+
+#~ msgid "This module can not be disabled, because it is required by: %s"
+#~ msgstr "Ce module ne peut pas être désactivé, car il est requis par : %s"
+
+#~ msgid ""
+#~ "This module depends on other modules that you do not have or doesn't meet "
+#~ "the version required: %s"
+#~ msgstr ""
+#~ "Ce module dépend d'autres modules que vous n'avez pas ou ne répond pas la "
+#~ "version requise : %s"
+
+#~ msgid "Site offline"
+#~ msgstr "Site hors ligne"
+
+#~ msgid "You are not authorized to access that location."
+#~ msgstr "Vous n'êtes pas autorisé à accéder à cet endroit."
+
+#~ msgid "Duplicated content"
+#~ msgstr "Contenu dupliqué"
+
+#~ msgid ""
+#~ "Duplicate content detected!; it looks as though you've already sent that!"
+#~ msgstr ""
+#~ "Duplication de contenu détecté. On dirait que vous avez déjà envoyé ça ! "
+
+#~ msgid "Blocks"
+#~ msgstr "Blocs"
+
+#~ msgid "Clone"
+#~ msgstr "Cloner"
+
+#~ msgid "Block has been cloned"
+#~ msgstr "Bloc a été cloné"
+
+#~ msgid "Block could not be cloned"
+#~ msgstr "Le bloc n'a pas pu être cloné"
+
+#~ msgid "Block has been saved"
+#~ msgstr "Bloc a été enregistré"
+
+#~ msgid "Block could not be saved. Please, try again."
+#~ msgstr "Le bloc n'a pas pu être sauvé. S'il vous plaît, essayez à nouveau."
+
+#~ msgid "Editing Block"
+#~ msgstr "Édition du bloc"
+
+#~ msgid "Editing block"
+#~ msgstr "Édition du bloc"
+
+#~ msgid "Add new block"
+#~ msgstr "Ajouter nouveau bloc"
+
+#~ msgid "New block"
+#~ msgstr "Nouveau bloc"
+
+#~ msgid "Block has been deleted"
+#~ msgstr "Le bloc a été supprimé"
+
+#~ msgid "Block could not be deleted"
+#~ msgstr "Le bloc ne peut pas été supprimé"
+
+#~ msgid "Duplicate this block?"
+#~ msgstr "Dupliquer ce bloc ?"
+
+#~ msgid "clone"
+#~ msgstr "cloner"
+
+#~ msgid "configure"
+#~ msgstr "configurer"
+
+#~ msgid "Delete selected block ?"
+#~ msgstr "Supprimer bloc sélectionné?"
+
+#~ msgid "delete"
+#~ msgstr "supprimer"
+
+#~ msgid "New Block"
+#~ msgstr "Nouveau bloc"
+
+#~ msgid "Content"
+#~ msgstr "Contenu"
+
+#~ msgid "Block title"
+#~ msgstr "Titre du bloc"
+
+#~ msgid "The title of the block as shown to the user."
+#~ msgstr "Le titre du bloc comme indiqué à l'utilisateur."
+
+#~ msgid "Block description *"
+#~ msgstr "Description du bloc* "
+
+#~ msgid ""
+#~ "A brief description of your block. Used on the Blocks administration page."
+#~ msgstr ""
+#~ "Une brève description de votre bloc. Utilisé sur la page d'administration "
+#~ "des blocs."
+
+#~ msgid "Block body *"
+#~ msgstr "Corps de bloc *"
+
+#~ msgid "Language"
+#~ msgstr "Langue"
+
+#~ msgid "Translations"
+#~ msgstr "Traductions"
+
+#~ msgid "Show this block for these languages"
+#~ msgstr "Afficher cette section pour ces langues"
+
+#~ msgid "If no language is selected, block will show regardless of language."
+#~ msgstr ""
+#~ "Si aucune langue n'est sélectionnée, le bloc affichera indépendamment de "
+#~ "la langue."
+
+#~ msgid "Visibility settings"
+#~ msgstr "Paramètres de visibilité"
+
+#~ msgid "Theme Region"
+#~ msgstr "Région du Thème"
+
+#~ msgid "Specify in which themes and regions this block is displayed."
+#~ msgstr "Précisez dans quels thèmes et les régions de ce bloc est affiché."
+
+#~ msgid "--None--"
+#~ msgstr "--Aucun--"
+
+#~ msgid "Pages"
+#~ msgstr "Pages"
+
+#~ msgid "All pages except those listed"
+#~ msgstr "Toutes les pages sauf celles listées"
+
+#~ msgid "Only the listed pages"
+#~ msgstr "Seules les pages listées"
+
+#~ msgid "Pages on which this PHP code returns TRUE (experts only)"
+#~ msgstr "Pages sur lesquelles ce code PHP renvoie TRUE (experts seulement)"
+
+#~ msgid ""
+#~ "Specify pages by using their paths. Enter one path per line. The '*' "
+#~ "character is a wildcard. Example paths are blog for the blog page and "
+#~ "blog/* for every blog entry. '/' is the front page."
+#~ msgstr ""
+#~ "Spécifiez les pages en utilisant leurs chemins. Entrez un chemin par "
+#~ "ligne. Le '*' caractère est un caractère générique. Exemple chemins sont "
+#~ "blog pour la page de blog et blog/* pour chaque entrée de blog. '/' est "
+#~ "la page d'accueil.\""
+
+#~ msgid ""
+#~ "If the PHP option is chosen, enter PHP code between &lt;?php ?&gt;. Note "
+#~ "that executing incorrect PHP code can break your QuickApps site."
+#~ msgstr ""
+#~ "Si l'option PHP est choisi, entrez le code PHP. Attention : l'exécution "
+#~ "incorrecte de code PHP peut briser votre site."
+
+#~ msgid "Roles"
+#~ msgstr "Rôles"
+
+#~ msgid "Show block for specific roles"
+#~ msgstr "Montrer bloc pour des rôles spécifiques"
+
+#~ msgid ""
+#~ "Show this block only for the selected role(s). If you select no roles, "
+#~ "the block will be visible to all users."
+#~ msgstr ""
+#~ "Afficher cette section seulement pour le rôle sélectionné(s). Si vous ne "
+#~ "sélectionnez aucun rôle, le Bloc sera visible par tous les utilisateurs."
+
+#~ msgid "Advanced Options"
+#~ msgstr "Options avancées"
+
+#~ msgid "Block class suffix"
+#~ msgstr "Suffixe de classe pour le bloc"
+
+#~ msgid ""
+#~ "A suffix to be applied to the CSS class of the block. This allows for "
+#~ "individual block styling."
+#~ msgstr ""
+#~ "Un suffixe à appliquer à la classe CSS du bloc. Cela permet de styler le "
+#~ "bloc individuel."
+
+#~ msgid "Save block"
+#~ msgstr "Enregistrer bloc"
+
+#~ msgid "Active"
+#~ msgstr "Actif"
+
+#~ msgid "Unassigned or Disabled"
+#~ msgstr "Non affecté ou Désactivé"
+
+#~ msgid "Save all"
+#~ msgstr "Enregistrer tout"
+
+#~ msgid "Unpublished comments"
+#~ msgstr "Commentaires non publiés"
+
+#~ msgid "Published comments"
+#~ msgstr "Commentaires publiés"
+
+#~ msgid "Comments"
+#~ msgstr "Commentaires"
+
+#~ msgid "Comment details"
+#~ msgstr "Détails commentaire"
+
+#~ msgid "Comment Details"
+#~ msgstr "Détails commentaire"
+
+#~ msgid "Comment has been deleted."
+#~ msgstr "Le commentaire a été supprimé."
+
+#~ msgid "Comment could not be deleted."
+#~ msgstr "Commentaire n'a pas pu être supprimé."
+
+#~ msgid "Anonymous"
+#~ msgstr "Anonyme"
+
+#~ msgid "No subject"
+#~ msgstr "Aucun sujet"
+
+#~ msgid "wrote"
+#~ msgstr "écrit"
+
+#~ msgid "Anti-Spam Protection"
+#~ msgstr "Protection anti-spam"
+
+#~ msgid "Use ReCaptcha"
+#~ msgstr "Utiliser ReCaptcha"
+
+#~ msgid "ReCaptcha Public Key"
+#~ msgstr "ReCaptcha Public Key"
+
+#~ msgid "ReCaptcha Private Key"
+#~ msgstr "ReCaptcha Private Key"
+
+#~ msgid "Theme"
+#~ msgstr "Thème"
+
+#~ msgid "Red"
+#~ msgstr "Rouge"
+
+#~ msgid "White"
+#~ msgstr "Blanc"
+
+#~ msgid "Black Glass"
+#~ msgstr "Verre noir"
+
+#~ msgid "Clean"
+#~ msgstr "Nettoyer"
+
+#~ msgid "Auto-Detect"
+#~ msgstr "Auto-detecte"
+
+#~ msgid "English"
+#~ msgstr "Anglais"
+
+#~ msgid "Dutch"
+#~ msgstr "Néerlandais"
+
+#~ msgid "French"
+#~ msgstr "Français"
+
+#~ msgid "German"
+#~ msgstr "Allemand"
+
+#~ msgid "Portuguese"
+#~ msgstr "Portugais"
+
+#~ msgid "Russian"
+#~ msgstr "Russe"
+
+#~ msgid "Spanish"
+#~ msgstr "Espagnol"
+
+#~ msgid "Turkish"
+#~ msgstr "Turc"
+
+#~ msgid "Custom Translation"
+#~ msgstr "Traduction personnalisée"
+
+#~ msgid "Use Akismet"
+#~ msgstr "Utilisez Akismet"
+
+#~ msgid "Akismet API Key"
+#~ msgstr "Akismet API Key"
+
+#~ msgid "On SPAM detected"
+#~ msgstr "Le SPAM détecté"
+
+#~ msgid "Mark as SPAM"
+#~ msgstr "Marquer comme spam"
+
+#~ msgid "Delete"
+#~ msgstr "Supprimer"
+
+#~ msgid "Published"
+#~ msgstr "Publié"
+
+#~ msgid "Unpublished (%s)"
+#~ msgstr "Dépublié"
+
+#~ msgid "Invalid security code."
+#~ msgstr "Code de sécurité invalide."
+
+#~ msgid "Details"
+#~ msgstr "Détails"
+
+#~ msgid "Delete selected comment ?"
+#~ msgstr "Delete selected comment ?"
+
+#~ msgid "Subject"
+#~ msgstr "Sujet"
+
+#~ msgid "Author"
+#~ msgstr "Auteur"
+
+#~ msgid "Posted in"
+#~ msgstr "Publié dans"
+
+#~ msgid "Posted on"
+#~ msgstr "Posté le"
+
+#~ msgid "Y/m/d - H:i"
+#~ msgstr "d/m/Y - H:i"
+
+#~ msgid "There are no comments to display"
+#~ msgstr "Il n'y a pas de commentaires à afficher"
+
+#~ msgid "Filter Options"
+#~ msgstr "Options du filtre"
+
+#~ msgid "Author’s name"
+#~ msgstr "Nom de l'auteur"
+
+#~ msgid "Author’s e-mail"
+#~ msgstr "Auteur de l'e-mail"
+
+#~ msgid "Author’s host name (IP)"
+#~ msgstr "Nom d'hôte de l'auteur (IP)"
+
+#~ msgid "Author’s web site"
+#~ msgstr "Site Web de l'auteur"
+
+#~ msgid "Comment"
+#~ msgstr "Commenter"
+
+#~ msgid "Comment’s body"
+#~ msgstr "Corps du commentaire"
+
+#~ msgid "Content’s title"
+#~ msgstr "Titre du contenu"
+
+#~ msgid "Content’s slug"
+#~ msgstr "Slug du contenu"
+
+#~ msgid "Content’s id"
+#~ msgstr "\"ID du contenu\""
+
+#~ msgid "Filter"
+#~ msgstr "Filtrer"
+
+#~ msgid "Are you sure ?"
+#~ msgstr "Etes-vous sûr?"
+
+#~ msgid "Update Options"
+#~ msgstr "Mettez à jour les options"
+
+#~ msgid "Approve selected comments"
+#~ msgstr "Approuver les commentaires sélectionnés"
+
+#~ msgid "Unapprove selected comments"
+#~ msgstr "Désapprouver les commentaires sélectionnés"
+
+#~ msgid "Delete selected comments"
+#~ msgstr "Supprimer les commentaires sélectionnés"
+
+#~ msgid "Update"
+#~ msgstr "Mis à jour"
+
+#~ msgid "Published in content"
+#~ msgstr "Publié dans le contenu"
+
+#~ msgid "Published by"
+#~ msgstr "Publié par"
+
+#~ msgid "on %s"
+#~ msgstr "le %s"
+
+#~ msgid "M d, Y H:i"
+#~ msgstr "d M Y H:i"
+
+#~ msgid "Hostname"
+#~ msgstr "Nom d'hôte"
+
+#~ msgid "Web page"
+#~ msgstr "Page Web"
+
+#~ msgid "Message"
+#~ msgstr "Message"
+
+#~ msgid "Date cannot be empty."
+#~ msgstr "La date ne peut pas être vide."
+
+#~ msgid "Add a Timepicker"
+#~ msgstr "Ajouter un sélecteur de temps"
+
+#~ msgid "Add a Date Picker"
+#~ msgstr "Ajouter un sélecteur de date"
+
+#~ msgid "Time Options"
+#~ msgstr "Options d'heure"
+
+#~ msgid "Time format"
+#~ msgstr "Format de l'heure"
+
+#~ msgid "e.g.: hh:mm:ss:l"
+#~ msgstr "ex.: hh:mm:ss:l"
+
+#~ msgid "Separator"
+#~ msgstr "Séparateur"
+
+#~ msgid "Use AM/PM"
+#~ msgstr "Utiliser AM/PM"
+
+#~ msgid "Show seconds"
+#~ msgstr "Afficher les secondes"
+
+#~ msgid "Show milliseconds"
+#~ msgstr "Voir millisecondes"
+
+#~ msgid "Date Options"
+#~ msgstr "Options de date"
+
+#~ msgid "Date format"
+#~ msgstr "Format de la date"
+
+#~ msgid "e.g.: yy-mm-dd"
+#~ msgstr "\"ex.: yy-mm-dd\""
+
+#~ msgid "Display button bar"
+#~ msgstr "Afficher la barre de bouton"
+
+#~ msgid "Display month & year menu"
+#~ msgstr "Afficher le menu mois et année"
+
+#~ msgid "Show week of the year"
+#~ msgstr "Montrer semaine de l'année"
+
+#~ msgid "Display multiple months"
+#~ msgstr "Afficher plusieurs mois"
+
+#~ msgid "Localize"
+#~ msgstr "Localiser"
+
+#~ msgid "Choose Time"
+#~ msgstr "Sélectionnez Heure"
+
+#~ msgid "Time"
+#~ msgstr "Temps"
+
+#~ msgid "Hour"
+#~ msgstr "Heure"
+
+#~ msgid "Minute"
+#~ msgstr "Minute"
+
+#~ msgid "Second"
+#~ msgstr "Seconde"
+
+#~ msgid "Milliecond"
+#~ msgstr "Milliseconde"
+
+#~ msgid "Invalid file extension."
+#~ msgstr "Extension de fichier invalide."
+
+#~ msgid "Error: %s"
+#~ msgstr "Erreur : %s"
+
+#~ msgid "You must upload at least one file."
+#~ msgstr "Vous devez télécharger au moins un fichier"
+
+#~ msgid "Remove"
+#~ msgstr "Supprimé"
+
+#~ msgid "Files must be less than <b>%sB</b>."
+#~ msgstr "Fichiers doit être inférieure à <b>%sB</b>."
+
+#~ msgid "Allowed file types: <b>%s</b>."
+#~ msgstr "Les types de fichiers acceptés : <b>%s</b>."
+
+#~ msgid "Link to file"
+#~ msgstr "Lien vers le fichier"
+
+#~ msgid "Table of Files"
+#~ msgstr "Table des Fichiers"
+
+#~ msgid "File URL"
+#~ msgstr "URL du fichier"
+
+#~ msgid "Allowed extensions"
+#~ msgstr "Extensions autorisées"
+
+#~ msgid "Comma separated. e.g. jpg,gif,png"
+#~ msgstr "Séparés par des virgule. ex. jpg,gif,png"
+
+#~ msgid "Custom"
+#~ msgstr "Personnalisé"
+
+#~ msgid "Number of files"
+#~ msgstr "Nombre de fichiers"
+
+#~ msgid "Customized number of files"
+#~ msgstr "Numéro personnalisée de fichiers"
+
+#~ msgid "Maximum number of files users can upload for this field."
+#~ msgstr ""
+#~ "Nombre maximum de fichiers utilisateurs qui peuvent être télécharger dans "
+#~ "ce champ."
+
+#~ msgid "Upload folder"
+#~ msgstr "Téléchargez le dossier"
+
+#~ msgid ""
+#~ "Optional subdirectory within the upload destination where files will be "
+#~ "stored. Do not include preceding or trailing slashes."
+#~ msgstr ""
+#~ "Sous-dossier optionnel qui sera dans le dossier de destination des "
+#~ "téléchargements et où les fichiers seront stockés. Ne pas inclure des "
+#~ "barres obliques avant ou arrière."
+
+#~ msgid "Enable Description field"
+#~ msgstr "Activer champ Description"
+
+#~ msgid ""
+#~ "The description field allows users to enter a description about the "
+#~ "uploaded file."
+#~ msgstr ""
+#~ "Le champ de description permet aux utilisateurs d'entrer une description "
+#~ "pour le fichier uploadé."
+
+#~ msgid "Attachment"
+#~ msgstr "Attachement"
+
+#~ msgid "Size"
+#~ msgstr "Taille"
+
+#~ msgid "Title"
+#~ msgstr "Titre"
+
+#~ msgid ""
+#~ "The title is used as a tool tip when the user hovers the mouse over the "
+#~ "image."
+#~ msgstr ""
+#~ "Le titre est utilisé comme info-bulle lorsque l'utilisateur passe la "
+#~ "souris sur l'mage."
+
+#~ msgid "Alternate text"
+#~ msgstr "Texte alternatif"
+
+#~ msgid ""
+#~ "This text will be used by screen readers, search engines, or when the "
+#~ "image cannot be loaded."
+#~ msgstr ""
+#~ "Ce texte sera utilisé par les lecteurs d'écran, moteurs de recherche, ou "
+#~ "lorsque l'image ne peut pas être chargé."
+
+#~ msgid "Image style"
+#~ msgstr "Style d'image"
+
+#~ msgid "None (original image)"
+#~ msgstr "Aucune (image originale)"
+
+#~ msgid "File"
+#~ msgstr "Fichier"
+
+#~ msgid "Link image to"
+#~ msgstr "Lien de l'image pour"
+
+#~ msgid "Nothing"
+#~ msgstr "Rien"
+
+#~ msgid "Enable <em>Title</em> field"
+#~ msgstr "Activer champ <em>Titre</em>"
+
+#~ msgid ""
+#~ "The title attribute is used as a tooltip when the mouse hovers over the "
+#~ "image."
+#~ msgstr ""
+#~ "L'attribut <em>title</em> est utilisé comme une info-bulle lorsque la "
+#~ "souris survole le image."
+
+#~ msgid "Enable <em>Alt</em> field"
+#~ msgstr "Active le champ <em>Alt</em>"
+
+#~ msgid ""
+#~ "The alt attribute may be used by search engines, screen readers, and when "
+#~ "the image cannot be loaded."
+#~ msgstr ""
+#~ "L'attribut <em>alt</em> peut être utilisé par les moteurs de recherche, "
+#~ "les lecteurs d'écran, et lorsque l'image ne peut pas être chargé."
+
+#~ msgid "-- No preview --"
+#~ msgstr "-- Aucun aperçu --"
+
+#~ msgid "Preview image style"
+#~ msgstr "Aperçu de style d'image"
+
+#~ msgid "The preview image will be shown while editing the content."
+#~ msgstr "L'image d'aperçu s'affiche lors de la modification du contenu."
+
+#~ msgid "Image resolution"
+#~ msgstr "Résolution de l'image"
+
+#~ msgid "Minimum image resolution"
+#~ msgstr "Résolution d'image minimale"
+
+#~ msgid "pixels"
+#~ msgstr "pixels"
+
+#~ msgid ""
+#~ "The minimum allowed image size expressed as WIDTHxHEIGHT (e.g. 640x480). "
+#~ "Leave blank for no restriction. If a smaller image is uploaded, it will "
+#~ "be rejected."
+#~ msgstr ""
+#~ "La taille d'image minimale autorisée exprimée en WIDTHxHEIGHT (par "
+#~ "exemple 640x480). Laissez vide pour aucune restriction. Si une image trop "
+#~ "petite est téléchargée, elle sera rejetés."
+
+#~ msgid "Maximum image resolution"
+#~ msgstr "Résolution d'image maximale"
+
+#~ msgid ""
+#~ "The maximum allowed image size expressed as WIDTHxHEIGHT (e.g. 640x480). "
+#~ "Leave blank for no restriction. If a larger image is uploaded, it will be "
+#~ "rejected."
+#~ msgstr ""
+#~ "La taille d'image maximale permise exprimée en WIDTHxHEIGHT (par exemple "
+#~ "640x480). Laissez vide pour aucune restriction. Si une image plus grande "
+#~ "est téléchargée, elle sera rejeté."
+
+#~ msgid "Minimum image ratio"
+#~ msgstr "Ratio d'image minimum"
+
+#~ msgid ""
+#~ "The upload will be invalid if the image apect ratio (e.g. 1.6) is lower. "
+#~ "Leave blank for no restriction."
+#~ msgstr ""
+#~ "Le téléchargement ne sera pas valide si le rapport d'image (par exemple "
+#~ "1,6) est plus faible. Laissez vide pour aucune restriction."
+
+#~ msgid "Maximum image ratio"
+#~ msgstr "Ratio d'image maximale"
+
+#~ msgid ""
+#~ "The upload will be invalid if the image apect ratio (e.g. 1.6) is "
+#~ "greater. Leave blank for no restriction."
+#~ msgstr ""
+#~ "Le téléchargement ne sera pas valide si le rapport d'image (par exemple "
+#~ "1,6) est plus grande. Laissez vide pour aucune restriction."
+
+#~ msgid "Minimum image pixels"
+#~ msgstr "Pixels de l'image minimum"
+
+#~ msgid ""
+#~ "The upload will be invalid if the image number of pixels is lower. Leave "
+#~ "blank for no restriction."
+#~ msgstr ""
+#~ "Le téléchargement ne sera pas valide si le nombre de pixels de l'image "
+#~ "est plus faible. Laisser vide pour aucune restriction."
+
+#~ msgid "Maximum image pixels"
+#~ msgstr "Pixels de l'image maximum"
+
+#~ msgid ""
+#~ "The upload will be invalid if the image number of pixels is greater. "
+#~ "Leave blank for no restriction."
+#~ msgstr ""
+#~ "Le téléchargement ne sera pas valide si le nombre de pixels d'image est "
+#~ "supérieure. Laisser vide pour aucune restriction."
+
+#~ msgid "You must select at least one option."
+#~ msgstr "Vous devez sélectionner au moins une option."
+
+#~ msgid "Default"
+#~ msgstr "Par défaut"
+
+#~ msgid "Key"
+#~ msgstr "Clé"
+
+#~ msgid "Radio buttons"
+#~ msgstr "Les boutons radio"
+
+#~ msgid "Checkboxes"
+#~ msgstr "Les Cases à cocher"
+
+#~ msgid "List Type"
+#~ msgstr "Type de liste"
+
+#~ msgid "Options"
+#~ msgstr "Les options"
+
+#~ msgid ""
+#~ "The possible values this field can contain. Enter one value per line, in "
+#~ "the format <b>key|label</b>."
+#~ msgstr ""
+#~ "Les valeurs possibles de ce champ peut contenir. Entrez une valeur par "
+#~ "ligne, au format<b>Clé|étiquette</b>"
+
+#~ msgid ""
+#~ "The key is the stored value. The label will be used in displayed values "
+#~ "and edit forms."
+#~ msgstr ""
+#~ "La clé est la valeur stockée. L'étiquette sera utilisée dans les valeurs "
+#~ "affichées et éditer des formulaires."
+
+#~ msgid ""
+#~ "The label is optional: if a line contains a single string, it will be "
+#~ "used as key and label."
+#~ msgstr ""
+#~ "L'étiquette est facultative: si une ligne contient une seule chaîne, il "
+#~ "sera utilisé comme la clé et l'étiquette."
+
+#~ msgid "Max. %s characters length."
+#~ msgstr "Max. %S caractères maximum."
+
+#~ msgid "Field required."
+#~ msgstr "Un champ obligatoire."
+
+#~ msgid "Invalid field."
+#~ msgstr "Champ invalide."
+
+#~ msgid "Full"
+#~ msgstr "Plein"
+
+#~ msgid "Plain"
+#~ msgstr "Normal"
+
+#~ msgid "Trimmed"
+#~ msgstr "Coupé (Trimmed)"
+
+#~ msgid "Trim length or read-more-cutter"
+#~ msgstr "Couper la longueur ou lisez-plus-coupe"
+
+#~ msgid ""
+#~ "Numeric value will convert content to plain text and then trim it to the "
+#~ "specified number of chars. e.g.: 400"
+#~ msgstr ""
+#~ "Valeur numérique vous permet de convertir le contenu en texte brut, puis "
+#~ "le découper à un nombre déterminé de caractères par exemple : 400"
+
+#~ msgid ""
+#~ "String value will cut the content in two by the specified string, the "
+#~ "first part will be displayed. e.g.: &lt;!-- readmore --&gt;"
+#~ msgstr ""
+#~ "Valeur de chaîne permettra de réduire le contenu en deux par la chaîne "
+#~ "spécifiée, la première partie sera affiché. ex : &lt;!-- readmore --&gt;"
+
+#~ msgid "Text field"
+#~ msgstr "Champ de texte"
+
+#~ msgid "Long text"
+#~ msgstr "Texte long"
+
+#~ msgid "Type of content"
+#~ msgstr "Type de contenu"
+
+#~ msgid "Plain text"
+#~ msgstr "Texte normal"
+
+#~ msgid "Full HTML"
+#~ msgstr "Version intégrale en HTML"
+
+#~ msgid "Filtered HTML"
+#~ msgstr "HTML filtré"
+
+#~ msgid "Markdown"
+#~ msgstr "Réduction"
+
+#~ msgid "Text processing"
+#~ msgstr "Traitement de texte"
+
+#~ msgid "No HTML tags allowed."
+#~ msgstr "Aucune balise HTML autorisée."
+
+#~ msgid ""
+#~ "Web page addresses and e-mail addresses turn into links automatically."
+#~ msgstr ""
+#~ "Les adresses de pages web et de messagerie électronique sont transformées "
+#~ "en liens automatiquement."
+
+#~ msgid "Lines and paragraphs break automatically."
+#~ msgstr "Les lignes et les paragraphes vont à la ligne automatiquement."
+
+#~ msgid ""
+#~ "Allowed HTML tags: &lt;a&gt; &lt;em&gt; &lt;strong&gt; &lt;cite&gt; &lt;"
+#~ "blockquote&gt; &lt;code&gt; &lt;ul&gt; &lt;ol&gt; &lt;li&gt; &lt;dl&gt; "
+#~ "&lt;dt&gt; &lt;dd&gt;"
+#~ msgstr ""
+#~ "Tags HTML autorisés: &lt;a&gt; &lt;em&gt; &lt;strong&gt; &lt;cite&gt; &lt;"
+#~ "blockquote&gt; &lt;code&gt; &lt;ul&gt; &lt;ol&gt; &lt;li&gt; &lt;dl&gt; "
+#~ "&lt;dt&gt; &lt;dd&gt;"
+
+#~ msgid ""
+#~ "<a href=\"%s\" target=\"_blank\">Markdown</a> text format allowed only."
+#~ msgstr ""
+#~ "Format texte <a href=\"%s\" target=\"_blank\">réduit</a> permis seulement."
+
+#~ msgid "Max length"
+#~ msgstr "Longueur maximale"
+
+#~ msgid ""
+#~ "This is only used if your Type of content is a `Text field`. This will "
+#~ "limit the subscriber to typing X number of characters in your textbox."
+#~ msgstr ""
+#~ "Ce n'est utilisée que si votre type de contenu est un  `champ de texte `. "
+#~ "Cela permettra de limiter l'abonné à taper un nombre X de caractères dans "
+#~ "votre zone de texte. "
+
+#~ msgid "Validation rule"
+#~ msgstr "La règle de validation"
+
+#~ msgid ""
+#~ "Enter your custom regular expression. e.g.: \"/^[a-z0-9]{3,}$/i\" (Only "
+#~ "letters and integers, min 3 characters)"
+#~ msgstr ""
+#~ "Entrez votre expression régulière personnalisée. ex.: \"/^[a-z0-9]{3,}$/i"
+#~ "\" (Seul lettres et des entiers, minimum 3 caractères)"
+
+#~ msgid "Validation message"
+#~ msgstr "Message de validation"
+
+#~ msgid "This is only used if `Validation rule` has been set."
+#~ msgstr "Ceci n'est utilisé que si la `règle de validation` a été défini."
+
+#~ msgid "Turn on JavaScript to see the email address."
+#~ msgstr "Activez JavaScript pour voir l'adresse e-mail."
+
+#~ msgid "This field is locked and cannot be modified"
+#~ msgstr "Ce champ est verrouillé et ne peut pas être modifié"
+
+#~ msgid "Field display format (display mode: %s)"
+#~ msgstr "Format d'affichage de champ (mode d'affichage: %s)"
+
+#~ msgid "Label"
+#~ msgstr "Étiquette"
+
+#~ msgid "Hidden"
+#~ msgstr "Caché (Hidden)"
+
+#~ msgid "Above"
+#~ msgstr "Au-dessus"
+
+#~ msgid "Inline"
+#~ msgstr "en ligne (Inline)"
+
+#~ msgid "Allow hooktags"
+#~ msgstr "Laissez hooktags"
+
+#~ msgid "Yes"
+#~ msgstr "Oui"
+
+#~ msgid "No"
+#~ msgstr "Non"
+
+#~ msgid "Format"
+#~ msgstr "Format"
+
+#~ msgid "Save field"
+#~ msgstr "Enregistrer le champ"
+
+#~ msgid "New language has been saved"
+#~ msgstr "Nouvelle langue a été enregistré"
+
+#~ msgid "Language could not be saved. Please, try again."
+#~ msgstr "Langue n'a pas pu être sauvé. S'il vous plaît, essayez à nouveau."
+
+#~ msgid "Language has been saved"
+#~ msgstr "La langue a été sauvé"
+
+#~ msgid "Editing language"
+#~ msgstr "Modification de la langue"
+
+#~ msgid "ALL"
+#~ msgstr "TOUS"
+
+#~ msgid "Theme: %s"
+#~ msgstr "Thème : %s"
+
+#~ msgid "Field: %s"
+#~ msgstr "Champ: %s"
+
+#~ msgid "Module: %s"
+#~ msgstr "Module: %s"
+
+#~ msgid "Translation packages"
+#~ msgstr "Paquets de traduction"
+
+#~ msgid "Translation Packages"
+#~ msgstr "Paquets de traduction"
+
+#~ msgid "Package not found"
+#~ msgstr "Paquet non trouvé"
+
+#~ msgid ""
+#~ "Could not delete package folder. Please check folder permissions for '%s'."
+#~ msgstr ""
+#~ "Impossible de supprimer le dossier du paquet (package). S'il vous plaît "
+#~ "vérifier les autorisations de dossier pour '%s'."
+
+#~ msgid "Language package removed!"
+#~ msgstr "Paquet de langue retiré !"
+
+#~ msgid "Invalid module or language "
+#~ msgstr "Module ou langue non valide"
+
+#~ msgid "Language package upload success"
+#~ msgstr "Téléchargement du paquet de langue réussi"
+
+#~ msgid "Translatable entries"
+#~ msgstr "Entrées traduisibles"
+
+#~ msgid "Translatable Entries"
+#~ msgstr "Entrées traduisibles"
+
+#~ msgid "Fuzzy entries"
+#~ msgstr "Entrées confuse (fuzzy)"
+
+#~ msgid "Fuzzy entry has been deleted."
+#~ msgstr "Entrée confuse (fuzzy) a été supprimé."
+
+#~ msgid "Fuzzy entry was not found."
+#~ msgstr "Entrée confuse (fuzzy) n'a pas été trouvé."
+
+#~ msgid "Entry has been saved"
+#~ msgstr "Entrée a été enregistrée"
+
+#~ msgid "Entry could not be saved. Please, try again."
+#~ msgstr "Entrée n'a pu être sauvé. S'il vous plaît, essayez à nouveau."
+
+#~ msgid "Editing entry"
+#~ msgstr "Modification de l'entrée"
+
+#~ msgid "Add new entry"
+#~ msgstr "Ajouter une nouvelle entrée"
+
+#~ msgid "%s entries has been imported."
+#~ msgstr "%s entrées ont été importées."
+
+#~ msgid "Import entries"
+#~ msgstr "Importation entrées"
+
+#~ msgid "Import Entries"
+#~ msgstr "Importation entrées"
+
+#~ msgid "- None selected -"
+#~ msgstr "- Aucun élément sélectionné -"
+
+#~ msgid "%s: %s"
+#~ msgstr "%s : %s"
+
+#~ msgid "l, F j, Y - H:i"
+#~ msgstr "l, F j, Y - H:i"
+
+#~ msgid "m/d/Y - H:i"
+#~ msgstr "d/m/Y - H:i"
+
+#~ msgid "D, m/d/Y - H:i"
+#~ msgstr "D/m/Y - H:i"
+
+#~ msgid "No records found in model."
+#~ msgstr "Aucun enregistrement trouvé dans le modèle."
+
+#~ msgid "Display language as"
+#~ msgstr "Afficher la langue comme"
+
+#~ msgid "HTML List"
+#~ msgstr "Liste HTML"
+
+#~ msgid "Selectbox"
+#~ msgstr "boîte de sélection"
+
+#~ msgid "Display language flag icon"
+#~ msgstr "Afficher l'icône drapeau de la langue"
+
+#~ msgid "Display language name"
+#~ msgstr "Afficher le nom de la langue"
+
+#~ msgid "Languages"
+#~ msgstr "Langues"
+
+#~ msgid "Configure languages for content and the user interface."
+#~ msgstr "Configurer les langues pour le contenu et l'interface utilisateur."
+
+#~ msgid "Translate interface"
+#~ msgstr "Traduire l'interface"
+
+#~ msgid "Manage translation files packages"
+#~ msgstr "Gérer les fichiers de traduction paquets"
+
+#~ msgid "Add translatable entry"
+#~ msgstr "Ajouter une entrée traduisible"
+
+#~ msgid "Add new translatable entry."
+#~ msgstr "Ajouter une nouvelle entrée traduisible."
+
+#~ msgid "Fuzzy entries."
+#~ msgstr "Entrées confuse (Fuzzy)"
+
+#~ msgid "Language name in English *"
+#~ msgstr "Nom de la langue en anglais"
+
+#~ msgid "Native language name *"
+#~ msgstr "Nom de la langue native"
+
+#~ msgid "Name of the language in the language being added."
+#~ msgstr "Nom de la langue dans la langue."
+
+#~ msgid "Flag icon"
+#~ msgstr "Drapeau icône"
+
+#~ msgid "-- None --"
+#~ msgstr "-- Aucun --"
+
+#~ msgid "Custom flag icon"
+#~ msgstr "Drapeau icône personnalisé"
+
+#~ msgid ""
+#~ "Optional URL of your language flag icon, if your language flag isn't in "
+#~ "the above list."
+#~ msgstr ""
+#~ "URL facultative pour votre drapeau icône de langue, si le drapeau de "
+#~ "langue n'est pas dans la liste ci-dessus."
+
+#~ msgid "Left to Right"
+#~ msgstr "De gauche à droite"
+
+#~ msgid "Right to Left"
+#~ msgstr "De droite à gauche"
+
+#~ msgid "Direction *"
+#~ msgstr "Direction *"
+
+#~ msgid "Direction that text in this language is presented."
+#~ msgstr "La direction que le texte dans cette langue est présentée."
+
+#~ msgid "Save language"
+#~ msgstr "Enregistrer la langue"
+
+#~ msgid "English name"
+#~ msgstr "Nom anglais"
+
+#~ msgid "Default language"
+#~ msgstr "Langue par défaut"
+
+#~ msgid "Native name"
+#~ msgstr "Nom natif"
+
+#~ msgid "Code"
+#~ msgstr "Code"
+
+#~ msgid "Direction"
+#~ msgstr "Direction"
+
+#~ msgid "Left to right"
+#~ msgstr "De gauche à droite"
+
+#~ msgid "Right to left"
+#~ msgstr "De droite à gauche"
+
+#~ msgid "Status"
+#~ msgstr "Statut"
+
+#~ msgid "active"
+#~ msgstr "actif"
+
+#~ msgid "disabled"
+#~ msgstr "désactivé"
+
+#~ msgid "Actions"
+#~ msgstr "Actions"
+
+#~ msgid "move up"
+#~ msgstr "monter"
+
+#~ msgid "move down"
+#~ msgstr "descendre"
+
+#~ msgid "set as default"
+#~ msgstr "définie par défaut"
+
+#~ msgid "edit"
+#~ msgstr "éditer"
+
+#~ msgid "There are no languages to display. Critical error"
+#~ msgstr "Il n'existe aucune langue à afficher. erreur critique"
+
+#~ msgid "Add New Language"
+#~ msgstr "Ajouter une nouvelle langue"
+
+#~ msgid "Language name"
+#~ msgstr "Nom de la langue"
+
+#~ msgid "Add"
+#~ msgstr "Ajouter"
+
+#~ msgid "Custom Language"
+#~ msgstr "Langue personnalisée"
+
+#~ msgid "Language code *"
+#~ msgstr "Code de langue *"
+
+#~ msgid ""
+#~ "<a href=\"%s\" target=\"_blank\">ISO 639-3</a> compliant language "
+#~ "identifier."
+#~ msgstr ""
+#~ "<a href=\"%s\" target=\"_blank\">ISO 639-3</a> conforme à "
+#~ "l'identificateur de langue"
+
+#~ msgid "Enable selected languages"
+#~ msgstr "Activer les langues sélectionnées"
+
+#~ msgid "Disable selected languages"
+#~ msgstr "Désactiver les langues sélectionnées"
+
+#~ msgid "Delete selected languages"
+#~ msgstr "Supprimer les langues sélectionnées"
+
+#~ msgid "Upload Translation Package"
+#~ msgstr "Téléchargez Paquet (Package ) de traduction"
+
+#~ msgid "Package (.po)"
+#~ msgstr "Paquet (.po)"
+
+#~ msgid "Select a translation package."
+#~ msgstr "Sélectionnez un paquet (package) de traduction."
+
+#~ msgid "Translation for"
+#~ msgstr "traduction pour"
+
+#~ msgid "What would you like to translate?"
+#~ msgstr "Que voulez-vous traduire ?"
+
+#~ msgid ""
+#~ "What is the language of this package? You can register more languages on "
+#~ "the <a href=\"%s\">Languages</a> section."
+#~ msgstr ""
+#~ "Quelle est la langue de ce paquet (package) ? Vous pouvez enregistrer "
+#~ "d'autres langues sur le <a href=\"%s\">Langues</ a>."
+
+#~ msgid "Upload"
+#~ msgstr "Téléchargez (Upload)"
+
+#~ msgid "download"
+#~ msgstr "télécharger (download)"
+
+#~ msgid "uninstall"
+#~ msgstr "désinstaller"
+
+#~ msgid "Delete the selected package ?"
+#~ msgstr "Supprimer le paquet (package) sélectionné?"
+
+#~ msgid "Invalid package"
+#~ msgstr "paquet (package) invalide"
+
+#~ msgid "Adding translatable entry"
+#~ msgstr "Ajout de l'entrée traduisible"
+
+#~ msgid "Original text"
+#~ msgstr "Texte original"
+
+#~ msgid "Translate"
+#~ msgstr "Traduire"
+
+#~ msgid "Editing translation entry"
+#~ msgstr "Modification de l'entrée de traduction"
+
+#~ msgid "Usage"
+#~ msgstr "Utilisation"
+
+#~ msgid "Save"
+#~ msgstr "Sauver"
+
+#~ msgid "Text"
+#~ msgstr "Texte"
+
+#~ msgid "translate"
+#~ msgstr "traduire"
+
+#~ msgid "unhide"
+#~ msgstr "démasquer"
+
+#~ msgid "hide"
+#~ msgstr "masquer"
+
+#~ msgid "Delete this entry ?"
+#~ msgstr "Supprimer cette entrée ?"
+
+#~ msgid "There are no fuzzy entries to display"
+#~ msgstr "Il n'y a aucune entrée confuse (fuzzy) à afficher"
+
+#~ msgid "In file"
+#~ msgstr "dans le fichier"
+
+#~ msgid "Line number"
+#~ msgstr "Numéro de la ligne"
+
+#~ msgid "Both"
+#~ msgstr "Tous les deux"
+
+#~ msgid "Are you sure about this changes ?"
+#~ msgstr "Êtes-vous sûr de ce changement ?"
+
+#~ msgid "Hide"
+#~ msgstr "Masquer"
+
+#~ msgid "Unhide"
+#~ msgstr "Démasquer"
+
+#~ msgid "Export"
+#~ msgstr "Exporter"
+
+#~ msgid "Export all"
+#~ msgstr "Exporter tout"
+
+#~ msgid "Clear all"
+#~ msgstr "Effacer tout"
+
+#~ msgid "Package (.pot)"
+#~ msgstr "Paquet (Package) (.pot)"
+
+#~ msgid "Regenerate translation cache"
+#~ msgstr "Régénérer cache de translation"
+
+#~ msgid "regenerate"
+#~ msgstr "régénérer"
+
+#~ msgid "There are no translations to display"
+#~ msgstr "Il n'existe pas de traductions à afficher"
+
+#~ msgid "Search"
+#~ msgstr "Rechercher"
+
+#~ msgid "Import"
+#~ msgstr "Importer"
+
+#~ msgid "Menu"
+#~ msgstr "Menu"
+
+#~ msgid "Menus"
+#~ msgstr "Menus"
+
+#~ msgid "Menu has been saved"
+#~ msgstr "Le menu a été enregistré"
+
+#~ msgid "Menu could not be saved. Please, try again."
+#~ msgstr "le menu n'a pas pu être sauvé. S'il vous plaît, essayez à nouveau."
+
+#~ msgid "Add menu"
+#~ msgstr "Ajout d'un menu"
+
+#~ msgid "Editing menu"
+#~ msgstr "Modification du menu"
+
+#~ msgid "Editing Menu"
+#~ msgstr "Modification du menu"
+
+#~ msgid "Menu link has been saved"
+#~ msgstr "Lien de menu a été enregistré"
+
+#~ msgid "Menu link could not be saved. Please, try again."
+#~ msgstr "Menu lien n'a pu être sauvé. S'il vous plaît, essayez à nouveau."
+
+#~ msgid "Menu links list"
+#~ msgstr "Liste de liens de menu"
+
+#~ msgid "Add menu link"
+#~ msgstr "Ajouter un lien de menu"
+
+#~ msgid "Add Menu Link"
+#~ msgstr "Ajouter un lien de menu"
+
+#~ msgid "Editing menu links"
+#~ msgstr "Modification les liens de menu"
+
+#~ msgid "Editing link"
+#~ msgstr "Modification un lien"
+
+#~ msgid "Editing Link"
+#~ msgstr "Modification un lien"
+
+#~ msgid "Editing Menu Links"
+#~ msgstr "Modification les liens de menu"
+
+#~ msgid "There are no menu links yet. <a href=\"%s\">Add link.</a>"
+#~ msgstr ""
+#~ "Il n'y a pas encore les liens de menu. <a href=\"%s\">Ajouter un lien.</a>"
+
+#~ msgid "Save changes"
+#~ msgstr "Enregistrer les modifications"
+
+#~ msgid "Saving..."
+#~ msgstr "Sauvegarde en cours ..."
+
+#~ msgid "Saved!"
+#~ msgstr "sauvegardé !"
+
+#~ msgid "Delete selected link ?"
+#~ msgstr "Supprimer le lien sélectionné ?"
+
+#~ msgid "New Menu"
+#~ msgstr "Nouveau menu"
+
+#~ msgid "Title *"
+#~ msgstr "Titre *"
+
+#~ msgid "Description"
+#~ msgstr "Description"
+
+#~ msgid "Save & add links"
+#~ msgstr "Enregistrer et ajouter des liens"
+
+#~ msgid "Menu link title *"
+#~ msgstr "Titre du menu du lien *"
+
+#~ msgid "The text to be used for this link in the menu."
+#~ msgstr "Le texte à utiliser pour ce lien dans le menu"
+
+#~ msgid "Path *"
+#~ msgstr "Chemin *"
+
+#~ msgid ""
+#~ "The path for this menu link. This can be an internal QuickApps path such "
+#~ "as /type-of-content/my-post.html or an external URL such as http://"
+#~ "quickapps.es. Enter '/' to link to the front page."
+#~ msgstr ""
+#~ "Le chemin pour ce lien de menu. Il peut être un chemin interne tel que /"
+#~ "type-of-content/my-post.html ou une URL externe comme http://quickapps."
+#~ "es. Entrez '/' mettre un lien vers la page d'accueil."
+
+#~ msgid "Shown when hovering over the menu link."
+#~ msgstr "S'affiche lorsque le curseur est sur le lien du menu."
+
+#~ msgid "Target window"
+#~ msgstr "Fenêtre cible"
+
+#~ msgid "Same window"
+#~ msgstr "La même fenêtre"
+
+#~ msgid "New window"
+#~ msgstr "Nouvelle fenêtre"
+
+#~ msgid "Target browser window when the link is clicked."
+#~ msgstr "Fenêtre du navigateur cible lorsque le lien est cliqué."
+
+#~ msgid "Show as selected:"
+#~ msgstr "Voir aussi choisi : "
+
+#~ msgid "When following PHP code returns TRUE (experts only)"
+#~ msgstr ""
+#~ "Lorsque vous suivez le code PHP retourne la valeur TRUE (experts "
+#~ "seulement)"
+
+#~ msgid "On URL matching (regular expression)"
+#~ msgstr "Sur la correspondance des URL (expression régulière)"
+
+#~ msgid "Parent link"
+#~ msgstr "Lien parent"
+
+#~ msgid "Show as expanded"
+#~ msgstr "Voir aussi développé"
+
+#~ msgid ""
+#~ "If selected and this menu link has children, the menu will always appear "
+#~ "expanded."
+#~ msgstr ""
+#~ "S'il est sélectionné et ce lien de menu a des enfants, le menu apparaîtra "
+#~ "toujours développé."
+
+#~ msgid "Edit menu link"
+#~ msgstr "Modifier lien du menu"
+
+#~ msgid "Path"
+#~ msgstr "Chemin"
+
+#~ msgid "When URL match any those listed"
+#~ msgstr "Quand l'URL se trouve dans aucune de celles qui sont énumérées"
+
+#~ msgid "Enabled"
+#~ msgstr "Activé"
+
+#~ msgid "Menu links that are not enabled will not be listed in any menu."
+#~ msgstr ""
+#~ "Liens du menu qui ne sont pas activés ne seront pas inscrits dans "
+#~ "n'importe quel menu."
+
+#~ msgid "Go to <a href=\"%s\">menu links</a> list to reparent this link."
+#~ msgstr ""
+#~ "Allez dans <a href=\"%s\">la liste des liens de menu</a> pour re-parenter "
+#~ "ce lien."
+
+#~ msgid "links"
+#~ msgstr "Liste des liens"
+
+#~ msgid "add link"
+#~ msgstr "ajouter un lien"
+
+#~ msgid "Delete selected menu ?"
+#~ msgstr "Supprimer le menu sélectionné ?"
+
+#~ msgid "Links"
+#~ msgstr "Links"
+
+#~ msgid "Contents"
+#~ msgstr "Contenu"
+
+#~ msgid "Translate Content"
+#~ msgstr "Traduire contenu"
+
+#~ msgid "Translating Content"
+#~ msgstr "Traduire contenu"
+
+#~ msgid "Content has been saved"
+#~ msgstr "Le contenu a été sauvé"
+
+#~ msgid "Content could not be saved. Please, try again."
+#~ msgstr "Contenu ne pouvait être sauvé. S'il vous plaît, essayez à nouveau."
+
+#~ msgid ""
+#~ "<b>Content type not found.</b><br/>You can't edit this undefined type of "
+#~ "content."
+#~ msgstr ""
+#~ "<b> Type de contenu introuvable.</ b> <br/> Vous ne pouvez pas modifier "
+#~ "ce type de contenu indéfini."
+
+#~ msgid ""
+#~ "Missing parent content. This is a translated content, and reference a "
+#~ "missing parent content."
+#~ msgstr ""
+#~ "Manque de contenu parent. Il s'agit d'un contenu traduit, et la référence "
+#~ "à un contenu parent est manquant."
+
+#~ msgid "Editing Content"
+#~ msgstr "Editer ce contenu"
+
+#~ msgid "Add Content"
+#~ msgstr "Ajouter du contenu"
+
+#~ msgid "Select content type"
+#~ msgstr "Sélectionnez le type de contenu"
+
+#~ msgid "Page not found"
+#~ msgstr "Page non trouvée"
+
+#~ msgid ""
+#~ "Your comment has been queued for review by site administrators and will "
+#~ "be published after approval."
+#~ msgstr ""
+#~ "Votre commentaire a été mis en attente pour un examen par les "
+#~ "administrateurs du site et sera publié après approbation."
+
+#~ msgid "Your comment has been posted."
+#~ msgstr "Votre commentaire a été enregistré."
+
+#~ msgid "Comment could not be saved. Please try again."
+#~ msgstr "Commentaire n'a pu être sauvé. S'il vous plaît essayez de nouveau."
+
+#~ msgid "Content Types"
+#~ msgstr "Types de contenu"
+
+#~ msgid "Content type has been saved!"
+#~ msgstr "Le type de contenu a été enregistré !"
+
+#~ msgid "Content type could not be saved"
+#~ msgstr "le type de contenu n'a pas pu être sauvé"
+
+#~ msgid "Editing Type"
+#~ msgstr "Modification du type"
+
+#~ msgid "Add Content Type"
+#~ msgstr "Ajouter un type de contenu"
+
+#~ msgid "Content type has been deleted"
+#~ msgstr "Type de contenu a été supprimé"
+
+#~ msgid "Display"
+#~ msgstr "Afficher"
+
+#~ msgid "Display Settings"
+#~ msgstr "Paramètres d'affichage"
+
+#~ msgid "Field has been saved"
+#~ msgstr "Le champ a été enregistré"
+
+#~ msgid "Field could not be saved"
+#~ msgstr "Le champ n'a pas pu être sauvé"
+
+#~ msgid "Fields"
+#~ msgstr "Les champs"
+
+#~ msgid "Field Settings"
+#~ msgstr "Paramètres de champ"
+
+#~ msgid "Field has been saved."
+#~ msgstr "Le champ a été enregistré."
+
+#~ msgid "Field could not be saved. Please, try again."
+#~ msgstr "Le champ n'a pas pu être sauvé. S'il vous plaît, essayez à nouveau."
+
+#~ msgid "Field display settings"
+#~ msgstr "Paramètres d'affichage du champ"
+
+#~ msgid "Field Display Settings"
+#~ msgstr "Paramètres d'affichage du champ"
+
+#~ msgid "Field could not be created. Please, try again."
+#~ msgstr "Le champ n'a pas pu être créé. S'il vous plaît, essayez à nouveau."
+
+#~ msgid "%s *"
+#~ msgstr "%s *"
+
+#~ msgid ""
+#~ "A short description (255 chars. max.) about this content. Will be used as "
+#~ "page meta-description when rendering this content node."
+#~ msgstr ""
+#~ "Une brève description (255 caractères. Max.) relatif à ce contenu. Elle "
+#~ "sera utilisé comme page de méta-description lors du rendu de ce nœud de "
+#~ "contenu."
+
+#~ msgid "Settings"
+#~ msgstr "Paramètres"
+
+#~ msgid "Open"
+#~ msgstr "Ouvert"
+
+#~ msgid "Closed"
+#~ msgstr "Fermé"
+
+#~ msgid "Read Only"
+#~ msgstr "Lecture seule"
+
+#~ msgid "-- Any --"
+#~ msgstr "-- Peu importe --"
+
+#~ msgid ""
+#~ "If no language is selected (-- Any --), node will show regardless of "
+#~ "language"
+#~ msgstr ""
+#~ "Si aucune langue n'est sélectionnée (-- Peu importe --), ce nœud montrera "
+#~ "quelle que soit la langue"
+
+#~ msgid "Publishing"
+#~ msgstr "Publication"
+
+#~ msgid "Promoted to front page"
+#~ msgstr "Proposé à la première page"
+
+#~ msgid "Sticky at top of lists"
+#~ msgstr "Collant au sommet de la liste"
+
+#~ msgid "Cache this node for"
+#~ msgstr "Cache ce nœud pour"
+
+#~ msgid "Cache"
+#~ msgstr "Cache"
+
+#~ msgid "-- No Cache --"
+#~ msgstr "\"-- Pas de cache --\""
+
+#~ msgid "%s Hour"
+#~ msgstr "%s Heure"
+
+#~ msgid "%s Hours"
+#~ msgstr "%s Heures"
+
+#~ msgid "%s Day"
+#~ msgstr "%s Jour"
+
+#~ msgid "%s Days"
+#~ msgstr "%s Jours"
+
+#~ msgid "%s Week"
+#~ msgstr "%s Semaine"
+
+#~ msgid "%s Weeks"
+#~ msgstr "%s Semaines"
+
+#~ msgid "%s Month"
+#~ msgstr "%s mois"
+
+#~ msgid "%s Months"
+#~ msgstr "%s Mois"
+
+#~ msgid "%s Year"
+#~ msgstr "%s Années"
+
+#~ msgid "Show content for specific roles"
+#~ msgstr "Afficher le contenu pour des rôles spécifiques"
+
+#~ msgid ""
+#~ "Show this content only for the selected role(s). If you select no roles, "
+#~ "the content will be visible to all users."
+#~ msgstr ""
+#~ "Montrer ce contenu seulement pour le rôle sélectionné(s). Si vous ne "
+#~ "sélectionnez aucun rôle, le contenu sera visible par tous les "
+#~ "utilisateurs."
+
+#~ msgid "Menu Link"
+#~ msgstr "Lien de menu"
+
+#~ msgid "Provide a menu link"
+#~ msgstr "Fournir un lien de menu"
+
+#~ msgid "Menu link title"
+#~ msgstr "Le titre du lien de menu"
+
+#~ msgid "Parent item"
+#~ msgstr "Elément parent"
+
+#~ msgid "Node container class suffix"
+#~ msgstr "Node suffixe classe conteneur"
+
+#~ msgid ""
+#~ "A suffix to be applied to the CSS class of the node container. This "
+#~ "allows for individual node styling."
+#~ msgstr ""
+#~ "Un suffixe à appliquer à la classe CSS du conteneur noeud. Cela permet de "
+#~ "mettre un style au nœud individuellement."
+
+#~ msgid "Add content"
+#~ msgstr "Ajouter du contenu"
+
+#~ msgid "There are no content types availables"
+#~ msgstr "Il n'y a pas de types de contenu disponibles"
+
+#~ msgid ""
+#~ "Go to <a href=\"%s\">Content Types</a> section for create a new content "
+#~ "type"
+#~ msgstr ""
+#~ "Aller à la section <a href=\"%s\">Types de contenu</a> pour créer un "
+#~ "nouveau type de contenu"
+
+#~ msgid "Editing"
+#~ msgstr "Modifier"
+
+#~ msgid "Slug: %s"
+#~ msgstr "Slug : %s"
+
+#~ msgid "URL: %s"
+#~ msgstr "URL : %s"
+
+#~ msgid "Translation for: %s [%s]"
+#~ msgstr "traduction pour : %s [%s]"
+
+#~ msgid "Regenerate slug"
+#~ msgstr "Régénérer slug"
+
+#~ msgid ""
+#~ "If this option is checked and title has changed then a new slug is "
+#~ "generated."
+#~ msgstr ""
+#~ "Si cette option est cochée et que le titre a changé, une nouveau slug "
+#~ "sera généré."
+
+#~ msgid "Available Translations"
+#~ msgstr "Traductions disponibles"
+
+#~ msgid "Delete selected content ?"
+#~ msgstr "Supprimez le contenu sélectionné ?"
+
+#~ msgid "Save content"
+#~ msgstr "Sauvegarder le contenu"
+
+#~ msgid "Sticky at top"
+#~ msgstr "Collant en haut"
+
+#~ msgid "Promoted in front page"
+#~ msgstr "Proposé en page d'accueil"
+
+#~ msgid "Cache activated"
+#~ msgstr "Cache activé"
+
+#~ msgid "This node is a translation of other"
+#~ msgstr "Ce nœud est une traduction des autres"
+
+#~ msgid "Type"
+#~ msgstr "Type"
+
+#~ msgid "not published"
+#~ msgstr "pas publié"
+
+#~ msgid "published"
+#~ msgstr "publié"
+
+#~ msgid "Updated"
+#~ msgstr "Mis à jour"
+
+#~ msgid "updated"
+#~ msgstr "mis à jour"
+
+#~ msgid "There are no nodes to display"
+#~ msgstr "Il n'existe pas de nœuds à afficher"
+
+#~ msgid "Front Page"
+#~ msgstr "Page d'accueil"
+
+#~ msgid "promoted to front page"
+#~ msgstr "Proposé à la première page"
+
+#~ msgid "not promoted to front page"
+#~ msgstr "pas proposé à la première page"
+
+#~ msgid "Sticky"
+#~ msgstr "Collant"
+
+#~ msgid "sticky at top"
+#~ msgstr "collant en haut"
+
+#~ msgid "not sticky at top"
+#~ msgstr "ne colle pas en haut"
+
+#~ msgid "Publish selected content"
+#~ msgstr "Publier du contenu sélectionné"
+
+#~ msgid "Unpublish selected content"
+#~ msgstr "Dépublier contenu sélectionné"
+
+#~ msgid "Promote selected content to front page"
+#~ msgstr "Promouvoir le contenu sélectionné à la première page"
+
+#~ msgid "Demote selected content from front page"
+#~ msgstr "Rétrograder le contenu sélectionné de la première page"
+
+#~ msgid "Make selected content sticky"
+#~ msgstr "Rendre le contenu sélectionné collant"
+
+#~ msgid "Make selected content not sticky"
+#~ msgstr "Rendre le contenu sélectionné ne colle pas"
+
+#~ msgid "Delete selected content"
+#~ msgstr "Supprimez le contenu sélectionné"
+
+#~ msgid "Clear cache"
+#~ msgstr "Vider le cache"
+
+#~ msgid "Translate to"
+#~ msgstr "Ttraduire en"
+
+#~ msgid "Keywords"
+#~ msgstr "Mots-clés"
+
+#~ msgid "URL prefix"
+#~ msgstr "préfixe de l'URL"
+
+#~ msgid "Adds a prefix to each search URL query."
+#~ msgstr "Ajoute un préfixe à chaque requête de l'URL de recherche."
+
+#~ msgid "New Content"
+#~ msgstr "Nouveau contenu"
+
+#~ msgid "Add Type"
+#~ msgstr "Ajouter un type"
+
+#~ msgid "The node could not be rendered"
+#~ msgstr "Le noeud ne peut pas être affiché"
+
+#~ msgid "«"
+#~ msgstr "«"
+
+#~ msgid "»"
+#~ msgstr "»"
+
+#~ msgid "Your search yielded no results"
+#~ msgstr "Votre recherche n'a donné aucun résultat"
+
+#~ msgid "Check if your spelling is correct."
+#~ msgstr "Vérifiez que l'orthographe est correcte."
+
+#~ msgid ""
+#~ "Remove quotes around phrases to search for each word individually. white "
+#~ "cat will often show more results than \"white cat\"."
+#~ msgstr ""
+#~ "Supprimez les guillemets autour des expressions pour rechercher chaque "
+#~ "terme individuellement. chat blanc se montrent souvent plus de résultats "
+#~ "que \"chat blanc\"."
+
+#~ msgid ""
+#~ "Consider loosening your query with OR. white OR cat will often show more "
+#~ "results than white cat."
+#~ msgstr ""
+#~ "Vous pouvez étendre la requête avec l'opérateur OR. blanc OR chat se "
+#~ "montrent souvent plus de résultats que chat blanc."
+
+#~ msgid "Name *"
+#~ msgstr "Nom *"
+
+#~ msgid ""
+#~ "This text will be displayed as part of the list on the Add new content "
+#~ "page"
+#~ msgstr ""
+#~ "Ce texte sera affiché dans le cadre de la liste sur la page Ajouter un "
+#~ "nouveau contenu"
+
+#~ msgid ""
+#~ "Describe this content type. The text will be displayed on the Add new "
+#~ "content page."
+#~ msgstr ""
+#~ "Décrivez ce type de contenu. Le texte sera affiché sur la page Ajouter un "
+#~ "nouveau contenu ."
+
+#~ msgid "Title field label *"
+#~ msgstr "Titre étiquette de champ *"
+
+#~ msgid "Display format"
+#~ msgstr "Format d'affichage"
+
+#~ msgid "Show author's name"
+#~ msgstr "Afficher le nom de l'auteur"
+
+#~ msgid "Author username will be displayed"
+#~ msgstr "L'identifiant de l'auteur sera affiché"
+
+#~ msgid "Show date"
+#~ msgstr "Afficher la date"
+
+#~ msgid "Publish date will be displayed"
+#~ msgstr "La date de publication sera affiché"
+
+#~ msgid "Auto approve comments"
+#~ msgstr "Auto approuver les commentaires"
+
+#~ msgid "Comments per page"
+#~ msgstr "Nombre de commentaires par page"
+
+#~ msgid "Anonymous posters may not enter their contact information"
+#~ msgstr "Les anonymes ne peuvent entrer leurs informations de contact"
+
+#~ msgid "Anonymous posters may leave their contact information"
+#~ msgstr "Les anonymes peuvent laisser leurs coordonnées"
+
+#~ msgid "Anonymous posters must leave their contact information"
+#~ msgstr "Les anonymes doivent laisser leurs coordonnées"
+
+#~ msgid "Anonymous commenting"
+#~ msgstr "Anonyme commentant"
+
+#~ msgid "Allow comment title"
+#~ msgstr "Laissez un commentaire Titre"
+
+#~ msgid "Default options"
+#~ msgstr "Les options par défaut"
+
+#~ msgid "Default comment setting for new content"
+#~ msgstr "Mise en commentaire par défaut de nouveaux contenus"
+
+#~ msgid "Save and add fields"
+#~ msgstr "Enregistrer et ajouter des champs"
+
+#~ msgid "edit format"
+#~ msgstr "modifier le format"
+
+#~ msgid "There are no fields to display"
+#~ msgstr "Il n'y a pas de champs à afficher"
+
+#~ msgid ""
+#~ "Content items can be displayed using different display-modes: Full, List, "
+#~ "RSS, Print, etc. List is a short format that is typically used in lists "
+#~ "of multiple content items. Full content is typically used when the "
+#~ "content is displayed on its own page."
+#~ msgstr ""
+#~ "Les éléments de contenu peut être affiché en utilisant différents modes "
+#~ "d'affichage:-liste exhaustive, RSS, impression, etc … La liste est un "
+#~ "format court qui est généralement être utilisé dans les listes de "
+#~ "plusieurs éléments de contenu. Contenu complet est généralement utilisé "
+#~ "lorsque le contenu est affiché sur sa propre page."
+
+#~ msgid ""
+#~ "Here, you can define which fields are shown and hidden when <em>%s</em> "
+#~ "content is displayed in each display-mode, and define how the fields are "
+#~ "displayed in each display-mode."
+#~ msgstr ""
+#~ "Ici, vous pouvez définir les champs affichés et masqués lorsque <em>%s</"
+#~ "em> le contenu est affiché dans chaque mode d'affichage, et de définir la "
+#~ "façon dont les champs sont affichés dans chaque mode d'affichage."
+
+#~ msgid "Display Modes"
+#~ msgstr "Modes d'affichage."
+
+#~ msgid "Use custom display settings for the following display-modes"
+#~ msgstr ""
+#~ "Utiliser les paramètres d'affichage personnalisés pour les affichage-"
+#~ "modes suivants"
+
+#~ msgid "New ID *"
+#~ msgstr "Nouvel ID *"
+
+#~ msgid ""
+#~ "A unique name for this content type. It must only contain lowercase "
+#~ "letters, numbers, and underscores."
+#~ msgstr ""
+#~ "Un nom unique pour ce type de contenu. Il ne doit contenir que des "
+#~ "lettres minuscules, chiffres et caractères de soulignement."
+
+#~ msgid "Basic settings"
+#~ msgstr "Réglages de base"
+
+#~ msgid "Label *"
+#~ msgstr "Etiquette *"
+
+#~ msgid "Required field"
+#~ msgstr "Champs obligatoires"
+
+#~ msgid ""
+#~ "Instructions to present to the user below this field on the editing form. "
+#~ "(hooktags are allowed)"
+#~ msgstr ""
+#~ "Instructions pour présenter à l'utilisateur sous ce champ le formulaire "
+#~ "de modification. (tags crochet sont autorisés)"
+
+#~ msgid "Help text"
+#~ msgstr "Texte d'aide"
+
+#~ msgid "%s field settings"
+#~ msgstr "%s paramètres de champ"
+
+#~ msgid "Required"
+#~ msgstr "Requis"
+
+#~ msgid "Delete selected field and all related data, this can not be undone ?"
+#~ msgstr ""
+#~ "Supprimer un champ sélectionné et toutes les données connexes. Cette "
+#~ "action ne peut pas être annulée."
+
+#~ msgid "Add field"
+#~ msgstr "Ajouter un champ"
+
+#~ msgid "display"
+#~ msgstr "afficher"
+
+#~ msgid "fields"
+#~ msgstr "champs"
+
+#~ msgid ""
+#~ "Are you sure that you want to delete this type of content. ? This action "
+#~ "cannot be undone."
+#~ msgstr ""
+#~ "Etes-vous sûr que vous voulez supprimer ce type de contenu. ? Cette "
+#~ "action ne peut pas être annulée."
+
+#~ msgid "Configuration has been saved."
+#~ msgstr "La configuration a été sauvegardée."
+
+#~ msgid "Configuration could not be saved. Please, try again."
+#~ msgstr ""
+#~ "La configuration n'a pas pu être sauvé. S'il vous plaît, essayez à "
+#~ "nouveau."
+
+#~ msgid ""
+#~ "The file `%s` appears to be invalid, `Variable.url_language_prefix` "
+#~ "parameter not found."
+#~ msgstr ""
+#~ "Le fichier `%s` semble être invalide, Le paramètre `Variable."
+#~ "url_language_prefix` est introuvable."
+
+#~ msgid "The file `%s` could not be written."
+#~ msgstr "Le fichier `%s` n'a pas pu être écrit."
+
+#~ msgid "Apps Directory"
+#~ msgstr "Répertoire des apps"
+
+#~ msgid "No themes match your request."
+#~ msgstr "Pas de thèmes correspondant à votre demande."
+
+#~ msgid "Themes Directory"
+#~ msgstr "Répertoire des thèmes"
+
+#~ msgid "No modules match your request."
+#~ msgstr "Aucun module correspond à vos critères."
+
+#~ msgid "Modules Directory"
+#~ msgstr "Répertoire des modules"
+
+#~ msgid "Theme Details: %s"
+#~ msgstr "Détails du thème : %s"
+
+#~ msgid "Module Details: %s"
+#~ msgstr "Détails du module : %s"
+
+#~ msgid "Help"
+#~ msgstr "Aider"
+
+#~ msgid "Your modules folder is not writable. %s"
+#~ msgstr "Votre dossier de modules n'est pas accessible en écriture. %s"
+
+#~ msgid "Load order"
+#~ msgstr "Ordre de chargement"
+
+#~ msgid "Load Order"
+#~ msgstr "Ordre de chargement"
+
+#~ msgid "Module changes has been saved!"
+#~ msgstr "Le changements module a été sauvé!"
+
+#~ msgid "Configure Module"
+#~ msgstr "Configurer un module"
+
+#~ msgid "Module '%s' has been enabled"
+#~ msgstr "Module '%s' a été activée"
+
+#~ msgid "Module '%s' has been disabled"
+#~ msgstr "Module '%s' a été désactivé"
+
+#~ msgid "Module '%s' has been uninstalled"
+#~ msgstr "Module '%s' a été désinstallé"
+
+#~ msgid "Module could not been installed"
+#~ msgstr "Le module ne peut pas été installé"
+
+#~ msgid "Module has been installed"
+#~ msgstr "Le module a été installé"
+
+#~ msgid "Your themes folder is not writable. %s"
+#~ msgstr "Votre dossier de thèmes n'est pas modifiable. %s"
+
+#~ msgid "Theme settings"
+#~ msgstr "Configuration des thèmes"
+
+#~ msgid "Configure Theme"
+#~ msgstr "Configurer le thème"
+
+#~ msgid "Theme '%s' has been uninstalled"
+#~ msgstr "Le thème '%s' a été désinstallé"
+
+#~ msgid "Error uninstalling theme '%s'"
+#~ msgstr "Erreur de désinstallation du thème '%s'"
+
+#~ msgid "Theme could not been installed"
+#~ msgstr "Le thème ne pourrait pas été installé"
+
+#~ msgid "Theme has been installed"
+#~ msgstr "Le thème a été installé"
+
+#~ msgid "$object must be an instance of Model, View or Controller"
+#~ msgstr "$object doit être une instance de Modèle, Vue ou le contrôleur"
+
+#~ msgid "Site information"
+#~ msgstr "Informations sur le site"
+
+#~ msgid "Site details"
+#~ msgstr "Détails du site"
+
+#~ msgid "Site name *"
+#~ msgstr "Nom du site *"
+
+#~ msgid "Slogan"
+#~ msgstr "Slogan"
+
+#~ msgid "How this is used depends on your site's theme."
+#~ msgstr "La façon dont cela est utilisé dépend du thème de votre site."
+
+#~ msgid ""
+#~ "A brief description about your site, this will be used as default meta-"
+#~ "description in layout."
+#~ msgstr ""
+#~ "La brève description de votre site, elle sera utilisée par défaut dans la "
+#~ "présentation méta-description."
+
+#~ msgid "E-mail address *"
+#~ msgstr "Adresse e-mail *"
+
+#~ msgid ""
+#~ "The From address in automated e-mails sent during registration and new "
+#~ "password requests, and other notifications. (Use an address ending in "
+#~ "your site's domain to help prevent this e-mail being flagged as spam.)"
+#~ msgstr ""
+#~ "C'est l'adresse de l'expéditeur des e-mails envoyés automatiquement lors "
+#~ "de l'inscription et des demandes nouveau mot de passe, et d'autres "
+#~ "notifications. (Utiliser une adresse se terminant par domaine de votre "
+#~ "site pour éviter que cet e-mail soit marqué comme spam.)"
+
+#~ msgid "Site under maintenance"
+#~ msgstr "Site en cours de maintenance"
+
+#~ msgid "Maintenance IP"
+#~ msgstr "Maintenance IP"
+
+#~ msgid "Add my IP"
+#~ msgstr "Ajouter mon adresse IP"
+
+#~ msgid ""
+#~ "IP addresses allowed to access the Front Office even if the site is "
+#~ "disabled. Use a comma to separate them (e.g., "
+#~ "42.24.4.2,127.0.0.1,99.98.97.96)"
+#~ msgstr ""
+#~ "Adresses IP autorisées à accéder au Front Office, même si le site est "
+#~ "désactivé. Utilisez une virgule pour les séparer (ex., "
+#~ "42.24.4.2,127.0.0.1,99.98.97.96"
+
+#~ msgid "Maintenance message"
+#~ msgstr "Message d'entretien"
+
+#~ msgid "Front page"
+#~ msgstr "Page d'accueil"
+
+#~ msgid "Number of posts on front page"
+#~ msgstr "Nombre de messages sur la première page"
+
+#~ msgid ""
+#~ "The maximum number of posts displayed on overview pages such as the front "
+#~ "page."
+#~ msgstr ""
+#~ "Le nombre maximum de messages affichés sur des pages aperçu telles que la "
+#~ "page d'accueil"
+
+#~ msgid "Default front page"
+#~ msgstr "Page d'accueil par défaut"
+
+#~ msgid ""
+#~ "Optionally, specify a relative URL to display as the front page. Leave "
+#~ "blank to display the default content feed"
+#~ msgstr ""
+#~ "Spécifiez éventuellement une URL relative à afficher comme page "
+#~ "d'accueil. Laissez ce champ vide pour afficher le flux de contenu par "
+#~ "défaut"
+
+#~ msgid "Regional settings"
+#~ msgstr "Les paramètres régionaux"
+
+#~ msgid "Default time zone"
+#~ msgstr "Fuseau horaire par défaut"
+
+#~ msgid "URL path prefix"
+#~ msgstr "Préfixe du chemin de l'URL"
+
+#~ msgid ""
+#~ "URLs like http://www.example.com/fre/about set language to French (fre). "
+#~ "<b>Warning: Changing this setting may break incoming URLs. Use with "
+#~ "caution on a production site.</b>"
+#~ msgstr ""
+#~ "Les URL comme \"http://www.example.com/fre/about\" avec une langue réglée "
+#~ "vers le français (fer). <b> Attention: La modification de ce paramètre "
+#~ "peut casser les URL entrantes. A utiliser avec précaution sur un site de "
+#~ "production. </b>"
+
+#~ msgid "Users settings"
+#~ msgstr "les paramètres utilisateurs"
+
+#~ msgid "User Login"
+#~ msgstr "Authentifiant utilisateur"
+
+#~ msgid "After"
+#~ msgstr "Après"
+
+#~ msgid "failed login attempts"
+#~ msgstr "tentatives de connexion infructueuses"
+
+#~ msgid "Block visitor for"
+#~ msgstr "on bloque le visiteur pendant"
+
+#~ msgid "minutes"
+#~ msgstr "minutes"
+
+#~ msgid "Leave empty any of the parameters for no login-blocking feature."
+#~ msgstr ""
+#~ "Laisser vider tous les paramètres de connexion avec aucune fonction "
+#~ "blocage de login."
+
+#~ msgid "User Avatar"
+#~ msgstr "Avatar de l'utilisateur"
+
+#~ msgid "Use <a href='http://www.gravatar.com'>Gravatar</a>"
+#~ msgstr "Utilisez <a href='http://www.gravatar.com'> Gravatar </a>"
+
+#~ msgid "Avatar width"
+#~ msgstr "Largeur de Avatar"
+
+#~ msgid ""
+#~ "By default, images are presented at 80px by 80px if no size parameter is "
+#~ "supplied."
+#~ msgstr ""
+#~ "Par défaut, les images sont présentées à 80px par 80px si aucun paramètre "
+#~ "de taille est fournie."
+
+#~ msgid "Default avatar URL"
+#~ msgstr "l'URL avatar par défaut"
+
+#~ msgid ""
+#~ "URL of picture to display for users with an email not matching a Gravatar "
+#~ "image."
+#~ msgstr ""
+#~ "l'URL de l'image à afficher pour les utilisateurs avec un e-mail ne "
+#~ "correspond pas à une image Gravatar"
+
+#~ msgid "Force default"
+#~ msgstr "Force la valeur par défaut"
+
+#~ msgid "Force the default image to always load."
+#~ msgstr "Force l'image par défaut à toujours se charger."
+
+#~ msgid "Rating"
+#~ msgstr "Classement"
+
+#~ msgid ""
+#~ "If the user's email does not have an image meeting the requested rating "
+#~ "level, then the default image is returned (or the specified default)"
+#~ msgstr ""
+#~ "Si l'email de l'utilisateur ne dispose pas d'un groupe d'image d'un "
+#~ "niveau de note demandé, l'image par défaut est retourné (ou le défaut "
+#~ "spécifié)"
+
+#~ msgid "suitable for display on all websites with any audience type."
+#~ msgstr ""
+#~ "pouvant être affiché sur tous les sites Web avec n'importe quel type de "
+#~ "public"
+
+#~ msgid ""
+#~ "may contain rude gestures, provocatively dressed individuals, the lesser "
+#~ "swear words, or mild violence."
+#~ msgstr ""
+#~ "peut contenir des jurons, ou des images potentiellement choquantes "
+#~ "représentant de la violence légère ou des individus habillés de manière "
+#~ "provocante."
+
+#~ msgid ""
+#~ "may contain such things as harsh profanity, intense violence, nudity, or "
+#~ "hard drug use."
+#~ msgstr ""
+#~ "peut contenir des images choquantes représentant de la violence intense, "
+#~ "de la nudité, ou de l’emploi de drogues dures"
+
+#~ msgid ""
+#~ "may contain hardcore sexual imagery or extremely disturbing violence."
+#~ msgstr ""
+#~ "peut contenir des images extrêmes ou dérangeantes à cause des "
+#~ "représentations crues de nature sexuelle, ou de la violence extrême."
+
+#~ msgid "Default avatar"
+#~ msgstr "Avatar par défaut"
+
+#~ msgid ""
+#~ "URL of picture to display for users with no custom picture selected or "
+#~ "anonymous users."
+#~ msgstr ""
+#~ "l'URL de l'image à afficher pour les utilisateurs sans image "
+#~ "personnalisée sélectionnée ou utilisateurs anonymes."
+
+#~ msgid "Other module settings"
+#~ msgstr "Autres paramètres de module"
+
+#~ msgid "Install"
+#~ msgstr "Installer"
+
+#~ msgid "Install this module ?"
+#~ msgstr "Installez ce module?"
+
+#~ msgid "Download"
+#~ msgstr "Télécharger (Download)"
+
+#~ msgid "project repository"
+#~ msgstr "Dépôt du projet"
+
+#~ msgid "Visit"
+#~ msgstr "Visiter"
+
+#~ msgid "author"
+#~ msgstr "auteur"
+
+#~ msgid "category"
+#~ msgstr "catégorie"
+
+#~ msgid "version"
+#~ msgstr "version"
+
+#~ msgid "compatibility"
+#~ msgstr "compatibilité"
+
+#~ msgid "home page"
+#~ msgstr "page d'accueil"
+
+#~ msgid "watchers"
+#~ msgstr "observateurs"
+
+#~ msgid "branches"
+#~ msgstr "branches"
+
+#~ msgid "wiki"
+#~ msgstr "wiki"
+
+#~ msgid "Link"
+#~ msgstr "lien"
+
+#~ msgid "issue tracker"
+#~ msgstr "numéro traqueur"
+
+#~ msgid "Link (%d)"
+#~ msgstr "Lien (%d)"
+
+#~ msgid "Available downloads"
+#~ msgstr "les téléchargements disponibles"
+
+#~ msgid "install"
+#~ msgstr "installer"
+
+#~ msgid "Readme"
+#~ msgstr "Lisez-moi"
+
+#~ msgid "Newest"
+#~ msgstr "Nouveautés"
+
+#~ msgid "Recently Updated"
+#~ msgstr "Récemment mis à jour"
+
+#~ msgid "Search Modules"
+#~ msgstr "Recherche Modules"
+
+#~ msgid "Search for modules by keyword."
+#~ msgstr "Rechercher par mot-clé modules."
+
+#~ msgid "Install this theme ?"
+#~ msgstr "Installer ce thème?"
+
+#~ msgid "type"
+#~ msgstr "type"
+
+#~ msgid "Public theme (front office)"
+#~ msgstr "Thème public (front office)"
+
+#~ msgid "Private theme (back office)"
+#~ msgstr "Thème Privé (back office)"
+
+#~ msgid "Search Themes"
+#~ msgstr "Recherche de thèmes"
+
+#~ msgid "Search for themes by keyword."
+#~ msgstr "Rechercher des thèmes par mots-clés."
+
+#~ msgid "Change administrator theme, are you sure ?\\n"
+#~ msgstr "Modifier le thème de l'administrateur, êtes-vous sûr ?\\n"
+
+#~ msgid "Change site theme, are you sure ?"
+#~ msgstr "Modifier le thème du site, vous êtes sûr?"
+
+#~ msgid "<b>regions:</b> <em>%s</em>"
+#~ msgstr "<b>régions:</b> <em>%s</em>"
+
+#~ msgid "Set as default"
+#~ msgstr "Définir par défaut"
+
+#~ msgid "Delete selected theme ?\\nThis operation cannot be undone!"
+#~ msgstr "Supprimer le thème choisi?\\nCette action ne peut être annulée !"
+
+#~ msgid "Uninstall"
+#~ msgstr "Désinstaller"
+
+#~ msgid "Configure"
+#~ msgstr "Configurer"
+
+#~ msgid "Manage"
+#~ msgstr "Gérer"
+
+#~ msgid "Installed Themes"
+#~ msgstr "Les thèmes installés"
+
+#~ msgid "Help topics"
+#~ msgstr "Les rubriques d'aide"
+
+#~ msgid "Help is available on the following items"
+#~ msgstr "L'aide est disponible sur les éléments suivants"
+
+#~ msgid ""
+#~ "Powered by &copy; <a href=\"http://www.quickappscms.org/\">QuickApps CMS</"
+#~ "a> v%s"
+#~ msgstr "Propulsé par © <a href=\"http://www.quickappscms.org\">CMS</a> v%s"
+
+#~ msgid "Recent Content"
+#~ msgstr "Contenu récent"
+
+#~ msgid "Color %d"
+#~ msgstr "Ccouleur %d"
+
+#~ msgid "Font %d"
+#~ msgstr "Fonte %d"
+
+#~ msgid "Size %d"
+#~ msgstr "Taille %d"
+
+#~ msgid "Add Your CSS"
+#~ msgstr "Ajouter votre CSS"
+
+#~ msgid "Unknown property %d"
+#~ msgstr "Propriété Inconnu %d"
+
+#~ msgid "Reset"
+#~ msgstr "Réinitialiser (reset)"
+
+#~ msgid "Reset selected style sheet ?"
+#~ msgstr "Réinitialiser feuille de style sélectionnée?"
+
+#~ msgid "Install New Module"
+#~ msgstr "Installez un nouveau module"
+
+#~ msgid "Upload Package File"
+#~ msgstr "Télécharger le fichier Paquet (Package)"
+
+#~ msgid "Package"
+#~ msgstr "Paquet (Package)"
+
+#~ msgid "Activate after install"
+#~ msgstr "Activez après l'installation"
+
+#~ msgid "Install From URL"
+#~ msgstr "Install From URL"
+
+#~ msgid "Dependencies"
+#~ msgstr "Dépendances"
+
+#~ msgid "Permissions"
+#~ msgstr "Permissions"
+
+#~ msgid "Disable"
+#~ msgstr "Désactiver"
+
+#~ msgid "Enable"
+#~ msgstr "Activer"
+
+#~ msgid "Delete selected module ? This change cannot be undone!"
+#~ msgstr ""
+#~ "Supprimer module sélectionné ? Ce changement ne peut pas être annulée !"
+
+#~ msgid "Update orders"
+#~ msgstr "Mise à jour des ordres"
+
+#~ msgid "Install New Theme"
+#~ msgstr "Installer un nouveau thème"
+
+#~ msgid "Frontend themes"
+#~ msgstr "Thèmes de frontend"
+
+#~ msgid "Backend themes"
+#~ msgstr "Thèmes de Backend"
+
+#~ msgid "\"%s\" Theme"
+#~ msgstr "\"%s\" Thèmes"
+
+#~ msgid "Customize Appearance"
+#~ msgstr "Personnaliser l'apparence"
+
+#~ msgid "Toggle display"
+#~ msgstr "Basculer affichage"
+
+#~ msgid "Logo"
+#~ msgstr "Logo"
+
+#~ msgid "Site name"
+#~ msgstr "Nom du site"
+
+#~ msgid "Site slogan"
+#~ msgstr "Slogan du site"
+
+#~ msgid "Shortcut icon"
+#~ msgstr "Icône de raccourci"
+
+#~ msgid "Logo image URL"
+#~ msgstr "L'URL de l'image Logo"
+
+#~ msgid "Leave blank to use default logo."
+#~ msgstr "Laissez vide pour utiliser le logo par défaut."
+
+#~ msgid "Shortcut icon URL"
+#~ msgstr "l'URL de l'icône du raccourci"
+
+#~ msgid "Leave blank to use default favicon."
+#~ msgstr "Laissez vide pour utiliser favicon par défaut."
+
+#~ msgid "Vocabulary has been saved. Now you can add terms."
+#~ msgstr ""
+#~ "Vocabulaire a été enregistré. Maintenant, vous pouvez ajouter des termes."
+
+#~ msgid "Vocabulary could not be saved. Please, try again."
+#~ msgstr ""
+#~ "Vocabulaire n'a pas pu être sauvé. S'il vous plaît, essayez à nouveau."
+
+#~ msgid "Add vocabulary"
+#~ msgstr "Ajouter vocabulaire"
+
+#~ msgid "Add Vocabulary"
+#~ msgstr "Ajouter vocabulaire"
+
+#~ msgid "Vocabulary has been saved"
+#~ msgstr "Vocabulaire a été sauvé"
+
+#~ msgid "Editing Vocabulary \"%s\""
+#~ msgstr "Modifier le vocabulaire \"%s\""
+
+#~ msgid "Term has been created."
+#~ msgstr "Un terme a été créé."
+
+#~ msgid "Term could not be saved. Please, try again."
+#~ msgstr "Le terme n'a pas pu être sauvé. S'il vous plaît, essayez à nouveau."
+
+#~ msgid "Terms"
+#~ msgstr "Termes"
+
+#~ msgid "%s Terms"
+#~ msgstr "%s Termes"
+
+#~ msgid "Term has been saved."
+#~ msgstr "Le terme a été sauvegardée."
+
+#~ msgid "Editing term"
+#~ msgstr "Modifier le terme"
+
+#~ msgid "Editing term \"%s\""
+#~ msgstr "Modifier le terme  \"%s\""
+
+#~ msgid "This field cannot hold more than 2 values."
+#~ msgstr "Ce champ ne peut pas contenir plus de 2 valeurs."
+
+#~ msgid "You must <a href=\"%s\">select a vocabulary</a> for this field!"
+#~ msgstr ""
+#~ "Vous devez sélectionner <a href=\"%s\">un vocabulaire </ a> pour ce "
+#~ "champ !"
+
+#~ msgid "Link (localized)"
+#~ msgstr "Lien (localisé)"
+
+#~ msgid "Plain (localized)"
+#~ msgstr "Normal (localisé)"
+
+#~ msgid ""
+#~ "Valid only when format is \"Link (localized)\". Adds a prefix to each "
+#~ "term link url."
+#~ msgstr ""
+#~ "Valable seulement lorsque le format est \" Lien (localisé) \". Ajoute un "
+#~ "préfixe du terme  à chaque lien url."
+
+#~ msgid "Vocabulary *"
+#~ msgstr "Vocabulaire *"
+
+#~ msgid "The vocabulary which supplies the options for this field."
+#~ msgstr "Le vocabulaire qui fournit les options pour ce champ."
+
+#~ msgid "Check boxes/radio buttons"
+#~ msgstr "Cases à cocher / boutons radio "
+
+#~ msgid "Select list"
+#~ msgstr "Sélectionnez la liste"
+
+#~ msgid "Autocomplete term (tagging)"
+#~ msgstr "Saisie semi-automatique de terme (tagging)"
+
+#~ msgid "Element Type"
+#~ msgstr "Type d'élément"
+
+#~ msgid ""
+#~ "The type of form element you would like to present to the user when "
+#~ "creating this field."
+#~ msgstr ""
+#~ "Le type d'élément de formulaire que vous souhaitez présenter à "
+#~ "l'utilisateur lors de la création de ce champ."
+
+#~ msgid "Unlimited"
+#~ msgstr "Illimités"
+
+#~ msgid "Number of values"
+#~ msgstr "Nombre de valeurs"
+
+#~ msgid "Maximum number of values users can enter for this field."
+#~ msgstr ""
+#~ "Le nombre maximum de valeurs utilisateurs qui peuvent entrer dans ce "
+#~ "champ."
+
+#~ msgid "Type in a search term"
+#~ msgstr "Entrez un terme de recherche"
+
+#~ msgid "No results"
+#~ msgstr "Pas de résultats"
+
+#~ msgid "Searching..."
+#~ msgstr "Recherche …"
+
+#~ msgid "x"
+#~ msgstr "x"
+
+#~ msgid "Delete selected term ?"
+#~ msgstr "Supprimer le terme choisi ?"
+
+#~ msgid "New Vocabulary"
+#~ msgstr "Nouveau vocabulaire"
+
+#~ msgid "Vocabularies"
+#~ msgstr "Vocabulaires"
+
+#~ msgid "Show content count"
+#~ msgstr "Afficher le nombre contenu"
+
+#~ msgid "Show vocabulary and its terms as tree"
+#~ msgstr "Montrer le vocabulaire et les termes en arborescence"
+
+#~ msgid "Cache terms counters for"
+#~ msgstr "Compteurs termes en Cache pour les : "
+
+#~ msgid "%s Minutes"
+#~ msgstr "%s Minute"
+
+#~ msgid "Save vocabulary"
+#~ msgstr "Enregistrer vocabulaire"
+
+#~ msgid "Term"
+#~ msgstr "Terme"
+
+#~ msgid "Go to <a href=\"%s\">terms list</a> to reparent this term"
+#~ msgstr "Voir la <a href=\"%s\">liste des termes</a> parenté ce terme"
+
+#~ msgid "Save term"
+#~ msgstr "Enregistrer terme"
+
+#~ msgid "Vocabulary name"
+#~ msgstr "Nom du vocabulaire"
+
+#~ msgid "terms"
+#~ msgstr "Les termes"
+
+#~ msgid "Delete selected vocabulary and all its terms ?"
+#~ msgstr "Supprimer le vocabulaire choisi et tous ses termes?"
+
+#~ msgid "There are no vocabularies to display"
+#~ msgstr "Il n'y a pas vocabulaires à afficher"
+
+#~ msgid "Add New Term"
+#~ msgstr "Ajouter nouveau terme"
+
+#~ msgid "Parent term"
+#~ msgstr "Le terme parent"
+
+#~ msgid "Manage Display"
+#~ msgstr "Gérez Afficher"
+
+#~ msgid "User Display Settings"
+#~ msgstr "Paramètres d'affichage utilisateur"
+
+#~ msgid "Manage Fields"
+#~ msgstr "Gérer les champs"
+
+#~ msgid "Manage User Fields"
+#~ msgstr "Gérer les champs utilisateur"
+
+#~ msgid "Field settings"
+#~ msgstr "Réglages du champ"
+
+#~ msgid "Users"
+#~ msgstr "Utilisateurs"
+
+#~ msgid "User has been saved"
+#~ msgstr "L'utilisateur a été enregistré"
+
+#~ msgid "User could not be saved. Please, try again."
+#~ msgstr ""
+#~ "L'utilisateur n'a pas pu être sauvé. S'il vous plaît, essayez à nouveau."
+
+#~ msgid "Add User"
+#~ msgstr "Ajouter un utilisateur"
+
+#~ msgid "Add new user"
+#~ msgstr "Ajouter un nouvel utilisateur"
+
+#~ msgid "Editing User"
+#~ msgstr "Modification de l'utilisateur"
+
+#~ msgid "Editing user"
+#~ msgstr "Modification de l'utilisateur"
+
+#~ msgid "User Permissions"
+#~ msgstr "Les autorisations des utilisateurs"
+
+#~ msgid "Role has been saved"
+#~ msgstr "Le rôle a été enregistré"
+
+#~ msgid "Role could not be saved. Please, try again."
+#~ msgstr "Le rôle ne pourrait être sauvé. S'il vous plaît, essayez à nouveau."
+
+#~ msgid "User roles"
+#~ msgstr "Les rôles utilisateur"
+
+#~ msgid "User Roles"
+#~ msgstr "Les rôles des utilisateurs"
+
+#~ msgid "Editing role"
+#~ msgstr "Modification du rôle"
+
+#~ msgid "Editing Role"
+#~ msgstr "Modification du rôle"
+
+#~ msgid "Login"
+#~ msgstr "Identifiant"
+
+#~ msgid ""
+#~ "Registration complete. A welcome message has been sent to your e-mail "
+#~ "address with instructions on how to active your account."
+#~ msgstr ""
+#~ "Inscription compléter. Un message de bienvenue a été envoyé à votre "
+#~ "adresse e-mail avec des instructions sur la façon d'activer votre compte."
+
+#~ msgid "Create new account"
+#~ msgstr "Créer un nouveau compte"
+
+#~ msgid "Create new user account"
+#~ msgstr "Créer nouveau compte utilisateur"
+
+#~ msgid "Further instructions have been sent to your e-mail address."
+#~ msgstr "D'autres instructions ont été envoyées à votre adresse e-mail."
+
+#~ msgid "invalid email"
+#~ msgstr "email invalide"
+
+#~ msgid "Sorry, %s is not recognized as e-mail address."
+#~ msgstr "Désolé,%s n'est pas reconnu comme adresse e-mail."
+
+#~ msgid "Request new password"
+#~ msgstr "Demande de nouveau mot de passe"
+
+#~ msgid "%s profile"
+#~ msgstr "%s profil"
+
+#~ msgid ""
+#~ "You have reached the maximum number of login attempts. Try again in %d "
+#~ "minutes."
+#~ msgstr ""
+#~ "Vous avez atteint le nombre maximum de tentatives de connexion. Veuillez "
+#~ "réessayer dans %d minutes."
+
+#~ msgid "Logged in successfully."
+#~ msgstr "Connecté avec succès."
+
+#~ msgid "Invalid username or password"
+#~ msgstr "Nom d'utilisateur ou mot de passe invalide"
+
+#~ msgid "Logout successful."
+#~ msgstr "Déconnexion réussie."
+
+#~ msgid "User not found."
+#~ msgstr "Utilisateur introuvable."
+
+#~ msgid "This message has been marked as \"do not notify\"."
+#~ msgstr "Ce message a été marqué comme \" ne pas notifier \"."
+
+#~ msgid "Email could not be sent."
+#~ msgstr "L'e-mail n'a pas pu être envoyé."
+
+#~ msgid "Invalid message preset."
+#~ msgstr "Message prédéfini invalide."
+
+#~ msgid "Password mismatch."
+#~ msgstr "Mot de passe différent"
+
+#~ msgid "Use custom display settings for the following dispay-modes"
+#~ msgstr ""
+#~ "Utiliser les paramètres d'affichage personnalisés pour les «modes "
+#~ "d'affichage\" suivants"
+
+#~ msgid "Number of users"
+#~ msgstr "Nombre d'utilisateurs"
+
+#~ msgid "Mailing notifications"
+#~ msgstr "Notifications d'envoi"
+
+#~ msgid "Body"
+#~ msgstr "Corps du texte"
+
+#~ msgid "User activation"
+#~ msgstr "Activation par l'utilisateur"
+
+#~ msgid "Notify user when account is activated."
+#~ msgstr "Notifier l'utilisateur lorsque le compte est activé."
+
+#~ msgid "Account blocked"
+#~ msgstr "Compte bloqué"
+
+#~ msgid "Notify user when account is blocked."
+#~ msgstr "Notifier l'utilisateur lorsque le compte est bloqué."
+
+#~ msgid "Password recovery"
+#~ msgstr "Récupération du Mot de passe"
+
+#~ msgid "Account canceled"
+#~ msgstr "Compte annulé"
+
+#~ msgid "Notify user when account is canceled."
+#~ msgstr "Notifier l'utilisateur lorsque le compte est annulé."
+
+#~ msgid "List all users"
+#~ msgstr "Lister tous les utilisateurs"
+
+#~ msgid "Add New User"
+#~ msgstr "Ajouter un nouvel utilisateur"
+
+#~ msgid "Allow you to fine tune the security and administration of QuickApps."
+#~ msgstr ""
+#~ "Vous permettent d'affiner la sécurité et l'administration de QuickApps."
+
+#~ msgid "Manage permissions by role"
+#~ msgstr "Gérer les autorisations par rôle"
+
+#~ msgid "Add, edit, and arrange fields for storing user data."
+#~ msgstr ""
+#~ "Ajouter, modifier et organiser des champs pour stocker des données de "
+#~ "l'utilisateur."
+
+#~ msgid ""
+#~ "Configure how fields should be displayed when rendering a user profile "
+#~ "page."
+#~ msgstr ""
+#~ "Configurer la façon dont les champs doivent être affichés lors du rendu "
+#~ "d'une page de profil utilisateur."
+
+#~ msgid "Real name *"
+#~ msgstr "Nom réel *"
+
+#~ msgid ""
+#~ "Your real name, it is used only for identification purposes. i.e: John "
+#~ "Locke"
+#~ msgstr ""
+#~ "Votre vrai nom, il est utilisé uniquement à des fins d'identification. "
+#~ "C'est-à-dire : John Locke"
+
+#~ msgid "User name *"
+#~ msgstr "Nom d'utilisateur *"
+
+#~ msgid "Nick used to login. Must be unique and alphanumeric."
+#~ msgstr ""
+#~ "Pseudo utilisé pour se connecter. Doit être unique et alphanumériques."
+
+#~ msgid "Avatar"
+#~ msgstr "Avatar"
+
+#~ msgid ""
+#~ "Full url to avatar image file. i.e: http://www.example.com/my-avatar.jpg"
+#~ msgstr ""
+#~ "Url complet vers le fichier image d'avatar. C'est-à-dire : http://www."
+#~ "example.com/my-avatar.jpg"
+
+#~ msgid "E-mail *"
+#~ msgstr "E-mail *"
+
+#~ msgid "Public email"
+#~ msgstr "E-mail public"
+
+#~ msgid "Time zone"
+#~ msgstr "Fuseau horaire"
+
+#~ msgid "Create user"
+#~ msgstr "Créer un utilisateur"
+
+#~ msgid "Editing user: %s"
+#~ msgstr "Editer l'utilisateur : %s"
+
+#~ msgid "Usernames cannot be changed"
+#~ msgstr "Les noms d'utilisateur ne peut pas être changé"
+
+#~ msgid "New password"
+#~ msgstr "Nouveau mot de passe"
+
+#~ msgid ""
+#~ "If you would like to change the password type a new one. Otherwise leave "
+#~ "this blank."
+#~ msgstr ""
+#~ "Si vous souhaitez modifier le mot de passe, tapez-en un nouveau. Sinon, "
+#~ "laissez ce champ vide."
+
+#~ msgid "Update user"
+#~ msgstr "Mettre à jour l'utilisateur"
+
+#~ msgid "User Name"
+#~ msgstr "Nom d'utilisateur"
+
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#~ msgid "There are no users to display"
+#~ msgstr "Il n'y a pas d'utilisateurs à afficher"
+
+#~ msgid "blocked"
+#~ msgstr "bloqué"
+
+#~ msgid "Block selected users"
+#~ msgstr "Bloquer les utilisateurs sélectionnés"
+
+#~ msgid "Unblock selected users"
+#~ msgstr "Débloquer les utilisateurs sélectionnés"
+
+#~ msgid "Delete selected users"
+#~ msgstr "Supprimer les utilisateurs sélectionnés"
+
+#~ msgid "Role name"
+#~ msgstr "Nom de rôle"
+
+#~ msgid "Update Role"
+#~ msgstr "Mise à jour du rôle"
+
+#~ msgid "Add New Role"
+#~ msgstr "Ajouter un nouveau rôle"
+
+#~ msgid "Are you sure?"
+#~ msgstr "Etes-vous sûr ?"
+
+#~ msgid "There are no roles to display"
+#~ msgstr "Il n'y a pas rôles à afficher"
+
+#~ msgid "Username..."
+#~ msgstr "Nom d'utilisateur ..."
+
+#~ msgid "Password..."
+#~ msgstr "Mot de passe ..."
+
+#~ msgid "Remember"
+#~ msgstr "Rappeler"
+
+#~ msgid "E-mail new password"
+#~ msgstr "E-mailler le nouveau mot de passe"
+
+#~ msgid "Register"
+#~ msgstr "S'enregistrer"
+
+#~ msgid "Dashboard"
+#~ msgstr "Tableau de bord"
+
+#~ msgid "Structure"
+#~ msgstr "Structure"
+
+#~ msgid "Appearance"
+#~ msgstr "Aspect"
+
+#~ msgid "Modules"
+#~ msgstr "Modules"
+
+#~ msgid "Configuration"
+#~ msgstr "Configuration"
+
+#~ msgid "View Site"
+#~ msgstr "Voir le site"
+
+#~ msgid "Log out"
+#~ msgstr "Déconnexion"
+
+#~ msgid "Logout"
+#~ msgstr "Déconnexion"
+
+#~ msgid "My account"
+#~ msgstr "Mon compte"
+
+#~ msgid "« Previous "
+#~ msgstr "« précédent"
+
+#~ msgid " Next »"
+#~ msgstr " Suivant »"
+
+#~ msgid " Last"
+#~ msgstr " Dernier"
+
+#~ msgid "First "
+#~ msgstr "Premier "
+
+#~ msgid ""
+#~ "Configure what block content appears in your site's sidebars and other "
+#~ "regions."
+#~ msgstr ""
+#~ "Configurer les contenus bloc qui apparaît dans les barres latérales de "
+#~ "votre site et d'autres régions"
+
+#~ msgid "Manage content types."
+#~ msgstr "Gérer les types de contenu."
+
+#~ msgid ""
+#~ "Add new menus to your site, edit existing menus, and rename and "
+#~ "reorganize menu links."
+#~ msgstr ""
+#~ "Ajouter de nouveaux menus à votre site, modifier les menus existants, "
+#~ "renommer-les et réorganiser les liens du menu."
+
+#~ msgid "Manage tagging, categorization, and classification of your content."
+#~ msgstr ""
+#~ "Gérer l'étiquetage (tagging), la catégorisation et la classification de "
+#~ "votre contenu."
+
+#~ msgid ""
+#~ "Controls the visual building blocks a page is constructed with. Blocks "
+#~ "are boxes of content rendered into an area, or region, of a web page."
+#~ msgstr ""
+#~ "Contrôle visuel des éléments constitutifs d'une page est construite avec. "
+#~ "Les blocs sont des boîtes de contenu affiché dans une zone particulière "
+#~ "ou d'une région, de la page Web."
+
+#~ msgid "Allows users to comment on and discuss published content."
+#~ msgstr ""
+#~ "Permet aux utilisateurs de commenter et de discuter le contenu publié."
+
+#~ msgid "Field API to add fields to entities like nodes and users."
+#~ msgstr ""
+#~ "Champ API pour ajouter des champs à des entités comme les noeuds et les "
+#~ "utilisateurs."
+
+#~ msgid ""
+#~ "Adds language handling functionality and enables the translation of the "
+#~ "user interface to languages other than English"
+#~ msgstr ""
+#~ "Ajoute la fonctionnalité traiter la langue et permet la traduction de "
+#~ "l'interface utilisateur dans d'autres langues que l'anglais"
+
+#~ msgid "Allows administrators to customize the site navigation menu."
+#~ msgstr ""
+#~ "Permet aux administrateurs de personnaliser le menu de navigation du site."
+
+#~ msgid "Allows content to be submitted to the site and displayed on pages."
+#~ msgstr ""
+#~ "Permet au contenu d'être soumises sur le site et de l'affichager sur les "
+#~ "pages."
+
+#~ msgid "System Kernel."
+#~ msgstr "Noyau du système."
+
+#~ msgid "Enables the categorization of content."
+#~ msgstr "Permet la catégorisation du contenu."
+
+#~ msgid "Manages the user registration and login system."
+#~ msgstr "Gère l'enregistrement d'utilisateur et le système de connexion."
+
+#~ msgid "Default frontend theme for QuickApps"
+#~ msgstr "Thème interface par défaut pour QuickApps"
+
+#~ msgid "Default backend theme for QuickApps"
+#~ msgstr "Thème backend par défaut pour QuickApps"
+
+#~ msgid "Theme in use"
+#~ msgstr "Thème en cours d'utilisation"
+
+#~ msgid "Article"
+#~ msgstr "Article"
+
+#~ msgid "Basic page"
+#~ msgstr "Page simple"
+
+#~ msgid ""
+#~ "Use articles for time-sensitive content like news, press releases or blog "
+#~ "posts."
+#~ msgstr ""
+#~ "Utilisez \"articles\" pour le contenu sensible au temps, comme les "
+#~ "communiqués de presse, des articles de blog."
+
+#~ msgid "Use basic pages for your static content, such as an 'About us' page."
+#~ msgstr ""
+#~ "Utilisez \"page simple\" pour votre contenu statique, comme un 'A propos "
+#~ "de nous '."
+
+#~ msgid "Date picker field."
+#~ msgstr "Champ sélecteur de date."
+
+#~ msgid "Define file uploader."
+#~ msgstr "Définir uploader le fichier."
+
+#~ msgid ""
+#~ "Defines list field types. Use with Options to create selection lists."
+#~ msgstr ""
+#~ "Définit les champs de types liste. Utiliser avec options pour créer des "
+#~ "listes de sélection."
+
+#~ msgid "Defines simple text field types."
+#~ msgstr "Définit les champ de types texte simples."
+
+#~ msgid "Defines terms list."
+#~ msgstr "Définit liste des termes."
+
+#~ msgid "Main font"
+#~ msgstr "police de caractère principale"
+
+#~ msgid "Footer"
+#~ msgstr "Pied de page"
+
+#~ msgid "Header top"
+#~ msgstr "Entête"
+
+#~ msgid "Header bottom"
+#~ msgstr "Bas d'en-tête"
+
+#~ msgid "Main background"
+#~ msgstr "Arrière-plan principal"
+
+#~ msgid "Background"
+#~ msgstr "Fond"
+
+#~ msgid "Links hover"
+#~ msgstr "liens survolé (hover)"
+
+#~ msgid "Header"
+#~ msgstr "En-tête"
+
+#~ msgid "Main menu background"
+#~ msgstr "Arrière-plan du menu principal"
+
+#~ msgid "Main menu text"
+#~ msgstr "Texte du menu principal"
+
+#~ msgid "Branding background"
+#~ msgstr "Arrière-plan de la zone de l'image de marque (Branding)"
+
+#~ msgid ""
+#~ "The <em>Main</em> menu is used on many sites to show the major sections "
+#~ "of the site, often in a top navigation bar."
+#~ msgstr ""
+#~ "Le <em>menu principal</em> est utilisé sur de nombreux sites de montrer "
+#~ "les principales sections du site, souvent dans une barre de navigation "
+#~ "supérieure."
+
+#~ msgid ""
+#~ "The <em>Management</em> menu contains links for administrative tasks."
+#~ msgstr ""
+#~ "\"Le <em>menu de gestion</em> contient des liens pour les tâches "
+#~ "administratives.\""
+
+#~ msgid ""
+#~ "The <em>Navigation</em> menu contains links intended for site visitors. "
+#~ "Links are added to the <em>Navigation</em> menu automatically by some "
+#~ "modules."
+#~ msgstr ""
+#~ "Le <em>menu de navigation</em> contient des liens destinés aux visiteurs "
+#~ "du site. Les liens sont ajoutés au <em>menu de navigation</em> "
+#~ "automatiquement par certains modules."
+
+#~ msgid ""
+#~ "The <em>User</em> menu contains links related to the user's account, as "
+#~ "well as the 'Log out' link."
+#~ msgstr ""
+#~ "Le <em>menu utilisateur</em> contient des liens concernant le compte de "
+#~ "l'utilisateur, ainsi que le lien 'Déconnexion'"
+
+#~ msgid ""
+#~ "We sincerely apologize for the inconvenience.<br/>Our site is currently "
+#~ "undergoing scheduled maintenance and upgrades, but will return shortly."
+#~ "<br/>Thanks you for your patience."
+#~ msgstr ""
+#~ "Nous nous excusons pour la gêne occasionnée. <br/> Notre site est "
+#~ "actuellement en cours de maintenance et de mises à niveau, mais sera de "
+#~ "retour sous peu. <br/> Merci pour votre patience."
+
+#~ msgid "Administer blocks"
+#~ msgstr "Administrer les blocs"
+
+#~ msgid "Grant full access to administer blocks"
+#~ msgstr "Accorder un accès complet à administrer les blocs"
+
+#~ msgid "Administer comments"
+#~ msgstr "Administrer commentaires"
+
+#~ msgid "Administer comments and comment settings"
+#~ msgstr "Administrer les commentaires et les paramètres commentaires"
+
+#~ msgid "Delete fields"
+#~ msgstr "Supprimer les champs"
+
+#~ msgid "Allow user to delete CCK fields"
+#~ msgstr "Permettre à l'utilisateur de supprimer des champs CCK"
+
+#~ msgid "Upload & Delete files"
+#~ msgstr "Téléchargez et supprimer des fichiers"
+
+#~ msgid "Allow user to upload new files and delete existing ones."
+#~ msgstr ""
+#~ "Permettre à l'utilisateur de télécharger de nouveaux fichiers et "
+#~ "supprimer ceux qui existent déjà."
+
+#~ msgid "Upload & Delete images"
+#~ msgstr "Téléchargez et supprimer des images"
+
+#~ msgid "Allow user to upload new images and delete existing ones."
+#~ msgstr ""
+#~ "Permettre à l'utilisateur de télécharger de nouvelles images et de "
+#~ "supprimer ceux qui existent déjà."
+
+#~ msgid "Preview uploaded images"
+#~ msgstr "Aperçu des images téléchargées"
+
+#~ msgid "Allow user to preview images."
+#~ msgstr "Permettre à l'utilisateur de prévisualiser les images."
+
+#~ msgid "Administer languages"
+#~ msgstr "Administrer les langues"
+
+#~ msgid "Allow user to add, edit and delete languages"
+#~ msgstr ""
+#~ "Permettre à l'utilisateur d'ajouter, modifier et supprimer des langues"
+
+#~ msgid "Translate interface texts"
+#~ msgstr "Traduire des textes de l'interface"
+
+#~ msgid "Allow user to administer translatable entries"
+#~ msgstr "Autoriser l'utilisateur à administrer les entrées traduisibles"
+
+#~ msgid "Administer language packages"
+#~ msgstr "Administrer les packages de langues"
+
+#~ msgid "Allow user to install and modify existing language packages (.po)"
+#~ msgstr ""
+#~ "Permettre à l'utilisateur d'installer et modifier des packages "
+#~ "linguistiques existantes (.po)"
+
+#~ msgid "Administer menus"
+#~ msgstr "Administrer les menus"
+
+#~ msgid "Allow user to administer menus and menu items"
+#~ msgstr "Autoriser l'utilisateur à administrer les menus et options de menu"
+
+#~ msgid "Administer content types"
+#~ msgstr "Administrer les types de contenu"
+
+#~ msgid ""
+#~ "Warning: Give to trusted roles only; this permission has security "
+#~ "implications."
+#~ msgstr ""
+#~ "Attention: Donnez à des personnes de confiance uniquement, cette "
+#~ "autorisation a des répercussions sur la sécurité."
+
+#~ msgid "Administer content"
+#~ msgstr "Administrer le contenu"
+
+#~ msgid "Access the site's front page"
+#~ msgstr "L'accès en première page du site"
+
+#~ msgid "View published content"
+#~ msgstr "Voir le contenu publié"
+
+#~ msgid "Search content and RSS feeds"
+#~ msgstr "Recherche de contenu et les flux RSS"
+
+#~ msgid "Access to dashboard"
+#~ msgstr "L'accès au tableau de bord"
+
+#~ msgid "Administer site configuration"
+#~ msgstr "Administrer la configuration du site"
+
+#~ msgid "Structure Menu"
+#~ msgstr "Menu Structure"
+
+#~ msgid "Allow user to access the `structure` menu item."
+#~ msgstr ""
+#~ "Permettre à l'utilisateur d'accéder au élément du menu \"structure\"."
+
+#~ msgid "Help Topics"
+#~ msgstr "Rubriques d'aide"
+
+#~ msgid "Allow user to consult help topics."
+#~ msgstr "Permettre à l'utilisateur de consulter les rubriques d'aide."
+
+#~ msgid "Administer modules"
+#~ msgstr "Administrer les modules"
+
+#~ msgid "Administer themes"
+#~ msgstr "Administrer les thèmes"
+
+#~ msgid "Administer vocabularies and terms"
+#~ msgstr "Administrer les vocabulaires et les termes"
+
+#~ msgid "Keywords suggestions handler"
+#~ msgstr "Gestionnaire des suggestions de mots-clés"
+
+#~ msgid "Suggest keyword"
+#~ msgstr "Proposer un mot-clé"
+
+#~ msgid "Allow user to use the `Autocomplete term`"
+#~ msgstr "Autoriser l'utilisateur à utiliser le terme `Autocomplete`"
+
+#~ msgid "User Basics"
+#~ msgstr "Simple utilisateur"
+
+#~ msgid "Backend main module access"
+#~ msgstr "Accès au module \"principal Backend\""
+
+#~ msgid "Grant access to (/admin/user)"
+#~ msgstr "Accorder l'accès à (/admin/user)"
+
+#~ msgid "Frontpage login form"
+#~ msgstr "formulaire d'identification de FrontPage"
+
+#~ msgid "Backend login"
+#~ msgstr "connexion Backend"
+
+#~ msgid "Backend login form"
+#~ msgstr "Formulaire de connexion Backend"
+
+#~ msgid "Frontpage logout"
+#~ msgstr "Déconnexion Frontpage"
+
+#~ msgid "After logout user gets redirected to site frontpage"
+#~ msgstr ""
+#~ "Après la déconnexion, l'utilisateur est redirigé vers le site frontpage"
+
+#~ msgid "Backend logout"
+#~ msgstr "Déconnexion backend"
+
+#~ msgid "After logout user gets redirected to backend login screen"
+#~ msgstr ""
+#~ "Après déconnexion utilisateur est redirigé vers l'écran de connexion "
+#~ "backend"
+
+#~ msgid "Registration page"
+#~ msgstr "Page d'inscription"
+
+#~ msgid "Activate account"
+#~ msgstr "Activer le compte"
+
+#~ msgid "View users profile"
+#~ msgstr "Voir le profil de l'utilisateur"
+
+#~ msgid "My account section"
+#~ msgstr "Mon compte de la section"
+
+#~ msgid "Administer permissions"
+#~ msgstr "Administrer les permissions"
+
+#~ msgid "Administer users"
+#~ msgstr "Administrer les utilisateurs"
+
+#~ msgid "Administer user roles"
+#~ msgstr "Administrer les rôles utilisateur"
+
+#~ msgid "Administer user CCK fields"
+#~ msgstr "Administrer les champs CCK utilisateur"
+
+#~ msgid "List"
+#~ msgstr "Lister"
+
+#~ msgid "RSS"
+#~ msgstr "RSS"
+
+#~ msgid "Print"
+#~ msgstr "Imprimer"
+
+#~ msgid "User profile"
+#~ msgstr "profil de l'utilisateur"
+
+#~ msgid "Thumbnail"
+#~ msgstr "Vignette"
+
+#~ msgid "Medium"
+#~ msgstr "Moyen"
+
+#~ msgid "Large"
+#~ msgstr "Grand"
+
+#~ msgid "said on %s"
+#~ msgstr "à dit %s"
+
+#~ msgid "Permalink"
+#~ msgstr "Permalink"
+
+#~ msgid "Quote"
+#~ msgstr "Citer"
+
+#~ msgid "published by <a href=\"%s\">%s</a>"
+#~ msgstr "publié par <a href=\"%s\">%s</a>"
+
+#~ msgid "%d comments"
+#~ msgstr "%d commentaires"
+
+#~ msgid "Read More"
+#~ msgstr "Lire la suite"
+
+#~ msgid "Add new comment"
+#~ msgstr "Ajouter un commentaire"
+
+#~ msgid "Your name"
+#~ msgstr "Votre nom"
+
+#~ msgid "Your name *"
+#~ msgstr "Votre nom *"
+
+#~ msgid "Email *"
+#~ msgstr "E-mail *"
+
+#~ msgid "Comment *"
+#~ msgstr "Commentaire *"
+
+#~ msgid "Containing any of the words"
+#~ msgstr "Contenant l'un des mots"
+
+#~ msgid "Containing the phrase"
+#~ msgstr "Contenant l'expression"
+
+#~ msgid "Containing none of the words"
+#~ msgstr "Ne contenant pas les mots"
+
+#~ msgid "Only of the type(s)"
+#~ msgstr "Seulement de type(s)"
+
+#~ msgid "Profile"
+#~ msgstr "Profil"
+
+#~ msgid "Real name"
+#~ msgstr "Nom réel"
+
+#~ msgid "User since"
+#~ msgstr "Utilisateur depuis"
+
+#~ msgid "M d, Y"
+#~ msgstr "d M Y"
+
+#~ msgid "Last connection"
+#~ msgstr "Dernière connexion"
+
+#~ msgid "Error"
+#~ msgstr "Erreur"
+
+#~ msgid ""
+#~ "The requested address %s was not found. <br/> There are no translations "
+#~ "available or you don't have sufficient permissions."
+#~ msgstr ""
+#~ "L'adresse demandée %s n'a pas été trouvé. <br/> Il n'y a pas de "
+#~ "traductions disponibles ou si vous ne disposez pas des autorisations "
+#~ "suffisantes."
+
+#~ msgid "<a href=\"%s\">Go to home page</a>"
+#~ msgstr "<a href=\"%s\">Aller à la page d'accueil</a>"
+
+#~ msgid "An Internal Error Has Occurred."
+#~ msgstr "Une erreur interne s'est produite."
+
+#~ msgid "Private Method in %s"
+#~ msgstr "Méthode privée dans %s"
+
+#~ msgid "%s%s cannot be accessed directly."
+#~ msgstr "%s%s n'est pas accessible directement."
+
+#~ msgid "Notice"
+#~ msgstr "Attention"
+
+#~ msgid "If you want to customize this error message, create %s"
+#~ msgstr "Si vous voulez personnaliser ce message d'erreur, créez %s"
+
+#~ msgid ""
+#~ "LayoutHelper::userAvatar() is deprecated, use UserHelper::avatar() instead"
+#~ msgstr ""
+#~ "LayoutHelper::userAvatar() est obsolète, utilisez UserHelper::avatar() à "
+#~ "la place"
+
+#~ msgid ""
+#~ "LayoutHelper::menuNodeChildren() is deprecated, use MenuHelper::"
+#~ "menuNodeChildren() instead"
+#~ msgstr ""
+#~ "LayoutHelper::menuNodeChildren()  est obsolète, utilisez MenuHelper::"
+#~ "menuNodeChildren() à la place"
+
+#~ msgid "LayoutHelper::menu() is deprecated, use MenuHelper::render() instead"
+#~ msgstr ""
+#~ "LayoutHelper::menu() est obsolète, utilisez MenuHelper::render() à la "
+#~ "place"
+
+#~ msgid ""
+#~ "LayoutHelper::toolbar() is deprecated, use MenuHelper::toolbar() instead"
+#~ msgstr ""
+#~ "LayoutHelper::toolbar() est obsolète, utilisez  MenuHelper::toolbar() à "
+#~ "la place"
+
+#~ msgid ""
+#~ "LayoutHelper::blockPush() is deprecated, use BlockHelper::push() instead"
+#~ msgstr ""
+#~ "LayoutHelper::blockPush() est obsolète, utilisez BlockHelper::push() à la "
+#~ "place"
+
+#~ msgid ""
+#~ "LayoutHelper::emptyRegion() is deprecated, use BlockHelper::regionCount() "
+#~ "instead"
+#~ msgstr ""
+#~ "LayoutHelper::emptyRegion() est obsolète, utilisez  BlockHelper::"
+#~ "regionCount() à la place"
+
+#~ msgid ""
+#~ "LayoutHelper::blocksInRegion() is deprecated, use BlockHelper::"
+#~ "regionCount() instead"
+#~ msgstr ""
+#~ "LayoutHelper::blocksInRegion() est obsolète, utilisez BlockHelper::"
+#~ "regionCount() à la place"
+
+#~ msgid ""
+#~ "LayoutHelper::blocks() is deprecated, use BlockHelper::region() instead"
+#~ msgstr ""
+#~ "LayoutHelper::blocks() est obsolète, utilisez BlockHelper::region() à la "
+#~ "place"
+
+#~ msgid ""
+#~ "LayoutHelper::block() is deprecated, use BlockHelper::render() instead"
+#~ msgstr ""
+#~ "LayoutHelper::block() est obsolète, utilisez BlockHelper::render() à la "
+#~ "place"
+
+#~ msgid ""
+#~ "LayoutHelper::getNodeType() is deprecated, use NodeHelper::"
+#~ "getAttr(\"node_type_id\") instead"
+#~ msgstr ""
+#~ "LayoutHelper::getNodeType() est obsolète, utilisez NodeHelper::"
+#~ "getAttr(\"node_type_id\") à la place"
+
+#~ msgid ""
+#~ "LayoutHelper::nodeField() is deprecated, use NodeHelper::getAttr() instead"
+#~ msgstr ""
+#~ "LayoutHelper::nodeField() est obsolète, utilisez NodeHelper::getAttr() à "
+#~ "la place"
+
+#~ msgid ""
+#~ "LayoutHelper::renderNode() is deprecated, use NodeHelper::render() instead"
+#~ msgstr ""
+#~ "LayoutHelper::renderNode() est obsolète, utilisez NodeHelper::render() à "
+#~ "la place"
+
+#~ msgid ""
+#~ "LayoutHelper::renderField() is deprecated, use NodeHelper::renderField() "
+#~ "instead"
+#~ msgstr ""
+#~ "LayoutHelper::renderField() est obsolète, utilisez NodeHelper::"
+#~ "renderField() à la place"
+
+#~ msgid "TableHelper::create() is deprecated, use render() instead"
+#~ msgstr "TableHelper::create() est obsolète, utilisez render() à la place"
+
+#~ msgid "Installation"
+#~ msgstr "Installation"
+
+#~ msgid "Data Base"
+#~ msgstr "Base de donnée"
+
+#~ msgid "Configuration exists"
+#~ msgstr "La configuration existe"
+
+#~ msgid ""
+#~ "Your configuration file already exists. If it contains the right values, "
+#~ "you may <a href=\"%s\">continue with installation</a>. If you would like "
+#~ "to use this part of the installer to recreate the file, please delete it "
+#~ "first."
+#~ msgstr ""
+#~ "Votre fichier de configuration existe déjà. Si il contient les bonnes "
+#~ "valeurs, vous pouvez <a href=\"%s\">poursuivre l'installation </a>. Si "
+#~ "vous souhaitez le ré-installer et recréer le fichier, s'il vous plaît, "
+#~ "supprimer d'abord le fichier Config/database.php."
+
+#~ msgid ""
+#~ "Enter connection data for your MySQL database. Note: your database must "
+#~ "already exist before completing this step."
+#~ msgstr ""
+#~ "Entrer les données de connexion de votre base de données MySQL. "
+#~ "<br>Remarque: votre base de données doit déjà exister avant de compléter "
+#~ "cette étape."
+
+#~ msgid "MySQL server hostname"
+#~ msgstr "Nom d'hôte du serveur MySQL"
+
+#~ msgid "Database name"
+#~ msgstr "Nom de la base de données"
+
+#~ msgid "Database username"
+#~ msgstr "Identifiant de la base de données"
+
+#~ msgid "Database password"
+#~ msgstr "Mot de passe de la base de données"
+
+#~ msgid "Database table prefix"
+#~ msgstr "Préfixe de table de la base de données"
+
+#~ msgid ""
+#~ "Only change if \"qa_\" conflicts with existing tables. Otherwise, leave "
+#~ "this alone."
+#~ msgstr ""
+#~ "Changer que s'il y a des conflits de Préfixe (\"qa_\") avec des tables "
+#~ "existantes. Sinon, n'y touchez pas."
+
+#~ msgid "Finishing Installation"
+#~ msgstr "Finition Installation"
+
+#~ msgid ""
+#~ "Please read and agree to the following license agreement before "
+#~ "installing."
+#~ msgstr ""
+#~ "S'il vous plaît, lisez et acceptez le contrat de licence suivant avant "
+#~ "d'installer."
+
+#~ msgid "Running server test..."
+#~ msgstr "Exécution du serveur de test ..."
+
+#~ msgid "Congratulations! Your server meets the basic software requirements."
+#~ msgstr ""
+#~ "Félicitations ! Votre serveur répond aux exigences de base du logiciel."
+
+#~ msgid "Uh oh. There's a server compatibility issue. See below."
+#~ msgstr ""
+#~ "Oh oh. Il y a un problème de compatibilité du serveur. Voir ci-dessous."
+
+#~ msgid "User Account"
+#~ msgstr "Compte utilisateur"
+
+#~ msgid ""
+#~ "Please enter the administrative username and password to use when signing "
+#~ "into this installation."
+#~ msgstr ""
+#~ "S'il vous plaît entrez le nom d'utilisateur et mot de passe "
+#~ "d'administration à utiliser lors de la signature dans cette installation."
+
+#~ msgid "Real Name"
+#~ msgstr "Nom réel"
+
+#~ msgid "Your real name."
+#~ msgstr "Votre vrai nom."
+
+#~ msgid "Password again"
+#~ msgstr "Mot de passe à nouveau"
+
+#~ msgid "Install QuickApps CMS"
+#~ msgstr "Installez QuickApps CMS"
+
+#~ msgid "QuickApps Installation"
+#~ msgstr "Installation QuickApps"
+
+#~ msgid ""
+#~ "This email was sent using <a href=\"http://www.quickappscms.org/"
+#~ "\">QuickApps CMS v%s</a>"
+#~ msgstr ""
+#~ "Ce courriel a été envoyé à l'aide <a href=\"http://www.quickappscms.org/"
+#~ "\">QuickApps CMS v%s</a>"
+
+#~ msgid ""
+#~ "This email was sent using QuickApps CMS v%s [http://www.quickappscms.org/]"
+#~ msgstr ""
+#~ "Ce courriel a été envoyé à l'aide QuickApps CMS v%s [http://www."
+#~ "quickappscms.org/]"
+
+#~ msgid "View site"
+#~ msgstr "Voir le site"
+
+#~ msgid "Home"
+#~ msgstr "Accueil"
+
+#~ msgid "Image slider folder"
+#~ msgstr "Dossier image pour le Slider de page d'accueil"
+
+#~ msgid "Recommended images size:"
+#~ msgstr "Taille recommandée des images:"
+
+#~ msgid ""
+#~ "Enter one image per line, in the format <b>file name|url|caption</b>. e."
+#~ "g.:"
+#~ msgstr ""
+#~ "Entrez une image par ligne, au format <b>nom du fichier | url | légende"
+#~ "\". par exemple:"
+
+#~ msgid ""
+#~ "Image files should be stored in /files/<b>%s</b>, you can change this "
+#~ "folder in the <a href=\"%s\">theme settings panel</a>"
+#~ msgstr ""
+#~ "Les fichiers image doivent être stockés dans /files/<b>%s</b>, vous "
+#~ "pouvez changer ce dossier dans le <a href=\"%s\">réglage des paramètres "
+#~ "thème</a>"
+
+#~ msgid "Special tags are allowed"
+#~ msgstr "Des balises spéciales sont autorisées"
+
+#~ msgid "Invalid description."
+#~ msgstr "Description invalide."
+
+#~ msgid "Invalid block body."
+#~ msgstr "Corps de bloc invalide."
+
+#~ msgid "Commenter name required."
+#~ msgstr "Le nom du commentateur est nécessaire."
+
+#~ msgid "Invalid email."
+#~ msgstr "E-mail invalide."
+
+#~ msgid "Invalid homepage URL."
+#~ msgstr "L'URL de la page d'accueil est invalide."
+
+#~ msgid "Comment body can not be empty."
+#~ msgstr "Le corps du commentaire ne peut pas être vide."
+
+#~ msgid "Invalid field label."
+#~ msgstr "Libellé (label) du champ est invalide."
+
+#~ msgid ""
+#~ "Field name must only contain letters and numbers. Between 3-32 characters "
+#~ "are required (character '_' is allowed)."
+#~ msgstr ""
+#~ "Nom du champ doit contenir que des lettres et des chiffres. Entre 3-32 "
+#~ "caractères sont requis (caractère '_' est autorisé)."
+
+#~ msgid "Field name already in use."
+#~ msgstr "Champ de nom déjà utilisé."
+
+#~ msgid "Select a field type."
+#~ msgstr "Sélectionnez un type de champ."
+
+#~ msgid "Code must be 3 letters (lowercase) long."
+#~ msgstr "Le code doit être de 3 lettres (minuscules) de long."
+
+#~ msgid "Language code already exists."
+#~ msgstr "Code de la langue existe déjà."
+
+#~ msgid "English name can not be empty."
+#~ msgstr "Nom anglais ne peut pas être vide."
+
+#~ msgid "Native name can not be empty."
+#~ msgstr "Nom dans la langue (natif) ne peut pas être vide."
+
+#~ msgid "Invalid language direction."
+#~ msgstr "Direction de langue invalide."
+
+#~ msgid "Original text can not be empty."
+#~ msgstr "Texte original ne peut pas être vide."
+
+#~ msgid "Original text already exists."
+#~ msgstr "Texte original existe déjà."
+
+#~ msgid "Menu title can not be empty."
+#~ msgstr "Titre du menu ne peut pas être vide."
+
+#~ msgid "Menu link title can not be empty."
+#~ msgstr "Le titre du lien de menu ne peut pas être vide."
+
+#~ msgid "Invalid link path."
+#~ msgstr "Chemin du lien invalide."
+
+#~ msgid "Node title can not be empty."
+#~ msgstr "Le titre du noeud ne peut pas être vide."
+
+#~ msgid "Type name can not be empty."
+#~ msgstr "Nom du type ne peut pas être vide."
+
+#~ msgid "Title field label can not be empty."
+#~ msgstr "Le titre du champ ne peut être vide"
+
+#~ msgid "Term name can not be empty."
+#~ msgstr "Le nom du terme ne peut pas être vide."
+
+#~ msgid "Vocabulary title can not be empty."
+#~ msgstr "Le titre du Vocabulaire ne peut pas être vide."
+
+#~ msgid "Role name can not be empty."
+#~ msgstr "Le nom de rôle ne peut pas être vide."
+
+#~ msgid "Role name already in use."
+#~ msgstr "Le nom de rôle est déjà utilisé."
+
+#~ msgid "Only letters and numbers allowed."
+#~ msgstr "Seules les lettres et les chiffres sont autorisés."
+
+#~ msgid "Minimum length of 3 characters."
+#~ msgstr "Longueur minimum de 3 caractères."
+
+#~ msgid "Maximum length of 32 characters."
+#~ msgstr "Longueur maximale de 32 caractères."
+
+#~ msgid "Username already in use."
+#~ msgstr "Nom d'utilisateur déjà utilisé."
+
+#~ msgid "You must enter your real name."
+#~ msgstr "Vous devez entrer votre vrai nom."
+
+#~ msgid "Email already in use."
+#~ msgstr "E-mail déjà utilisée."
+
+#~ msgid "Password mismatch or less than 6 characters."
+#~ msgstr "Mot de passe différent ou moins de 6 caractères."
+
+#~ msgid "Route classes must extend CakeRoute"
+#~ msgstr "Les classes Route doit s'étendre CakeRoute"
+
+#~ msgid "Debug setting does not allow access to this url."
+#~ msgstr "Debug setting does not allow access to this url."
+
+#~ msgid "The requested address %s was not found on this server."
+#~ msgstr "L'adresse demandée %s n'a pas été trouvée sur ce serveur."
+
+#~ msgid "Missing Controller '%s'"
+#~ msgstr "Contrôleur '%s' manquant"
+
+#~ msgid "Missing Method '%s' in '%s'"
+#~ msgstr "Méthode '%s' manquante dans '%s'"
+
+#~ msgid "Trying to access private method '%s' in '%s'"
+#~ msgstr "Tentative d'accès à une méthode privée '%s' dans '%s'"
+
+#~ msgid "Missing database table '%s' for model '%s'"
+#~ msgstr "Table '%s' manquante dans la base de données pour le modèle '%s'"
+
+#~ msgid "Missing Database"
+#~ msgstr "Base de données manquante"
+
+#~ msgid "Missing View '%s' for '%s' in '%s'"
+#~ msgstr "Vue '%s' manquante pour '%s' dans '%s'"
+
+#~ msgid "Missing Layout '%s'"
+#~ msgstr "Gabarit '%s' manquant"
+
+#~ msgid "Missing Database Connection. Try 'cake bake'"
+#~ msgstr "Connexion manquante à la base de données. Essayez 'cake bake'"
+
+#~ msgid "Missing Helper file '%s' for '%s'"
+#~ msgstr "Fichier d'assistant '%s' manquant pour '%s'"
+
+#~ msgid "Missing Helper class '%s' in '%s'"
+#~ msgstr "Classe de l'assistant '%s' manquante pour '%s'"
+
+#~ msgid "Missing Component file '%s' for '%s'"
+#~ msgstr "Fichier du composant '%s' manquant pour '%s'"
+
+#~ msgid "Missing Component class '%s' in '%s'"
+#~ msgstr "Classe du composant '%s' manquante dans '%s'"
+
+#~ msgid "Missing model '%s'"
+#~ msgstr "Modèle '%s' manquant"
+
+#~ msgid "Error: Your current Cake configuration is set to"
+#~ msgstr "Erreur : votre configuration actuelle de Cake mentionne"
+
+#~ msgid "an ACL implementation other than DB. Please change"
+#~ msgstr ""
+#~ "une implémentation d'ACL différente de la base de données. Merci de "
+#~ "changer"
+
+#~ msgid "your core config to reflect your decision to use"
+#~ msgstr ""
+#~ "votre configuration du coeur pour refléter votre décision d'utiliser"
+
+#~ msgid "DbAcl before attempting to use this script"
+#~ msgstr "DbAcl avant d'essayer d'utiliser ce script"
+
+#~ msgid "Current ACL Classname: %s"
+#~ msgstr "Nom de classe ACL actuel : %s"
+
+#~ msgid ""
+#~ "Your database configuration was not found. Take a moment to create one."
+#~ msgstr ""
+#~ "La configuration de votre base de données n'a pas été trouvée. Prenez le "
+#~ "temps d'en créer une."
+
+#~ msgid ""
+#~ "For help, run the 'help' command.  For help on a specific command, run "
+#~ "'help <command>'"
+#~ msgstr ""
+#~ "Pour de l'aide, lancez la commande 'help'. Pour de l'aide sur une "
+#~ "commande spécifique, lancez 'help <commande>'"
+
+#~ msgid "Could not find parent node using reference \"%s\""
+#~ msgstr ""
+#~ "Impossible de trouver le noeud parent en utilisant la référence \"%s\""
+
+#~ msgid "/ can not be used as an alias!"
+#~ msgstr "/ ne peut pas être utilisé comme alias !"
+
+#~ msgid "\\t/ is the root, please supply a sub alias"
+#~ msgstr "\\t/ est la racine, merci de fournir un sous alias"
+
+#~ msgid "New %s '%s' created.\n"
+#~ msgstr "Nouveau %s '%s' créé.\n"
+
+#~ msgid "There was a problem creating a new %s '%s'."
+#~ msgstr "Il y a eu un problème lors de la création d'un nouveau %s '%s'."
+
+#~ msgid "Node Not Deleted"
+#~ msgstr "Noeud non supprimé"
+
+#~ msgid "There was an error deleting the %s. Check that the node exists"
+#~ msgstr ""
+#~ "Une erreur est survenue lors de la suppression de %s. Vérifiez que le "
+#~ "noeud existe"
+
+#~ msgid "%s deleted"
+#~ msgstr "%s supprimé"
+
+#~ msgid ""
+#~ "Error in setting new parent. Please make sure the parent node exists, and "
+#~ "is not a descendant of the node specified."
+#~ msgstr ""
+#~ "Erreur lors de la définition d'un nouveau parent. Merci de vérifiez que "
+#~ "le noeud parent existe, et n'est pas un descendant du noeud spécifié."
+
+#~ msgid "Node parent set to %s"
+#~ msgstr "Noeud parent fixé à %s"
+
+#~ msgid "Supplied Node '%s' not found"
+#~ msgstr "Noeud fourni '%s' introuvable"
+
+#~ msgid "No tree returned."
+#~ msgstr "Aucun arbre retourné."
+
+#~ msgid "%s is not allowed."
+#~ msgstr "%s n'est pas autorisé."
+
+#~ msgid "Permission granted."
+#~ msgstr "Permission accordée."
+
+#~ msgid "Permission was not granted."
+#~ msgstr "La permission n'a pas été accordée."
+
+#~ msgid "Permission was not denied."
+#~ msgstr "La permission n'a pas été refusée."
+
+#~ msgid "Permission inherited."
+#~ msgstr "Permission héritée."
+
+#~ msgid "Permission was not inherited."
+#~ msgstr "La permission n'a pas été héritée."
+
+#~ msgid "Usage: cake acl <command> <arg1> <arg2>..."
+#~ msgstr "Usage : cake acl <commande> <arg1> <arg2> ..."
+
+#~ msgid ""
+#~ "Creates a new ACL object <node> under the parent specified by <parent>, "
+#~ "an id/alias."
+#~ msgstr ""
+#~ "Crée un nouvel objet ACL <noeud> sous le parent spécifié par <parent>, un "
+#~ "id / alias."
+
+#~ msgid ""
+#~ "The <parent> and <node> references can be in one of the following formats:"
+#~ msgstr ""
+#~ "Les références <parent> et <node> peuvent être dans l'un des formats "
+#~ "suivants :"
+
+#~ msgid ""
+#~ "<model>.<id> - The node will be bound to a specific record of the given "
+#~ "model"
+#~ msgstr ""
+#~ "<modele>.<id> - Le noeud sera lié à un enregistrement spécifique du "
+#~ "modèle donné"
+
+#~ msgid ""
+#~ "<alias> - The node will be given a string alias (or path, in the case of "
+#~ "<parent>),"
+#~ msgstr ""
+#~ "<alias> - Un alias sera attribué au noeud (ou chemin, dans le cas de "
+#~ "<parent>),"
+
+#~ msgid ""
+#~ "i.e. 'John'.  When used with <parent>, this takes the form of an alias "
+#~ "path,"
+#~ msgstr ""
+#~ "i.e 'Jean'. Lorsque utilisé avec <parent>, cela prend la forme d'un alias "
+#~ "de chemin, "
+
+#~ msgid "i.e. <group>/<subgroup>/<parent>."
+#~ msgstr "i.e. <groupe>/<sous-groupe>/<parent>."
+
+#~ msgid ""
+#~ "To add a node at the root level, enter 'root' or '/' as the <parent> "
+#~ "parameter."
+#~ msgstr ""
+#~ "Pour ajouter un noeud à la racine, saisissez 'root' ou '/' pour le "
+#~ "paramètre <parent>."
+
+#~ msgid ""
+#~ "Deletes the ACL object with the given <node> reference (see 'create' for "
+#~ "info on node references)."
+#~ msgstr ""
+#~ "Supprime l'objet ACL ayant la référence <noeud> donnée (voir 'create' "
+#~ "pour des informations sur les références de noeud)."
+
+#~ msgid ""
+#~ "Moves the ACL object specified by <node> beneath the parent ACL object "
+#~ "specified by <parent>."
+#~ msgstr ""
+#~ "Déplace l'objet ACL spécifié par <noeud> sous l'objet ACL parent spécifié "
+#~ "par <parent>."
+
+#~ msgid "To identify the node and parent, use the row id."
+#~ msgstr "Pour identifier le noeud et son parent, utilisez le rang id."
+
+#~ msgid "Returns the path to the ACL object specified by <node>. This command"
+#~ msgstr ""
+#~ "Retourne le chemin vers l'objet ACL spécifié par <noeud>. Cette commande "
+
+#~ msgid ""
+#~ "is useful in determining the inhertiance of permissions for a certain"
+#~ msgstr ""
+#~ "est utile pour déterminer l'héritage des permissions pour un certain "
+
+#~ msgid "object in the tree."
+#~ msgstr "objet dans l'arbre."
+
+#~ msgid ""
+#~ "For more detailed parameter usage info, see help for the 'create' command."
+#~ msgstr ""
+#~ "Pour plus de détails sur l'utilisation des paramètres, regardez l'aide de "
+#~ "la commande 'create'."
+
+#~ msgid "or"
+#~ msgstr "ou"
+
+#~ msgid "Use this command to check ACL permissions."
+#~ msgstr "Utilisez cette commande pour vérifier les permissions ACL."
+
+#~ msgid "Use this command to grant ACL permissions. Once executed, the ARO"
+#~ msgstr ""
+#~ "Utilisez cette commande pour accorder les permissions ACL. Une fois "
+#~ "exécutée, l'ARO "
+
+#~ msgid "specified (and its children, if any) will have ALLOW access to the"
+#~ msgstr ""
+#~ "spécifié (et ces enfants si il en a) auront un accès ALLOW (autorisés) à "
+
+#~ msgid "specified ACO action (and the ACO's children, if any)."
+#~ msgstr "l'action ACO spécifiée (et les enfants de cet ACO si il en a)."
+
+#~ msgid "Use this command to deny ACL permissions. Once executed, the ARO"
+#~ msgstr ""
+#~ "Utilisez cette commande pour refuser les permissions ACL. Une fois "
+#~ "exécutée, l'ARO"
+
+#~ msgid "specified (and its children, if any) will have DENY access to the"
+#~ msgstr ""
+#~ "spécifié (et ces enfants si il en a) auront un accès DENY (refusé) à "
+
+#~ msgid "Use this command to force a child ARO object to inherit its"
+#~ msgstr ""
+#~ "Utilisez cette commande pour forcer un objet ARO enfant à hériter ses "
+
+#~ msgid "permissions settings from its parent."
+#~ msgstr "paramètres de permissions de son parent."
+
+#~ msgid "The view command will return the ARO or ACO tree. The optional"
+#~ msgstr "La commande view retournera l'arbre des ARO ou ACO."
+
+#~ msgid ""
+#~ "id/alias parameter allows you to return only a portion of the requested "
+#~ "tree."
+#~ msgstr ""
+#~ "Le paramètre optionnel id / alias vous permet de retourner seulement une "
+#~ "portion de l'arbre demandé."
+
+#~ msgid "Uses this command : cake schema run create DbAcl"
+#~ msgstr "Utilise cette commande : cake schema run create DbAcl"
+
+#~ msgid "Displays this help message, or a message on a specific command."
+#~ msgstr ""
+#~ "Affiche ce message d'aide ou un message sur une commande spécifique."
+
+#~ msgid "Command '%s' not found"
+#~ msgstr "Commande '%s' introuvable"
+
+#~ msgid "Missing/Unknown node type: '%s'"
+#~ msgstr "Type de noeud Inconnu/Manquant : '%s'"
+
+#~ msgid "Please specify which ACL object type you wish to create."
+#~ msgstr "Merci de spécifier quel type d'objet ACL vous souhaitez créer."
+
+#~ msgid "%s::%s() could not be found"
+#~ msgstr "%s::%s() est introuvable"
+
+#~ msgid ""
+#~ "Select a number to see the more information about a specific method. q to "
+#~ "quit. l to list."
+#~ msgstr ""
+#~ "Sélectionnez un nombre pour avoir plus d'informations sur une méthode "
+#~ "spécifique. q pour quitter. l pour lister."
+
+#~ msgid "Done"
+#~ msgstr "Effectué"
+
+#~ msgid "%s could not be found"
+#~ msgstr "%s est introuvable"
+
+#~ msgid ""
+#~ "%s directory could not be found.\n"
+#~ "Be sure you have created %s"
+#~ msgstr ""
+#~ "Le dossier %s est introuvable.\n"
+#~ "Vérifiez que vous avez créé %s"
+
+#~ msgid ""
+#~ "You have made an invalid selection. Please choose a type of class to Bake "
+#~ "by entering D, M, V, or C."
+#~ msgstr ""
+#~ "Vous avez effectué une sélection invalide. Merci de choisir un type de "
+#~ "classe à Cuisiner en saisissant D, M, V ou C."
+
+#~ msgid "%s Model was baked."
+#~ msgstr "Le modèle %s a été cuisiné."
+
+#~ msgid "%s Controller was baked."
+#~ msgstr "Le contrôleur %s a été cuisiné."
+
+#~ msgid "Bake All complete"
+#~ msgstr "Cuisson Totale terminée"
+
+#~ msgid "Bake All could not continue without a valid model"
+#~ msgstr "La Cuisson Totale ne peut pas continuer sans un modèle valide"
+
+#~ msgid "I18n Shell"
+#~ msgstr "Shell I18n"
+
+#~ msgid "[E]xtract POT file from sources"
+#~ msgstr "[E]xtraire un fichier POT depuis les sources"
+
+#~ msgid "[I]nitialize i18n database table"
+#~ msgstr "[I]nitialiser la table i18n de la base de données"
+
+#~ msgid ""
+#~ "You have made an invalid selection. Please choose a command to execute by "
+#~ "entering E, I, H, or Q."
+#~ msgstr ""
+#~ "Vous avez fait une sélection invalide. Merci de choisir une commande à "
+#~ "exécuter en saisissant E, I, H ou Q."
+
+#~ msgid "I18n Shell:"
+#~ msgstr "Shell I18n : "
+
+#~ msgid "I18n Shell initializes i18n database table for your application"
+#~ msgstr ""
+#~ "Le shell I18n initialise la table i18n de votre base de données pour "
+#~ "votre application"
+
+#~ msgid "and generates .pot file(s) with translations."
+#~ msgstr "et génère des fichiers .pot avec les traductions."
+
+#~ msgid "Schema could not be found"
+#~ msgstr "Le schema est introuvable"
+
+#~ msgid "Generating Schema..."
+#~ msgstr "Génération du Schéma..."
+
+#~ msgid "Schema file: %s generated"
+#~ msgstr "Fichier de schéma : %s généré"
+
+#~ msgid "SQL dump file created in %s"
+#~ msgstr "Fichier SQL de dump créé dans %s"
+
+#~ msgid "SQL dump could not be created"
+#~ msgstr "Le fichier SQL de dump ne peut pas être créé"
+
+#~ msgid "Command not found"
+#~ msgstr "Commande non trouvée"
+
+#~ msgid "Performing a dry run."
+#~ msgstr "Effectuer un essai à vide."
+
+#~ msgid "Schema is up to date."
+#~ msgstr "Le schéma est à jour."
+
+#~ msgid "The following table(s) will be dropped."
+#~ msgstr "La(les) table(s) suivante(s) sera(ont) supprimée(s)."
+
+#~ msgid "Are you sure you want to drop the table(s)?"
+#~ msgstr "Etes-vous sûr de vouloir supprimer la(les) table(s) ?"
+
+#~ msgid "Dropping table(s)."
+#~ msgstr "Suppression table(s)"
+
+#~ msgid "The following table(s) will be created."
+#~ msgstr "La(les) table(s) suivante(s) sera(ont) créée(s)."
+
+#~ msgid "Creating table(s)."
+#~ msgstr "Création table(s)."
+
+#~ msgid "End create."
+#~ msgstr "Fin de la création."
+
+#~ msgid "Comparing Database to Schema..."
+#~ msgstr "Comparaison de la Base de données avec le Schéma..."
+
+#~ msgid "The following statements will run."
+#~ msgstr "Les expressions ci-après seront exécutées."
+
+#~ msgid "Are you sure you want to alter the tables?"
+#~ msgstr "Etes-vous sûr de vouloir modifier les tables ?"
+
+#~ msgid "Updating Database..."
+#~ msgstr "Mise à jour de la base de données..."
+
+#~ msgid "End update."
+#~ msgstr "Fin de la mise à jour."
+
+#~ msgid "%s is up to date."
+#~ msgstr "%s est à jour."
+
+#~ msgid "Dry run for %s :"
+#~ msgstr "Essai à vide pour %s : "
+
+#~ msgid "%s updated."
+#~ msgstr "%s mis à jour."
+
+#~ msgid "Creating file %s"
+#~ msgstr "Création du fichier %s"
+
+#~ msgid "File exists, overwrite?"
+#~ msgstr "Le fichier existe, écraser ?"
+
+#~ msgid "Quitting."
+#~ msgstr "Quitter."
+
+#~ msgid "Skip"
+#~ msgstr "Passer"
+
+#~ msgid "Error! Could not write to"
+#~ msgstr "Erreur ! Impossible d'écrire sur "
+
+#~ msgid "Would you like to build your controller interactively?"
+#~ msgstr "Voulez-vous construire votre contrôleur de manière interactive ?"
+
+#~ msgid "Warning: Choosing no will overwrite the %sController."
+#~ msgstr "Attention : choisir 'non' écrasera %sController."
+
+#~ msgid "Would you like to use scaffolding?"
+#~ msgstr "Voulez-vous utiliser le scaffolding (prototypage rapide) ?"
+
+#~ msgid ""
+#~ "Would you like to include some basic class methods (index(), add(), "
+#~ "view(), edit())?"
+#~ msgstr ""
+#~ "Voulez-vous inclure des méthodes de base (index(), add(), view(), "
+#~ "edit()) ?"
+
+#~ msgid "Would you like to create the methods for admin routing?"
+#~ msgstr "Voulez-vous créer des méthodes pour le routage admin ?"
+
+#~ msgid ""
+#~ "Would you like this controller to use other helpers besides HtmlHelper "
+#~ "and FormHelper?"
+#~ msgstr ""
+#~ "Voulez-vous que ce contrôleur utilise d'autres helpers en plus de "
+#~ "HtmlHelper et FormHelper ?"
+
+#~ msgid ""
+#~ "Please provide a comma separated list of the other helper names you'd "
+#~ "like to use.\n"
+#~ "Example: 'Ajax, Javascript, Time'"
+#~ msgstr ""
+#~ "Merci de fournir la liste des noms des autres helpers que vous souhaitez "
+#~ "utiliser, séparés par une virgule.\n"
+#~ "Exemple : 'Ajax, Javascript, Time'"
+
+#~ msgid "Would you like this controller to use any components?"
+#~ msgstr "Voulez-vous que ce contrôleur utilise des composants ?"
+
+#~ msgid ""
+#~ "Please provide a comma separated list of the component names you'd like "
+#~ "to use.\n"
+#~ "Example: 'Acl, Security, RequestHandler'"
+#~ msgstr ""
+#~ "Merci de fournir la liste des noms des composants que vous souhaitez "
+#~ "utiliser, séparés par une virgule.\n"
+#~ "Exemple : 'Acl, Security, RequestHandler'"
+
+#~ msgid "Would you like to use Sessions?"
+#~ msgstr "Voulez-vous utiliser les Sessions ?"
+
+#~ msgid "Look okay?"
+#~ msgstr "Est-ce que cela vous semble correct ?"
+
+#~ msgid ""
+#~ "You must have a model for this class to build scaffold methods. Please "
+#~ "try again."
+#~ msgstr ""
+#~ "Vous devez avoir un modèle pour cette classe afin de construire des "
+#~ "méthodes de scaffolding. Merci de réessayer."
+
+#~ msgid "Your database does not have any tables."
+#~ msgstr "Votre base de données ne contient aucune table."
+
+#~ msgid ""
+#~ "Enter a number from the list above, type in the name of another "
+#~ "controller, or 'q' to exit"
+#~ msgstr ""
+#~ "Saisissez un chiffre de la liste ci-dessus, tapez le nom d'un autre "
+#~ "contrôleur ou 'q' pour quitter"
+
+#~ msgid "Exit"
+#~ msgstr "Quitter"
+
+#~ msgid ""
+#~ "The Controller name you supplied was empty, or the number \n"
+#~ "you selected was not an option. Please try again."
+#~ msgstr ""
+#~ "Le nom de Contrôleur que vous avez fourni était vide ou le numéro\n"
+#~ "que vous avez sélectionné n'était pas une option possible. Merci de "
+#~ "réessayer."
+
+#~ msgid "Use Database Config"
+#~ msgstr "Configuration de base de données à utiliser"
+
+#~ msgid ""
+#~ "Given your model named '%s', Cake would expect a database table named %s"
+#~ msgstr ""
+#~ "D'après votre modèle nommé '%s', Cake s'attend à trouver une table nommée "
+#~ "%s"
+
+#~ msgid "Do you want to use this table?"
+#~ msgstr "Voulez-vous utiliser cette table ?"
+
+#~ msgid "What is the name of the table (enter \"null\" to use NO table)?"
+#~ msgstr ""
+#~ "Quel est le nom de la table (saisissez \"null\" pour n'utiliser AUCUNE "
+#~ "table) ?"
+
+#~ msgid ""
+#~ "Would you like to supply validation criteria for the fields in your model?"
+#~ msgstr ""
+#~ "Voulez-vous saisir des critères de validation pour les champs de votre "
+#~ "modèle ?"
+
+#~ msgid "What is the primaryKey?"
+#~ msgstr "Quelle est la clé primaire ?"
+
+#~ msgid ""
+#~ "Would you like to define model associations (hasMany, hasOne, belongsTo, "
+#~ "etc.)?"
+#~ msgstr ""
+#~ "Voulez-vous définir des associations de modèles (hasMany, hasOne, "
+#~ "belongsTo, etc...) ?"
+
+#~ msgid "The following Model will be created:"
+#~ msgstr "Le Modèle suivant sera créé : "
+
+#~ msgid "One moment while the associations are detected."
+#~ msgstr "Un petit moment le temps que les associations soient détectées."
+
+#~ msgid "None found."
+#~ msgstr "Aucune trouvée."
+
+#~ msgid "Please confirm the following associations:"
+#~ msgstr "Merci de confirmer les associations suivantes : "
+
+#~ msgid "This is a self join. Use %s as the alias"
+#~ msgstr "Ceci est une auto-jointure. Utilisez %s comme alias"
+
+#~ msgid "Specify an alternate alias."
+#~ msgstr "Spécifiez un alias alternatif."
+
+#~ msgid "Would you like to define some additional model associations?"
+#~ msgstr "Voulez-vous définir des associations de modèles supplémentaires ?"
+
+#~ msgid "What is the association type?"
+#~ msgstr "Quel est le type d'association ?"
+
+#~ msgid ""
+#~ "The selection you entered was invalid. Please enter a number between 1 "
+#~ "and 4."
+#~ msgstr ""
+#~ "La sélection saisie est invalide. Merci de saisir un nombre entre 1 et 4."
+
+#~ msgid ""
+#~ "For the following options be very careful to match your setup exactly. "
+#~ "Any spelling mistakes will cause errors."
+#~ msgstr ""
+#~ "Soyez très attentif à ce que les options suivantes correspondent "
+#~ "parfaitement à votre configuration. Toute faute de frappe engendrera des "
+#~ "erreurs."
+
+#~ msgid "What is the alias for this association?"
+#~ msgstr "Quel est l'alias pour cette association ?"
+
+#~ msgid "What className will %s use?"
+#~ msgstr "Quel nom de classe utilisera %s ?"
+
+#~ msgid "What is the table for this model?"
+#~ msgstr "Quelle est la table pour ce modèle ?"
+
+#~ msgid "A helpful List of possible keys"
+#~ msgstr "Une liste utile de clés possibles"
+
+#~ msgid "What is the foreignKey?"
+#~ msgstr "Quelle est la clé étrangère (foreignKey) ?"
+
+#~ msgid "What is the foreignKey? Specify your own."
+#~ msgstr "Quelle est la clé étrangère (foreignKey) ? Saisissez la vôtre."
+
+#~ msgid "What is the associationForeignKey?"
+#~ msgstr "Quelle est la clé étrangère d'association (associationForeignkey) ?"
+
+#~ msgid "What is the joinTable?"
+#~ msgstr "Quelle est la table de jointure (joinTable) ?"
+
+#~ msgid "Define another association?"
+#~ msgstr "Définir une autre association ?"
+
+#~ msgid "Possible Models based on your current database:"
+#~ msgstr "Modèles possibles d'après votre base de données actuelle :"
+
+#~ msgid ""
+#~ "Enter a number from the list above, type in the name of another model, or "
+#~ "'q' to exit"
+#~ msgstr ""
+#~ "Saisissez un chiffre de la liste ci-dessus, tapez le nom d'un autre "
+#~ "modèle ou 'q' pour quitter"
+
+#~ msgid ""
+#~ "The model name you supplied was empty, or the number you selected was not "
+#~ "an option. Please try again."
+#~ msgstr ""
+#~ "Le nom du modèle que vous avez soumis était vide ou le numéro que vous "
+#~ "avez sélectionné n'était pas une option valide. Merci de réessayer."
+
+#~ msgid "Enter the name of the plugin in CamelCase format"
+#~ msgstr "Saisissez le nom du plugin au format CamelCase"
+
+#~ msgid "An error occured trying to bake: %s in %s"
+#~ msgstr "Une erreur est survenue en essayant de faire cuire : %s dans %s"
+
+#~ msgid "Do you want verbose output?"
+#~ msgstr "Voulez-vous une sortie verbeuse ?"
+
+#~ msgid "Created: %s in %s"
+#~ msgstr "Créé : %s dans %s"
+
+#~ msgid "The Welcome page was NOT created"
+#~ msgstr "La page d'accueil n'a PAS été créée"
+
+#~ msgid "Random hash key created for 'Security.salt'"
+#~ msgstr "Clé de hash aléatoirement générée pour 'Security.salt'"
+
+#~ msgid ""
+#~ "Unable to generate random hash for 'Security.salt', you should change it "
+#~ "in %s"
+#~ msgstr ""
+#~ "Impossible de générer un hash aléatoire pour 'Security.salt', vous "
+#~ "devriez le modifier dans %s"
+
+#~ msgid "CAKE_CORE_INCLUDE_PATH set to %s in webroot/index.php"
+#~ msgstr "CAKE_CORE_INCLUDE_PATH fixé à %s dans webroot/index.php"
+
+#~ msgid "CAKE_CORE_INCLUDE_PATH set to %s in webroot/test.php"
+#~ msgstr "CAKE_CORE_INCLUDE_PATH fixé à %s dans webroot/test.php"
+
+#~ msgid "Remember to check these value after moving to production server"
+#~ msgstr ""
+#~ "N'oubliez pas de vérifier ces valeurs lorsque vous passerez sur le "
+#~ "serveur de production"
+
+#~ msgid "Unable to set CAKE_CORE_INCLUDE_PATH, you should change it in %s"
+#~ msgstr ""
+#~ "Impossible de définir CAKE_CORE_INCLUDE_PATH, vous devriez faire la "
+#~ "modification dans %s"
+
+#~ msgid "chmod -R 0777 %s"
+#~ msgstr "chmod -R 0777 %s"
+
+#~ msgid ""
+#~ "What is the path to the directory layout you wish to copy?\n"
+#~ "Example: %s"
+#~ msgstr ""
+#~ "Quel est le chemin du dossier gabarit que vous souhaitez copier ?\n"
+#~ "Exemple : %s"
+
+#~ msgid "Directory path does not exist please choose another:"
+#~ msgstr "Le chemin de répertoire n'existe pas, merci d'en choisir un autre :"
+
+#~ msgid "Enter the class to test or (q)uit"
+#~ msgstr "Saisissez la classe à tester ou (q)uittez"
+
+#~ msgid "Enter the name for the test or (q)uit"
+#~ msgstr "Saisissez le nom du test ou (q)uittez"
+
+#~ msgid "Enter a test case or (q)uit"
+#~ msgstr "Saisissez un cas d'utilisation ou (q)uittez"
+
+#~ msgid "Test baked\n"
+#~ msgstr "Les tests sont cuits\n"
+
+#~ msgid "Is this correct?"
+#~ msgstr "Est-ce correct ?"
+
+#~ msgid ""
+#~ "The file '%s' could not be found.\n"
+#~ "In order to bake a view, you'll need to first create the controller."
+#~ msgstr ""
+#~ "Le fichier '%s' est introuvable.\n"
+#~ "Afin de pouvoir cuisiner une vue, vous devez d'abord créer le contrôleur."
+
+#~ msgid "CakePHP: the rapid development php framework:"
+#~ msgstr "CakePHP : le framework de développement rapide php :"
+
+#~ msgid "CakePHP: the rapid development php framework"
+#~ msgstr "CakePHP : le framework de développement rapide php"
+
+#~ msgid "Method write() not implemented in %s"
+#~ msgstr "Méthode write() non implémentée dans %s"
+
+#~ msgid "Method read() not implemented in %s"
+#~ msgstr "Méthode read() non implémentée dans %s"
+
+#~ msgid "(ClassRegistry::init() could not create instance of %1$s class %2$s "
+#~ msgstr ""
+#~ "(ClassRegistry::init() ne peut pas créer une instance de la classe %1$s "
+#~ "%2$s "
+
+#~ msgid ""
+#~ "(ClassRegistry::init() Attempted to create instance of a class with a "
+#~ "numeric name"
+#~ msgstr ""
+#~ "(ClassRegistry::init() a essayé de créer l'instance d'une classe ayant un "
+#~ "nom numérique"
+
+#~ msgid "Configure::load() - no variable $config found in %s.php"
+#~ msgstr "Configure::load() - aucune variable $config trouvée dans %s.php"
+
+#~ msgid ""
+#~ "Can't find application core file. Please create %score.php, and make sure "
+#~ "it is readable by PHP."
+#~ msgstr ""
+#~ "Impossible de trouver le fichier du coeur de l'application. Merci de "
+#~ "créer %score.php, et de vous assurer qu'il est lisible par PHP."
+
+#~ msgid ""
+#~ "Can't find application bootstrap file. Please create %sbootstrap.php, and "
+#~ "make sure it is readable by PHP."
+#~ msgstr ""
+#~ "Impossible de trouver le fichier de bootstrap de l'application. Merci de "
+#~ "créer %sbootstrap.php, et de vous assurer qu'il est lisible par PHP."
+
+#~ msgid ""
+#~ "Please change the value of 'Security.salt' in app/config/core.php to a "
+#~ "salt value specific to your application"
+#~ msgstr ""
+#~ "Merci de changer la valeur de 'Security.salt' dans app/config/core.php et "
+#~ "de lui donner une valeur spécifique à votre application"
+
+#~ msgid "Not Found"
+#~ msgstr "Introuvable"
+
+#~ msgid "Missing Controller"
+#~ msgstr "Contrôleur manquant"
+
+#~ msgid "Missing Method in Controller"
+#~ msgstr "Méthode manquante dans le Contrôleur"
+
+#~ msgid "Trying to access private method in class"
+#~ msgstr "Tentative d'accès à une méthode privée de la classe"
+
+#~ msgid "Scaffold Missing Database Connection"
+#~ msgstr "Scaffold ne trouve pas de connexion à la base de données"
+
+#~ msgid "Missing View"
+#~ msgstr "Vue manquante"
+
+#~ msgid "Missing Layout"
+#~ msgstr "Gabarit manquant"
+
+#~ msgid "Missing Database Connection"
+#~ msgstr "Connexion à la base de données manquante"
+
+#~ msgid "Missing Helper File"
+#~ msgstr "Fichier du Helper manquant"
+
+#~ msgid "Missing Helper Class"
+#~ msgstr "Classe du Helper manquante"
+
+#~ msgid "Missing Component Class"
+#~ msgstr "Classe du Composant manquante"
+
+#~ msgid "Missing Model"
+#~ msgstr "Modèle manquant"
+
+#~ msgid "%s changed to %s"
+#~ msgstr "%s modifié en %s"
+
+#~ msgid "%s NOT changed to %s"
+#~ msgstr "%s NON modifié en %s"
+
+#~ msgid "%s created"
+#~ msgstr "%s créé"
+
+#~ msgid "%s NOT created"
+#~ msgstr "%s NON créé"
+
+#~ msgid "%s NOT removed"
+#~ msgstr "%s NON supprimé"
+
+#~ msgid "%s copied to %s"
+#~ msgstr "%s copié vers %s"
+
+#~ msgid "%s NOT copied to %s"
+#~ msgstr "%s NON copié vers %s"
+
+#~ msgid "%s not created"
+#~ msgstr "%s non créé"
+
+#~ msgid ""
+#~ "HttpSocket::decodeBody - Unknown encoding: %s. Activate quirks mode to "
+#~ "surpress error."
+#~ msgstr ""
+#~ "HttpSocket::decodeBody - Encodage %s inconnu. Activez le quirks mode pour "
+#~ "ignorer l'erreur."
+
+#~ msgid ""
+#~ "HttpSocket::decodeChunkedBody - Could not parse malformed chunk. Activate "
+#~ "quirks mode to do this."
+#~ msgstr ""
+#~ "HttpSocket::decodeChunkedBody - Impossible de parser un tronçon mal "
+#~ "formé. Activez le quirks mode pour le faire."
+
+#~ msgid ""
+#~ "HttpSocket::buildRequestLine - Passed an invalid request line string. "
+#~ "Activate quirks mode to do this."
+#~ msgstr ""
+#~ "HttpSocket::buildRequestLine - La ligne de requête passée est invalide. "
+#~ "Activez le quirks mode pour le faire."
+
+#~ msgid ""
+#~ "HttpSocket::buildRequestLine - The \"*\" asterisk character is only "
+#~ "allowed for the following methods: %s. Activate quirks mode to work "
+#~ "outside of HTTP/1.1 specs."
+#~ msgstr ""
+#~ "HttpSocket::buildRequestLine - L'astérisque \"*\"  n'est autorisé que "
+#~ "pour les méthodes suivantes : %s. Activez le quirks mode pour que çà "
+#~ "marche sans tenir compte des spécifications HTTP/1.1."
+
+#~ msgid "Magic method handler call__ not defined in %s"
+#~ msgstr "Méthode magique call__ non définie dans %s"
+
+#~ msgid "You cannot use an empty key for Security::cipher()"
+#~ msgstr "Vous ne pouvez pas utiliser une clé vide pour Security::cipher()"
+
+#~ msgid ""
+#~ "You must set the all Configure::write('Session.*') in core.php to use "
+#~ "database storage"
+#~ msgstr ""
+#~ "Vous devez définir toutes les clés Configure::write('Session.*') dans "
+#~ "core.php pour utiliser le stockage par base de données"
+
+#~ msgid "Connection timed out"
+#~ msgstr "Connexion périmée"
+
+#~ msgid "You must define the $operator parameter for Validation::comparison()"
+#~ msgstr ""
+#~ "Vous devez définir le paramètre $operator pour Validation::comparison()"
+
+#~ msgid "You must define a regular expression for Validation::custom()"
+#~ msgstr ""
+#~ "Vous devez définir une expression régulière pour Validation::custom()"
+
+#~ msgid ""
+#~ "Controller::__construct() : Can not get or parse my own class name, "
+#~ "exiting."
+#~ msgstr ""
+#~ "Controller::__construct() : Impossible de récupérer ou parser mon propre "
+#~ "nom de classe, adieu."
+
+#~ msgid "%s::isAuthorized() is not defined."
+#~ msgstr "%s::isAuthorized() n'est pas défini."
+
+#~ msgid ""
+#~ "Controller::paginate() - can't find model %1$s in controller "
+#~ "%2$sController"
+#~ msgstr ""
+#~ "Controller::paginate() - impossible de trouver le modèle %1$s dans le "
+#~ "contrôleur %2$sController"
+
+#~ msgid "Scaffold :: "
+#~ msgstr "Scaffold :: "
+
+#~ msgid "No id set for %s::view()"
+#~ msgstr "Aucun id défini pour %s::view()"
+
+#~ msgid "Invalid id for %s::edit()"
+#~ msgstr "Id invalide pour %s::edit()"
+
+#~ msgid "Please correct errors below."
+#~ msgstr "Merci de corriger les erreurs ci-dessous."
+
+#~ msgid "No id set for %s::delete()"
+#~ msgstr "Aucun id défini pour %s::delete()"
+
+#~ msgid "There was an error deleting the %1$s with id: %2$d"
+#~ msgstr ""
+#~ "Une erreur est survenue lors de la suppression de %1$s ayant pour id : "
+#~ "%2$d"
+
+#~ msgid ""
+#~ "[acl_base] The AclBase class constructor has been called, or the class "
+#~ "was instantiated. This class must remain abstract. Please refer to the "
+#~ "Cake docs for ACL configuration."
+#~ msgstr ""
+#~ "[acl_base] Le constructeur de la classe AclBase a été appelé ou la classe "
+#~ "a été instanciée. Cette classe doit rester abstraite. Merci de se référer "
+#~ "à la documentation de Cake concernant la configuration des ACL."
+
+#~ msgid "ACO permissions key %s does not exist in DbAcl::check()"
+#~ msgstr "Les clés de permissions ACO %s n'existent pas dans DbAcl::check()"
+
+#~ msgid "DbAcl::allow() - Invalid node"
+#~ msgstr "DbAcl::allow() - Noeud invalide"
+
+#~ msgid ""
+#~ "Could not find $userModel. Please set AuthComponent::$userModel in "
+#~ "beforeFilter()."
+#~ msgstr ""
+#~ "$userModel introuvable. Merci de renseigner AuthComponent::$userModel "
+#~ "dans beforeFilter()."
+
+#~ msgid ""
+#~ "Could not find %s. Set AuthComponent::$object in beforeFilter() or pass a "
+#~ "valid object"
+#~ msgstr ""
+#~ "%s introuvable. Renseignez AuthComponent::$object dans beforeFilter() ou "
+#~ "passez un objet valide"
+
+#~ msgid ""
+#~ "Auth::isAuthorized() - $authorize is set to an incorrect value.  Allowed "
+#~ "settings are: \"actions\", \"crud\", \"model\" or null."
+#~ msgstr ""
+#~ "Auth::isAuthorized() - $authorize contient une valeur incorrecte. Les "
+#~ "paramètres autorisés sont : \"actions\", \"crud\", \"model\" ou null."
+
+#~ msgid "Auth::getModel() - Model is not set or could not be found"
+#~ msgstr "Auth::getModel() - Le modèle n'est pas défini ou est introuvable"
+
+#~ msgid ""
+#~ "SecurityComponent::loginCredentials() - Server does not support digest "
+#~ "authentication"
+#~ msgstr ""
+#~ "SecurityComponent::loginCredentials() - Le serveur ne supporte pas "
+#~ "l'authentification \"digest\""
+
+#~ msgid "ConnectionManager::getDataSource - Non-existent data source %s"
+#~ msgstr "ConnectionManager::getDataSource - Source de données %s inexistante"
+
+#~ msgid "Unable to load DataSource file %s.php"
+#~ msgstr "Impossible de charger le fichier de Source de Données %s.php"
+
+#~ msgid ""
+#~ "(Model::getColumnTypes) Unable to build model field data. If you are "
+#~ "using a model without a database table, try implementing schema()"
+#~ msgstr ""
+#~ "(Model::getColumnTypes) Impossible de construire les données des champs "
+#~ "du modèle. Si vous utilisez un modèle sans table de base de données, "
+#~ "essayez d'implémenter schema()"
+
+#~ msgid "Model \"%s\" is not associated with model \"%s\""
+#~ msgstr "Le modèle \"%s\" n'est pas associé avec le modèle \"%s\""
+
+#~ msgid "Datasource %s for TranslateBehavior of model %s is not connected"
+#~ msgstr ""
+#~ "La source de données %s pour le TranslateBehavior du modèle %s n'est pas "
+#~ "connectée"
+
+#~ msgid "Association %s is already binded to model %s"
+#~ msgstr "L'association %s est déjà reliée au modèle %s"
+
+#~ msgid "SQL Error in model %s:"
+#~ msgstr "Erreur SQL dans le modèle %s :"
+
+#~ msgid "Must specify table to operate on constraints"
+#~ msgstr "Vous devez spécifier une table pour agir sur les contraintes"
+
+#~ msgid "DboOracle::constraint() accepts only enable, disable, or list"
+#~ msgstr "DboOracle::constraint() n'accepte que enable, disable ou list"
+
+#~ msgid "Error in view %s, got: <blockquote>%s</blockquote>"
+#~ msgstr "Erreur dans la vue %s : <blockquote>%s</blockquote>"
+
+#~ msgid "Error in layout %s, got: <blockquote>%s</blockquote>"
+#~ msgstr "Erreur dans le gabarit %s : <blockquote>%s</blockquote>"
+
+#~ msgid "Missing Method in %s"
+#~ msgstr "Méthode manquante dans %s"
+
+#~ msgid "The action %1$s is not defined in controller %2$s"
+#~ msgstr "L'action %1$s n'est pas définie dans le contrôleur %2$s"
+
+#~ msgid "Create %1$s%2$s in file: %3$s."
+#~ msgstr "Créez %1$s%2$s dans le fichier : %3$s."
+
+#~ msgid "If you want to customize this error message, create %s."
+#~ msgstr "Si vous voulez personnaliser ce message d'erreur, créez %s."
+
+#~ msgid "Component class %1$s in %2$s was not found."
+#~ msgstr "La classe du Composant %1$s dans %2$s est introuvable."
+
+#~ msgid "Create the class %s in file: %s"
+#~ msgstr "Créez la classe %s dans le fichier : %s"
+
+#~ msgid "%s requires a database connection"
+#~ msgstr "%s nécessite une connexion à la base de données"
+
+#~ msgid "Confirm you have created the file : %s."
+#~ msgstr "Confirmez que vous avez créé le fichier : %s."
+
+#~ msgid "%s could not be found."
+#~ msgstr "%s est introuvable."
+
+#~ msgid "Create the class %s below in file: %s"
+#~ msgstr "Créez la classe %s ci-dessous dans le fichier : %s"
+
+#~ msgid "The helper class <em>%s</em> can not be found or does not exist."
+#~ msgstr "La classe Helper <em>%s</em> est introuvable ou n'existe pas."
+
+#~ msgid "Create the class below in file: %s"
+#~ msgstr "Créez la classe ci-dessous dans le fichier : %s"
+
+#~ msgid "The helper file %s can not be found or does not exist."
+#~ msgstr "Le fichier Helper %s est introuvable ou n'existe pas."
+
+#~ msgid "The layout file %s can not be found or does not exist."
+#~ msgstr "Le fichier gabarit %s est introuvable ou n'existe pas."
+
+#~ msgid "Confirm you have created the file: %s"
+#~ msgstr "Confirmez que vous avez créé le fichier : %s"
+
+#~ msgid "<em>%s</em> could not be found."
+#~ msgstr "<em>%s</em> est introuvable."
+
+#~ msgid "Scaffold requires a database connection"
+#~ msgstr "Le scaffold a besoin d'une connexion à la base de données"
+
+#~ msgid "Database table %1$s for model %2$s was not found."
+#~ msgstr "La table %1$s pour le modèle %2$s est introuvable."
+
+#~ msgid "The view for %1$s%2$s was not found."
+#~ msgstr "La vue est introuvable pour %1$s%2$s."
+
+#~ msgid "Scaffold Error"
+#~ msgstr "Erreur de scaffolding"
+
+#~ msgid "Method _scaffoldError in was not found in the controller"
+#~ msgstr "La méthode _scaffoldError est introuvable dans le contrôleur"
+
+#~ msgid "Submit"
+#~ msgstr "Envoyer"
+
+#~ msgid "Error in field %s"
+#~ msgstr "Erreur dans le champ %s"
+
+#~ msgid "New"
+#~ msgstr "Nouveau"
+
+#~ msgid "January"
+#~ msgstr "Janvier"
+
+#~ msgid "February"
+#~ msgstr "Février"
+
+#~ msgid "April"
+#~ msgstr "Avril"
+
+#~ msgid "May"
+#~ msgstr "Mai"
+
+#~ msgid "June"
+#~ msgstr "Juin"
+
+#~ msgid "July"
+#~ msgstr "Juillet"
+
+#~ msgid "August"
+#~ msgstr "Août"
+
+#~ msgid "September"
+#~ msgstr "Septembre"
+
+#~ msgid "October"
+#~ msgstr "Octobre"
+
+#~ msgid "November"
+#~ msgstr "Novembre"
+
+#~ msgid "%d KB"
+#~ msgstr "%d Ko"
+
+#~ msgid "%.2f MB"
+#~ msgstr "%.2f Mo"
+
+#~ msgid "%.2f GB"
+#~ msgstr "%.2f Go"
+
+#~ msgid "%.2f TB"
+#~ msgstr "%.2f To"
+
+#~ msgid "%d Byte"
+#~ msgid_plural "%d Bytes"
+#~ msgstr[0] "%d Octet"
+#~ msgstr[1] "%d Octets"
+
+#~ msgid " of "
+#~ msgstr " sur "
+
+#~ msgid "You can not write to a Session from the view"
+#~ msgstr "Vous ne pouvez pas écrire dans la Session depuis une vue"
+
+#~ msgid ""
+#~ "(TextHelper::flay) Deprecated: the Flay library is no longer supported "
+#~ "and will be removed in a future version."
+#~ msgstr ""
+#~ "(TextHelper::flay) Déprécié : la librairie Flay n'est plus supportée et "
+#~ "sera supprimée dans une version future."
+
+#~ msgid "Today, %s"
+#~ msgstr "Aujourd'hui, %s"
+
+#~ msgid "Yesterday, %s"
+#~ msgstr "Hier, %s"
+
+#~ msgid "%s ago"
+#~ msgstr "il y a %s"
+
+#~ msgid "days"
+#~ msgstr "jours"
+
+#~ msgid "year"
+#~ msgid_plural "years"
+#~ msgstr[0] "année"
+#~ msgstr[1] "années"
+
+#~ msgid "week"
+#~ msgid_plural "weeks"
+#~ msgstr[0] "semaine"
+#~ msgstr[1] "semaines"
+
+#~ msgid "day"
+#~ msgid_plural "days"
+#~ msgstr[0] "jour"
+#~ msgstr[1] "jours"
+
+#~ msgid "hour"
+#~ msgid_plural "hours"
+#~ msgstr[0] "heure"
+#~ msgstr[1] "heures"
+
+#~ msgid "Release Notes for CakePHP %s."
+#~ msgstr "Notes de version pour CakePHP %s."
+
+#~ msgid "Your tmp directory is NOT writable."
+#~ msgstr "Votre dossier temporaire n'est PAS accessible en écriture."
+
+#~ msgid ""
+#~ "The %s is being used for caching. To change the config edit APP/config/"
+#~ "core.php "
+#~ msgstr ""
+#~ "%s sera utilisé pour le cache. Pour changer cette configuration, éditez "
+#~ "APP/config/core.php"
+
+#~ msgid ""
+#~ "Your cache is NOT working. Please check the settings in APP/config/core."
+#~ "php"
+#~ msgstr ""
+#~ "Votre cache ne fonctionne PAS. Merci de vérifier les paramètres dans APP/"
+#~ "config/core.php"
+
+#~ msgid "Your database configuration file is NOT present."
+#~ msgstr ""
+#~ "Votre fichier de configuration de la base de données n'est PAS présent."
+
+#~ msgid "Rename config/database.php.default to config/database.php"
+#~ msgstr "Renommez config/database.php.default en config/database.php"
+
+#~ msgid "Cake is NOT able to connect to the database."
+#~ msgstr "Cake ne peut PAS se connecter à la base de données."
+
+#~ msgid ""
+#~ "To change the content of this page, create: APP/views/pages/home.ctp.<br /"
+#~ ">\n"
+#~ "To change its layout, create: APP/views/layouts/default.ctp.<br />\n"
+#~ "You can also add some CSS styles for your pages at: APP/webroot/css."
+#~ msgstr ""
+#~ "Pour changer le contenu de cette page, créez : APP/views/pages/home.ctp."
+#~ "<br />\n"
+#~ "Pour changer son gabarit, créez : APP/views/layouts/default.ctp.<br />\n"
+#~ "Vous pouvez également ajouter des styles CSS à vos pages dans : APP/"
+#~ "webroot/css."
+
+#~ msgid "Getting Started"
+#~ msgstr "Commencer"
+
+#~ msgid "The 15 min Blog Tutorial"
+#~ msgstr "Le tutoriel du blog en 15 min"
+
+#~ msgid "More about Cake"
+#~ msgstr "En savoir plus à propos de Cake"
+
+#~ msgid ""
+#~ "CakePHP is a rapid development framework for PHP which uses commonly "
+#~ "known design patterns like Active Record, Association Data Mapping, Front "
+#~ "Controller and MVC."
+#~ msgstr ""
+#~ "CakePHP est un framework de développement rapide en PHP qui utilise des "
+#~ "design patterns connus tels que Active Record, Association Data Mapping, "
+#~ "Front Controller et MVC."
+
+#~ msgid ""
+#~ "Our primary goal is to provide a structured framework that enables PHP "
+#~ "users at all levels to rapidly develop robust web applications, without "
+#~ "any loss to flexibility."
+#~ msgstr ""
+#~ "Notre but premier est de proposer un framework structuré qui permet aux "
+#~ "utilisateurs PHP de tous niveaux, de développer rapidement des "
+#~ "applications web sans aucune perte en terme de flexibilité."
+
+#~ msgid "Cake Software Foundation"
+#~ msgstr "Cake Software Foundation"
+
+#~ msgid "Promoting development related to CakePHP"
+#~ msgstr "Promouvoir le développement lié à CakePHP"
+
+#~ msgid "CakePHP"
+#~ msgstr "CakePHP"
+
+#~ msgid "The Rapid Development Framework"
+#~ msgstr "Le framework de développement rapide"
+
+#~ msgid "CakePHP Documentation"
+#~ msgstr "Documentation de CakePHP"
+
+#~ msgid "Your Rapid Development Cookbook"
+#~ msgstr "Votre livre de cuisine du développement rapide"
+
+#~ msgid "CakePHP API"
+#~ msgstr "API de CakePHP"
+
+#~ msgid "Quick Reference"
+#~ msgstr "Référence rapide"
+
+#~ msgid "The Bakery"
+#~ msgstr "La Bakery"
+
+#~ msgid "Everything CakePHP"
+#~ msgstr "Tout sur CakePHP"
+
+#~ msgid "The Show"
+#~ msgstr "L'émission"
+
+#~ msgid ""
+#~ "The Show is a live and archived internet radio broadcast CakePHP-related "
+#~ "topics and answer questions live via IRC, Skype, and telephone."
+#~ msgstr ""
+#~ "L'émission est une radio diffusée sur internet en direct puis archivée, "
+#~ "concernant des sujets liés à CakePHP et répondant aux questions posées "
+#~ "directement depuis IRC, Skype ou par téléphone."
+
+#~ msgid "CakePHP Google Group"
+#~ msgstr "Le Google group de CakePHP"
+
+#~ msgid "Community mailing list"
+#~ msgstr "La mailing-list de la communauté"
+
+#~ msgid "Live chat about CakePHP"
+#~ msgstr "Chat en direct à propos de CakePHP"
+
+#~ msgid "CakePHP Code"
+#~ msgstr "Code CakePHP"
+
+#~ msgid "For the Development of CakePHP Git repository, Downloads"
+#~ msgstr "Pour le développement du dépôt Git de CakePHP, Téléchargements"
+
+#~ msgid "CakePHP Lighthouse"
+#~ msgstr "Lighthouse CakePHP"
+
+#~ msgid "CakePHP Tickets, Wiki pages, Roadmap"
+#~ msgstr "Tickets, pages Wiki, feuille de route CakePHP"
+
+#~ msgid "CakeForge"
+#~ msgstr "Forge Cake"
+
+#~ msgid "Open Development for CakePHP"
+#~ msgstr "Développement ouvert pour CakePHP"
+
+#~ msgid "Book Store"
+#~ msgstr "Livres en vente"
+
+#~ msgid "CakePHP gear"
+#~ msgstr "Gadgets CakePHP"
+
+#~ msgid "Get your own CakePHP gear - Doughnate to Cake"
+#~ msgstr "Obtenez votre propre gadget CakePHP - Donnez à Cake"
+
+#~ msgid "Are you sure you want to delete"
+#~ msgstr "Etes-vous sûr de vouloir supprimer"
+
+#~ msgid "New %s"
+#~ msgstr "Nouveau %s"
+
+#~ msgid "View"
+#~ msgstr "Voir"
+
+#~ msgid "next"
+#~ msgstr "suivant"
+
+#~ msgid "Related %s"
+#~ msgstr "Lié à %s"
+
+#~ msgid "Plural Rule 1"
+#~ msgstr "Règle de pluriel 1"
+
+#~ msgid "Plural Rule 1 (from core)"
+#~ msgstr "Règle de pluriel 1 (issue du coeur)"
+
+#~ msgid "%d = 1"
+#~ msgid_plural "%d = 0 or > 1"
+#~ msgstr[0] "%d = 1"
+#~ msgstr[1] "%d = 0 or > 1"
+
+#~ msgid "%d = 1 (from core)"
+#~ msgid_plural "%d = 0 or > 1 (from core)"
+#~ msgstr[0] "%d = 1 (from core)"
+#~ msgstr[1] "%d = 0 or > 1 (from core)"
+
+#~ msgid "this is a \"quoted string\""
+#~ msgstr "ceci est une \"chaine échapée\""
+
+#~ msgid "Le login doit contenir au moins 2 caractères"
+#~ msgstr "Le login doit contenir au moins 2 caractères"
+
+#~ msgid ""
+#~ "To change the content of this page, edit: %s\n"
+#~ "\t\tTo change its layout, edit: %s\n"
+#~ "\t\tYou can also add some CSS styles for your pages at: %s"
+#~ msgstr ""
+#~ "Pour changer le contenu de cette page, éditez : %s\n"
+#~ "\t\tPour changer son gabarit, éditez : %s\n"
+#~ "\t\tVous pouvez également ajouter des styles CSS à vos pages dans : %s"
+
+#~ msgid "Your tmp directory is "
+#~ msgstr "Votre répertoire temporaire est "
+
+#~ msgid "writable."
+#~ msgstr "accessible en écriture."
+
+#~ msgid "NOT writable."
+#~ msgstr "NON accessible en écriture."
+
+#~ msgid "set up and initialized properly."
+#~ msgstr "configuré et initialisé correctement."
+
+#~ msgid " is being used to cache, to change this edit config/core.php "
+#~ msgstr ""
+#~ " sera utilisé pour le cache, pour changer cela, éditez config/core.php"
+
+#~ msgid "NOT working."
+#~ msgstr "NE fonctionne pas."
+
+#~ msgid ""
+#~ "Edit: config/core.php to insure you have the newset version of this file "
+#~ "and the variable $cakeCache set properly"
+#~ msgstr ""
+#~ "Edition : vérifiez config/core.php pour vous assurez que vous avez la "
+#~ "nouvelle version de ce fichier et que la variable $cakeCache est définie "
+#~ "correctement"
+
+#~ msgid "Your database configuration file is "
+#~ msgstr "Votre fichier de configuration de base de données est"
+
+#~ msgid "present."
+#~ msgstr "présent."
+
+#~ msgid "NOT present."
+#~ msgstr "NON présent."
+
+#~ msgid "Cake"
+#~ msgstr "Cake"
+
+#~ msgid " is NOT able to "
+#~ msgstr " n'est PAS capable de "
+
+#~ msgid "Read the release notes and get the latest version"
+#~ msgstr "Lisez les notes de mise à jour et récupérez la dernière version"
+
+#~ msgid ""
+#~ "To change the content of this page, create: /app/views/pages/home.ctp."
+#~ msgstr ""
+#~ "Pour changer le contenu de cette page, créez : /app/views/pages/home.ctp."
+
+#~ msgid "To change its layout, create: /app/views/layouts/default.ctp."
+#~ msgstr "Pour changer son gabarit, créez : /app/views/layouts/default.ctp."
+
+#~ msgid "See the views section of the manual for more info."
+#~ msgstr "Voir la section vues du manuel pour plus d'informations."
+
+#~ msgid ""
+#~ "You can also add some CSS styles for your pages at: app/webroot/css/."
+#~ msgstr ""
+#~ "Vous pouvez aussi ajoutez quelques styles CSS à vos pages dans : app/"
+#~ "webroot/css/."
+
+#~ msgid "Cook up Web sites fast with CakePHP"
+#~ msgstr "Cuisinez rapidement des sites Web avec CakePHP"
+
+#~ msgid "Create an interactive production wiki using PHP"
+#~ msgstr "Créez un wiki interactif de production en utilisant PHP"
+
+#~ msgid "CakeSchwag"
+#~ msgstr "CakeSchwag"
+
+#~ msgid "CakePHP Manual"
+#~ msgstr "Manuel CakePHP"
+
+#~ msgid "Docblock Your Best Friend"
+#~ msgstr "Docblock est votre meilleur ami"
+
+#~ msgid "CakePHP Trac"
+#~ msgstr "Trac de CakePHP"
+
+#~ msgid ""
+#~ "For the Development of CakePHP (Tickets, SVN browser, Roadmap, Changelogs)"
+#~ msgstr ""
+#~ "Pour le développement de CakePHP (Tickets, explorateur SVN, feuille de "
+#~ "route, journaux de modification)"

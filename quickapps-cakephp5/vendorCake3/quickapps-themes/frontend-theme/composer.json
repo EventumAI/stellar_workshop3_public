@@ -1,0 +1,40 @@
+{
+    "name": "quickapps-themes/frontend-theme",
+    "description": "QuickAppsCMS’s default frontend theme based on Twitter Bootstrap.",
+    "type": "cakephp-plugin",
+    "keywords": [
+        "framework",
+        "cms",
+        "cmf",
+        "quickapps",
+        "theme",
+        "frontend",
+        "responsive layout",
+        "full width template",
+        "rtl language"
+    ],
+    "homepage": "http://quickappscms.org",
+    "license": "GPL-3.0",
+    "require": {
+        "quickapps-plugins/cms": "*"
+    },
+    "authors": [
+        {
+            "name": "Christopher Castro",
+            "email": "chris@quickapps.es"
+        }
+    ],
+    "extra": {
+        "admin": false,
+        "regions": {
+            "main-menu": "Main Menu",
+            "sub-menu": "Sub-menu",
+            "right-sidebar": "Right Sidebar"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "FrontendTheme\\": "src"
+        }
+    }
+}

@@ -1,0 +1,2127 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: QucikApps CMS\n"
+"POT-Creation-Date: 2015-04-11 23:23+0000\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Oliver Strixner <info@osvision.de>\n"
+"Language-Team:  <info@osvision.de>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Poedit 1.7.5\n"
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:139
+msgid "Welcome to QuickAppsCMS"
+msgstr "Willkommen bei QuickAppsCMS"
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:140
+msgid "Click here to install in English"
+msgstr "Klicke hier, um die Installation auf Deutsch zu starten"
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:172
+msgid "Server Requirements"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:188;388
+msgid "License Agreement"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:242
+msgid "Account created you can now login!"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:246
+msgid "Account could not be created, please check your information."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:273
+msgid ""
+"Unable to continue, check write permission for the \"/config\" directory."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:313
+msgid ""
+"Your php version is not supported. check that your version is 5.4.19 or newer."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:314;315;316;317;329
+msgid "Missing extension: {0}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:318;319;320;321;322
+msgid "\"{0}\" folder is not writable."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:338
+msgid "Your server has SafeMode on, please turn it off before continuing."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:380
+msgid "Welcome"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:384
+msgid "System Requirements"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:392
+msgid "Database Setup"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:396
+msgid "Your Account"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Controller/StartupController.php:400
+msgid "Finish"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:77
+msgid "<info>Plugins Shell</info>"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:79
+msgid "[I]nstall new plugin"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:80
+msgid "[R]emove an existing plugin"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:81
+msgid "[E]nable plugin"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:82
+msgid "[D]isable plugin"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:83
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:82
+msgid "[H]elp"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:84
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:83
+msgid "[Q]uit"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:86
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:85
+msgid "What would you like to do?"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:106
+msgid ""
+"You have made an invalid selection. Please choose a command to execute by "
+"entering I, R, E, D, H, or Q."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:149
+msgid ""
+"Please provide a plugin source, it can be either an URL or a filesystem path "
+"to a ZIP/directory within your server?\n"
+"[Q]uit"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:153
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:150
+msgid "Installation aborted"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:156
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:153
+msgid "Starting installation..."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:160
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:157
+msgid "Starting installation... successfully installed!"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:164
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:161
+msgid "Starting installation... failed!"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:189
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:186
+msgid "[{index, number}] {name}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:194
+msgid ""
+"Which plugin would you like to uninstall?\n"
+"[Q]uit"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:198;267;320
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:195;263
+msgid "Operation aborted"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:201;270;323
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:198;266
+msgid "Invalid option"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:205
+msgid "<info>The following plugin will be UNINSTALLED</info>"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:207;329
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:204
+msgid "Name:        {0}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:208;330
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:205
+msgid "Description: {0}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:209;331
+msgid "Status:      {0, select, active={Active} other{Disabled}}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:210;332
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:206
+msgid "Path:        {0}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:214
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:210
+msgid "Please type in \"{0}\" to uninstall"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:219
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:215
+msgid "Plugin uninstalled!"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:222
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:218
+msgid "Plugin could not be uninstalled."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:226
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:222
+msgid "Confirmation failure, operation aborted!"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:249
+msgid "<info>There are no disabled plugins!</info>"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:258;311
+msgid "[{index, number, integer}] {name}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:263
+msgid ""
+"Which plugin would you like to activate?\n"
+"[Q]uit"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:275
+msgid "Plugin enabled!"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:278
+msgid "Plugin could not be enabled."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:302
+msgid "<info>There are no active plugins!</info>"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:316
+msgid ""
+"Which plugin would you like to disable?\n"
+"[Q]uit"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:327
+msgid "<info>The following plugin will be DISABLED</info>"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:336
+msgid "Please type in \"{0}\" to disable this plugin"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:341
+msgid "Plugin disabled!"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/PluginsShell.php:344
+msgid "Plugin could not be disabled."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:77
+msgid "<info>Themes Shell</info>"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:79
+msgid "[I]nstall new theme"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:80
+msgid "[R]emove an existing theme"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:81
+msgid "[C]hange site theme"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:102
+msgid ""
+"You have made an invalid selection. Please choose a command to execute by "
+"entering I, R, C, H, or Q."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:145
+msgid ""
+"Please provide a theme source, it can be either an URL or a filesystem path "
+"to a ZIP/directory within your server?\n"
+"[Q]uit"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:191
+msgid ""
+"Which theme would you like to uninstall?\n"
+"[Q]uit"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:202
+msgid "<info>The following theme will be uninstalled</info>"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:245
+msgid "<info>There are no disabled themes!</info>"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:254
+msgid ""
+"[{index, number, integer}] {name} [{theme_type, select, front{frontend} "
+"other{backend}}]"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:259
+msgid ""
+"Which theme would you like to activate?\n"
+"[Q]uit"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:271
+msgid "Theme changed!"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/ThemesShell.php:274
+msgid "Theme could not be changed."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:113
+msgid "Install a new plugin or theme."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:116
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUpdateTask.php:42
+msgid ""
+"Either a full path within filesystem to a ZIP file, or path to a directory "
+"representing an extracted ZIP file, or an URL from where download plugin "
+"package."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:120
+msgid "Indicates that the plugin being installed should be treated as a theme."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:126
+msgid "Enables the plugin after installation."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:132
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginToggleTask.php:62
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:66
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUpdateTask.php:46
+msgid "Plugin events will not be trigged."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:151
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:85
+msgid "Something went wrong. Details: {0}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:189
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:162
+msgid ""
+"Task was explicitly rejected by the {type, select, theme{theme} "
+"other{plugin}}."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:193
+msgid ""
+"Internal error, {type, select, theme{theme} other{plugin}} did not respond to "
+"\"beforeInstall\" callback correctly."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:235
+msgid ""
+"{type, select, theme{The theme} other{The plugin}} was installed but some "
+"errors occur."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:269
+msgid ""
+"Unable to register {type, select, theme{theme} other{plugin}} option, invalid "
+"option #{index}."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:282
+msgid "Unable to register option \"{name}\"."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:287
+msgid ""
+"Some errors were found while trying to register {type, select, theme{theme} "
+"other{plugin}} options values, see below:"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:289
+msgid "  - {error}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:368
+msgid ""
+"Destination directory already exists, please delete manually this directory: "
+"{0}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:373
+msgid ""
+"Destination directory could not be cleared, please check write permissions: "
+"{0}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:382
+msgid "Error when moving package content."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:412
+msgid "Unable to resolve the given source ({source})."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:439;476
+msgid "Unable to extract the package."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:480
+msgid ""
+"Unable to download the file, check write permission on \"{path}\" directory."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:484
+msgid "Could not download the package, no .ZIP file was found at the given URL."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:522
+msgid "Unzip error: {error}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:539
+msgid "Invalid package, missing \"src\" directory."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:543
+msgid "Invalid package, missing \"composer.json\" file."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:547
+msgid "Invalid \"composer.json\"."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:555
+msgid "The given package is not a valid theme."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:558
+msgid "The given package is not a valid plugin."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:572
+msgid ""
+"{type, select, theme{The theme} other{The plugin}} \"{name}\" is already "
+"installed."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:574
+msgid ""
+"{type, select, theme{The theme} other{The plugin}} \"{name}\" is already "
+"installed but disabled, maybe you want try to enable it?."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:581
+msgid "Missing \"screenshot.png\" file."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:587
+msgid ""
+"{type, select, theme{The theme} other{The plugin}} \"{name}\" depends on "
+"other packages, plugins or libraries that were not found: {depends}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginInstallTask.php:597
+msgid "Write permissions required for directory: {path}."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginToggleTask.php:49
+msgid "Enables or disables a plugin."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginToggleTask.php:52
+msgid "Name of the plugin to enable/disable."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginToggleTask.php:56
+msgid "Whether to \"enable\" or \"disable\" the given plugin."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginToggleTask.php:89
+msgid "Plugin \"{0}\" was not found."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginToggleTask.php:94
+msgid ""
+"Plugin \"{0}\" is a core plugin, you cannot enable or disable core's plugins."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginToggleTask.php:115
+msgid ""
+"Plugin \"{0}\" cannot be enabled as some dependencies are disabled or not "
+"installed: {1}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginToggleTask.php:142
+msgid "Plugin \"{0}\" cannot be disabled as it is required by: {1}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginToggleTask.php:173
+msgid "Plugin \"{0}\" could not be enabled due to an internal error."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginToggleTask.php:175
+msgid "Plugin \"{0}\" could not be disabled due to an internal error."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginToggleTask.php:202
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUpdateTask.php:71
+msgid "Task was explicitly rejected by the plugin."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginToggleTask.php:206
+msgid ""
+"Internal error, plugin did not respond to \"before{0}\" callback properly."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginToggleTask.php:226
+msgid "Plugin did not respond to \"after{0}\" callback properly."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:59
+msgid "Uninstall an existing plugin."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:62
+msgid "Name of the plugin to uninstall."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:109
+msgid ""
+"Enable write permissions in /tmp directory before uninstall any plugin or "
+"theme."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:114
+msgid "No plugin/theme was given to remove."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:132
+msgid "Plugin \"{name}\" was not found."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:139
+msgid ""
+"{type, select, theme{The theme} other{The plugin}} \"{name}\" is currently "
+"being used and cannot be removed."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:144
+msgid ""
+"{type, select, theme{The theme} other{The plugin}} \"{name}\" is a core "
+"plugin, you cannot remove core's plugins."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:150
+msgid ""
+"{type, select, theme{The theme} other{The plugin}} \"{name}\" cannot be "
+"removed as it is required by: {required}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:166
+msgid ""
+"Internal error, the {type, select, theme{theme} other{plugin}} did not "
+"respond to \"beforeUninstall\" callback correctly."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:172
+msgid ""
+"{type, select, theme{The theme} other{The plugin}} \"{name}\" could not be "
+"unregistered from DB."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:186
+msgid ""
+"{type, select, theme{The theme} other{The plugin}} did not respond to "
+"\"afterUninstall\" callback."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:249
+msgid ""
+"{type, select, theme{Theme's} other{Plugin's}} directory was not found: {path}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:266
+msgid ""
+"Some {type, select, theme{theme's} other{plugin's}} files or directories "
+"cannot be removed from your server, please check write permissions of:"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUninstallTask.php:268
+msgid "  - {path}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUpdateTask.php:39
+msgid "Install a new plugin."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUpdateTask.php:76
+msgid ""
+"Internal error, plugin did not respond to \"beforeUpdate\" callback correctly."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUpdateTask.php:91
+msgid "Plugin was installed but some errors occur."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUpdateTask.php:111
+msgid ""
+"The plugin \"{0}\" is not installed, you cannot update a plugin that is not "
+"installed in your system."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUpdateTask.php:116
+msgid ""
+"Plugin \"{0}\" is a core plugin, you cannot update system's core using this "
+"method."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUpdateTask.php:119
+msgid "Unable to update, please check write permissions for \"{0}\"."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUpdateTask.php:138
+msgid "Plugin's directory was not found: "
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUpdateTask.php:155
+msgid "Some plugin's files or directories cannot be removed from your server:"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/PluginUpdateTask.php:157
+msgid "  -{0}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/ThemeActivationTask.php:46
+msgid "Changes site's theme."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/ThemeActivationTask.php:49
+msgid "Name of the theme to change to."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/ThemeActivationTask.php:53
+msgid "Theme events will not be trigged."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/ThemeActivationTask.php:68
+msgid "You must provide a theme."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/ThemeActivationTask.php:73
+msgid "Theme \"{0}\" was not found."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/ThemeActivationTask.php:79
+msgid "\"{0}\" is not a theme."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/ThemeActivationTask.php:84
+msgid "Theme \"{0}\" is already active."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/ThemeActivationTask.php:96
+msgid "Task was explicitly rejected by the theme."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/ThemeActivationTask.php:101
+msgid ""
+"Internal error, theme did not respond to \"beforeActivate\" callback properly."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/ThemeActivationTask.php:119
+msgid "Internal error, the option \"{0}\" could not be persisted on database."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Shell/Task/ThemeActivationTask.php:128
+msgid "Theme did not respond to \"afterActivate\" callback."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/account.ctp:16;60
+msgid "Create Account"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/account.ctp:17
+msgid ""
+"Complete the following information for create a new user account, you can "
+"login later and administer your website   ."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/account.ctp:30
+msgid "Name"
+msgstr "Name"
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/account.ctp:31
+msgid "Your real name, e.g. John Locke."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/account.ctp:35
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:59
+msgid "Username"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/account.ctp:36
+msgid "The username you will use to login to QuickApps CMS."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/account.ctp:40
+msgid "e-Mail"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/account.ctp:41
+msgid "In case you forget your login details."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/account.ctp:47
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:64
+msgid "Password"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/account.ctp:48
+msgid "The password you will use to login to QuickApps CMS."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/account.ctp:52
+msgid "Confirm password"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/account.ctp:53
+msgid "Confirm your password."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:16
+msgid "Database Connection"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:17
+msgid ""
+"Enter connection data for your database. Note: your database must already "
+"exist before completing this step."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:30
+msgid "Host"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:30
+msgid "ex. localhost"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:31
+msgid "ex. mysql.server.com or localhost"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:35
+msgid "Database Name"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:35
+msgid "ex. quickappscms_db"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:36
+msgid "Database must already exist!"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:49
+msgid "Database Type"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:53
+msgid "The type of database your QuickAppsCMS data will be stored in."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:60
+msgid "Username used to log into this database."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:65
+msgid "Password used to log into this database."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:74
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/requirements.ctp:17
+msgid "Continue"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/database.ctp:80
+msgid "This might take a few minutes, please be patient"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/finish.ctp:18
+msgid "Thanks!"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/finish.ctp:19
+msgid ""
+"Thanks for choosing QuickApps CMS!, you can login into the administration "
+"section or go to your site's home page"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/finish.ctp:20
+msgid "Links of Interest"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/finish.ctp:23
+msgid "Official Site"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/finish.ctp:24
+msgid "GitHub"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/finish.ctp:25
+msgid "API 2.0"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/finish.ctp:26
+msgid "Issue Tracker"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/finish.ctp:27
+msgid "Google Group"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/finish.ctp:34
+msgid "Visit my website"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/finish.ctp:35
+msgid "Administer my website"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/license.ctp:23
+msgid "I Agree"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/requirements.ctp:16
+msgid ""
+"<strong>Congratulations!</strong> Your server meets the basic software "
+"requirements."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Template/Startup/requirements.ctp:21
+msgid "<strong>Uh oh.</strong> There's a server compatibility issue. See below."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Utility/DatabaseInstaller.php:153
+msgid "Nothing installed"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Utility/DatabaseInstaller.php:176
+msgid "Invalid database information in file \"{0}\""
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Utility/DatabaseInstaller.php:191
+msgid "Invalid database type ({0})."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Utility/DatabaseInstaller.php:208
+msgid "Database engine cannot be empty."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Utility/DatabaseInstaller.php:219
+msgid ""
+"Unable to connect to database, please check your information. Details: {0}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Utility/DatabaseInstaller.php:240
+msgid "Error importing \"{0}\"."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Utility/DatabaseInstaller.php:248
+msgid "Unable to import database information. Details: {0}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Utility/DatabaseInstaller.php:269
+msgid ""
+"A previous installation of QuickAppsCMS already exists, please drop your "
+"database tables before continue."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Utility/DatabaseInstaller.php:351
+msgid "Unable to create table \"{0}\". Details: {1}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Utility/DatabaseInstaller.php:400
+msgid "Error while importing data for table \"{0}\". Details: {1}"
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Utility/PackageUploader.php:62
+msgid "Invalid package."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Utility/PackageUploader.php:65
+msgid "Invalid package format, it is not a ZIP package."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Utility/PackageUploader.php:80
+msgid ""
+"Package could not be uploaded, please check write permissions on /tmp "
+"directory."
+msgstr ""
+
+#: C:/xampp/htdocs/quickapps2/vendor/quickapps/cms/plugins/Installer/src/Utility/ServerTest.php:109;121
+msgid "Test failed"
+msgstr ""
+
+#~ msgid "Welcome to QuickApps CMS"
+#~ msgstr "Willkommen bei QuickApps CMS"
+
+#~ msgid "MySQL extension is not loaded on your server."
+#~ msgstr "MySQL Erweiterung ist auf Ihrem Server nicht geladen"
+
+#~ msgid "Could not connect to database."
+#~ msgstr "Keine Verbindung zur Datenbank"
+
+#~ msgid "Could not write database.php file."
+#~ msgstr "Kann database.php Datei nicht schreiben"
+
+#~ msgid "Could not create new user, please try again."
+#~ msgstr "Kann neuen Benutzer nicht anlegen, bitte versuchen Sie es erneut"
+
+#~ msgid "Unzip error."
+#~ msgstr "Fehler beim entpacken."
+
+#~ msgid "Forbidden Names"
+#~ msgstr "Verbotener Namen"
+
+#~ msgid "Forbidden module name \"%s\""
+#~ msgstr "Verbotener Modulnamen \"%s\""
+
+#~ msgid "Theme name"
+#~ msgstr "Theme Name"
+
+#~ msgid "Invalid module name (got \"%s\", expected: \"%s\")"
+#~ msgstr "UngÃ¼ltiger Modulname (got \"%s\", expected: \"%s\")"
+
+#~ msgid "This module is already installed"
+#~ msgstr "Dieses Modul ist bereits installiert"
+
+#~ msgid "Config Folder"
+#~ msgstr "Konfigurationsverzeichnis"
+
+#~ msgid "\"Config\" folder not found"
+#~ msgstr "\"Config\" Verzeichnis gefunden"
+
+#~ msgid "Bootstrap File"
+#~ msgstr "Bootstrap Datei"
+
+#~ msgid "\"Config/bootstrap.php\" file not found"
+#~ msgstr "\"Config/bootstrap.php\" Datei nicht gefunden"
+
+#~ msgid "Routes File"
+#~ msgstr "Routes Datei"
+
+#~ msgid "\"Config/routes.php\" file not found"
+#~ msgstr "\"Config/routes.php\" Datei nicht gefunden"
+
+#~ msgid "Controller Folder"
+#~ msgstr "Controller Verzeichnis"
+
+#~ msgid "\"Controller\" folder not found"
+#~ msgstr "\"Controller\" Verzeichnis nicht gefunden"
+
+#~ msgid "Component Folder"
+#~ msgstr "Component Verzeichnis"
+
+#~ msgid "\"Component\" folder not found"
+#~ msgstr "\"Component\" Verzeichnis nicht gefunden"
+
+#~ msgid "Installer File"
+#~ msgstr "Installationsdatei"
+
+#~ msgid "Installer file (InstallComponent.php) not found"
+#~ msgstr "Installationsdatei (InstallComponent.php) nicht gefunden"
+
+#~ msgid "YAML File"
+#~ msgstr "YAML Datei"
+
+#~ msgid "YAML File (%s) not found"
+#~ msgstr "YAML Datei (%s) nicht gefunden"
+
+#~ msgid "Invalid theme name (got \"%s\", expected: \"%s\")"
+#~ msgstr "UngÃ¼ltiger Theme Name (bekam \"%s\", erwartet: \"%s\")"
+
+#~ msgid "Already Installed"
+#~ msgstr "Bereits installiert"
+
+#~ msgid "This theme is already installed"
+#~ msgstr "Dieses Theme ist bereits installiert"
+
+#~ msgid "Layouts Folder"
+#~ msgstr "Layouts Verzeichnis"
+
+#~ msgid "\"Layouts\" folder not found"
+#~ msgstr "\"Layouts\" Verzeichnis gefunden"
+
+#~ msgid "app Folder"
+#~ msgstr "app Verezichnis"
+
+#~ msgid "\"app\" folder not found"
+#~ msgstr "\"app\" Verzeichnis nicht gefunden"
+
+#~ msgid "Plugin app"
+#~ msgstr "Plugin app"
+
+#~ msgid "Module app (\"%s\") folder not found"
+#~ msgstr "Module app (\"%s\") Verzeichnis nicht gefunden"
+
+#~ msgid "webroot Folder"
+#~ msgstr "webroot Verzeichnis"
+
+#~ msgid "\"webroot\" folder not found"
+#~ msgstr "\"webroot\" Verzeichnis nicht gefunden"
+
+#~ msgid "Theme thumbnail"
+#~ msgstr "Theme Miniaturbild"
+
+#~ msgid "Thumbnail image (\"%s\") not found"
+#~ msgstr "Miniaturbild (\"%s\") nichtgefunden"
+
+#~ msgid "YAML Validation"
+#~ msgstr "YAML GÃ¼ltigkeitsprÃ¼fung"
+
+#, fuzzy
+#~ msgid "Module does not exist."
+#~ msgstr "Modul existiert nicht"
+
+#~ msgid "Site offline"
+#~ msgstr "Webseite offline"
+
+#~ msgid "You are not authorized to access that location."
+#~ msgstr "Sie haben keinen Zugriff fÃ¼r diesen Bereich."
+
+#, fuzzy
+#~ msgid "Duplicated content"
+#~ msgstr "VerÃ¶ffentlichter Inhalt !?!"
+
+#~ msgid "Blocks"
+#~ msgstr "BlÃ¶cke"
+
+#~ msgid "Clone"
+#~ msgstr "Kopieren"
+
+#~ msgid "Block has been cloned"
+#~ msgstr "Block wurde kopiert"
+
+#~ msgid "Block could not be cloned"
+#~ msgstr "Block konnte nicht kopiert werden"
+
+#~ msgid "Block has been saved"
+#~ msgstr "Block wurde gespeichert"
+
+#~ msgid "Block could not be saved. Please, try again."
+#~ msgstr ""
+#~ "Block konnte nicht gespeichert werden. Bitte versuchen Sie es erneut."
+
+#~ msgid "Editing Block"
+#~ msgstr "Block bearbeiten"
+
+#~ msgid "Editing block"
+#~ msgstr "Block bearbeiten"
+
+#~ msgid "Add new block"
+#~ msgstr "neuen Block hinzufÃ¼gen"
+
+#~ msgid "New block"
+#~ msgstr "Neuer Block"
+
+#~ msgid "Block has been deleted"
+#~ msgstr "Block wurde gelÃ¶scht"
+
+#~ msgid "Block could not be deleted"
+#~ msgstr "Block konnte nicht gelÃ¶scht werden"
+
+#~ msgid "Duplicate this block?"
+#~ msgstr "Block kopieren?"
+
+#~ msgid "clone"
+#~ msgstr "klonen"
+
+#~ msgid "configure"
+#~ msgstr "konfigurieren"
+
+#~ msgid "Delete selected block ?"
+#~ msgstr "AusgewÃ¤hlten Block lÃ¶schen?"
+
+#~ msgid "delete"
+#~ msgstr "lÃ¶schen"
+
+#~ msgid "New Block"
+#~ msgstr "Neuer Block"
+
+#~ msgid "Content"
+#~ msgstr "Inhalt"
+
+#~ msgid "Block title"
+#~ msgstr "Blocktitel"
+
+#~ msgid "The title of the block as shown to the user."
+#~ msgstr "Der Titel des Blocks, wie er dem Benutzer angezeigt wird."
+
+#~ msgid "Block description *"
+#~ msgstr "Blockbeschreibung *"
+
+#~ msgid ""
+#~ "A brief description of your block. Used on the Blocks administration page."
+#~ msgstr ""
+#~ "Eine kurze Beschreibung des Blocks..  Sie wird auf der <a href=\"@overview"
+#~ "\">Verwaltungsseite fÃ¼r BlÃ¶cke</a> verwendet"
+
+#~ msgid "Block body *"
+#~ msgstr "Blockinhalt *"
+
+#~ msgid "Language"
+#~ msgstr "Sprache"
+
+#~ msgid "Translations"
+#~ msgstr "Ãbersetzungen"
+
+#~ msgid "Show this block for these languages"
+#~ msgstr "Diesen Block fÃ¼r diese Sprachen anzeigen"
+
+#~ msgid "If no language is selected, block will show regardless of language."
+#~ msgstr ""
+#~ "Wenn keine Sprache ausgewÃ¤hlt wurde, wird der Block unabhÃ¤ngig von der "
+#~ "Sprache angezeigt. !?!"
+
+#~ msgid "Visibility settings"
+#~ msgstr "Sichtbarkeitseinstellungen"
+
+#~ msgid "Theme Region"
+#~ msgstr "Themen Region !?!"
+
+#~ msgid "Specify in which themes and regions this block is displayed."
+#~ msgstr "Angabe in welchen Themes und Bereichen dieser Block angezeigt wird."
+
+#~ msgid "--None--"
+#~ msgstr "--Keine--"
+
+#~ msgid "Pages"
+#~ msgstr "Seiten"
+
+#~ msgid "All pages except those listed"
+#~ msgstr "Alle Seiten auÃer den angegebenen"
+
+#~ msgid "Only the listed pages"
+#~ msgstr "Nur die aufgelisteten Seiten"
+
+#~ msgid "Pages on which this PHP code returns TRUE (experts only)"
+#~ msgstr ""
+#~ "Seiten, fÃ¼r die dieser PHP-Code <code>TRUE</code> zurÃ¼ckliefert (nur "
+#~ "fÃ¼r Experten)"
+
+#~ msgid ""
+#~ "Specify pages by using their paths. Enter one path per line. The '*' "
+#~ "character is a wildcard. Example paths are blog for the blog page and blog/"
+#~ "* for every blog entry. '/' is the front page."
+#~ msgstr ""
+#~ "Geben Sie Seiten an, indem Sie deren Pfade angeben, ein Pfad pro Zeile. "
+#~ "Das Zeichen '*â ist ein Platzhalter. Beispiele fÃ¼r Pfade sind blog fÃ¼r "
+#~ "die Blog-Seite und blog/* fÃ¼r jeden Blogeintrag. '/' ist die Startseite."
+
+#~ msgid ""
+#~ "If the PHP option is chosen, enter PHP code between &lt;?php ?&gt;. Note "
+#~ "that executing incorrect PHP code can break your QuickApps site."
+#~ msgstr ""
+#~ "Geben Sie PHP-Code zwischen  &lt;?php ?&gt; ein, wenn die PHP-Option "
+#~ "ausgewÃ¤hlt ist. Beachten Sie, dass das AusfÃ¼hren von inkorrektem PHP-"
+#~ "Code die QuickApps-Seite funktionsunfÃ¤hig machen kann."
+
+#~ msgid "Roles"
+#~ msgstr "Rollen"
+
+#~ msgid "Show block for specific roles"
+#~ msgstr "Diesen Block nur fÃ¼r bestimmte Rollen anzeigen"
+
+#~ msgid ""
+#~ "Show this block only for the selected role(s). If you select no roles, the "
+#~ "block will be visible to all users."
+#~ msgstr ""
+#~ "Diesen Block nur fÃ¼r die ausgewÃ¤hlten Rollen anzeigen. Wenn keine Rollen "
+#~ "gewÃ¤hlt werden, ist der Block fÃ¼r alle Benutzer sichtbar."
+
+#~ msgid "Advanced Options"
+#~ msgstr "Erweiterte Optionen"
+
+#~ msgid "Block class suffix"
+#~ msgstr "Block Klassen Suffix"
+
+#~ msgid ""
+#~ "A suffix to be applied to the CSS class of the block. This allows for "
+#~ "individual block styling."
+#~ msgstr ""
+#~ "Ein Suffix angewendet auf eine CSS-Klasse des Blocks. Das erlaubt ein "
+#~ "individuelles Block-Styling bloque. !?!"
+
+#~ msgid "Save block"
+#~ msgstr "Block speichern"
+
+#~ msgid "Active"
+#~ msgstr "Aktiv"
+
+#~ msgid "Unassigned or Disabled"
+#~ msgstr "Nicht zugeordnet oder deaktiviert"
+
+#~ msgid "Save all"
+#~ msgstr "Alles speichern"
+
+#~ msgid "Unpublished comments"
+#~ msgstr "Die VerÃ¶ffentlichung des Kommentars wurde zurÃ¼ckgezogen."
+
+#~ msgid "Published comments"
+#~ msgstr "VerÃ¶ffentlichte Kommentare"
+
+#~ msgid "Comments"
+#~ msgstr "Kommentare"
+
+#~ msgid "Comment details"
+#~ msgstr "Kommentar Details"
+
+#~ msgid "Comment Details"
+#~ msgstr "Kommentar Details"
+
+#, fuzzy
+#~ msgid "Comment has been deleted."
+#~ msgstr "Block wurde gelÃ¶scht"
+
+#, fuzzy
+#~ msgid "Comment could not be deleted."
+#~ msgstr "Block konnte nicht gelÃ¶scht werden"
+
+#~ msgid "Anonymous"
+#~ msgstr "Anonym"
+
+#~ msgid "No subject"
+#~ msgstr "Kein Betreff"
+
+#~ msgid "wrote"
+#~ msgstr "geschrieben"
+
+#~ msgid "Anti-Spam Protection"
+#~ msgstr "Anti-Spam Schutz"
+
+#~ msgid "Use ReCaptcha"
+#~ msgstr "Verwende ReCaptcha"
+
+#~ msgid "Theme"
+#~ msgstr "Theme"
+
+#~ msgid "Red"
+#~ msgstr "Rot"
+
+#~ msgid "White"
+#~ msgstr "WeiÃ"
+
+#~ msgid "Black Glass"
+#~ msgstr "Schwarzes Glas???"
+
+#~ msgid "Clean"
+#~ msgstr "Clean"
+
+#~ msgid "Auto-Detect"
+#~ msgstr "automatische Erkennung !?!"
+
+#~ msgid "English"
+#~ msgstr "Engisch"
+
+#~ msgid "Dutch"
+#~ msgstr "DÃ¤nisch"
+
+#~ msgid "French"
+#~ msgstr "FranzÃ¶sisch"
+
+#~ msgid "German"
+#~ msgstr "Deutsch"
+
+#~ msgid "Portuguese"
+#~ msgstr "Portugiesisch"
+
+#~ msgid "Russian"
+#~ msgstr "Russisch"
+
+#~ msgid "Spanish"
+#~ msgstr "Spanisch"
+
+#~ msgid "Turkish"
+#~ msgstr "TÃ¼rkisch"
+
+#~ msgid "Custom Translation"
+#~ msgstr "kundenspezifische Ãbersetzung"
+
+#~ msgid "Use Akismet"
+#~ msgstr "Verwende Aksimet"
+
+#~ msgid "Akismet API Key"
+#~ msgstr "Aksimet API SchlÃ¼ssel"
+
+#~ msgid "On SPAM detected"
+#~ msgstr "Auf SPAM ermitteln"
+
+#~ msgid "Mark as SPAM"
+#~ msgstr "Als SPAM markieren"
+
+#~ msgid "Delete"
+#~ msgstr "LÃ¶schen"
+
+#~ msgid "Published"
+#~ msgstr "VerÃ¶ffentlicht"
+
+#~ msgid "Unpublished (%s)"
+#~ msgstr "Nicht verÃ¶ffentlicht (%s)"
+
+#~ msgid "Invalid security code."
+#~ msgstr "UnzulÃ¤ssiger Sicherheitscode."
+
+#, fuzzy
+#~ msgid "Details"
+#~ msgstr "Kommentar Details"
+
+#, fuzzy
+#~ msgid "Delete selected comment ?"
+#~ msgstr "AusgewÃ¤lte Kommentare lÃ¶schen"
+
+#~ msgid "Subject"
+#~ msgstr "Betreff"
+
+#~ msgid "Author"
+#~ msgstr "Autor"
+
+#~ msgid "Posted in"
+#~ msgstr "Erstellt in"
+
+#~ msgid "Posted on"
+#~ msgstr "verschickt an"
+
+#~ msgid "Y/m/d - H:i"
+#~ msgstr "T/M/J - H:i"
+
+#~ msgid "There are no comments to display"
+#~ msgstr "Keine Kommentare zum anzeigen"
+
+#~ msgid "Comment"
+#~ msgstr "Kommentar"
+
+#, fuzzy
+#~ msgid "Comment’s body"
+#~ msgstr "Kommentare"
+
+#, fuzzy
+#~ msgid "Content’s title"
+#~ msgstr "Inhalt"
+
+#, fuzzy
+#~ msgid "Content’s slug"
+#~ msgstr "Inhalt"
+
+#~ msgid "Are you sure ?"
+#~ msgstr "Sind Sie sicher?"
+
+#~ msgid "Update Options"
+#~ msgstr "Aktualisierungs-Einstellungen"
+
+#~ msgid "Approve selected comments"
+#~ msgstr "BestÃ¤tigte ausgewÃ¤hlte Kommentare !?!"
+
+#~ msgid "Unapprove selected comments"
+#~ msgstr "UnbestÃ¤tigte ausgewÃ¤hlte Kommentare !?!"
+
+#~ msgid "Delete selected comments"
+#~ msgstr "AusgewÃ¤lte Kommentare lÃ¶schen"
+
+#~ msgid "Update"
+#~ msgstr "Aktualisieren"
+
+#~ msgid "Published in content"
+#~ msgstr "VerÃ¶ffentlichter Inhalt !?!"
+
+#~ msgid "Published by"
+#~ msgstr "VerÃ¶ffentlicht von"
+
+#~ msgid "on %s"
+#~ msgstr "auf %s"
+
+#~ msgid "M d, Y H:i"
+#~ msgstr "d  M, Y H:i"
+
+#~ msgid "Hostname"
+#~ msgstr "Hostname"
+
+#~ msgid "Web page"
+#~ msgstr "Webseite"
+
+#~ msgid "Message"
+#~ msgstr "Nachricht"
+
+#~ msgid "Date cannot be empty."
+#~ msgstr "Datum darf nicht leer sein"
+
+#~ msgid "Date format"
+#~ msgstr "Datumsformat"
+
+#~ msgid "Display month & year menu"
+#~ msgstr "Monat & Jahr Menü anzeigen"
+
+#~ msgid "Localize"
+#~ msgstr "Lokalisieren"
+
+#~ msgid "Invalid file extension."
+#~ msgstr "Ungültige Dateierweiterung."
+
+#~ msgid "Error: %s"
+#~ msgstr "Fehler: %s"
+
+#~ msgid "Remove"
+#~ msgstr "Entfernen"
+
+#~ msgid "Files must be less than <b>%sB</b>."
+#~ msgstr "Dateien müssen kleiner sein als <b>%sB</b>."
+
+#~ msgid "Allowed file types: <b>%s</b>."
+#~ msgstr "Zugelassene Dateitypen: <b>%s</b>."
+
+#~ msgid "Table of Files"
+#~ msgstr "Tabelle der Dateien"
+
+#~ msgid "File URL"
+#~ msgstr "Datei Pfad/URL"
+
+#~ msgid "Allowed extensions"
+#~ msgstr "Erlaubte Erweiterungen"
+
+#~ msgid "Number of files"
+#~ msgstr "Anzahl der Dateien"
+
+#~ msgid "Maximum number of files users can upload for this field."
+#~ msgstr ""
+#~ "Die maximale Anzahl hochladbarer Dateien die Benutzer für dieses Feld"
+
+#~ msgid "Size"
+#~ msgstr "GrÃ¶Ãe"
+
+#~ msgid "Title"
+#~ msgstr "Titel"
+
+#~ msgid "Plain"
+#~ msgstr "Plano"
+
+#~ msgid "Label"
+#~ msgstr "Label"
+
+#~ msgid "Hidden"
+#~ msgstr "Versteckt"
+
+#~ msgid "Yes"
+#~ msgstr "Ja"
+
+#~ msgid "No"
+#~ msgstr "Nein"
+
+#~ msgid "Format"
+#~ msgstr "Format"
+
+#~ msgid "Save field"
+#~ msgstr "Feld speichern"
+
+#~ msgid "Languages"
+#~ msgstr "Sprachen"
+
+#~ msgid "-- None --"
+#~ msgstr "-- Keine --"
+
+#~ msgid "Code"
+#~ msgstr "Code"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "active"
+#~ msgstr "aktive"
+
+#~ msgid "Actions"
+#~ msgstr "Aktionen"
+
+#~ msgid "move up"
+#~ msgstr "nach oben"
+
+#~ msgid "move down"
+#~ msgstr "nach unten"
+
+#~ msgid "Save"
+#~ msgstr "Speichern"
+
+#~ msgid "Save changes"
+#~ msgstr "Ãnderungen speichern"
+
+#~ msgid "Saving..."
+#~ msgstr "Speichere..."
+
+#~ msgid "Saved!"
+#~ msgstr "Gespeichert!"
+
+#~ msgid "New Menu"
+#~ msgstr "Neues MenÃ¼"
+
+#~ msgid "Title *"
+#~ msgstr "Titel *"
+
+#~ msgid "Description"
+#~ msgstr "Beschreibung"
+
+#~ msgid "Path *"
+#~ msgstr "Pfad *"
+
+#~ msgid "Target window"
+#~ msgstr "Zielfenster"
+
+#~ msgid "Same window"
+#~ msgstr "Daselbe Fenster"
+
+#~ msgid "New window"
+#~ msgstr "Neues Fenster"
+
+#~ msgid "links"
+#~ msgstr "Verlinkungen"
+
+#~ msgid "add link"
+#~ msgstr "Verlinkung hinzufÃ¼gen"
+
+#~ msgid "Links"
+#~ msgstr "Verlinkungen"
+
+#~ msgid "Contents"
+#~ msgstr "Inhalt"
+
+#~ msgid "Content has been saved"
+#~ msgstr "Inhalt wurde gespeichert"
+
+#~ msgid "Content could not be saved. Please, try again."
+#~ msgstr "Inhalt konnte nicht gespeichert werden, versuchen Sie es erneut."
+
+#~ msgid ""
+#~ "<b>Content type not found.</b><br/>You can't edit this undefined type of "
+#~ "content."
+#~ msgstr ""
+#~ "<b>Inhaltstyp nicht gefunden</b><br/>Sie kÃ¶nnen diesen undefinierten Typ "
+#~ "nicht bearbeiten."
+
+#~ msgid "Editing Content"
+#~ msgstr "Inhalt bearbeiten"
+
+#~ msgid "Add Content"
+#~ msgstr "Inhalt hinzufÃ¼gen"
+
+#~ msgid "Select content type"
+#~ msgstr "Inhaltstyp auswÃ¤hlen"
+
+#~ msgid "Page not found"
+#~ msgstr "Seite nicht gefunden"
+
+#~ msgid ""
+#~ "Your comment has been queued for review by site administrators and will be "
+#~ "published after approval."
+#~ msgstr ""
+#~ "Ihr Kommentar wurde in die Warteschlange eingestellt, um von Website-"
+#~ "Administratoren geprÃ¼ft und nach BestÃ¤tigung verÃ¶ffentlicht zu werden."
+
+#~ msgid "Your comment has been posted."
+#~ msgstr "Ihr Kommentar wurde erstellt."
+
+#~ msgid "Comment could not be saved. Please try again."
+#~ msgstr "Kommentar konnte nicht gespeichert werden. Versuchen Sie es erneut."
+
+#~ msgid "Content Types"
+#~ msgstr "Inhalttypen"
+
+#~ msgid "Display"
+#~ msgstr "Anzeigen"
+
+#, fuzzy
+#~ msgid "Field has been saved"
+#~ msgstr "Benutzer wurde gespeichert"
+
+#, fuzzy
+#~ msgid "Field could not be saved"
+#~ msgstr "Block konnte nicht kopiert werden"
+
+#~ msgid "Fields"
+#~ msgstr "Felder"
+
+#~ msgid "Field Settings"
+#~ msgstr "Feldeinstellungen"
+
+#~ msgid "%s *"
+#~ msgstr "%s *"
+
+#~ msgid "Settings"
+#~ msgstr "Einstellungen"
+
+#~ msgid "Open"
+#~ msgstr "Offen"
+
+#~ msgid "Closed"
+#~ msgstr "Geschlossen"
+
+#~ msgid "Read Only"
+#~ msgstr "nur lesen"
+
+#~ msgid "%s Hour"
+#~ msgstr "%s Stunde"
+
+#~ msgid "%s Hours"
+#~ msgstr "%s Stunden"
+
+#~ msgid "%s Day"
+#~ msgstr "%s Tag"
+
+#~ msgid "%s Days"
+#~ msgstr "%s Tage"
+
+#~ msgid "%s Week"
+#~ msgstr "%s Woche"
+
+#~ msgid "%s Weeks"
+#~ msgstr "%s Wochen"
+
+#~ msgid "%s Month"
+#~ msgstr "%s Monat"
+
+#~ msgid "%s Months"
+#~ msgstr "%s Monate"
+
+#~ msgid "%s Year"
+#~ msgstr "%s Jahr"
+
+#, fuzzy
+#~ msgid "Translation for: %s [%s]"
+#~ msgstr "Ãbersetzungen"
+
+#, fuzzy
+#~ msgid "Available Translations"
+#~ msgstr "Ãbersetzungen"
+
+#, fuzzy
+#~ msgid "This node is a translation of other"
+#~ msgstr "Ãbersetzungen"
+
+#, fuzzy
+#~ msgid "Translate to"
+#~ msgstr "Ãbersetzungen"
+
+#~ msgid "URL prefix"
+#~ msgstr "URL PrÃ¤fix"
+
+#~ msgid "edit format"
+#~ msgstr "Format bearbeiten"
+
+#~ msgid "There are no fields to display"
+#~ msgstr "Es sind keine Felder zum anzeigen vorhanden"
+
+#, fuzzy
+#~ msgid "Display Modes"
+#~ msgstr "Anzeigen"
+
+#~ msgid "Basic settings"
+#~ msgstr "Grundkonfiguarationen"
+
+#~ msgid "Label *"
+#~ msgstr "Label *"
+
+#, fuzzy
+#~ msgid "Required field"
+#~ msgstr "Feld erfordelich"
+
+#~ msgid "Help text"
+#~ msgstr "Hilfetext"
+
+#~ msgid "%s field settings"
+#~ msgstr "Feldeinstellungen %s"
+
+#~ msgid "Required"
+#~ msgstr "Erforderlich"
+
+#~ msgid "Delete selected field and all related data, this can not be undone ?"
+#~ msgstr ""
+#~ "LÃ¶sche ausgewÃ¤hlte Felder und alle zugehÃ¶rigen Daten, dies kann nicht "
+#~ "mehr rÃ¼ckgÃ¤ngig gemacht werden"
+
+#~ msgid "Add field"
+#~ msgstr "Feld anlegen"
+
+#~ msgid "Help"
+#~ msgstr "Hilfe"
+
+#, fuzzy
+#~ msgid "Load order"
+#~ msgstr "app Verezichnis"
+
+#, fuzzy
+#~ msgid "User Login"
+#~ msgstr "Anmeldung"
+
+#, fuzzy
+#~ msgid "Block visitor for"
+#~ msgstr "Blockbeschreibung *"
+
+#, fuzzy
+#~ msgid "Force default"
+#~ msgstr "Als Standard einstellen"
+
+#, fuzzy
+#~ msgid "Rating"
+#~ msgstr "Zitieren"
+
+#, fuzzy
+#~ msgid "author"
+#~ msgstr "Autor"
+
+#~ msgid "Set as default"
+#~ msgstr "Als Standard einstellen"
+
+#, fuzzy
+#~ msgid "Delete selected theme ?\\nThis operation cannot be undone!"
+#~ msgstr ""
+#~ "LÃ¶sche ausgewÃ¤hlte Felder und alle zugehÃ¶rigen Daten, dies kann nicht "
+#~ "mehr rÃ¼ckgÃ¤ngig gemacht werden"
+
+#~ msgid "Uninstall"
+#~ msgstr "Deinstallieren"
+
+#~ msgid "Configure"
+#~ msgstr "Konfigurieren"
+
+#, fuzzy
+#~ msgid "Manage"
+#~ msgstr "Sprache"
+
+#, fuzzy
+#~ msgid "Font %d"
+#~ msgstr "auf %s"
+
+#, fuzzy
+#~ msgid "Size %d"
+#~ msgstr "GrÃ¶Ãe"
+
+#, fuzzy
+#~ msgid "Reset"
+#~ msgstr "Rollen"
+
+#, fuzzy
+#~ msgid "Reset selected style sheet ?"
+#~ msgstr "AusgewÃ¤hlten Block lÃ¶schen?"
+
+#~ msgid "Install"
+#~ msgstr "Installieren"
+
+#, fuzzy
+#~ msgid "Install From URL"
+#~ msgstr "Installieren"
+
+#, fuzzy
+#~ msgid "Delete selected module ? This change cannot be undone!"
+#~ msgstr ""
+#~ "LÃ¶sche ausgewÃ¤hlte Felder und alle zugehÃ¶rigen Daten, dies kann nicht "
+#~ "mehr rÃ¼ckgÃ¤ngig gemacht werden"
+
+#, fuzzy
+#~ msgid "Update orders"
+#~ msgstr "Aktualisierungs-Einstellungen"
+
+#~ msgid "Install New Theme"
+#~ msgstr "Neues Theme installieren"
+
+#, fuzzy
+#~ msgid "Customize Appearance"
+#~ msgstr "Design"
+
+#~ msgid "Logo"
+#~ msgstr "Logo"
+
+#~ msgid "Site name"
+#~ msgstr "Webseitenname"
+
+#~ msgid "Site slogan"
+#~ msgstr "Webseiten Slogan"
+
+#~ msgid "Vocabulary *"
+#~ msgstr "Vokabular *"
+
+#~ msgid "Check boxes/radio buttons"
+#~ msgstr "Check boxes/radio buttons"
+
+#~ msgid "Select list"
+#~ msgstr "Auswahliste"
+
+#~ msgid "Unlimited"
+#~ msgstr "Unbegrenzt"
+
+#~ msgid "Number of values"
+#~ msgstr "Anzahl der Werte"
+
+#~ msgid "x"
+#~ msgstr "x"
+
+#~ msgid "Add New Term"
+#~ msgstr "Neuen Term hinzufÃ¼gen"
+
+#~ msgid "Parent term"
+#~ msgstr "Eltern Term"
+
+#~ msgid "Manage Fields"
+#~ msgstr "Felder verwalten"
+
+#~ msgid "Manage User Fields"
+#~ msgstr "Verwalten benutzerdefinierte Felder"
+
+#~ msgid "Field settings"
+#~ msgstr "Feldeinstellungen"
+
+#~ msgid "Users"
+#~ msgstr "Benutzer"
+
+#~ msgid "User has been saved"
+#~ msgstr "Benutzer wurde gespeichert"
+
+#~ msgid "User could not be saved. Please, try again."
+#~ msgstr ""
+#~ "Benutzer konnte nicht gespeichert werden. Bitte versuchen Sie es erneut."
+
+#~ msgid "Add User"
+#~ msgstr "Benutzer hinzufÃ¼gen"
+
+#~ msgid "Add new user"
+#~ msgstr "Neuen Benutzer hinzufÃ¼gen"
+
+#~ msgid "Editing User"
+#~ msgstr "Benutzer bearbeiten"
+
+#~ msgid "Editing user"
+#~ msgstr "Benutzer bearbeiten"
+
+#~ msgid "User Permissions"
+#~ msgstr "Benutzerrechte"
+
+#~ msgid "User roles"
+#~ msgstr "Benutzerrollen"
+
+#~ msgid "User Roles"
+#~ msgstr "Benutzerrollen"
+
+#~ msgid "Editing role"
+#~ msgstr "Rolle bearbeiten"
+
+#~ msgid "Editing Role"
+#~ msgstr "Rolle bearbeiten"
+
+#~ msgid "Login"
+#~ msgstr "Anmeldung"
+
+#, fuzzy
+#~ msgid "Email could not be sent."
+#~ msgstr "Block konnte nicht gelÃ¶scht werden"
+
+#, fuzzy
+#~ msgid "Add New User"
+#~ msgstr "Neuen Term hinzufÃ¼gen"
+
+#~ msgid "E-mail *"
+#~ msgstr "E-Maill *"
+
+#~ msgid "Email"
+#~ msgstr "eMail"
+
+#, fuzzy
+#~ msgid "Update Role"
+#~ msgstr "Aktualisieren"
+
+#~ msgid "Structure"
+#~ msgstr "Struktur"
+
+#~ msgid "Appearance"
+#~ msgstr "Design"
+
+#~ msgid "Modules"
+#~ msgstr "Modul"
+
+#~ msgid "Configuration"
+#~ msgstr "Konfiguration"
+
+#~ msgid "View Site"
+#~ msgstr "Webseite anzeigen"
+
+#~ msgid "Log out"
+#~ msgstr "Ausloggen"
+
+#~ msgid "Logout"
+#~ msgstr "Logout"
+
+#~ msgid "My account"
+#~ msgstr "Mein Konto"
+
+#, fuzzy
+#~ msgid "« Previous "
+#~ msgstr "Â« Vorher"
+
+#, fuzzy
+#~ msgid " Next »"
+#~ msgstr " NÃ¤chster Â»"
+
+#, fuzzy
+#~ msgid "Manage content types."
+#~ msgstr "Inhaltstyp auswÃ¤hlen"
+
+#~ msgid ""
+#~ "Controls the visual building blocks a page is constructed with. Blocks are "
+#~ "boxes of content rendered into an area, or region, of a web page."
+#~ msgstr ""
+#~ "Steuert die visuellen Bloecke aus der eine Seite gebaut wurde. Bloecke "
+#~ "sind zusÃ¤tzliche Inhalte, die in bestimmte Bereiche, Regionen einer "
+#~ "Webseite angezeigt werden."
+
+#~ msgid "Allows users to comment on and discuss published content."
+#~ msgstr "Ermoeglicht Besuchern das Kommentieren von Inhalten."
+
+#, fuzzy
+#~ msgid "Theme in use"
+#~ msgstr "Theme Name"
+
+#, fuzzy
+#~ msgid "Article"
+#~ msgstr "Aktiv"
+
+#, fuzzy
+#~ msgid "Links hover"
+#~ msgstr "Verlinkungen"
+
+#, fuzzy
+#~ msgid "Administer blocks"
+#~ msgstr "neuen Block hinzufÃ¼gen"
+
+#, fuzzy
+#~ msgid "Administer comments"
+#~ msgstr "Neuen Kommentar hinzufÃ¼gen"
+
+#, fuzzy
+#~ msgid "Delete fields"
+#~ msgstr "LÃ¶schen"
+
+#, fuzzy
+#~ msgid "Translate interface texts"
+#~ msgstr "Ãbersetzungen"
+
+#, fuzzy
+#~ msgid "Administer content types"
+#~ msgstr "Inhaltstyp auswÃ¤hlen"
+
+#, fuzzy
+#~ msgid "Administer content"
+#~ msgstr "Ãbersetzungen"
+
+#, fuzzy
+#~ msgid "View published content"
+#~ msgstr "VerÃ¶ffentlichter Inhalt !?!"
+
+#, fuzzy
+#~ msgid "Structure Menu"
+#~ msgstr "Struktur"
+
+#, fuzzy
+#~ msgid "User Basics"
+#~ msgstr "Benutzer"
+
+#, fuzzy
+#~ msgid "Activate account"
+#~ msgstr "Mein Konto"
+
+#, fuzzy
+#~ msgid "View users profile"
+#~ msgstr "Benutzerrollen"
+
+#, fuzzy
+#~ msgid "My account section"
+#~ msgstr "Mein Konto"
+
+#, fuzzy
+#~ msgid "Administer permissions"
+#~ msgstr "Benutzerrechte"
+
+#, fuzzy
+#~ msgid "Administer users"
+#~ msgstr "Neuen Benutzer hinzufÃ¼gen"
+
+#, fuzzy
+#~ msgid "List"
+#~ msgstr "Verlinkungen"
+
+#, fuzzy
+#~ msgid "Print"
+#~ msgstr "Plano"
+
+#, fuzzy
+#~ msgid "User profile"
+#~ msgstr "Benutzerrollen"
+
+#, fuzzy
+#~ msgid "Thumbnail"
+#~ msgstr "Theme Miniaturbild"
+
+#, fuzzy
+#~ msgid "Large"
+#~ msgstr "Sprache"
+
+#~ msgid "said on %s"
+#~ msgstr "gesagt auf %s"
+
+#~ msgid "Quote"
+#~ msgstr "Zitat"
+
+#, fuzzy
+#~ msgid "%d comments"
+#~ msgstr "Kommentare"
+
+#~ msgid "Add new comment"
+#~ msgstr "Neuen Kommentar hinzufÃ¼gen"
+
+#~ msgid "Your name"
+#~ msgstr "Ihr Name"
+
+#~ msgid "Your name *"
+#~ msgstr "Ihr Name *"
+
+#~ msgid "Comment *"
+#~ msgstr "Kommentar *"
+
+#~ msgid "M d, Y"
+#~ msgstr "d M, Y"
+
+#, fuzzy
+#~ msgid "Configuration exists"
+#~ msgstr "Konfiguration"
+
+#, fuzzy
+#~ msgid "Your real name."
+#~ msgstr "Ihr Name"
+
+#~ msgid "View site"
+#~ msgstr "Webseite anzeigen"
+
+#, fuzzy
+#~ msgid "Home"
+#~ msgstr "Hostname"
+
+#~ msgid "Invalid description."
+#~ msgstr "UngÃ¼ltige Beschreibung"
+
+#~ msgid "Invalid block body."
+#~ msgstr "UngÃ¼ltiger Blockinhalt"
+
+#~ msgid "Commenter name required."
+#~ msgstr "Kommentierername erforderlich."
+
+#~ msgid "Invalid email."
+#~ msgstr "Ungueltige E-Mail."
+
+#~ msgid "Invalid homepage URL."
+#~ msgstr "Ungueltige Homepage URL"
+
+#~ msgid "Comment body can not be empty."
+#~ msgstr "Kommentare duerfen nicht leer sein."
+
+#, fuzzy
+#~ msgid "Invalid field label."
+#~ msgstr "Ungueltige E-Mail."
+
+#, fuzzy
+#~ msgid "Select a field type."
+#~ msgstr "Inhaltstyp auswÃ¤hlen"
+
+#, fuzzy
+#~ msgid "English name can not be empty."
+#~ msgstr "Datum darf nicht leer sein"
+
+#, fuzzy
+#~ msgid "Native name can not be empty."
+#~ msgstr "Datum darf nicht leer sein"
+
+#, fuzzy
+#~ msgid "Invalid language direction."
+#~ msgstr "UngÃ¼ltige Beschreibung"
+
+#, fuzzy
+#~ msgid "Original text can not be empty."
+#~ msgstr "Datum darf nicht leer sein"
+
+#, fuzzy
+#~ msgid "Menu title can not be empty."
+#~ msgstr "Datum darf nicht leer sein"
+
+#, fuzzy
+#~ msgid "Menu link title can not be empty."
+#~ msgstr "Datum darf nicht leer sein"
+
+#, fuzzy
+#~ msgid "Invalid link path."
+#~ msgstr "UngÃ¼ltiger Blockinhalt"
+
+#, fuzzy
+#~ msgid "Node title can not be empty."
+#~ msgstr "Datum darf nicht leer sein"
+
+#, fuzzy
+#~ msgid "Type name can not be empty."
+#~ msgstr "Datum darf nicht leer sein"
+
+#, fuzzy
+#~ msgid "Title field label can not be empty."
+#~ msgstr "Datum darf nicht leer sein"

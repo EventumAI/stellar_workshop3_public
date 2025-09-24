@@ -1,0 +1,40 @@
+{
+    "name": "quickapps-plugins/installer",
+    "description": "Handles (un)installations of QuickAppsCMS Plugins and Themes.",
+    "type": "cakephp-plugin",
+    "keywords": ["framework", "cms", "cmf", "quickapps", "plugin"],
+    "homepage": "http://quickappscms.org",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Christopher Castro",
+            "email": "chris@quickapps.es"
+        }
+    ],
+    "require": {
+        "quickapps-themes/backend-theme": "*",
+        "quickapps-plugins/block": "*",
+        "quickapps-plugins/bootstrap": "*",
+        "quickapps-plugins/captcha": "*",
+        "quickapps-plugins/cms": "*",
+        "quickapps-plugins/comment": "*",
+        "quickapps-plugins/content": "*",
+        "quickapps-plugins/eav": "*",
+        "quickapps-plugins/field": "*",
+        "quickapps-themes/frontend-theme": "*",
+        "quickapps-plugins/jquery": "*",
+        "quickapps-plugins/locale": "*",
+        "quickapps-plugins/media-manager": "*",
+        "quickapps-plugins/menu": "*",
+        "quickapps-plugins/search": "*",
+        "quickapps-plugins/system": "*",
+        "quickapps-plugins/taxonomy": "*",
+        "quickapps-plugins/user": "*",
+        "quickapps-plugins/wysiwyg": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Installer\\": "src"
+        }
+    }
+}

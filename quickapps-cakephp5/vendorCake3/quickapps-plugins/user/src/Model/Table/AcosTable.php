@@ -1,0 +1,174 @@
+<?php
+/**
+ * Licensed under The GPL-3.0 License
+ * For full copyright and license information, please see the LICENSE.txt
+ * Redistributions of files must retain the above copyright notice.
+ *
+ * @since    2.0.0
+ * @author   Christopher Castro <chris@quickapps.es>
+ * @link     http://www.quickappscms.org
+ * @license  http://opensource.org/licenses/gpl-3.0.html GPL-3.0 License
+ */
+namespace User\Model\Table;
+
+use Cake\Cache\Cache;
+use Cake\Event\Event;
+use Cake\ORM\Table;
+use User\Model\Entity\Aco;
+
+/**
+ * Represents "acos" database table.
+ *
+ */
+class AcosTable extends Table
+{
+
+    /**
+     * Initialize a table instance. Called after the constructor.
+     *
+     * @param array $config Configuration options passed to the constructor
+     * @return void
+     */
+    public function initialize(array $config)
+    {
+        $this->addBehavior('Tree');
+        $this->belongsToMany('Roles', [
+            'className' => 'User.Roles',
+            'joinTable' => 'permissions',
+            'propertyName' => 'roles',
+        ]);
+
+        // removes all permissions when a content is removed from the tree
+        $this->hasMany('Permissions', [
+            'className' => 'User.Permissions',
+            'propertyName' => 'permissions',
+            'dependent' => true,
+        ]);
+    }
+
+    /**
+     * We create a hash of "alias" property so we can perform
+     * case sensitive SQL comparisons.
+     *
+     * @param \Cake\Event\Event $event The event that was triggered
+     * @param \User\Model\Entity\Aco $aco ACO entity being saved
+     * @return void
+     */
+    public function beforeSave(Event $event, Aco $aco)
+    {
+        if ($aco->isNew()) {
+            $aco->set('alias_hash', md5($aco->alias));
+        }
+    }
+
+    /**
+     * Clear permissions cache after ACO save so new changes are applied.
+     *
+     * @param \Cake\Event\Event $event The event that was triggered
+     * @param \User\Model\Entity\Aco $aco ACO entity that was saved
+     * @return void
+     */
+    public function afterSave(Event $event, Aco $aco)
+    {
+        Cache::clear(false, 'permissions');
+    }
+
+    /**
+     * Retrieves the ACO contents for the given ACO path.
+     *
+     * ### ACO path format:
+     *
+     * As a string describing a path:
+     *
+     *     PluginName/ControllerName/actionName
+     *
+     * Or an associative array which values describes a path, for instance:
+     *
+     * ```php
+     * [
+     *     'plugin' => YourPlugin,
+     *     'prefix' => Admin,
+     *     'controller' => Users,
+     *     'action' => index,
+     * ]
+     * ```
+     *
+     * The above array is equivalent to: `PluginName/Admin/Users/index`
+     *
+     * @param string|array $ref ACO path as described above
+     * @return \Cake\ORM\Query|bool False if not found or query result if found
+     */
+    public function node($ref)
+    {
+        $type = $this->alias();
+        $table = $this->table();
+        $path = [];
+
+        if (is_array($ref)) {
+            $path = implode('/', array_values(array_filter($ref)));
+            $path = explode('/', $path);
+        } elseif (is_string($ref)) {
+            $path = explode('/', $ref);
+        }
+
+        if (empty($path)) {
+            return false;
+        }
+
+        $start = $path[0];
+        unset($path[0]);
+
+        $queryData = [
+            'conditions' => [
+                "{$type}.lft" . ' <= ' . "{$type}0.lft",
+                "{$type}.rght" . ' >= ' . "{$type}0.rght",
+            ],
+            'fields' => ['id', 'parent_id', 'alias'],
+            'join' => [[
+                    'table' => $table,
+                    'alias' => "{$type}0",
+                    'type' => 'INNER',
+                    'conditions' => [
+                        "{$type}0.alias_hash" => md5($start),
+                        "{$type}0.plugin = {$type}.plugin",
+                    ]
+            ]],
+            'order' => "{$type}.lft" . ' DESC'
+        ];
+
+        foreach ($path as $i => $alias) {
+            $j = $i - 1;
+
+            $queryData['join'][] = [
+                'table' => $table,
+                'alias' => "{$type}{$i}",
+                'type' => 'INNER',
+                'conditions' => [
+                    "{$type}{$i}.lft" . ' > ' . "{$type}{$j}.lft",
+                    "{$type}{$i}.rght" . ' < ' . "{$type}{$j}.rght",
+                    "{$type}{$i}.alias_hash" => md5($alias),
+                    "{$type}{$i}.plugin = {$type}{$i}.plugin",
+                    "{$type}{$j}.id" . ' = ' . "{$type}{$i}.parent_id"
+                ]
+            ];
+
+            $queryData['conditions'] = [
+                'OR' => [
+                    "{$type}.lft" . ' <= ' . "{$type}0.lft" . ' AND ' . "{$type}.rght" . ' >= ' . "{$type}0.rght",
+                    "{$type}.lft" . ' <= ' . "{$type}{$i}.lft" . ' AND ' . "{$type}.rght" . ' >= ' . "{$type}{$i}.rght"
+                ]
+            ];
+        }
+        $query = $this->find('all', $queryData);
+        $result = $query->toArray();
+        $path = array_values($path);
+        if (!isset($result[0]) ||
+            (!empty($path) && $result[0]->alias !== $path[count($path) - 1]) ||
+            (empty($path) && $result[0]->alias !== $start)
+        ) {
+            return false;
+        }
+
+        return $query;
+    }
+}

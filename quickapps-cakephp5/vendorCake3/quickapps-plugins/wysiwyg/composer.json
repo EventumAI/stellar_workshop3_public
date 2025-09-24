@@ -1,0 +1,22 @@
+{
+    "name": "quickapps-plugins/wysiwyg",
+    "description": "Wysiwyg editor for textareas powered by CKEditor.",
+    "type": "cakephp-plugin",
+    "keywords": ["framework", "cms", "cmf", "quickapps", "plugin"],
+    "homepage": "http://quickappscms.org",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Christopher Castro",
+            "email": "chris@quickapps.es"
+        }
+    ],
+    "require": {
+        "quickapps-plugins/cms": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wysiwyg\\": "src"
+        }
+    }
+}

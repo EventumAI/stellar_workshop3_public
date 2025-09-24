@@ -1,0 +1,22 @@
+{
+    "name": "quickapps-plugins/media-manager",
+    "description": "Allows you to upload, manage, and display files from your server directories.",
+    "type": "cakephp-plugin",
+    "keywords": ["quickapps", "plugin", "multimedia", "files", "upload"],
+    "homepage": "http://quickappscms.org",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Christopher Castro",
+            "email": "chris@quickapps.es"
+        }
+    ],
+    "require": {
+        "quickapps-plugins/cms": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "MediaManager\\": "src"
+        }
+    }
+}

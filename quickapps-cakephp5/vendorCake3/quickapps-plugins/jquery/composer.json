@@ -1,0 +1,22 @@
+{
+    "name": "quickapps-plugins/jquery",
+    "description": "Provides jQuery assets and CakePHP helpers for working with jQuery.",
+    "type": "cakephp-plugin",
+    "keywords": ["framework", "cms", "cmf", "quickapps", "plugin", "jquery", "jquery ui"],
+    "homepage": "http://quickappscms.org",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Christopher Castro",
+            "email": "chris@quickapps.es"
+        }
+    ],
+    "require": {
+        "quickapps-plugins/cms": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jquery\\": "src"
+        }
+    }
+}
