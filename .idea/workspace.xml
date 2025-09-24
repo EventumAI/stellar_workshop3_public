@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="548c33a4-3618-484a-ac7b-4627ba0b0a8e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/README.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/config/bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/config/eav-mysql.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Locale/eav.pot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/EavBehavior.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/EavToolbox.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/QueryScope/OrderScope.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/QueryScope/QueryScopeInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/QueryScope/SelectScope.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/QueryScope/WhereScope.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Entity/CachedColumn.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Entity/EavValue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Table/EavAttributesTable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Table/EavValuesTable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Shell/TableShell.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Shell/Task/InfoTask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Shell/Task/SchemaTask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/tests/Fixture/DummyFixture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/tests/Fixture/EavAttributesFixture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/tests/Fixture/EavValuesFixture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/opt/homebrew/Cellar/php/8.4.5_1/bin/php" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="3346iw8FouxjIKhnfnflUKTWFIi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;git-widget-placeholder&quot;: &quot;eav__plugin&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/cadukiz/Desktop/dev/workshops/W3/quickapps-cakephp5/plugins&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/quickapps-cakephp5/plugins" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-PS-252.23892.419" />
+        <option value="bundled-php-predefined-a98d8de5180a-c72577f2c82f-com.jetbrains.php.sharedIndexes-PS-252.23892.419" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="548c33a4-3618-484a-ac7b-4627ba0b0a8e" name="Changes" comment="" />
+      <created>1758564127477</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1758564127477</updated>
+      <workItem from="1758564128501" duration="39103000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
