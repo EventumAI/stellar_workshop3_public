@@ -6,15 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="548c33a4-3618-484a-ac7b-4627ba0b0a8e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migration-docs/CakePHP_3_TO_5_GUIDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/migration-docs/CakePHP_3_TO_5_GUIDE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/.phpunit.cache/test-results" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/.phpunit.cache/test-results" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/logs/cli-debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/logs/cli-debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/EavBehavior.php" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/EavBehavior.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/EavToolbox.php" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/EavToolbox.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/tmp/cache/models/myapp_cake_model_test_dummy" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/tmp/cache/models/myapp_cake_model_test_dummy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/tmp/cache/models/myapp_cake_model_test_eav_attributes" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/tmp/cache/models/myapp_cake_model_test_eav_attributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/tmp/tests.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/tmp/tests.sqlite" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +29,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;git-widget-placeholder&quot;: &quot;eav__plugin&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;presentation__scripts&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/cadukiz/Desktop/dev/workshops/W3/quickapps-cakephp5/plugins&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
@@ -64,7 +55,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1758564127477</updated>
-      <workItem from="1758564128501" duration="65719000" />
+      <workItem from="1758564128501" duration="67020000" />
     </task>
     <servers />
   </component>
