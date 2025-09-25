@@ -51,3 +51,230 @@ PHPUnit\TextUI\Application->run() /var/www/html/vendor/phpunit/phpunit/phpunit, 
 /var/www/html/vendor/bin/phpunit /var/www/html/vendor/bin/phpunit, line 122
 [main]
 
+2025-09-24 11:28:21 debug: Reading migrations status for test...
+2025-09-24 11:31:23 debug: Reading migrations status for test...
+2025-09-24 11:31:46 debug: Reading migrations status for test...
+2025-09-24 11:32:19 debug: Reading migrations status for test...
+2025-09-24 11:35:54 debug: Reading migrations status for test...
+2025-09-24 11:36:13 debug: Reading migrations status for test...
+2025-09-24 11:36:50 debug: Reading migrations status for test...
+2025-09-24 11:38:23 debug: Reading migrations status for test...
+2025-09-24 11:39:02 debug: Reading migrations status for test...
+2025-09-24 11:39:31 debug: Reading migrations status for test...
+2025-09-24 11:40:21 debug: Reading migrations status for test...
+2025-09-24 11:41:06 debug: Reading migrations status for test...
+2025-09-24 11:41:59 debug: Reading migrations status for test...
+2025-09-24 11:42:59 debug: Reading migrations status for test...
+2025-09-24 11:44:07 debug: Reading migrations status for test...
+2025-09-24 11:46:33 debug: Reading migrations status for test...
+2025-09-24 11:48:05 debug: Reading migrations status for test...
+2025-09-24 11:49:43 debug: Reading migrations status for test...
+2025-09-24 11:49:43 debug: Since 5.1.0: Cache config `_cake_core_` is deprecated. Use `_cake_translations_` instead
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line: 152
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/I18n/I18n.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only. in /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php on line 377
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/var/www/html/vendor/cakephp/cakephp/src/Core/functions.php /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php, line 377
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 80
+Cake\I18n\I18n::translators() /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 152
+Cake\I18n\I18n::getTranslator() /var/www/html/vendor/cakephp/cakephp/src/I18n/functions.php, line 87
+/var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php /var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php, line 77
+/var/www/html/plugins/eav/src/Model/Behavior/EavBehavior.php /var/www/html/plugins/eav/src/Model/Behavior/EavBehavior.php, line 243
+Eav\Model\Behavior\EavBehavior->addColumn() /var/www/html/vendor/cakephp/cakephp/src/ORM/BehaviorRegistry.php, line 303
+Cake\ORM\BehaviorRegistry->call() /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php, line 2823
+Cake\ORM\Table->__call() /var/www/html/plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php, line 254
+Eav\Test\TestCase\Model\Behavior\EavBehaviorTest->testAddColumnExistingThrows() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1548
+PHPUnit\Framework\TestCase->runTest() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 686
+PHPUnit\Framework\TestCase->runBare() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestRunner.php, line 106
+PHPUnit\Framework\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 516
+PHPUnit\Framework\TestCase->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 64
+PHPUnit\TextUI\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Application.php, line 204
+PHPUnit\TextUI\Application->run() /var/www/html/vendor/phpunit/phpunit/phpunit, line 104
+/var/www/html/vendor/bin/phpunit /var/www/html/vendor/bin/phpunit, line 122
+[main]
+
+2025-09-24 11:49:43 debug: Since 5.0.0: Calling Table::get() with options array is deprecated. Use named arguments instead.
+/var/www/html/plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php, line: 433
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only. in /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php on line 377
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/var/www/html/vendor/cakephp/cakephp/src/Core/functions.php /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php, line 377
+/var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php, line 1543
+Cake\ORM\Table->get() /var/www/html/plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php, line 433
+Eav\Test\TestCase\Model\Behavior\EavBehaviorTest->testFind() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1548
+PHPUnit\Framework\TestCase->runTest() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 686
+PHPUnit\Framework\TestCase->runBare() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestRunner.php, line 106
+PHPUnit\Framework\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 516
+PHPUnit\Framework\TestCase->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 64
+PHPUnit\TextUI\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Application.php, line 204
+PHPUnit\TextUI\Application->run() /var/www/html/vendor/phpunit/phpunit/phpunit, line 104
+/var/www/html/vendor/bin/phpunit /var/www/html/vendor/bin/phpunit, line 122
+[main]
+
+2025-09-24 11:56:56 debug: Reading migrations status for test...
+2025-09-24 11:56:56 debug: Since 5.1.0: Cache config `_cake_core_` is deprecated. Use `_cake_translations_` instead
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line: 152
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/I18n/I18n.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only. in /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php on line 377
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/var/www/html/vendor/cakephp/cakephp/src/Core/functions.php /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php, line 377
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 80
+Cake\I18n\I18n::translators() /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 152
+Cake\I18n\I18n::getTranslator() /var/www/html/vendor/cakephp/cakephp/src/I18n/functions.php, line 87
+/var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php /var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php, line 77
+/var/www/html/plugins/eav/src/Model/Behavior/EavBehavior.php /var/www/html/plugins/eav/src/Model/Behavior/EavBehavior.php, line 244
+Eav\Model\Behavior\EavBehavior->addColumn() /var/www/html/vendor/cakephp/cakephp/src/ORM/BehaviorRegistry.php, line 303
+Cake\ORM\BehaviorRegistry->call() /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php, line 2823
+Cake\ORM\Table->__call() /var/www/html/plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php, line 254
+Eav\Test\TestCase\Model\Behavior\EavBehaviorTest->testAddColumnExistingThrows() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1548
+PHPUnit\Framework\TestCase->runTest() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 686
+PHPUnit\Framework\TestCase->runBare() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestRunner.php, line 106
+PHPUnit\Framework\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 516
+PHPUnit\Framework\TestCase->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 64
+PHPUnit\TextUI\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Application.php, line 204
+PHPUnit\TextUI\Application->run() /var/www/html/vendor/phpunit/phpunit/phpunit, line 104
+/var/www/html/vendor/bin/phpunit /var/www/html/vendor/bin/phpunit, line 122
+[main]
+
+2025-09-24 11:56:56 debug: Since 5.0.0: Calling Table::get() with options array is deprecated. Use named arguments instead.
+/var/www/html/plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php, line: 433
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only. in /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php on line 377
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/var/www/html/vendor/cakephp/cakephp/src/Core/functions.php /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php, line 377
+/var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php, line 1543
+Cake\ORM\Table->get() /var/www/html/plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php, line 433
+Eav\Test\TestCase\Model\Behavior\EavBehaviorTest->testFind() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1548
+PHPUnit\Framework\TestCase->runTest() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 686
+PHPUnit\Framework\TestCase->runBare() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestRunner.php, line 106
+PHPUnit\Framework\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 516
+PHPUnit\Framework\TestCase->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 64
+PHPUnit\TextUI\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Application.php, line 204
+PHPUnit\TextUI\Application->run() /var/www/html/vendor/phpunit/phpunit/phpunit, line 104
+/var/www/html/vendor/bin/phpunit /var/www/html/vendor/bin/phpunit, line 122
+[main]
+
+2025-09-24 11:56:56 debug: Since 5.2.0: Returning a value from event listeners is deprecated. Use `$event->setResult()` instead in `Model.beforeFind` of `Eav\Model\Behavior\EavBehavior::beforeFind()`
+/var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line: 316
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/Event/EventManager.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only. in /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php on line 377
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/var/www/html/vendor/cakephp/cakephp/src/Core/functions.php /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php, line 377
+/var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 350
+Cake\Event\EventManager->_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 316
+Cake\Event\EventManager->dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 88
+Cake\ORM\Table->dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/ORM/Query/SelectQuery.php, line 1537
+Cake\ORM\Query\SelectQuery->triggerBeforeFind() /var/www/html/vendor/cakephp/cakephp/src/ORM/Query/SelectQuery.php, line 1564
+Cake\ORM\Query\SelectQuery->_execute() /var/www/html/vendor/cakephp/cakephp/src/ORM/Query/SelectQuery.php, line 382
+Cake\ORM\Query\SelectQuery->all() /var/www/html/vendor/cakephp/cakephp/src/ORM/Query/SelectQuery.php, line 586
+Cake\ORM\Query\SelectQuery->first() /var/www/html/vendor/cakephp/cakephp/src/ORM/Query/SelectQuery.php, line 597
+Cake\ORM\Query\SelectQuery->firstOrFail() /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php, line 1574
+Cake\ORM\Table->get() /var/www/html/plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php, line 433
+Eav\Test\TestCase\Model\Behavior\EavBehaviorTest->testFind() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1548
+PHPUnit\Framework\TestCase->runTest() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 686
+PHPUnit\Framework\TestCase->runBare() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestRunner.php, line 106
+PHPUnit\Framework\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 516
+PHPUnit\Framework\TestCase->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 64
+PHPUnit\TextUI\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Application.php, line 204
+PHPUnit\TextUI\Application->run() /var/www/html/vendor/phpunit/phpunit/phpunit, line 104
+/var/www/html/vendor/bin/phpunit /var/www/html/vendor/bin/phpunit, line 122
+[main]
+
+2025-09-24 11:57:56 debug: Reading migrations status for test...
+2025-09-24 11:57:56 debug: Since 5.1.0: Cache config `_cake_core_` is deprecated. Use `_cake_translations_` instead
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line: 152
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/I18n/I18n.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only. in /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php on line 377
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/var/www/html/vendor/cakephp/cakephp/src/Core/functions.php /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php, line 377
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 80
+Cake\I18n\I18n::translators() /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 152
+Cake\I18n\I18n::getTranslator() /var/www/html/vendor/cakephp/cakephp/src/I18n/functions.php, line 87
+/var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php /var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php, line 77
+/var/www/html/plugins/eav/src/Model/Behavior/EavBehavior.php /var/www/html/plugins/eav/src/Model/Behavior/EavBehavior.php, line 244
+Eav\Model\Behavior\EavBehavior->addColumn() /var/www/html/vendor/cakephp/cakephp/src/ORM/BehaviorRegistry.php, line 303
+Cake\ORM\BehaviorRegistry->call() /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php, line 2823
+Cake\ORM\Table->__call() /var/www/html/plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php, line 254
+Eav\Test\TestCase\Model\Behavior\EavBehaviorTest->testAddColumnExistingThrows() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1548
+PHPUnit\Framework\TestCase->runTest() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 686
+PHPUnit\Framework\TestCase->runBare() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestRunner.php, line 106
+PHPUnit\Framework\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 516
+PHPUnit\Framework\TestCase->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 64
+PHPUnit\TextUI\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Application.php, line 204
+PHPUnit\TextUI\Application->run() /var/www/html/vendor/phpunit/phpunit/phpunit, line 104
+/var/www/html/vendor/bin/phpunit /var/www/html/vendor/bin/phpunit, line 122
+[main]
+
+2025-09-24 11:57:56 debug: Since 5.0.0: Calling Table::get() with options array is deprecated. Use named arguments instead.
+/var/www/html/plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php, line: 433
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only. in /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php on line 377
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/var/www/html/vendor/cakephp/cakephp/src/Core/functions.php /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php, line 377
+/var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php, line 1543
+Cake\ORM\Table->get() /var/www/html/plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php, line 433
+Eav\Test\TestCase\Model\Behavior\EavBehaviorTest->testFind() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1548
+PHPUnit\Framework\TestCase->runTest() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 686
+PHPUnit\Framework\TestCase->runBare() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestRunner.php, line 106
+PHPUnit\Framework\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 516
+PHPUnit\Framework\TestCase->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 64
+PHPUnit\TextUI\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Application.php, line 204
+PHPUnit\TextUI\Application->run() /var/www/html/vendor/phpunit/phpunit/phpunit, line 104
+/var/www/html/vendor/bin/phpunit /var/www/html/vendor/bin/phpunit, line 122
+[main]
+
+2025-09-24 11:57:56 debug: Since 5.2.0: Returning a value from event listeners is deprecated. Use `$event->setResult()` instead in `Model.beforeFind` of `Eav\Model\Behavior\EavBehavior::beforeFind()`
+/var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line: 316
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/Event/EventManager.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only. in /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php on line 377
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/var/www/html/vendor/cakephp/cakephp/src/Core/functions.php /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php, line 377
+/var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 350
+Cake\Event\EventManager->_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 316
+Cake\Event\EventManager->dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 88
+Cake\ORM\Table->dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/ORM/Query/SelectQuery.php, line 1537
+Cake\ORM\Query\SelectQuery->triggerBeforeFind() /var/www/html/vendor/cakephp/cakephp/src/ORM/Query/SelectQuery.php, line 1564
+Cake\ORM\Query\SelectQuery->_execute() /var/www/html/vendor/cakephp/cakephp/src/ORM/Query/SelectQuery.php, line 382
+Cake\ORM\Query\SelectQuery->all() /var/www/html/vendor/cakephp/cakephp/src/ORM/Query/SelectQuery.php, line 586
+Cake\ORM\Query\SelectQuery->first() /var/www/html/vendor/cakephp/cakephp/src/ORM/Query/SelectQuery.php, line 597
+Cake\ORM\Query\SelectQuery->firstOrFail() /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php, line 1574
+Cake\ORM\Table->get() /var/www/html/plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php, line 433
+Eav\Test\TestCase\Model\Behavior\EavBehaviorTest->testFind() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1548
+PHPUnit\Framework\TestCase->runTest() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 686
+PHPUnit\Framework\TestCase->runBare() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestRunner.php, line 106
+PHPUnit\Framework\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 516
+PHPUnit\Framework\TestCase->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 64
+PHPUnit\TextUI\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Application.php, line 204
+PHPUnit\TextUI\Application->run() /var/www/html/vendor/phpunit/phpunit/phpunit, line 104
+/var/www/html/vendor/bin/phpunit /var/www/html/vendor/bin/phpunit, line 122
+[main]
+
+2025-09-24 11:57:56 debug: Since 5.0.0: Calling `findAll` finder with options array is deprecated. Use named arguments instead.
+/var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php, line: 2645
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/ORM/Table.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only. in /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php on line 377
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/var/www/html/vendor/cakephp/cakephp/src/Core/functions.php /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php, line 377
+/var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php, line 2713
+Cake\ORM\Table->invokeFinder() /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php, line 2645
+Cake\ORM\Table->callFinder() /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php, line 1279
+Cake\ORM\Table->find() /var/www/html/plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php, line 518
+Eav\Test\TestCase\Model\Behavior\EavBehaviorTest->testFindWithBundle() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1548
+PHPUnit\Framework\TestCase->runTest() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 686
+PHPUnit\Framework\TestCase->runBare() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestRunner.php, line 106
+PHPUnit\Framework\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 516
+PHPUnit\Framework\TestCase->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 64
+PHPUnit\TextUI\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Application.php, line 204
+PHPUnit\TextUI\Application->run() /var/www/html/vendor/phpunit/phpunit/phpunit, line 104
+/var/www/html/vendor/bin/phpunit /var/www/html/vendor/bin/phpunit, line 122
+[main]
+

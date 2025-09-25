@@ -61,12 +61,28 @@ class EavBehaviorTest extends TestCase
         parent::setUp();
 
         // TODO: Refactor for CakePHP 5 patterns
+        // Quick fix: Configure missing cache for EAV - force reconfigure to ensure persistence
+        if (\Cake\Cache\Cache::configured('eav_table_attrs')) {
+            \Cake\Cache\Cache::drop('eav_table_attrs');
+        }
+        \Cake\Cache\Cache::setConfig('eav_table_attrs', [
+            'className' => 'Array',
+            'duration' => '+1 hour',
+        ]);
         // Quick fix: Ensure plugin is loaded for tests
         if (!class_exists('Eav\Model\Behavior\EavBehavior')) {
             // Force autoload by requiring the file if class doesn't exist
             $behaviorPath = dirname(dirname(dirname(dirname(__DIR__)))) . '/src/Model/Behavior/EavBehavior.php';
             if (file_exists($behaviorPath)) {
                 require_once $behaviorPath;
+            }
+        }
+
+        // Quick fix: Manually require EavToolbox dependency
+        if (!class_exists('Eav\Model\Behavior\EavToolbox')) {
+            $toolboxPath = dirname(dirname(dirname(dirname(__DIR__)))) . '/src/Model/Behavior/EavToolbox.php';
+            if (file_exists($toolboxPath)) {
+                require_once $toolboxPath;
             }
         }
 
@@ -116,7 +132,9 @@ class EavBehaviorTest extends TestCase
         $this->table->addBehavior('Eav.Eav');
 
         // Clear cache before each test
-        Cache::clear('eav_table_attrs');
+        if (\Cake\Cache\Cache::configured('eav_table_attrs')) {
+            Cache::clear('eav_table_attrs');
+        }
     }
 
     /**
@@ -128,7 +146,9 @@ class EavBehaviorTest extends TestCase
     {
         parent::tearDown();
         TableRegistry::getTableLocator()->clear();
-        Cache::clear('eav_table_attrs');
+        if (\Cake\Cache\Cache::configured('eav_table_attrs')) {
+            Cache::clear('eav_table_attrs');
+        }
     }
 
     // ========================================================================
