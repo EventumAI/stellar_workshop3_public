@@ -28,8 +28,8 @@ use Cake\Utility\Hash;
 use Eav\Model\Behavior\EavToolbox;
 use Eav\Model\Behavior\QueryScope\QueryScopeInterface;
 use Eav\Model\Behavior\QueryScope\SelectScope;
-use Eav\Model\Behavior\QueryScope\WhereScope;
 use Eav\Model\Entity\CachedColumn;
+use Eav\Model\Behavior\QueryScope\WhereScope;
 use \ArrayObject;
 
 /**
@@ -259,13 +259,18 @@ class EavBehavior extends Behavior implements PropertyMarshalInterface
         $data['name'] = $name;
         // TODO: Refactor for CakePHP 5 patterns - table() method is deprecated
         $data['table_alias'] = $this->_table->getTable();
-        // TODO: Refactor for CakePHP 5 patterns - TableRegistry::get() is deprecated
+        // TODO: Refactor for CakePHP 5 patterns - TableRegistry::get() is deprecated, handle NULL bundle values
+        $whereConditions = [
+            'name' => $data['name'],
+            'table_alias' => $data['table_alias'],
+        ];
+        if ($data['bundle'] === null) {
+            $whereConditions['bundle IS'] = null;
+        } else {
+            $whereConditions['bundle'] = $data['bundle'];
+        }
         $attr = FactoryLocator::get('Table')->get('Eav.EavAttributes')->find()
-            ->where([
-                'name' => $data['name'],
-                'table_alias' => $data['table_alias'],
-                'bundle IS' => $data['bundle'],
-            ])
+            ->where($whereConditions)
             ->limit(1)
             ->first();
 
@@ -273,20 +278,25 @@ class EavBehavior extends Behavior implements PropertyMarshalInterface
             throw new FatalErrorException(__d('eav', 'Virtual column "{0}" already defined, use the "overwrite" option if you want to change it.', $name));
         }
 
-        if ($attr) {
-            $attr = FactoryLocator::get('Table')->get('Eav.EavAttributes')->patchEntity($attr, $data);
+        // TODO: Refactor for CakePHP 5 patterns - handle NULL id entities from queries
+        $attributesTable = FactoryLocator::get('Table')->get('Eav.EavAttributes');
+        if ($attr && $attr->get('id') !== null) {
+            // Only patch if we have a valid existing entity with an id
+            $attr = $attributesTable->patchEntity($attr, $data);
         } else {
-            $attr = FactoryLocator::get('Table')->get('Eav.EavAttributes')->newEntity($data);
+            // Create new entity if no existing entity or existing entity has NULL id
+            $attr = $attributesTable->newEntity($data);
         }
 
-        $success = (bool)FactoryLocator::get('Table')->get('Eav.EavAttributes')->save($attr);
+        $success = (bool)$attributesTable->save($attr);
         // TODO: Refactor for CakePHP 5 patterns - quick fix for cache
         if (Cache::configured('eav_table_attrs')) {
             Cache::clear('eav_table_attrs');
         }
 
         if ($errors) {
-            return (array)$attr->errors();
+            // TODO: Refactor for CakePHP 5 patterns - errors() method is deprecated, use getErrors()
+            return (array)$attr->getErrors();
         }
 
         return (bool)$success;
@@ -301,22 +311,36 @@ class EavBehavior extends Behavior implements PropertyMarshalInterface
      */
     public function dropColumn($name, $bundle = null)
     {
-        // TODO: Refactor for CakePHP 5 patterns - TableRegistry::get() is deprecated
+        // TODO: Refactor for CakePHP 5 patterns - TableRegistry::get() is deprecated, handle NULL bundle
+        $whereConditions = [
+            'name' => $name,
+            'table_alias' => $this->_table->getTable(),
+        ];
+        if ($bundle === null) {
+            $whereConditions['bundle IS'] = null;
+        } else {
+            $whereConditions['bundle'] = $bundle;
+        }
         $attr = FactoryLocator::get('Table')->get('Eav.EavAttributes')->find()
-            ->where([
-                'name' => $name,
-                'table_alias' => $this->_table->getTable(),
-                'bundle IS' => $bundle,
-            ])
+            ->where($whereConditions)
             ->limit(1)
             ->first();
+
 
         // TODO: Refactor for CakePHP 5 patterns - quick fix for cache
         if (Cache::configured('eav_table_attrs')) {
             Cache::clear('eav_table_attrs');
         }
+        // TODO: Refactor for CakePHP 5 patterns - handle NULL id entities from queries
         if ($attr) {
-            return (bool)FactoryLocator::get('Table')->get('Eav.EavAttributes')->delete($attr);
+            if ($attr->get('id') !== null) {
+                return (bool)FactoryLocator::get('Table')->get('Eav.EavAttributes')->delete($attr);
+            } else {
+                // Work around NULL id issue - use deleteAll with conditions
+                $attributesTable = FactoryLocator::get('Table')->get('Eav.EavAttributes');
+                $result = $attributesTable->deleteAll($whereConditions);
+                return $result > 0;
+            }
         }
 
         return false;
@@ -395,12 +419,26 @@ class EavBehavior extends Behavior implements PropertyMarshalInterface
                 }
             }
 
-            $toUpdate[$column] = (string)serialize(new CachedColumn($cache));
+            // Ensure class is loaded before instantiation to fix intermittent autoload issues
+            if (!class_exists('Eav\Model\Entity\CachedColumn')) {
+                require_once dirname(__DIR__) . '/Entity/CachedColumn.php';
+            }
+            $toUpdate[$column] = (string)serialize(new \Eav\Model\Entity\CachedColumn($cache));
         }
 
         if (!empty($toUpdate)) {
+            // Check if cache columns actually exist in table schema
+            $tableColumns = $this->_table->getSchema()->columns();
+            foreach ($toUpdate as $column => $value) {
+                if (!in_array($column, $tableColumns)) {
+                    // Cache column doesn't exist in table schema, return false
+                    return false;
+                }
+            }
+
             $conditions = []; // scope to entity's PK (composed PK supported)
-            $keys = $this->_table->primaryKey();
+            // TODO: Refactor for CakePHP 5 patterns - primaryKey() is deprecated, use getPrimaryKey()
+            $keys = $this->_table->getPrimaryKey();
             $keys = !is_array($keys) ? [$keys] : $keys;
             foreach ($keys as $key) {
                 // TO-DO: check key exists in entity's visible properties list.
@@ -442,7 +480,7 @@ class EavBehavior extends Behavior implements PropertyMarshalInterface
      */
     public function beforeFind(Event $event, Query $query, ArrayObject $options, $primary)
     {
-        // TODO: Refactor for CakePHP 5 patterns - ArrayObject compatibility fix
+        // TODO: Refactor for CakePHP 5 patterns - Use $event->setResult() instead of return value
         $status = isset($options['eav']) ? $options['eav'] : $this->getConfig('status');
 
         if ($status) {
@@ -450,16 +488,18 @@ class EavBehavior extends Behavior implements PropertyMarshalInterface
             $this->_initScopes();
 
             if (empty($this->_queryScopes['Eav\\Model\\Behavior\\QueryScope\\SelectScope'])) {
-                return $query;
+                $event->setResult($query);
+                return;
             }
 
             $selectedVirtual = $this->_queryScopes['Eav\\Model\\Behavior\\QueryScope\\SelectScope']->getVirtualColumns($query, $options['bundle']);
             $args = compact('options', 'primary', 'selectedVirtual');
             $query = $this->_scopeQuery($query, $options['bundle']);
 
-            return $query->formatResults(function ($results) use ($args) {
+            $modifiedQuery = $query->formatResults(function ($results) use ($args) {
                 return $this->_hydrateEntities($results, $args);
             }, Query::PREPEND);
+            $event->setResult($modifiedQuery);
         }
     }
 
@@ -571,9 +611,9 @@ class EavBehavior extends Behavior implements PropertyMarshalInterface
             return $result;
         }
 
+        // TODO: Refactor for CakePHP 5 patterns - bufferResults() removed
         $fetchedRawValues = FactoryLocator::get('Table')->get('Eav.EavValues')
             ->find('all')
-            ->bufferResults(false)
             ->where([
                 'EavValues.eav_attribute_id IN' => array_keys($attrsById),
                 'EavValues.entity_id IN' => $entityIds,
@@ -681,8 +721,9 @@ class EavBehavior extends Behavior implements PropertyMarshalInterface
     public function afterSave(Event $event, EntityInterface $entity, ArrayObject $options)
     {
         $valuesTable = FactoryLocator::get('Table')->get('Eav.EavValues');
+        // TODO: Refactor for CakePHP 5 patterns - connection() method moved
         $result = $valuesTable
-            ->connection()
+            ->getConnection()
             ->transactional(function () use ($valuesTable, $entity, $options) {
                 $attrsById = [];
                 $updatedAttrs = [];
@@ -748,7 +789,24 @@ class EavBehavior extends Behavior implements PropertyMarshalInterface
                 return true;
             });
 
-        return $result;
+        // TODO: Refactor for CakePHP 5 patterns - event listeners should not return values
+        $event->setResult($result);
+    }
+
+    /**
+     * Before an entity is deleted from database. Check if operation is atomic.
+     *
+     * @param \Cake\Event\Event $event The event that was triggered
+     * @param \Cake\Datasource\EntityInterface $entity The entity being deleted
+     * @param \ArrayObject $options Additional options given as an array
+     * @throws \Cake\Error\FatalErrorException When using this behavior in non-atomic mode
+     * @return void
+     */
+    public function beforeDelete(Event $event, EntityInterface $entity, ArrayObject $options)
+    {
+        if (!$options['atomic']) {
+            throw new FatalErrorException(__d('eav', 'Entities in fieldable tables can only be deleted using transactions. Set [atomic = true]'));
+        }
     }
 
     /**
@@ -763,13 +821,18 @@ class EavBehavior extends Behavior implements PropertyMarshalInterface
      */
     public function afterDelete(Event $event, EntityInterface $entity, ArrayObject $options)
     {
-        if (!$options['atomic']) {
-            throw new FatalErrorException(__d('eav', 'Entities in fieldable tables can only be deleted using transactions. Set [atomic = true]'));
-        }
+        // Note: atomic check is now in beforeDelete() - this method handles cleanup after successful delete
 
+        // TODO: Association issue - manually join instead of contain to avoid association errors
         $valuesToDelete = FactoryLocator::get('Table')->get('Eav.EavValues')
             ->find()
-            ->contain('EavAttribute')
+            ->join([
+                'EavAttribute' => [
+                    'table' => 'eav_attributes',
+                    'type' => 'INNER',
+                    'conditions' => ['EavValues.eav_attribute_id = EavAttribute.id']
+                ]
+            ])
             ->where([
                 'EavAttribute.table_alias' => $this->_table->getTable(),
                 'EavValues.entity_id' => $this->_toolbox->getEntityId($entity),

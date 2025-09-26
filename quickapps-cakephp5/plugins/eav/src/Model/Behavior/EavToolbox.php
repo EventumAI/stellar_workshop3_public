@@ -272,7 +272,8 @@ class EavToolbox
     public function getEntityId(EntityInterface $entity)
     {
         $pk = [];
-        $keys = $this->_table->primaryKey();
+        // TODO: Refactor for CakePHP 5 patterns - primaryKey() is deprecated, use getPrimaryKey()
+        $keys = $this->_table->getPrimaryKey();
         $keys = !is_array($keys) ? [$keys] : $keys;
         foreach ($keys as $key) {
             $pk[] = $entity->get($key);
@@ -346,8 +347,8 @@ class EavToolbox
     {
         // TODO: Refactor for CakePHP 5 patterns - namespaceSplit is deprecated
         // Quick fix: manual namespace split
-        $conn = $query->connection(null);
-        $className = strtolower(get_class($conn->driver()));
+        $conn = $query->getConnection();
+        $className = strtolower(get_class($conn->getDriver()));
         $parts = explode('\\', $className);
         $driver = end($parts);
 

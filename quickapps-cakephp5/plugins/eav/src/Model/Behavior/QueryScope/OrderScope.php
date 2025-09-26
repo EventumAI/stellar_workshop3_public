@@ -13,7 +13,8 @@ namespace Eav\Model\Behavior\QueryScope;
 
 use Cake\ORM\Query;
 use Cake\ORM\Table;
-use Cake\ORM\TableRegistry;
+// TODO: Refactor for CakePHP 5 patterns - TableRegistry::get() is deprecated
+use Cake\Datasource\FactoryLocator;
 use Eav\Model\Behavior\EavToolbox;
 use Eav\Model\Behavior\QueryScope\QueryScopeInterface;
 
@@ -69,7 +70,7 @@ class OrderScope implements QueryScopeInterface
 
         foreach ($conditions as $column => $direction) {
             if (empty($column) ||
-                in_array($column, (array)$this->_table->schema()->columns()) || // ignore real columns
+                in_array($column, (array)$this->_table->getSchema()->columns()) || // ignore real columns // TODO: Refactor for CakePHP 5 patterns - schema() method is deprecated
                 !in_array($column, $this->_toolbox->getAttributeNames())
             ) {
                 continue;
@@ -94,7 +95,8 @@ class OrderScope implements QueryScopeInterface
     protected function _subQuery($column, $bundle = null)
     {
         $alias = $this->_table->alias();
-        $pk = $this->_table->primaryKey();
+        // TODO: Refactor for CakePHP 5 patterns - primaryKey() is deprecated, use getPrimaryKey()
+        $pk = $this->_table->getPrimaryKey();
         $type = $this->_toolbox->getType($column);
         $subConditions = [
             'EavAttribute.table_alias' => $this->_table->table(),
@@ -106,9 +108,17 @@ class OrderScope implements QueryScopeInterface
             $subConditions['EavAttribute.bundle'] = $bundle;
         }
 
-        $subQuery = TableRegistry::get('Eav.EavValues')
+        // TODO: Refactor for CakePHP 5 patterns - TableRegistry::get() is deprecated
+        // TODO: Association issue - manually join instead of contain to avoid association errors
+        $subQuery = FactoryLocator::get('Table')->get('Eav.EavValues')
             ->find()
-            ->contain(['EavAttribute'])
+            ->join([
+                'EavAttribute' => [
+                    'table' => 'eav_attributes',
+                    'type' => 'INNER',
+                    'conditions' => ['EavValues.eav_attribute_id = EavAttribute.id']
+                ]
+            ])
             ->select(["EavValues.value_{$type}"])
             ->where($subConditions)
             ->sql();

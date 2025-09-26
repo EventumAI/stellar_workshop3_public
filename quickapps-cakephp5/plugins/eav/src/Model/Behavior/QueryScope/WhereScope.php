@@ -13,6 +13,8 @@ namespace Eav\Model\Behavior\QueryScope;
 
 use Cake\Database\ExpressionInterface;
 use Cake\Database\Expression\Comparison;
+// TODO: Refactor for CakePHP 5 patterns - ComparisonExpression is the new class name
+use Cake\Database\Expression\ComparisonExpression;
 use Cake\Database\Expression\IdentifierExpression;
 use Cake\Database\Expression\UnaryExpression;
 use Cake\ORM\Query;
@@ -86,7 +88,7 @@ class WhereScope implements QueryScopeInterface
      */
     protected function _inspectExpression(ExpressionInterface $expression, $bundle, Query $query)
     {
-        if ($expression instanceof Comparison) {
+        if ($expression instanceof Comparison || $expression instanceof ComparisonExpression) {
             $expression = $this->_inspectComparisonExpression($expression, $bundle, $query);
         } elseif ($expression instanceof UnaryExpression) {
             $expression = $this->_inspectUnaryExpression($expression, $bundle, $query);
@@ -98,18 +100,18 @@ class WhereScope implements QueryScopeInterface
     /**
      * Analyzes the given comparison expression and alters it according.
      *
-     * @param \Cake\Database\Expression\Comparison $expression Comparison expression
+     * @param \Cake\Database\Expression\Comparison|\Cake\Database\Expression\ComparisonExpression $expression Comparison expression
      * @param string $bundle Consider attributes only for a specific bundle
      * @param \Cake\ORM\Query $query The query instance this expression comes from
-     * @return \Cake\Database\Expression\Comparison Scoped expression (or not)
+     * @return \Cake\Database\Expression\Comparison|\Cake\Database\Expression\ComparisonExpression Scoped expression (or not)
      */
-    protected function _inspectComparisonExpression(Comparison $expression, $bundle, Query $query)
+    protected function _inspectComparisonExpression($expression, $bundle, Query $query)
     {
         $field = $expression->getField();
         $column = is_string($field) ? $this->_toolbox->columnName($field) : '';
 
         if (empty($column) ||
-            in_array($column, (array)$this->_table->schema()->columns()) || // ignore real columns
+            in_array($column, (array)$this->_table->getSchema()->columns()) || // ignore real columns  // TODO: Refactor for CakePHP 5 patterns - schema() method is deprecated
             !in_array($column, $this->_toolbox->getAttributeNames()) ||
             !$this->_toolbox->isSearchable($column) // ignore no searchable virtual columns
         ) {
@@ -122,16 +124,17 @@ class WhereScope implements QueryScopeInterface
         $type = $this->_toolbox->getType($column);
         $conjunction = $expression->getOperator();
         $conditions = [
-            'EavValues.eav_attribute_id' => $attr['id'],
+            'EavValues.eav_attribute_id' => $attr->get('id'),
             "EavValues.value_{$type} {$conjunction}" => $value,
         ];
 
         // subquery scope
-        $subQuery = TableRegistry::get('Eav.EavValues')
+        // TODO: Refactor for CakePHP 5 patterns - TableRegistry::get() is deprecated
+        $subQuery = \Cake\Datasource\FactoryLocator::get('Table')->get('Eav.EavValues')
             ->find()
             ->select('EavValues.entity_id')
             ->where($conditions)
-            ->order(['EavValues.id' => 'DESC']);
+            ->orderBy(['EavValues.id' => 'DESC']); // TODO: Refactor for CakePHP 5 patterns - order() is deprecated, use orderBy()
 
         // some variables
         $pk = $this->_tablePrimaryKey();
@@ -196,7 +199,7 @@ class WhereScope implements QueryScopeInterface
             $column = is_string($field) ? $this->_toolbox->columnName($field) : '';
 
             if (empty($column) ||
-                in_array($column, (array)$this->_table->schema()->columns()) || // ignore real columns
+                in_array($column, (array)$this->_table->getSchema()->columns()) || // ignore real columns // TODO: Refactor for CakePHP 5 patterns - schema() method is deprecated
                 !in_array($column, $this->_toolbox->getAttributeNames($bundle)) ||
                 !$this->_toolbox->isSearchable($column) // ignore no searchable virtual columns
             ) {
@@ -223,17 +226,18 @@ class WhereScope implements QueryScopeInterface
 
             $attr = $this->_toolbox->attributes($bundle)[$column];
             $type = $this->_toolbox->getType($column);
-            $subQuery = TableRegistry::get('Eav.EavValues')
+            // TODO: Refactor for CakePHP 5 patterns - TableRegistry::get() is deprecated
+            $subQuery = \Cake\Datasource\FactoryLocator::get('Table')->get('Eav.EavValues')
                 ->find()
                 ->select("EavValues.value_{$type}")
                 ->where([
                     'EavValues.entity_id' => $field,
-                    'EavValues.eav_attribute_id' => $attr['id']
+                    'EavValues.eav_attribute_id' => $attr->get('id')
                 ])
-                ->order(['EavValues.id' => 'DESC'])
+                ->orderBy(['EavValues.id' => 'DESC']) // TODO: Refactor for CakePHP 5 patterns - order() is deprecated, use orderBy()
                 ->limit(1)
                 ->sql();
-            $subQuery = str_replace([':c0', ':c1'], [$field, $attr['id']], $subQuery);
+            $subQuery = str_replace([':c0', ':c1'], [$field, $attr->get('id')], $subQuery);
             $property->setValue($expression, "({$subQuery})");
         }
 
@@ -247,8 +251,9 @@ class WhereScope implements QueryScopeInterface
      */
     protected function _tablePrimaryKey()
     {
-        $alias = $this->_table->alias();
-        $pk = $this->_table->primaryKey();
+        $alias = $this->_table->getAlias();
+        // TODO: Refactor for CakePHP 5 patterns - primaryKey() is deprecated, use getPrimaryKey()
+        $pk = $this->_table->getPrimaryKey();
 
         if (!is_array($pk)) {
             $pk = [$pk];

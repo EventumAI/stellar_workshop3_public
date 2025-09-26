@@ -1,0 +1,18 @@
+2025-09-26 00:01:14 warning: require_once(/Users/cadukiz/Desktop/dev/workshops/W3/quickapps-cakephp5/plugins/eav/src/Entity/CachedColumn.php): Failed to open stream: No such file or directory in /Users/cadukiz/Desktop/dev/workshops/W3/quickapps-cakephp5/plugins/eav/src/Model/Behavior/EavBehavior.php on line 424
+Trace:
+Cake\Error\ErrorTrap->handleError() /Users/cadukiz/Desktop/dev/workshops/W3/quickapps-cakephp5/plugins/eav/src/Model/Behavior/EavBehavior.php, line 424
+/Users/cadukiz/Desktop/dev/workshops/W3/quickapps-cakephp5/plugins/eav/src/Model/Behavior/EavBehavior.php /Users/cadukiz/Desktop/dev/workshops/W3/quickapps-cakephp5/plugins/eav/src/Model/Behavior/EavBehavior.php, line 424
+Eav\Model\Behavior\EavBehavior->updateEavCache() /Users/cadukiz/Desktop/dev/workshops/W3/quickapps-cakephp5/vendor/cakephp/cakephp/src/ORM/BehaviorRegistry.php, line 303
+Cake\ORM\BehaviorRegistry->call() /Users/cadukiz/Desktop/dev/workshops/W3/quickapps-cakephp5/vendor/cakephp/cakephp/src/ORM/Table.php, line 2823
+Cake\ORM\Table->__call() /Users/cadukiz/Desktop/dev/workshops/W3/quickapps-cakephp5/plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php, line 740
+Eav\Test\TestCase\Model\Behavior\EavBehaviorTest->testUpdateEavCache() /Users/cadukiz/Desktop/dev/workshops/W3/quickapps-cakephp5/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1548
+PHPUnit\Framework\TestCase->runTest() /Users/cadukiz/Desktop/dev/workshops/W3/quickapps-cakephp5/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 686
+PHPUnit\Framework\TestCase->runBare() /Users/cadukiz/Desktop/dev/workshops/W3/quickapps-cakephp5/vendor/phpunit/phpunit/src/Framework/TestRunner.php, line 106
+PHPUnit\Framework\TestRunner->run() /Users/cadukiz/Desktop/dev/workshops/W3/quickapps-cakephp5/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 516
+PHPUnit\Framework\TestCase->run() /Users/cadukiz/Desktop/dev/workshops/W3/quickapps-cakephp5/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /Users/cadukiz/Desktop/dev/workshops/W3/quickapps-cakephp5/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 64
+PHPUnit\TextUI\TestRunner->run() /Users/cadukiz/Desktop/dev/workshops/W3/quickapps-cakephp5/vendor/phpunit/phpunit/src/TextUI/Application.php, line 204
+PHPUnit\TextUI\Application->run() /Users/cadukiz/Desktop/dev/workshops/W3/quickapps-cakephp5/vendor/phpunit/phpunit/phpunit, line 104
+/Users/cadukiz/Desktop/dev/workshops/W3/quickapps-cakephp5/vendor/bin/phpunit /Users/cadukiz/Desktop/dev/workshops/W3/quickapps-cakephp5/vendor/bin/phpunit, line 122
+[main]
+

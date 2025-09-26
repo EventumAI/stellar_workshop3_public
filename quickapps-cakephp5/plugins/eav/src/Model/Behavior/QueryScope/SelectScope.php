@@ -100,7 +100,16 @@ class SelectScope implements QueryScopeInterface
         $selectedVirtual = [];
         $virtualColumns = array_keys($this->_toolbox->attributes($bundle));
         foreach ($selectClause as $index => $column) {
-            list($table, $column) = pluginSplit($column);
+            // TODO: Refactor for CakePHP 5 patterns - pluginSplit is deprecated
+            // Quick fix: manual split instead of pluginSplit
+            $parts = explode('.', (string)$column, 2);
+            if (count($parts) === 2) {
+                list($table, $column) = $parts;
+            } else {
+                $table = null;
+                $column = $parts[0];
+            }
+
             if ((empty($table) || $table == $this->_table->alias()) &&
                 in_array($column, $virtualColumns)
             ) {
@@ -110,7 +119,8 @@ class SelectScope implements QueryScopeInterface
         }
 
         if (empty($selectClause) && !empty($selectedVirtual)) {
-            $selectClause[] = $this->_table->primaryKey();
+            // TODO: Refactor for CakePHP 5 patterns - primaryKey() is deprecated, use getPrimaryKey()
+            $selectClause[] = $this->_table->getPrimaryKey();
         }
 
         $query->select($selectClause, true);
