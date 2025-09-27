@@ -13,7 +13,6 @@ namespace Eav\Model\Behavior;
 
 use Cake\Cache\Cache;
 use Cake\Collection\CollectionInterface;
-// TODO: Refactor for CakePHP 5 patterns - Database\Type import updated
 use Cake\Database\TypeFactory;
 use Cake\Datasource\EntityInterface;
 use Cake\ORM\Query;
@@ -111,7 +110,6 @@ class EavToolbox
      */
     public static function columnName($column)
     {
-        // TODO: Refactor for CakePHP 5 patterns - pluginSplit is deprecated
         // Quick fix: manual split instead of pluginSplit
         $parts = explode('.', (string)$column, 2);
         if (count($parts) === 2) {
@@ -140,7 +138,6 @@ class EavToolbox
      */
     public function propertyExists(EntityInterface $entity, $property)
     {
-        // TODO: Refactor for CakePHP 5 patterns - visibleProperties() compatibility
         $visibleProperties = $entity->getVisible();
 
         return in_array($property, $visibleProperties);
@@ -155,7 +152,6 @@ class EavToolbox
      */
     public function marshal($value, $type)
     {
-        // TODO: Refactor for CakePHP 5 patterns - Type::build() is deprecated
         return TypeFactory::build($type)->marshal($value);
     }
 
@@ -174,26 +170,22 @@ class EavToolbox
         }
 
         $this->_attributes[$key] = [];
-        // TODO: Refactor for CakePHP 5 patterns - table() method is deprecated
-        $cacheKey = $this->_table->getTable() . '_' . $key;
-        // TODO: Refactor for CakePHP 5 patterns - quick fix for cache
+        $cacheKey = $this->_table->table() . '_' . $key;
         $attrs = Cache::configured('eav_table_attrs') ? Cache::read($cacheKey, 'eav_table_attrs') : false;
 
         if (empty($attrs)) {
-            $conditions = ['EavAttributes.table_alias' => $this->_table->getTable()];
+            $conditions = ['EavAttributes.table_alias' => $this->_table->table()];
             if (!empty($bundle)) {
                 $conditions['EavAttributes.bundle'] = $bundle;
             }
 
-            // TODO: Refactor for CakePHP 5 patterns - TableRegistry::get() is deprecated
             $attrs = FactoryLocator::get('Table')->get('Eav.EavAttributes')
                 ->find()
                 ->where($conditions)
                 ->all()
                 ->toArray();
 
-            // TODO: Refactor for CakePHP 5 patterns - quick fix for cache
-            if (Cache::configured('eav_table_attrs')) {
+                if (Cache::configured('eav_table_attrs')) {
                 Cache::write($cacheKey, $attrs, 'eav_table_attrs');
             }
         }
@@ -272,8 +264,7 @@ class EavToolbox
     public function getEntityId(EntityInterface $entity)
     {
         $pk = [];
-        // TODO: Refactor for CakePHP 5 patterns - primaryKey() is deprecated, use getPrimaryKey()
-        $keys = $this->_table->getPrimaryKey();
+        $keys = $this->_table->primaryKey();
         $keys = !is_array($keys) ? [$keys] : $keys;
         foreach ($keys as $key) {
             $pk[] = $entity->get($key);
@@ -345,7 +336,6 @@ class EavToolbox
      */
     public function driver(Query $query)
     {
-        // TODO: Refactor for CakePHP 5 patterns - namespaceSplit is deprecated
         // Quick fix: manual namespace split
         $conn = $query->getConnection();
         $className = strtolower(get_class($conn->getDriver()));

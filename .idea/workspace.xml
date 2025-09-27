@@ -5,20 +5,138 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="548c33a4-3618-484a-ac7b-4627ba0b0a8e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/EavToolbox.php" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/EavToolbox.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/QueryScope/OrderScope.php" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/QueryScope/OrderScope.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/QueryScope/SelectScope.php" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/QueryScope/SelectScope.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/QueryScope/WhereScope.php" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/QueryScope/WhereScope.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerConfigs">
+    <option name="configs">
+      <option value="$PROJECT_DIR$/quickapps-cakephp5/vendorCake3/quickapps-plugins/system/composer.json" />
+      <option value="$PROJECT_DIR$/quickapps-cakephp5/vendorCake3/quickapps-plugins/taxonomy/composer.json" />
+      <option value="$PROJECT_DIR$/quickapps-cakephp5/vendorCake3/quickapps-plugins/menu/composer.json" />
+      <option value="$PROJECT_DIR$/quickapps-cakephp5/plugins/Cms/composer.json" />
+      <option value="$PROJECT_DIR$/quickapps-cakephp5/vendorCake3/quickapps-plugins/media-manager/composer.json" />
+      <option value="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/composer.json" />
+      <option value="$PROJECT_DIR$/quickapps-cakephp5/vendorCake3/quickapps-plugins/bootstrap/composer.json" />
+      <option value="$PROJECT_DIR$/quickapps-cakephp5/vendorCake3/quickapps-plugins/wysiwyg/composer.json" />
+      <option value="$PROJECT_DIR$/quickapps-cakephp5/vendorCake3/quickapps-plugins/comment/composer.json" />
+      <option value="$PROJECT_DIR$/quickapps-cakephp5/vendorCake3/quickapps-plugins/block/composer.json" />
+      <option value="$PROJECT_DIR$/quickapps-cakephp5/vendorCake3/quickapps-plugins/jquery/composer.json" />
+      <option value="$PROJECT_DIR$/quickapps-cakephp5/vendorCake3/quickapps-themes/frontend-theme/composer.json" />
+      <option value="$PROJECT_DIR$/quickapps-cakephp5/vendorCake3/quickapps-plugins/media-manager/webroot/composer.json" />
+      <option value="$PROJECT_DIR$/quickapps-cakephp5/vendorCake3/quickapps-plugins/cms/composer.json" />
+      <option value="$PROJECT_DIR$/quickapps-cakephp5/vendorCake3/quickapps-plugins/installer/composer.json" />
+      <option value="$PROJECT_DIR$/quickapps-cakephp5/vendorCake3/quickapps-plugins/eav/composer.json" />
+      <option value="$PROJECT_DIR$/quickapps-cakephp5/vendorCake3/quickapps-plugins/user/composer.json" />
+      <option value="$PROJECT_DIR$/quickapps-cakephp5/vendorCake3/quickapps-plugins/content/composer.json" />
+      <option value="$PROJECT_DIR$/quickapps-cakephp5/vendorCake3/quickapps-themes/backend-theme/composer.json" />
+      <option value="$PROJECT_DIR$/quickapps-cakephp5/vendorCake3/quickapps-plugins/captcha/composer.json" />
+      <option value="$PROJECT_DIR$/quickapps-cakephp3/src/composer.json" />
+      <option value="$PROJECT_DIR$/quickapps-cakephp5/vendorCake3/quickapps-plugins/field/composer.json" />
+      <option value="$PROJECT_DIR$/quickapps-cakephp5/vendorCake3/quickapps-plugins/search/composer.json" />
+      <option value="$PROJECT_DIR$/quickapps-cakephp5/vendorCake3/quickapps-plugins/locale/composer.json" />
+    </option>
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/quickapps-cakephp5/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/opt/homebrew/Cellar/php/8.4.5_1/bin/php" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/opt/homebrew/Cellar/php/8.4.5_1/bin/php">
+    <include_path>
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/league/container" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/cakephp/cakephp-codesniffer" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/cakephp/twig-view" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/cakephp/migrations" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/cakephp/chronos" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/cakephp/plugin-installer" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/cakephp/cakephp" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/cakephp/bake" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/cakephp/debug_kit" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/laminas/laminas-diactoros" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/laminas/laminas-httphandlerrunner" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/phpstan/phpdoc-parser" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/symfony/polyfill-php81" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/slevomat/coding-standard" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/doctrine/sql-formatter" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/robmorgan/phinx" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/marc-mabe/php-enum" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/squizlabs/php_codesniffer" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/josegonzalez/dotenv" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/dealerdirect/phpcodesniffer-composer-installer" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/mobiledetect/mobiledetectlib" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/composer" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/m1/env" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/psr/http-server-handler" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/psr/http-server-middleware" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/twig/markdown-extra" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/seld/signal-handler" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/brick/varexporter" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/quickapps-cakephp5/vendor/jasny/twig-extensions" />
+    </include_path>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -27,18 +145,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;git-widget-placeholder&quot;: &quot;eav__plugin&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/cadukiz/Desktop/dev/workshops/W3/quickapps-cakephp5/plugins&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "eav__plugin__passed",
+    "last_opened_file_path": "/Users/cadukiz/Desktop/dev/workshops/W3/quickapps-cakephp5/plugins",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/quickapps-cakephp5/plugins" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/quickapps-cakephp5/phpunit.xml.dist" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -56,6 +187,7 @@
       <option name="presentableId" value="Default" />
       <updated>1758564127477</updated>
       <workItem from="1758564128501" duration="65719000" />
+      <workItem from="1758994699765" duration="2232000" />
     </task>
     <servers />
   </component>

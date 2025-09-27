@@ -105,7 +105,6 @@ class EavBehavior extends Behavior implements PropertyMarshalInterface
      *
      * @var array
      */
-    // TODO: Refactor for CakePHP 5 patterns
     protected array $_defaultConfig = [
         'status' => true,
         'cache' => false,
@@ -148,7 +147,6 @@ class EavBehavior extends Behavior implements PropertyMarshalInterface
         $this->_toolbox = new EavToolbox($table);
         parent::__construct($table, $config);
 
-        // TODO: Refactor for CakePHP 5 patterns - quick fix for config method
         if ($this->getConfig('cache')) {
             $info = $this->getConfig('cache');
             $holders = []; // column => [list of virtual columns]
@@ -238,10 +236,8 @@ class EavBehavior extends Behavior implements PropertyMarshalInterface
      */
     public function addColumn($name, array $options = [], $errors = true)
     {
-        // TODO: Refactor for CakePHP 5 patterns - schema() method is deprecated
-        if (in_array($name, (array)$this->_table->getSchema()->columns())) {
-            // TODO: Refactor for CakePHP 5 patterns - alias() method is deprecated
-            throw new FatalErrorException(__d('eav', 'The column name "{0}" cannot be used as it is already defined in the table "{1}"', $name, $this->_table->getAlias()));
+        if (in_array($name, (array)$this->_table->schema()->columns())) {
+            throw new FatalErrorException(__d('eav', 'The column name "{0}" cannot be used as it is already defined in the table "{1}"', $name, $this->_table->alias()));
         }
 
         $data = $options + [
@@ -257,9 +253,7 @@ class EavBehavior extends Behavior implements PropertyMarshalInterface
         }
 
         $data['name'] = $name;
-        // TODO: Refactor for CakePHP 5 patterns - table() method is deprecated
-        $data['table_alias'] = $this->_table->getTable();
-        // TODO: Refactor for CakePHP 5 patterns - TableRegistry::get() is deprecated, handle NULL bundle values
+        $data['table_alias'] = $this->_table->table();
         $whereConditions = [
             'name' => $data['name'],
             'table_alias' => $data['table_alias'],
@@ -278,7 +272,6 @@ class EavBehavior extends Behavior implements PropertyMarshalInterface
             throw new FatalErrorException(__d('eav', 'Virtual column "{0}" already defined, use the "overwrite" option if you want to change it.', $name));
         }
 
-        // TODO: Refactor for CakePHP 5 patterns - handle NULL id entities from queries
         $attributesTable = FactoryLocator::get('Table')->get('Eav.EavAttributes');
         if ($attr && $attr->get('id') !== null) {
             // Only patch if we have a valid existing entity with an id
@@ -289,13 +282,11 @@ class EavBehavior extends Behavior implements PropertyMarshalInterface
         }
 
         $success = (bool)$attributesTable->save($attr);
-        // TODO: Refactor for CakePHP 5 patterns - quick fix for cache
         if (Cache::configured('eav_table_attrs')) {
             Cache::clear('eav_table_attrs');
         }
 
         if ($errors) {
-            // TODO: Refactor for CakePHP 5 patterns - errors() method is deprecated, use getErrors()
             return (array)$attr->getErrors();
         }
 
@@ -311,10 +302,9 @@ class EavBehavior extends Behavior implements PropertyMarshalInterface
      */
     public function dropColumn($name, $bundle = null)
     {
-        // TODO: Refactor for CakePHP 5 patterns - TableRegistry::get() is deprecated, handle NULL bundle
         $whereConditions = [
             'name' => $name,
-            'table_alias' => $this->_table->getTable(),
+            'table_alias' => $this->_table->table(),
         ];
         if ($bundle === null) {
             $whereConditions['bundle IS'] = null;
@@ -327,11 +317,9 @@ class EavBehavior extends Behavior implements PropertyMarshalInterface
             ->first();
 
 
-        // TODO: Refactor for CakePHP 5 patterns - quick fix for cache
         if (Cache::configured('eav_table_attrs')) {
             Cache::clear('eav_table_attrs');
         }
-        // TODO: Refactor for CakePHP 5 patterns - handle NULL id entities from queries
         if ($attr) {
             if ($attr->get('id') !== null) {
                 return (bool)FactoryLocator::get('Table')->get('Eav.EavAttributes')->delete($attr);
@@ -428,7 +416,7 @@ class EavBehavior extends Behavior implements PropertyMarshalInterface
 
         if (!empty($toUpdate)) {
             // Check if cache columns actually exist in table schema
-            $tableColumns = $this->_table->getSchema()->columns();
+            $tableColumns = $this->_table->schema()->columns();
             foreach ($toUpdate as $column => $value) {
                 if (!in_array($column, $tableColumns)) {
                     // Cache column doesn't exist in table schema, return false
@@ -437,8 +425,7 @@ class EavBehavior extends Behavior implements PropertyMarshalInterface
             }
 
             $conditions = []; // scope to entity's PK (composed PK supported)
-            // TODO: Refactor for CakePHP 5 patterns - primaryKey() is deprecated, use getPrimaryKey()
-            $keys = $this->_table->getPrimaryKey();
+            $keys = $this->_table->primaryKey();
             $keys = !is_array($keys) ? [$keys] : $keys;
             foreach ($keys as $key) {
                 // TO-DO: check key exists in entity's visible properties list.
@@ -480,7 +467,6 @@ class EavBehavior extends Behavior implements PropertyMarshalInterface
      */
     public function beforeFind(Event $event, Query $query, ArrayObject $options, $primary)
     {
-        // TODO: Refactor for CakePHP 5 patterns - Use $event->setResult() instead of return value
         $status = isset($options['eav']) ? $options['eav'] : $this->getConfig('status');
 
         if ($status) {
@@ -559,7 +545,6 @@ class EavBehavior extends Behavior implements PropertyMarshalInterface
         foreach ($values as $value) {
             if (!$this->_toolbox->propertyExists($entity, $value['property_name'])) {
                 $entity->set($value['property_name'], $value['value']);
-                // TODO: Refactor for CakePHP 5 patterns - dirty() method signature change
                 $entity->setDirty($value['property_name'], false);
             }
         }
@@ -611,7 +596,6 @@ class EavBehavior extends Behavior implements PropertyMarshalInterface
             return $result;
         }
 
-        // TODO: Refactor for CakePHP 5 patterns - bufferResults() removed
         $fetchedRawValues = FactoryLocator::get('Table')->get('Eav.EavValues')
             ->find('all')
             ->where([
@@ -721,7 +705,6 @@ class EavBehavior extends Behavior implements PropertyMarshalInterface
     public function afterSave(Event $event, EntityInterface $entity, ArrayObject $options)
     {
         $valuesTable = FactoryLocator::get('Table')->get('Eav.EavValues');
-        // TODO: Refactor for CakePHP 5 patterns - connection() method moved
         $result = $valuesTable
             ->getConnection()
             ->transactional(function () use ($valuesTable, $entity, $options) {
@@ -789,7 +772,6 @@ class EavBehavior extends Behavior implements PropertyMarshalInterface
                 return true;
             });
 
-        // TODO: Refactor for CakePHP 5 patterns - event listeners should not return values
         $event->setResult($result);
     }
 
@@ -834,7 +816,7 @@ class EavBehavior extends Behavior implements PropertyMarshalInterface
                 ]
             ])
             ->where([
-                'EavAttribute.table_alias' => $this->_table->getTable(),
+                'EavAttribute.table_alias' => $this->_table->table(),
                 'EavValues.entity_id' => $this->_toolbox->getEntityId($entity),
             ]);
 
@@ -853,7 +835,6 @@ class EavBehavior extends Behavior implements PropertyMarshalInterface
     {
         if ($this->getConfig('cacheMap')) {
             foreach ((array)$this->getConfig('cacheMap') as $column => $fields) {
-                // TODO: Refactor for CakePHP 5 patterns - visibleProperties() compatibility
                 if (in_array($column, $entity->getVisible())) {
                     $string = $entity->get($column);
                     if ($string == serialize(false) || unserialize($string) !== false) {
