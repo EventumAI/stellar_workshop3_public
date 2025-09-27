@@ -143,7 +143,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "eav__plugin__before",
+    "git-widget-placeholder": "eav__plugin__start",
     "last_opened_file_path": "/Users/cadukiz/Desktop/dev/workshops/W3/quickapps-cakephp5/plugins",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -180,7 +180,7 @@
       <option name="presentableId" value="Default" />
       <updated>1758564127477</updated>
       <workItem from="1758564128501" duration="65719000" />
-      <workItem from="1758994699765" duration="3077000" />
+      <workItem from="1758994699765" duration="4216000" />
     </task>
     <servers />
   </component>
