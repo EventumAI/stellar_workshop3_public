@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="548c33a4-3618-484a-ac7b-4627ba0b0a8e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/EavToolbox.php" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/EavToolbox.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/QueryScope/OrderScope.php" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/QueryScope/OrderScope.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/QueryScope/SelectScope.php" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/QueryScope/SelectScope.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/QueryScope/WhereScope.php" beforeDir="false" afterPath="$PROJECT_DIR$/quickapps-cakephp5/plugins/eav/src/Model/Behavior/QueryScope/WhereScope.php" afterDir="false" />
-    </list>
+    <list default="true" id="548c33a4-3618-484a-ac7b-4627ba0b0a8e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -150,7 +143,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "eav__plugin__passed",
+    "git-widget-placeholder": "eav__plugin__before",
     "last_opened_file_path": "/Users/cadukiz/Desktop/dev/workshops/W3/quickapps-cakephp5/plugins",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -187,7 +180,7 @@
       <option name="presentableId" value="Default" />
       <updated>1758564127477</updated>
       <workItem from="1758564128501" duration="65719000" />
-      <workItem from="1758994699765" duration="2232000" />
+      <workItem from="1758994699765" duration="3077000" />
     </task>
     <servers />
   </component>
