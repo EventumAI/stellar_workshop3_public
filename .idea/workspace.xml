@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="548c33a4-3618-484a-ac7b-4627ba0b0a8e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/logs/cli-error.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quickapps-cakephp5/tmp/cache/models/myapp_cake_model_test_eav_values" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
