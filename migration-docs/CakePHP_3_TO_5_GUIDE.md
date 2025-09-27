@@ -1453,20 +1453,29 @@ class EavBehavior extends Behavior {
 
 ### **4. Table Class Methods**
 
-#### **Methods Changed**: Multiple table inspection methods
+#### **Methods Changed**: Multiple table inspection and query methods
 
 ```php
 // ❌ CakePHP 3 - Deprecated methods
 class EavBehavior extends Behavior {
     public function addColumn($name, array $options = []) {
+        // Table information methods
         $schema = $this->_table->schema();           // ❌ schema()
         $tableName = $this->_table->table();        // ❌ table()
         $alias = $this->_table->alias();            // ❌ alias()
+        $primaryKey = $this->_table->primaryKey();  // ❌ primaryKey()
 
         $columns = $schema->columns();
         $data['table_alias'] = $tableName;
+        $data['primary_key'] = $primaryKey;
 
         throw new Exception("Column exists in {$alias}");
+    }
+
+    public function queryExample() {
+        // Query ordering method
+        $query = $this->_table->find()
+            ->order(['created' => 'DESC']);         // ❌ order()
     }
 }
 ```
@@ -1475,14 +1484,23 @@ class EavBehavior extends Behavior {
 // ✅ CakePHP 5 - Modern methods
 class EavBehavior extends Behavior {
     public function addColumn($name, array $options = []) {
+        // Table information methods
         $schema = $this->_table->getSchema();        // ✅ getSchema()
         $tableName = $this->_table->getTable();     // ✅ getTable()
         $alias = $this->_table->getAlias();         // ✅ getAlias()
+        $primaryKey = $this->_table->getPrimaryKey(); // ✅ getPrimaryKey()
 
         $columns = $schema->columns();
         $data['table_alias'] = $tableName;
+        $data['primary_key'] = $primaryKey;
 
         throw new Exception("Column exists in {$alias}");
+    }
+
+    public function queryExample() {
+        // Query ordering method
+        $query = $this->_table->find()
+            ->orderBy(['created' => 'DESC']);        // ✅ orderBy()
     }
 }
 ```
@@ -1491,6 +1509,8 @@ class EavBehavior extends Behavior {
 - `Method 'schema' not found in \Cake\ORM\Table`
 - `Method 'table' not found in \Cake\ORM\Table`
 - `Method 'alias' not found in \Cake\ORM\Table`
+- `Method 'primaryKey' not found in \Cake\ORM\Table`
+- `Method 'order' not found in \Cake\ORM\Query`
 
 ---
 
@@ -1761,6 +1781,10 @@ class EavBehavior extends Behavior {
 | **Table** | `schema()` | `getSchema()` | Schema inspection |
 | **Table** | `table()` | `getTable()` | Table name |
 | **Table** | `alias()` | `getAlias()` | Table alias |
+| **Table** | `primaryKey()` | `getPrimaryKey()` | Get primary key field(s) |
+| **Table** | `primaryKey($key)` | `setPrimaryKey($key)` | Set primary key field(s) |
+| **Query** | `order()` | `orderBy()` | Query ordering |
+| **Query** | `order(['field' => 'ASC'])` | `orderBy(['field' => 'ASC'])` | Order with direction |
 | **Entity** | `dirty($field, $state)` | `setDirty($field, $state)` | Field dirty state |
 | **Entity** | `visibleProperties()` | `getVisible()` | Visible properties |
 | **Registry** | `TableRegistry::get()` | `FactoryLocator::get('Table')->get()` | Table instantiation |
@@ -2123,7 +2147,7 @@ vendor/bin/phpunit
 - Core Migration: 3-5 days
 - Plugin Migration: 2-3 days
 - Testing & Fixes: 2-3 days
-**Total: 8-12 days**
+  **Total: 8-12 days**
 
 ### Medium Project like QuickAppsCMS (10K-50K lines)
 - Environment Setup: 2 days
@@ -2131,14 +2155,14 @@ vendor/bin/phpunit
 - Plugin Migration: 2-3 weeks
 - Custom Pattern Migration: 1-2 weeks
 - Testing & Fixes: 1 week
-**Total: 5-8 weeks**
+  **Total: 5-8 weeks**
 
 ### Large Project (> 50K lines)
 - Environment Setup: 3-5 days
 - Core Migration: 3-4 weeks
 - Plugin Migration: 4-6 weeks
 - Testing & Fixes: 2-3 weeks
-**Total: 10-14 weeks**
+  **Total: 10-14 weeks**
 
 ---
 

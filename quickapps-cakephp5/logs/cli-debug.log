@@ -1046,3 +1046,444 @@ PHPUnit\TextUI\Application->run() /Users/cadukiz/Desktop/dev/workshops/W3/quicka
 /Users/cadukiz/Desktop/dev/workshops/W3/quickapps-cakephp5/vendor/bin/phpunit /Users/cadukiz/Desktop/dev/workshops/W3/quickapps-cakephp5/vendor/bin/phpunit, line 122
 [main]
 
+2025-09-27 19:44:58 debug: Reading migrations status for test...
+2025-09-27 19:44:58 debug: Since 5.1.0: Cache config `_cake_core_` is deprecated. Use `_cake_translations_` instead
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line: 152
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/I18n/I18n.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only. in /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php on line 377
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/var/www/html/vendor/cakephp/cakephp/src/Core/functions.php /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php, line 377
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 80
+Cake\I18n\I18n::translators() /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 152
+Cake\I18n\I18n::getTranslator() /var/www/html/vendor/cakephp/cakephp/src/I18n/functions.php, line 87
+/var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php /var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php, line 77
+/var/www/html/templates/Error/error400.php /var/www/html/templates/Error/error400.php, line 40
+/var/www/html/vendor/cakephp/cakephp/src/View/View.php /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 1187
+Cake\View\View->_evaluate() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 1144
+Cake\View\View->_render() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 785
+Cake\View\View->render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 712
+Cake\Controller\Controller->render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 432
+Cake\Error\Renderer\WebExceptionRenderer->_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 277
+Cake\Error\Renderer\WebExceptionRenderer->render() /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 149
+Cake\Error\Middleware\ErrorHandlerMiddleware->handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 119
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /var/www/html/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php, line 143
+Cake\TestSuite\MiddlewareDispatcher->execute() /var/www/html/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php, line 512
+App\Test\TestCase\Controller\PagesControllerTest->_sendRequest() /var/www/html/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php, line 398
+App\Test\TestCase\Controller\PagesControllerTest->get() /var/www/html/tests/TestCase/Controller/PagesControllerTest.php, line 55
+App\Test\TestCase\Controller\PagesControllerTest->testMissingTemplate() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1548
+PHPUnit\Framework\TestCase->runTest() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 686
+PHPUnit\Framework\TestCase->runBare() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestRunner.php, line 106
+PHPUnit\Framework\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 516
+PHPUnit\Framework\TestCase->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 64
+PHPUnit\TextUI\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Application.php, line 204
+PHPUnit\TextUI\Application->run() /var/www/html/vendor/phpunit/phpunit/phpunit, line 104
+/var/www/html/vendor/bin/phpunit /var/www/html/vendor/bin/phpunit, line 122
+[main]
+
+Request URL: /pages/not_existing
+2025-09-27 19:47:07 debug: Reading migrations status for test...
+2025-09-27 19:47:07 debug: Since 5.1.0: Cache config `_cake_core_` is deprecated. Use `_cake_translations_` instead
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line: 152
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/I18n/I18n.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only. in /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php on line 377
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/var/www/html/vendor/cakephp/cakephp/src/Core/functions.php /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php, line 377
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 80
+Cake\I18n\I18n::translators() /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 152
+Cake\I18n\I18n::getTranslator() /var/www/html/vendor/cakephp/cakephp/src/I18n/functions.php, line 87
+/var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php /var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php, line 77
+/var/www/html/templates/Error/error400.php /var/www/html/templates/Error/error400.php, line 40
+/var/www/html/vendor/cakephp/cakephp/src/View/View.php /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 1187
+Cake\View\View->_evaluate() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 1144
+Cake\View\View->_render() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 785
+Cake\View\View->render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 712
+Cake\Controller\Controller->render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 432
+Cake\Error\Renderer\WebExceptionRenderer->_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 277
+Cake\Error\Renderer\WebExceptionRenderer->render() /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 149
+Cake\Error\Middleware\ErrorHandlerMiddleware->handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 119
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /var/www/html/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php, line 143
+Cake\TestSuite\MiddlewareDispatcher->execute() /var/www/html/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php, line 512
+App\Test\TestCase\Controller\PagesControllerTest->_sendRequest() /var/www/html/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php, line 398
+App\Test\TestCase\Controller\PagesControllerTest->get() /var/www/html/tests/TestCase/Controller/PagesControllerTest.php, line 55
+App\Test\TestCase\Controller\PagesControllerTest->testMissingTemplate() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1548
+PHPUnit\Framework\TestCase->runTest() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 686
+PHPUnit\Framework\TestCase->runBare() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestRunner.php, line 106
+PHPUnit\Framework\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 516
+PHPUnit\Framework\TestCase->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 64
+PHPUnit\TextUI\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Application.php, line 204
+PHPUnit\TextUI\Application->run() /var/www/html/vendor/phpunit/phpunit/phpunit, line 104
+/var/www/html/vendor/bin/phpunit /var/www/html/vendor/bin/phpunit, line 122
+[main]
+
+Request URL: /pages/not_existing
+2025-09-27 19:49:52 debug: Reading migrations status for test...
+2025-09-27 19:49:52 debug: Since 5.1.0: Cache config `_cake_core_` is deprecated. Use `_cake_translations_` instead
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line: 152
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/I18n/I18n.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only. in /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php on line 377
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/var/www/html/vendor/cakephp/cakephp/src/Core/functions.php /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php, line 377
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 80
+Cake\I18n\I18n::translators() /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 152
+Cake\I18n\I18n::getTranslator() /var/www/html/vendor/cakephp/cakephp/src/I18n/functions.php, line 87
+/var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php /var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php, line 77
+/var/www/html/templates/Error/error400.php /var/www/html/templates/Error/error400.php, line 40
+/var/www/html/vendor/cakephp/cakephp/src/View/View.php /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 1187
+Cake\View\View->_evaluate() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 1144
+Cake\View\View->_render() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 785
+Cake\View\View->render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 712
+Cake\Controller\Controller->render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 432
+Cake\Error\Renderer\WebExceptionRenderer->_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 277
+Cake\Error\Renderer\WebExceptionRenderer->render() /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 149
+Cake\Error\Middleware\ErrorHandlerMiddleware->handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 119
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /var/www/html/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php, line 143
+Cake\TestSuite\MiddlewareDispatcher->execute() /var/www/html/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php, line 512
+App\Test\TestCase\Controller\PagesControllerTest->_sendRequest() /var/www/html/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php, line 398
+App\Test\TestCase\Controller\PagesControllerTest->get() /var/www/html/tests/TestCase/Controller/PagesControllerTest.php, line 55
+App\Test\TestCase\Controller\PagesControllerTest->testMissingTemplate() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1548
+PHPUnit\Framework\TestCase->runTest() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 686
+PHPUnit\Framework\TestCase->runBare() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestRunner.php, line 106
+PHPUnit\Framework\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 516
+PHPUnit\Framework\TestCase->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 64
+PHPUnit\TextUI\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Application.php, line 204
+PHPUnit\TextUI\Application->run() /var/www/html/vendor/phpunit/phpunit/phpunit, line 104
+/var/www/html/vendor/bin/phpunit /var/www/html/vendor/bin/phpunit, line 122
+[main]
+
+Request URL: /pages/not_existing
+2025-09-27 19:51:56 debug: Reading migrations status for test...
+2025-09-27 19:51:56 debug: Since 5.1.0: Cache config `_cake_core_` is deprecated. Use `_cake_translations_` instead
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line: 152
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/I18n/I18n.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only. in /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php on line 377
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/var/www/html/vendor/cakephp/cakephp/src/Core/functions.php /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php, line 377
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 80
+Cake\I18n\I18n::translators() /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 152
+Cake\I18n\I18n::getTranslator() /var/www/html/vendor/cakephp/cakephp/src/I18n/functions.php, line 87
+/var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php /var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php, line 77
+/var/www/html/templates/Error/error400.php /var/www/html/templates/Error/error400.php, line 40
+/var/www/html/vendor/cakephp/cakephp/src/View/View.php /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 1187
+Cake\View\View->_evaluate() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 1144
+Cake\View\View->_render() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 785
+Cake\View\View->render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 712
+Cake\Controller\Controller->render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 432
+Cake\Error\Renderer\WebExceptionRenderer->_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 277
+Cake\Error\Renderer\WebExceptionRenderer->render() /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 149
+Cake\Error\Middleware\ErrorHandlerMiddleware->handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 119
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /var/www/html/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php, line 143
+Cake\TestSuite\MiddlewareDispatcher->execute() /var/www/html/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php, line 512
+App\Test\TestCase\Controller\PagesControllerTest->_sendRequest() /var/www/html/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php, line 398
+App\Test\TestCase\Controller\PagesControllerTest->get() /var/www/html/tests/TestCase/Controller/PagesControllerTest.php, line 55
+App\Test\TestCase\Controller\PagesControllerTest->testMissingTemplate() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1548
+PHPUnit\Framework\TestCase->runTest() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 686
+PHPUnit\Framework\TestCase->runBare() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestRunner.php, line 106
+PHPUnit\Framework\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 516
+PHPUnit\Framework\TestCase->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 64
+PHPUnit\TextUI\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Application.php, line 204
+PHPUnit\TextUI\Application->run() /var/www/html/vendor/phpunit/phpunit/phpunit, line 104
+/var/www/html/vendor/bin/phpunit /var/www/html/vendor/bin/phpunit, line 122
+[main]
+
+Request URL: /pages/not_existing
+2025-09-27 19:52:19 debug: Reading migrations status for test...
+2025-09-27 19:52:19 debug: Since 5.1.0: Cache config `_cake_core_` is deprecated. Use `_cake_translations_` instead
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line: 152
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/I18n/I18n.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only. in /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php on line 377
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/var/www/html/vendor/cakephp/cakephp/src/Core/functions.php /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php, line 377
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 80
+Cake\I18n\I18n::translators() /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 152
+Cake\I18n\I18n::getTranslator() /var/www/html/vendor/cakephp/cakephp/src/I18n/functions.php, line 87
+/var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php /var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php, line 77
+/var/www/html/templates/Error/error400.php /var/www/html/templates/Error/error400.php, line 40
+/var/www/html/vendor/cakephp/cakephp/src/View/View.php /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 1187
+Cake\View\View->_evaluate() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 1144
+Cake\View\View->_render() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 785
+Cake\View\View->render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 712
+Cake\Controller\Controller->render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 432
+Cake\Error\Renderer\WebExceptionRenderer->_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 277
+Cake\Error\Renderer\WebExceptionRenderer->render() /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 149
+Cake\Error\Middleware\ErrorHandlerMiddleware->handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 119
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /var/www/html/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php, line 143
+Cake\TestSuite\MiddlewareDispatcher->execute() /var/www/html/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php, line 512
+App\Test\TestCase\Controller\PagesControllerTest->_sendRequest() /var/www/html/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php, line 398
+App\Test\TestCase\Controller\PagesControllerTest->get() /var/www/html/tests/TestCase/Controller/PagesControllerTest.php, line 55
+App\Test\TestCase\Controller\PagesControllerTest->testMissingTemplate() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1548
+PHPUnit\Framework\TestCase->runTest() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 686
+PHPUnit\Framework\TestCase->runBare() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestRunner.php, line 106
+PHPUnit\Framework\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 516
+PHPUnit\Framework\TestCase->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 64
+PHPUnit\TextUI\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Application.php, line 204
+PHPUnit\TextUI\Application->run() /var/www/html/vendor/phpunit/phpunit/phpunit, line 104
+/var/www/html/vendor/bin/phpunit /var/www/html/vendor/bin/phpunit, line 122
+[main]
+
+Request URL: /pages/not_existing
+2025-09-27 19:55:15 debug: Reading migrations status for test...
+2025-09-27 19:55:15 debug: Since 5.1.0: Cache config `_cake_core_` is deprecated. Use `_cake_translations_` instead
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line: 152
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/I18n/I18n.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only. in /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php on line 377
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/var/www/html/vendor/cakephp/cakephp/src/Core/functions.php /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php, line 377
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 80
+Cake\I18n\I18n::translators() /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 152
+Cake\I18n\I18n::getTranslator() /var/www/html/vendor/cakephp/cakephp/src/I18n/functions.php, line 87
+/var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php /var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php, line 77
+/var/www/html/templates/Error/error400.php /var/www/html/templates/Error/error400.php, line 40
+/var/www/html/vendor/cakephp/cakephp/src/View/View.php /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 1187
+Cake\View\View->_evaluate() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 1144
+Cake\View\View->_render() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 785
+Cake\View\View->render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 712
+Cake\Controller\Controller->render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 432
+Cake\Error\Renderer\WebExceptionRenderer->_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 277
+Cake\Error\Renderer\WebExceptionRenderer->render() /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 149
+Cake\Error\Middleware\ErrorHandlerMiddleware->handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 119
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /var/www/html/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php, line 143
+Cake\TestSuite\MiddlewareDispatcher->execute() /var/www/html/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php, line 512
+App\Test\TestCase\Controller\PagesControllerTest->_sendRequest() /var/www/html/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php, line 398
+App\Test\TestCase\Controller\PagesControllerTest->get() /var/www/html/tests/TestCase/Controller/PagesControllerTest.php, line 55
+App\Test\TestCase\Controller\PagesControllerTest->testMissingTemplate() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1548
+PHPUnit\Framework\TestCase->runTest() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 686
+PHPUnit\Framework\TestCase->runBare() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestRunner.php, line 106
+PHPUnit\Framework\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 516
+PHPUnit\Framework\TestCase->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 64
+PHPUnit\TextUI\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Application.php, line 204
+PHPUnit\TextUI\Application->run() /var/www/html/vendor/phpunit/phpunit/phpunit, line 104
+/var/www/html/vendor/bin/phpunit /var/www/html/vendor/bin/phpunit, line 122
+[main]
+
+Request URL: /pages/not_existing
+2025-09-27 19:55:20 debug: Reading migrations status for test...
+2025-09-27 19:55:50 debug: Reading migrations status for test...
+2025-09-27 19:55:50 debug: Since 5.1.0: Cache config `_cake_core_` is deprecated. Use `_cake_translations_` instead
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line: 152
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/I18n/I18n.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only. in /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php on line 377
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/var/www/html/vendor/cakephp/cakephp/src/Core/functions.php /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php, line 377
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 80
+Cake\I18n\I18n::translators() /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 152
+Cake\I18n\I18n::getTranslator() /var/www/html/vendor/cakephp/cakephp/src/I18n/functions.php, line 87
+/var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php /var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php, line 77
+/var/www/html/plugins/eav/src/Model/Behavior/EavBehavior.php /var/www/html/plugins/eav/src/Model/Behavior/EavBehavior.php, line 264
+Eav\Model\Behavior\EavBehavior->validateColumnName() /var/www/html/plugins/eav/src/Model/Behavior/EavBehavior.php, line 242
+Eav\Model\Behavior\EavBehavior->addColumn() /var/www/html/vendor/cakephp/cakephp/src/ORM/BehaviorRegistry.php, line 303
+Cake\ORM\BehaviorRegistry->call() /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php, line 2823
+Cake\ORM\Table->__call() /var/www/html/plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php, line 270
+Eav\Test\TestCase\Model\Behavior\EavBehaviorTest->testAddColumnExistingThrows() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1548
+PHPUnit\Framework\TestCase->runTest() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 686
+PHPUnit\Framework\TestCase->runBare() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestRunner.php, line 106
+PHPUnit\Framework\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 516
+PHPUnit\Framework\TestCase->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 64
+PHPUnit\TextUI\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Application.php, line 204
+PHPUnit\TextUI\Application->run() /var/www/html/vendor/phpunit/phpunit/phpunit, line 104
+/var/www/html/vendor/bin/phpunit /var/www/html/vendor/bin/phpunit, line 122
+[main]
+
+2025-09-27 19:55:56 debug: Reading migrations status for test...
+2025-09-27 19:55:56 debug: Since 5.1.0: Cache config `_cake_core_` is deprecated. Use `_cake_translations_` instead
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line: 152
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/I18n/I18n.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only. in /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php on line 377
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/var/www/html/vendor/cakephp/cakephp/src/Core/functions.php /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php, line 377
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 80
+Cake\I18n\I18n::translators() /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 152
+Cake\I18n\I18n::getTranslator() /var/www/html/vendor/cakephp/cakephp/src/I18n/functions.php, line 87
+/var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php /var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php, line 77
+/var/www/html/templates/Error/error400.php /var/www/html/templates/Error/error400.php, line 40
+/var/www/html/vendor/cakephp/cakephp/src/View/View.php /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 1187
+Cake\View\View->_evaluate() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 1144
+Cake\View\View->_render() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 785
+Cake\View\View->render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 712
+Cake\Controller\Controller->render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 432
+Cake\Error\Renderer\WebExceptionRenderer->_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 277
+Cake\Error\Renderer\WebExceptionRenderer->render() /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 149
+Cake\Error\Middleware\ErrorHandlerMiddleware->handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 119
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /var/www/html/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php, line 143
+Cake\TestSuite\MiddlewareDispatcher->execute() /var/www/html/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php, line 512
+App\Test\TestCase\Controller\PagesControllerTest->_sendRequest() /var/www/html/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php, line 398
+App\Test\TestCase\Controller\PagesControllerTest->get() /var/www/html/tests/TestCase/Controller/PagesControllerTest.php, line 55
+App\Test\TestCase\Controller\PagesControllerTest->testMissingTemplate() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1548
+PHPUnit\Framework\TestCase->runTest() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 686
+PHPUnit\Framework\TestCase->runBare() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestRunner.php, line 106
+PHPUnit\Framework\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 516
+PHPUnit\Framework\TestCase->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 64
+PHPUnit\TextUI\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Application.php, line 204
+PHPUnit\TextUI\Application->run() /var/www/html/vendor/phpunit/phpunit/phpunit, line 104
+/var/www/html/vendor/bin/phpunit /var/www/html/vendor/bin/phpunit, line 122
+[main]
+
+Request URL: /pages/not_existing
+2025-09-27 19:56:02 debug: Reading migrations status for test...
+2025-09-27 19:56:02 debug: Since 5.1.0: Cache config `_cake_core_` is deprecated. Use `_cake_translations_` instead
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line: 152
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/I18n/I18n.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only. in /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php on line 377
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/var/www/html/vendor/cakephp/cakephp/src/Core/functions.php /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php, line 377
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 80
+Cake\I18n\I18n::translators() /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 152
+Cake\I18n\I18n::getTranslator() /var/www/html/vendor/cakephp/cakephp/src/I18n/functions.php, line 87
+/var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php /var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php, line 77
+/var/www/html/templates/Error/error400.php /var/www/html/templates/Error/error400.php, line 40
+/var/www/html/vendor/cakephp/cakephp/src/View/View.php /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 1187
+Cake\View\View->_evaluate() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 1144
+Cake\View\View->_render() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 785
+Cake\View\View->render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 712
+Cake\Controller\Controller->render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 432
+Cake\Error\Renderer\WebExceptionRenderer->_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 277
+Cake\Error\Renderer\WebExceptionRenderer->render() /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 149
+Cake\Error\Middleware\ErrorHandlerMiddleware->handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 119
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /var/www/html/vendor/cakephp/cakephp/src/TestSuite/MiddlewareDispatcher.php, line 143
+Cake\TestSuite\MiddlewareDispatcher->execute() /var/www/html/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php, line 512
+App\Test\TestCase\Controller\PagesControllerTest->_sendRequest() /var/www/html/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php, line 398
+App\Test\TestCase\Controller\PagesControllerTest->get() /var/www/html/tests/TestCase/Controller/PagesControllerTest.php, line 55
+App\Test\TestCase\Controller\PagesControllerTest->testMissingTemplate() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1548
+PHPUnit\Framework\TestCase->runTest() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 686
+PHPUnit\Framework\TestCase->runBare() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestRunner.php, line 106
+PHPUnit\Framework\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 516
+PHPUnit\Framework\TestCase->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 64
+PHPUnit\TextUI\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Application.php, line 204
+PHPUnit\TextUI\Application->run() /var/www/html/vendor/phpunit/phpunit/phpunit, line 104
+/var/www/html/vendor/bin/phpunit /var/www/html/vendor/bin/phpunit, line 122
+[main]
+
+Request URL: /pages/not_existing
+2025-09-27 19:56:12 debug: Reading migrations status for test...
+2025-09-27 19:56:12 debug: Since 5.1.0: Cache config `_cake_core_` is deprecated. Use `_cake_translations_` instead
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line: 152
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/I18n/I18n.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only. in /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php on line 377
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/var/www/html/vendor/cakephp/cakephp/src/Core/functions.php /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php, line 377
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 80
+Cake\I18n\I18n::translators() /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 152
+Cake\I18n\I18n::getTranslator() /var/www/html/vendor/cakephp/cakephp/src/I18n/functions.php, line 87
+/var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php /var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php, line 77
+/var/www/html/plugins/eav/src/Model/Behavior/EavBehavior.php /var/www/html/plugins/eav/src/Model/Behavior/EavBehavior.php, line 264
+Eav\Model\Behavior\EavBehavior->validateColumnName() /var/www/html/plugins/eav/src/Model/Behavior/EavBehavior.php, line 242
+Eav\Model\Behavior\EavBehavior->addColumn() /var/www/html/vendor/cakephp/cakephp/src/ORM/BehaviorRegistry.php, line 303
+Cake\ORM\BehaviorRegistry->call() /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php, line 2823
+Cake\ORM\Table->__call() /var/www/html/plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php, line 270
+Eav\Test\TestCase\Model\Behavior\EavBehaviorTest->testAddColumnExistingThrows() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1548
+PHPUnit\Framework\TestCase->runTest() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 686
+PHPUnit\Framework\TestCase->runBare() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestRunner.php, line 106
+PHPUnit\Framework\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 516
+PHPUnit\Framework\TestCase->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 64
+PHPUnit\TextUI\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Application.php, line 204
+PHPUnit\TextUI\Application->run() /var/www/html/vendor/phpunit/phpunit/phpunit, line 104
+/var/www/html/vendor/bin/phpunit /var/www/html/vendor/bin/phpunit, line 122
+[main]
+
+2025-09-27 19:58:11 debug: Reading migrations status for test...
+2025-09-27 19:58:11 debug: Since 5.1.0: Cache config `_cake_core_` is deprecated. Use `_cake_translations_` instead
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line: 152
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/I18n/I18n.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only. in /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php on line 377
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/var/www/html/vendor/cakephp/cakephp/src/Core/functions.php /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php, line 377
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 80
+Cake\I18n\I18n::translators() /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 152
+Cake\I18n\I18n::getTranslator() /var/www/html/vendor/cakephp/cakephp/src/I18n/functions.php, line 87
+/var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php /var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php, line 77
+/var/www/html/plugins/eav/src/Model/Behavior/EavBehavior.php /var/www/html/plugins/eav/src/Model/Behavior/EavBehavior.php, line 264
+Eav\Model\Behavior\EavBehavior->validateColumnName() /var/www/html/plugins/eav/src/Model/Behavior/EavBehavior.php, line 242
+Eav\Model\Behavior\EavBehavior->addColumn() /var/www/html/vendor/cakephp/cakephp/src/ORM/BehaviorRegistry.php, line 303
+Cake\ORM\BehaviorRegistry->call() /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php, line 2823
+Cake\ORM\Table->__call() /var/www/html/plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php, line 270
+Eav\Test\TestCase\Model\Behavior\EavBehaviorTest->testAddColumnExistingThrows() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1548
+PHPUnit\Framework\TestCase->runTest() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 686
+PHPUnit\Framework\TestCase->runBare() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestRunner.php, line 106
+PHPUnit\Framework\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 516
+PHPUnit\Framework\TestCase->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 64
+PHPUnit\TextUI\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Application.php, line 204
+PHPUnit\TextUI\Application->run() /var/www/html/vendor/phpunit/phpunit/phpunit, line 104
+/var/www/html/vendor/bin/phpunit /var/www/html/vendor/bin/phpunit, line 122
+[main]
+
+2025-09-27 19:59:52 debug: Reading migrations status for test...
+2025-09-27 19:59:52 debug: Since 5.1.0: Cache config `_cake_core_` is deprecated. Use `_cake_translations_` instead
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line: 152
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/I18n/I18n.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only. in /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php on line 377
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/var/www/html/vendor/cakephp/cakephp/src/Core/functions.php /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php, line 377
+/var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 80
+Cake\I18n\I18n::translators() /var/www/html/vendor/cakephp/cakephp/src/I18n/I18n.php, line 152
+Cake\I18n\I18n::getTranslator() /var/www/html/vendor/cakephp/cakephp/src/I18n/functions.php, line 87
+/var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php /var/www/html/vendor/cakephp/cakephp/src/I18n/functions_global.php, line 77
+/var/www/html/plugins/eav/src/Model/Behavior/EavBehavior.php /var/www/html/plugins/eav/src/Model/Behavior/EavBehavior.php, line 264
+Eav\Model\Behavior\EavBehavior->validateColumnName() /var/www/html/plugins/eav/src/Model/Behavior/EavBehavior.php, line 242
+Eav\Model\Behavior\EavBehavior->addColumn() /var/www/html/vendor/cakephp/cakephp/src/ORM/BehaviorRegistry.php, line 303
+Cake\ORM\BehaviorRegistry->call() /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php, line 2823
+Cake\ORM\Table->__call() /var/www/html/plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php, line 270
+Eav\Test\TestCase\Model\Behavior\EavBehaviorTest->testAddColumnExistingThrows() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 1548
+PHPUnit\Framework\TestCase->runTest() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 686
+PHPUnit\Framework\TestCase->runBare() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestRunner.php, line 106
+PHPUnit\Framework\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 516
+PHPUnit\Framework\TestCase->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 374
+PHPUnit\Framework\TestSuite->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 64
+PHPUnit\TextUI\TestRunner->run() /var/www/html/vendor/phpunit/phpunit/src/TextUI/Application.php, line 204
+PHPUnit\TextUI\Application->run() /var/www/html/vendor/phpunit/phpunit/phpunit, line 104
+/var/www/html/vendor/bin/phpunit /var/www/html/vendor/bin/phpunit, line 122
+[main]
+
