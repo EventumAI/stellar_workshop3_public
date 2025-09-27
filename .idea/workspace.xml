@@ -40,6 +40,11 @@
       <recent name="$PROJECT_DIR$/quickapps-cakephp5/plugins" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

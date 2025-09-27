@@ -1,0 +1,1280 @@
+2025-09-27 19:44:58 error: [Cake\Http\Exception\NotFoundException] Not Found in /var/www/html/src/Controller/PagesController.php on line 70
+Stack Trace:
+- CORE/src/Controller/Controller.php:505
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:159
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:398
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:55
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/not_existing
+2025-09-27 19:44:58 error: [Cake\View\Exception\MissingTemplateException] Template file `Pages/not_existing.php` could not be found.
+
+The following paths were searched:
+
+- `/var/www/html/templates/Pages/not_existing.php`
+- `/var/www/html/vendor/cakephp/cakephp/templates/Pages/not_existing.php`
+ in /var/www/html/vendor/cakephp/cakephp/src/View/View.php on line 1376
+Exception Attributes: array (
+  'file' => 'Pages/not_existing.php',
+  'paths' => 
+  array (
+    0 => '/var/www/html/templates/',
+    1 => '/var/www/html/vendor/cakephp/cakephp/templates/',
+  ),
+)
+Stack Trace:
+- CORE/src/View/View.php:782
+- CORE/src/Controller/Controller.php:712
+- APP/Controller/PagesController.php:65
+- CORE/src/Controller/Controller.php:505
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:159
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:398
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:69
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/not_existing
+2025-09-27 19:44:58 error: [Cake\Http\Exception\ForbiddenException] Forbidden in /var/www/html/src/Controller/PagesController.php on line 52
+Stack Trace:
+- CORE/src/Controller/Controller.php:505
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:159
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:398
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:84
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/../Layout/ajax
+2025-09-27 19:44:58 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /var/www/html/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:162
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:414
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:96
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/home
+2025-09-27 19:47:07 error: [Cake\Http\Exception\NotFoundException] Not Found in /var/www/html/src/Controller/PagesController.php on line 70
+Stack Trace:
+- CORE/src/Controller/Controller.php:505
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:159
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:398
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:55
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/not_existing
+2025-09-27 19:47:07 error: [Cake\View\Exception\MissingTemplateException] Template file `Pages/not_existing.php` could not be found.
+
+The following paths were searched:
+
+- `/var/www/html/templates/Pages/not_existing.php`
+- `/var/www/html/vendor/cakephp/cakephp/templates/Pages/not_existing.php`
+ in /var/www/html/vendor/cakephp/cakephp/src/View/View.php on line 1376
+Exception Attributes: array (
+  'file' => 'Pages/not_existing.php',
+  'paths' => 
+  array (
+    0 => '/var/www/html/templates/',
+    1 => '/var/www/html/vendor/cakephp/cakephp/templates/',
+  ),
+)
+Stack Trace:
+- CORE/src/View/View.php:782
+- CORE/src/Controller/Controller.php:712
+- APP/Controller/PagesController.php:65
+- CORE/src/Controller/Controller.php:505
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:159
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:398
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:69
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/not_existing
+2025-09-27 19:47:07 error: [Cake\Http\Exception\ForbiddenException] Forbidden in /var/www/html/src/Controller/PagesController.php on line 52
+Stack Trace:
+- CORE/src/Controller/Controller.php:505
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:159
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:398
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:84
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/../Layout/ajax
+2025-09-27 19:47:07 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /var/www/html/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:162
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:414
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:96
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/home
+2025-09-27 19:49:52 error: [Cake\Http\Exception\NotFoundException] Not Found in /var/www/html/src/Controller/PagesController.php on line 70
+Stack Trace:
+- CORE/src/Controller/Controller.php:505
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:159
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:398
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:55
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/not_existing
+2025-09-27 19:49:52 error: [Cake\View\Exception\MissingTemplateException] Template file `Pages/not_existing.php` could not be found.
+
+The following paths were searched:
+
+- `/var/www/html/templates/Pages/not_existing.php`
+- `/var/www/html/vendor/cakephp/cakephp/templates/Pages/not_existing.php`
+ in /var/www/html/vendor/cakephp/cakephp/src/View/View.php on line 1376
+Exception Attributes: array (
+  'file' => 'Pages/not_existing.php',
+  'paths' => 
+  array (
+    0 => '/var/www/html/templates/',
+    1 => '/var/www/html/vendor/cakephp/cakephp/templates/',
+  ),
+)
+Stack Trace:
+- CORE/src/View/View.php:782
+- CORE/src/Controller/Controller.php:712
+- APP/Controller/PagesController.php:65
+- CORE/src/Controller/Controller.php:505
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:159
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:398
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:69
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/not_existing
+2025-09-27 19:49:52 error: [Cake\Http\Exception\ForbiddenException] Forbidden in /var/www/html/src/Controller/PagesController.php on line 52
+Stack Trace:
+- CORE/src/Controller/Controller.php:505
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:159
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:398
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:84
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/../Layout/ajax
+2025-09-27 19:49:52 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /var/www/html/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:162
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:414
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:96
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/home
+2025-09-27 19:51:56 error: [Cake\Http\Exception\NotFoundException] Not Found in /var/www/html/src/Controller/PagesController.php on line 70
+Stack Trace:
+- CORE/src/Controller/Controller.php:505
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:159
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:398
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:55
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/not_existing
+2025-09-27 19:51:56 error: [Cake\View\Exception\MissingTemplateException] Template file `Pages/not_existing.php` could not be found.
+
+The following paths were searched:
+
+- `/var/www/html/templates/Pages/not_existing.php`
+- `/var/www/html/vendor/cakephp/cakephp/templates/Pages/not_existing.php`
+ in /var/www/html/vendor/cakephp/cakephp/src/View/View.php on line 1376
+Exception Attributes: array (
+  'file' => 'Pages/not_existing.php',
+  'paths' => 
+  array (
+    0 => '/var/www/html/templates/',
+    1 => '/var/www/html/vendor/cakephp/cakephp/templates/',
+  ),
+)
+Stack Trace:
+- CORE/src/View/View.php:782
+- CORE/src/Controller/Controller.php:712
+- APP/Controller/PagesController.php:65
+- CORE/src/Controller/Controller.php:505
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:159
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:398
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:69
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/not_existing
+2025-09-27 19:51:56 error: [Cake\Http\Exception\ForbiddenException] Forbidden in /var/www/html/src/Controller/PagesController.php on line 52
+Stack Trace:
+- CORE/src/Controller/Controller.php:505
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:159
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:398
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:84
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/../Layout/ajax
+2025-09-27 19:51:56 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /var/www/html/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:162
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:414
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:96
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/home
+2025-09-27 19:52:19 error: [Cake\Http\Exception\NotFoundException] Not Found in /var/www/html/src/Controller/PagesController.php on line 70
+Stack Trace:
+- CORE/src/Controller/Controller.php:505
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:159
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:398
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:55
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/not_existing
+2025-09-27 19:52:19 error: [Cake\View\Exception\MissingTemplateException] Template file `Pages/not_existing.php` could not be found.
+
+The following paths were searched:
+
+- `/var/www/html/templates/Pages/not_existing.php`
+- `/var/www/html/vendor/cakephp/cakephp/templates/Pages/not_existing.php`
+ in /var/www/html/vendor/cakephp/cakephp/src/View/View.php on line 1376
+Exception Attributes: array (
+  'file' => 'Pages/not_existing.php',
+  'paths' => 
+  array (
+    0 => '/var/www/html/templates/',
+    1 => '/var/www/html/vendor/cakephp/cakephp/templates/',
+  ),
+)
+Stack Trace:
+- CORE/src/View/View.php:782
+- CORE/src/Controller/Controller.php:712
+- APP/Controller/PagesController.php:65
+- CORE/src/Controller/Controller.php:505
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:159
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:398
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:69
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/not_existing
+2025-09-27 19:52:19 error: [Cake\Http\Exception\ForbiddenException] Forbidden in /var/www/html/src/Controller/PagesController.php on line 52
+Stack Trace:
+- CORE/src/Controller/Controller.php:505
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:159
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:398
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:84
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/../Layout/ajax
+2025-09-27 19:52:19 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /var/www/html/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:162
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:414
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:96
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/home
+2025-09-27 19:55:15 error: [Cake\Http\Exception\NotFoundException] Not Found in /var/www/html/src/Controller/PagesController.php on line 70
+Stack Trace:
+- CORE/src/Controller/Controller.php:505
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:159
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:398
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:55
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/not_existing
+2025-09-27 19:55:15 error: [Cake\View\Exception\MissingTemplateException] Template file `Pages/not_existing.php` could not be found.
+
+The following paths were searched:
+
+- `/var/www/html/templates/Pages/not_existing.php`
+- `/var/www/html/vendor/cakephp/cakephp/templates/Pages/not_existing.php`
+ in /var/www/html/vendor/cakephp/cakephp/src/View/View.php on line 1376
+Exception Attributes: array (
+  'file' => 'Pages/not_existing.php',
+  'paths' => 
+  array (
+    0 => '/var/www/html/templates/',
+    1 => '/var/www/html/vendor/cakephp/cakephp/templates/',
+  ),
+)
+Stack Trace:
+- CORE/src/View/View.php:782
+- CORE/src/Controller/Controller.php:712
+- APP/Controller/PagesController.php:65
+- CORE/src/Controller/Controller.php:505
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:159
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:398
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:69
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/not_existing
+2025-09-27 19:55:15 error: [Cake\Http\Exception\ForbiddenException] Forbidden in /var/www/html/src/Controller/PagesController.php on line 52
+Stack Trace:
+- CORE/src/Controller/Controller.php:505
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:159
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:398
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:84
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/../Layout/ajax
+2025-09-27 19:55:15 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /var/www/html/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:162
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:414
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:96
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/home
+2025-09-27 19:55:56 error: [Cake\Http\Exception\NotFoundException] Not Found in /var/www/html/src/Controller/PagesController.php on line 70
+Stack Trace:
+- CORE/src/Controller/Controller.php:505
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:159
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:398
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:55
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/not_existing
+2025-09-27 19:55:56 error: [Cake\View\Exception\MissingTemplateException] Template file `Pages/not_existing.php` could not be found.
+
+The following paths were searched:
+
+- `/var/www/html/templates/Pages/not_existing.php`
+- `/var/www/html/vendor/cakephp/cakephp/templates/Pages/not_existing.php`
+ in /var/www/html/vendor/cakephp/cakephp/src/View/View.php on line 1376
+Exception Attributes: array (
+  'file' => 'Pages/not_existing.php',
+  'paths' => 
+  array (
+    0 => '/var/www/html/templates/',
+    1 => '/var/www/html/vendor/cakephp/cakephp/templates/',
+  ),
+)
+Stack Trace:
+- CORE/src/View/View.php:782
+- CORE/src/Controller/Controller.php:712
+- APP/Controller/PagesController.php:65
+- CORE/src/Controller/Controller.php:505
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:159
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:398
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:69
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/not_existing
+2025-09-27 19:55:56 error: [Cake\Http\Exception\ForbiddenException] Forbidden in /var/www/html/src/Controller/PagesController.php on line 52
+Stack Trace:
+- CORE/src/Controller/Controller.php:505
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:159
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:398
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:84
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/../Layout/ajax
+2025-09-27 19:55:56 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /var/www/html/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:162
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:414
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:96
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/home
+2025-09-27 19:56:02 error: [Cake\Http\Exception\NotFoundException] Not Found in /var/www/html/src/Controller/PagesController.php on line 70
+Stack Trace:
+- CORE/src/Controller/Controller.php:505
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:159
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:398
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:55
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/not_existing
+2025-09-27 19:56:02 error: [Cake\View\Exception\MissingTemplateException] Template file `Pages/not_existing.php` could not be found.
+
+The following paths were searched:
+
+- `/var/www/html/templates/Pages/not_existing.php`
+- `/var/www/html/vendor/cakephp/cakephp/templates/Pages/not_existing.php`
+ in /var/www/html/vendor/cakephp/cakephp/src/View/View.php on line 1376
+Exception Attributes: array (
+  'file' => 'Pages/not_existing.php',
+  'paths' => 
+  array (
+    0 => '/var/www/html/templates/',
+    1 => '/var/www/html/vendor/cakephp/cakephp/templates/',
+  ),
+)
+Stack Trace:
+- CORE/src/View/View.php:782
+- CORE/src/Controller/Controller.php:712
+- APP/Controller/PagesController.php:65
+- CORE/src/Controller/Controller.php:505
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:159
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:398
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:69
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/not_existing
+2025-09-27 19:56:02 error: [Cake\Http\Exception\ForbiddenException] Forbidden in /var/www/html/src/Controller/PagesController.php on line 52
+Stack Trace:
+- CORE/src/Controller/Controller.php:505
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:159
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:398
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:84
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/../Layout/ajax
+2025-09-27 19:56:02 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /var/www/html/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:162
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- CORE/src/TestSuite/MiddlewareDispatcher.php:143
+- CORE/src/TestSuite/IntegrationTestTrait.php:512
+- CORE/src/TestSuite/IntegrationTestTrait.php:414
+- ROOT/tests/TestCase/Controller/PagesControllerTest.php:96
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:1548
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:686
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestRunner.php:106
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php:516
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php:374
+- ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:64
+- ROOT/vendor/phpunit/phpunit/src/TextUI/Application.php:204
+- ROOT/vendor/phpunit/phpunit/phpunit:104
+- ROOT/vendor/bin/phpunit:122
+- [main]:
+
+Request URL: /pages/home
