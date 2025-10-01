@@ -7,8 +7,7 @@
 
 ---
 
-## 🎯 Slide Objective
-
+## 🎯 Slide Objecti
 Demonstrate how to use Claude Code to break down complex CMS migrations into manageable units using natural boundaries (controllers & plugins). Show real workflows that attendees can replicate.
 
 ---
