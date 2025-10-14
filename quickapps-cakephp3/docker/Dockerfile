@@ -1,7 +1,15 @@
 FROM php:7.4-apache
 
-# Install system dependencies
-RUN apt-get update && apt-get install -y \
+# Configure apt for better stability with hash mismatches
+RUN echo "Acquire::http::Pipeline-Depth 0;" > /etc/apt/apt.conf.d/99custom && \
+    echo "Acquire::http::No-Cache true;" >> /etc/apt/apt.conf.d/99custom && \
+    echo "Acquire::BrokenProxy true;" >> /etc/apt/apt.conf.d/99custom
+
+# Update package lists and install dependencies (skip upgrade to avoid hash mismatches)
+RUN apt-get clean && \
+    rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/* && \
+    apt-get update && \
+    apt-get install -y --fix-missing --no-install-recommends \
     git \
     curl \
     libpng-dev \
@@ -15,7 +23,7 @@ RUN apt-get update && apt-get install -y \
     libjpeg62-turbo-dev \
     libmcrypt-dev \
     default-mysql-client \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*
 
 # Install PHP extensions required by QuickAppsCMS
 RUN docker-php-ext-configure gd --with-freetype --with-jpeg \

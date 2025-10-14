@@ -17,9 +17,10 @@ ehthumbs.db
 Thumbs.db
 
 # Site specifict
-/config/settings.php
-/logs
-/plugins
-/tmp
+/logs/
+!/logs/.gitkeep
+/plugins/*
+!/plugins/.gitkeep
+/tmp/*
+!/tmp/.gitkeep
 /vendor
-/webroot
