@@ -20,9 +20,6 @@
         "cakephp/debug_kit": "Provides a debugging toolbar and enhanced debugging tools for CakePHP applications.",
         "cakephp/bake": "Pprovides the code generation functionality for CakePHP. Through a suite of CLI tools, you can quickly and easily generate code for your application."
     },
-    "scripts": {
-        "post-autoload-dump": "Cake\\Composer\\Installer\\PluginInstaller::postAutoloadDump"
-    },
     "config": {
         "allow-plugins": {
             "aura/installer-default": true,

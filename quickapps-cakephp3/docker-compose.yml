@@ -31,6 +31,7 @@ services:
       MYSQL_PASSWORD: ${MYSQL_PASSWORD:-quickapps123}
     volumes:
       - db-data:/var/lib/mysql
+      - ./docker/db/init:/docker-entrypoint-initdb.d:ro
     networks:
       - quickapps-network
 

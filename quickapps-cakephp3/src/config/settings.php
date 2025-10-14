@@ -19,7 +19,7 @@
   ),
   'Security' => 
   array (
-    'salt' => 'Or6~jFm7l%8LsC34tWd=S&zH(XgYV1bZN2KxiBfGcA$yIeov',
+    'salt' => '#K0Wz@9VsDr5T~L1CJmHNxAOw8BhqbGS3ZdPpt2k$F6gc&Uyi(!',
   ),
   'debug' => false,
 );
