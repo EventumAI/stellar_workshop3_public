@@ -55,7 +55,7 @@ By the end of this workbook, you will be able to:
 
 **CakePHP 3 File (Source)**: `quickapps-cakephp3/src/vendor/quickapps-plugins/user/src/Controller/GatewayController.php`
 
-**CakePHP 5 File (Target)**: `quickapps-cakephp5/src/Controller/UserGatewayController.php` (we'll create this)
+**CakePHP 5 File (Target)**: `quickapps-cakephp5/src/src/Controller/UserGatewayController.php` (we'll create this)
 
 **Method**: `forgot()` (lines 38-50+)
 
@@ -92,7 +92,7 @@ We'll create a new controller by copying from CakePHP 3 source:
 cat quickapps-cakephp3/src/vendor/quickapps-plugins/user/src/Controller/GatewayController.php
 
 # We'll create UserGatewayController.php in CakePHP 5 at:
-# quickapps-cakephp5/src/Controller/UserGatewayController.php
+# quickapps-cakephp5/src/src/Controller/UserGatewayController.php
 ```
 
 ---
@@ -127,7 +127,7 @@ Copy and paste this prompt to your AI assistant:
 Looking at quickapps-cakephp3/src/vendor/quickapps-plugins/user/src/Controller/GatewayController.php
 
 I want to create a migrated version of this controller at:
-quickapps-cakephp5/src/Controller/UserGatewayController.php
+quickapps-cakephp5/src/src/Controller/UserGatewayController.php
 
 First, identify deprecated CakePHP 3 patterns that need migration to CakePHP 5.
 Focus ONLY on methods that won't affect other parts of the codebase.
@@ -414,7 +414,7 @@ Copy and paste this prompt to your AI assistant:
 Now let's create the migrated controller file. Follow these steps:
 
 1. Copy the source file from quickapps-cakephp3/src/vendor/quickapps-plugins/user/src/Controller/GatewayController.php
-2. Create a new file at quickapps-cakephp5/src/Controller/UserGatewayController.php
+2. Create a new file at quickapps-cakephp5/src/src/Controller/UserGatewayController.php
 3. In the new file, migrate ONLY the forgot() method:
    - Change ONLY the lines that use $this->request->data to $this->request->getData()
    - Preserve exact same functionality and security checks

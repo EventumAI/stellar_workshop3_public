@@ -84,9 +84,9 @@ Always make tests pass FIRST, then improve quality. Never refactor broken code.
 
 ## Target Task
 
-**EAV Plugin File**: `quickapps-cakephp5/plugins/eav/src/Model/Behavior/EavBehavior.php`
+**EAV Plugin File**: `quickapps-cakephp5/src/plugins/eav/src/Model/Behavior/EavBehavior.php`
 
-**Test File**: `quickapps-cakephp5/plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php`
+**Test File**: `quickapps-cakephp5/src/plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php`
 
 **Current State**:
 - 891 lines with multiple responsibilities
@@ -100,7 +100,7 @@ Always make tests pass FIRST, then improve quality. Never refactor broken code.
 Before starting, ensure you have access to:
 
 - `migration-docs/TEST_PLAN.md` - Testing strategies for migration
-- `migration-docs/unknown_patterns/PATTERN_005_EAV_MODEL.md` - EAV-specific patterns
+- `migration-docs/unknown_patterns/03_eav_implementation.md` - EAV-specific patterns
 - `migration-docs/CakePHP_3_TO_5_GUIDE.md` - Refactoring patterns for CakePHP 5
 
 ## Prerequisites
@@ -130,7 +130,7 @@ For this workbook, we'll work with the EAV plugin files that are already present
 
 ```bash
 # Verify the EAV plugin files are present
-ls -la quickapps-cakephp5/plugins/eav/src/Model/Behavior/
+ls -la quickapps-cakephp5/src/plugins/eav/src/Model/Behavior/
 
 # You should see:
 # - EavBehavior.php (the main file we'll work with)
@@ -176,8 +176,8 @@ Copy and paste this prompt to your AI assistant:
 
 ```
 We are running the application in a docker instance using quickapps5-web container.
-Test file: quickapps-cakephp5/plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php
-Source file: quickapps-cakephp5/plugins/eav/src/Model/Behavior/EavBehavior.php
+Test file: quickapps-cakephp5/src/plugins/eav/tests/TestCase/Model/Behavior/EavBehaviorTest.php
+Source file: quickapps-cakephp5/src/plugins/eav/src/Model/Behavior/EavBehavior.php
 
 I need a comprehensive analysis in TWO parts:
 
@@ -209,7 +209,7 @@ For each issue, provide:
 - Why it's a problem
 - Impact on migration
 
-Reference migration-docs/unknown_patterns/PATTERN_005_EAV_MODEL.md for EAV-specific context.
+Reference migration-docs/unknown_patterns/03_eav_implementation.md for EAV-specific context.
 
 DO NOT fix anything yet - just analyze and report.
 ```
