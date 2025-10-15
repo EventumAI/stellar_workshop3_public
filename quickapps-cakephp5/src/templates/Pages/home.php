@@ -152,7 +152,7 @@ endif;
                         <?php endif; ?>
 
                         <?php $settings = Cache::getConfig('_cake_core_'); ?>
-                        <?php if (!empty($settings)) : ?>
+                        <?php if (!empty($settings) && isset($settings['className'])) : ?>
                             <li class="bullet success">The <em><?= h($settings['className']) ?></em> is being used for core caching. To change the config edit config/app.php</li>
                         <?php else : ?>
                             <li class="bullet problem">Your cache is NOT working. Please check the settings in config/app.php</li>
