@@ -40,27 +40,33 @@ docker exec quickapps5-db mysql -u quickapps5 -pquickapps123 quickapps5
 
 # Reset databases (for clean testing)
 docker exec quickapps-db mysql -u root -prootpassword -e "DROP DATABASE quickapps; CREATE DATABASE quickapps CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+docker exec quickapps5-db mysql -u root -prootpassword -e "DROP DATABASE quickapps5; CREATE DATABASE quickapps5 CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
 ```
 
 ### CakePHP 5 Development
 ```bash
 cd quickapps-cakephp5/src
-composer check          # Run all checks (tests + standards)
+composer check          # Run all checks (tests + coding standards)
 composer test           # Run PHPUnit tests
-composer cs-check       # Check coding standards  
-composer cs-fix         # Fix coding standards
-composer stan           # Run PHPStan static analysis
-bin/cake server -p 8765 # Built-in development server
+composer cs-check       # Check coding standards (phpcs)
+composer cs-fix         # Fix coding standards automatically (phpcbf)
+composer stan           # Run PHPStan static analysis (if configured)
+bin/cake server -p 8765 # Built-in development server (alternative to Docker)
 ```
 
 ### Database Management
 ```bash
-# Export QuickAppsCMS schema for analysis
+# Export schemas for analysis
 docker exec quickapps-db mysqldump -u quickapps -pquickapps123 --no-data quickapps > schema_cakephp3.sql
+docker exec quickapps5-db mysqldump -u quickapps5 -pquickapps123 --no-data quickapps5 > schema_cakephp5.sql
 
 # Compare database schemas
 docker exec quickapps-db mysql -u quickapps -pquickapps123 -e "SHOW TABLES;" quickapps
 docker exec quickapps5-db mysql -u quickapps5 -pquickapps123 -e "SHOW TABLES;" quickapps5
+
+# View table structure
+docker exec quickapps-db mysql -u quickapps -pquickapps123 quickapps -e "DESCRIBE table_name;"
+docker exec quickapps5-db mysql -u quickapps5 -pquickapps123 quickapps5 -e "DESCRIBE table_name;"
 ```
 
 ## Architecture Overview

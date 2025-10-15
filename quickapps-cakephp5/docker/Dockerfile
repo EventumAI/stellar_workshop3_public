@@ -1,5 +1,10 @@
 FROM php:8.2-apache
 
+# Configure apt for better stability with hash mismatches
+RUN echo "Acquire::http::Pipeline-Depth 0;" > /etc/apt/apt.conf.d/99custom && \
+    echo "Acquire::http::No-Cache true;" >> /etc/apt/apt.conf.d/99custom && \
+    echo "Acquire::BrokenProxy true;" >> /etc/apt/apt.conf.d/99custom
+
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
     git \
@@ -57,4 +62,8 @@ RUN echo "memory_limit = 512M" >> /usr/local/etc/php/conf.d/custom.ini \
 
 EXPOSE 80
 
+COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
+
+ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["apache2-foreground"]
