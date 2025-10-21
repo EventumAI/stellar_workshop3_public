@@ -65,5 +65,10 @@ EXPOSE 80
 COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
+RUN printf '%s\n' '#!/usr/bin/env sh' \
+    'exec php /var/www/html/vendor/bin/phpunit "$@"' \
+    > /usr/local/bin/phpunit \
+ && chmod +x /usr/local/bin/phpunit
+
 ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["apache2-foreground"]
