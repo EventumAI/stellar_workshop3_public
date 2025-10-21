@@ -106,9 +106,89 @@ Then open this file again - you'll see new content has been added!
 
 ---
 
-**⏱️ Time for warm-up**: ~5 minutes
-**Total workshop time**: ~45 minutes
+# Part 1: Finding Bugs with Corner Case Testing
+
+**Branch**: `workshop5-1`
 
 ---
 
-> **Note**: This workshop demonstrates practical AI workflows for testing. While we use a real CakePHP project, the principles apply to any technology stack.
+## 🎯 What We'll Do
+
+In this section, you'll discover how AI can help identify and fix bugs in **edge cases** and **corner cases**. I've added some corner case tests to the vacation calculator - but some of them are failing!
+
+## 📊 Current Situation
+
+The vacation calculator has:
+- ✅ **10 original tests** - all passing
+- ❌ **11 new corner case tests** - 2 are failing!
+
+The failing tests reveal real bugs in the calculator logic.
+
+## 🧪 Your Challenge
+
+Use AI in **plan mode** to fix the failing tests. Try this prompt:
+
+### 📝 Prompt Template
+
+```
+Please re-read the project config file, run the tests, and fix any failures you find.
+```
+
+### 🤔 What to Observe
+
+As you work with AI in plan mode, pay attention to:
+- **How many times** did you need to approve AI's actions?
+- **How long** did the entire process take?
+- **Did AI understand** the business logic correctly?
+- **What approach** did AI take to fix the bugs?
+
+### ✅ Success Criteria
+
+- [ ] AI re-read the configuration file
+- [ ] AI discovered the 2 failing tests
+- [ ] AI fixed the bugs in `VacationCalculator.php`
+- [ ] All 21 tests now pass
+- [ ] You understand what bugs were fixed
+
+### 🚨 Red Flags to Watch For
+
+- ❌ AI changes test expectations instead of fixing the code
+- ❌ AI fixes one bug but breaks other tests
+- ❌ AI doesn't run tests to verify the fix worked
+- ❌ AI makes overly complex changes
+
+---
+
+## 📝 Reflection Questions
+
+After completing this exercise, consider:
+
+1. **Efficiency**: How much faster was this than manually debugging?
+2. **Confirmations**: How many times did you need to approve actions?
+3. **Trust**: Would you have caught these edge cases yourself?
+4. **Process**: Did AI take a logical approach to solving the problem?
+
+---
+
+## 🎓 Key Takeaway
+
+> 💡 **AI can autonomously discover, diagnose, and fix bugs**
+>
+> By running tests, analyzing failures, and understanding business requirements, AI can handle the entire debugging workflow - not just write code.
+
+---
+
+## 🚀 Ready for Next Section?
+
+When you've successfully fixed all tests, switch to the next branch:
+
+```bash
+git checkout workshop5-2
+```
+
+---
+
+**⏱️ Time for Part 1**: ~10-15 minutes
+**Key metric**: Count how many confirmations you needed!
+
+---

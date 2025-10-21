@@ -184,4 +184,153 @@ class VacationCalculatorTest extends TestCase
         $result30 = $this->calculator->calculateAvailableDays($hireDate, 30, $calculationDate);
         $this->assertEquals(30, $result30);
     }
+
+    // ========================================
+    // Corner Case Tests
+    // ========================================
+
+    /**
+     * Test calculation date is before hire date (negative employment period)
+     */
+    public function testCalculationDateBeforeHireDate(): void
+    {
+        $hireDate = new DateTime('2024-10-01');
+        $calculationDate = new DateTime('2024-01-01'); // Before hire date!
+
+        $result = $this->calculator->calculateAvailableDays($hireDate, 20, $calculationDate);
+
+        // Employee not hired yet = no vacation days
+        $this->assertEquals(0, $result);
+    }
+
+    /**
+     * Test with zero base days per year
+     */
+    public function testZeroBaseDaysPerYear(): void
+    {
+        $hireDate = new DateTime('2023-01-01');
+        $calculationDate = new DateTime('2024-01-01');
+
+        $result = $this->calculator->calculateAvailableDays($hireDate, 0, $calculationDate);
+
+        // With 0 base days, should get 0 total (even with seniority)
+        $this->assertEquals(0, $result);
+    }
+
+    /**
+     * Test with negative base days per year
+     */
+    public function testNegativeBaseDaysPerYear(): void
+    {
+        $hireDate = new DateTime('2023-01-01');
+        $calculationDate = new DateTime('2024-01-01');
+
+        $result = $this->calculator->calculateAvailableDays($hireDate, -10, $calculationDate);
+
+        // Negative base days should be treated as 0
+        $this->assertEquals(0, $result);
+    }
+
+    /**
+     * Test employee hired today (zero days of employment)
+     */
+    public function testEmployeeHiredToday(): void
+    {
+        $today = new DateTime('2024-10-21');
+
+        $result = $this->calculator->calculateAvailableDays($today, 20, $today);
+
+        // Employee hired today gets 0 days (hasn't worked yet)
+        $this->assertEquals(0, $result);
+    }
+
+    /**
+     * Test employee with very long service (50 years)
+     */
+    public function testEmployeeWithFiftyYearsService(): void
+    {
+        $hireDate = new DateTime('1974-01-01');
+        $calculationDate = new DateTime('2024-01-01');
+        $baseDaysPerYear = 20;
+
+        $result = $this->calculator->calculateAvailableDays($hireDate, $baseDaysPerYear, $calculationDate);
+
+        // 50 years = 10 milestones × 5 days = 50 bonus days
+        // 20 base + 50 bonus = 70 days
+        $this->assertEquals(70, $result);
+    }
+
+    /**
+     * Test with very large base days per year
+     */
+    public function testVeryLargeBaseDaysPerYear(): void
+    {
+        $hireDate = new DateTime('2023-01-01');
+        $calculationDate = new DateTime('2024-01-01');
+        $baseDaysPerYear = 365; // Unrealistic but possible input
+
+        $result = $this->calculator->calculateAvailableDays($hireDate, $baseDaysPerYear, $calculationDate);
+
+        // Should handle gracefully
+        $this->assertEquals(365, $result);
+    }
+
+    /**
+     * Test with odd number of base days that don't divide evenly by 12
+     */
+    public function testOddBaseDaysWithRounding(): void
+    {
+        $hireDate = new DateTime('2024-04-01');
+        $calculationDate = new DateTime('2024-10-01');
+        $baseDaysPerYear = 13; // 13/12 = 1.0833... per month
+
+        $result = $this->calculator->calculateAvailableDays($hireDate, $baseDaysPerYear, $calculationDate);
+
+        // 6 months worked: 13/12 * 6 = 6.5, rounded = 7 days
+        $this->assertEquals(7, $result);
+    }
+
+    /**
+     * Test with base days that cause rounding down
+     */
+    public function testBaseDaysWithRoundingDown(): void
+    {
+        $hireDate = new DateTime('2024-09-01');
+        $calculationDate = new DateTime('2024-10-01');
+        $baseDaysPerYear = 13; // 13/12 = 1.0833... per month
+
+        $result = $this->calculator->calculateAvailableDays($hireDate, $baseDaysPerYear, $calculationDate);
+
+        // 1 month worked: 13/12 * 1 = 1.0833..., rounded = 1 day
+        $this->assertEquals(1, $result);
+    }
+
+    /**
+     * Test calculation on exact hire date anniversary
+     */
+    public function testExactHireDateAnniversary(): void
+    {
+        $hireDate = new DateTime('2019-01-01');
+        $calculationDate = new DateTime('2024-01-01'); // Exactly 5 years
+
+        $result = $this->calculator->calculateAvailableDays($hireDate, 20, $calculationDate);
+
+        // Exactly 5 years = 20 base + 5 seniority = 25 days
+        $this->assertEquals(25, $result);
+    }
+
+    /**
+     * Test one day before 5-year milestone anniversary
+     */
+    public function testOneDayBeforeMilestone(): void
+    {
+        $hireDate = new DateTime('2019-01-01');
+        $calculationDate = new DateTime('2023-12-31'); // 1 day before 5 years
+
+        $result = $this->calculator->calculateAvailableDays($hireDate, 20, $calculationDate);
+
+        // 4 years, 11 months, 30 days = no seniority bonus yet
+        // Should get 20 base days (capped at 12 months)
+        $this->assertEquals(20, $result);
+    }
 }
