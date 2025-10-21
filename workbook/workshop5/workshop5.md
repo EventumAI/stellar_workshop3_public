@@ -192,3 +192,179 @@ git checkout workshop5-2
 **Key metric**: Count how many confirmations you needed!
 
 ---
+
+# Part 2: Supercharging AI with MCP PHPUnit
+
+**Branch**: `workshop5-2`
+
+---
+
+## 🎯 What We'll Do
+
+In Part 1, you used AI with standard bash commands. Now let's give AI a **superpower** - direct access to PHPUnit through MCP (Model Context Protocol).
+
+## 🔧 What is MCP?
+
+**MCP (Model Context Protocol)** allows AI to use specialized tools instead of parsing bash output. With PHPUnit MCP, Claude can:
+
+- 🎯 Run tests directly through structured API
+- 📊 Get rich, structured test results
+- 🚀 Execute faster (no Docker output parsing)
+- 🔍 Better understand test failures
+
+## 📦 Setup MCP PHPUnit Server
+
+### Prerequisites
+
+The PHPUnit MCP package is already in `composer.json`. First, install it:
+
+```bash
+docker exec -it quickapps5-web composer install
+```
+
+### Configure MCP Server (Project-Level)
+
+I've created an example MCP configuration in `.claude/mcp/config.json`, but it uses **my personal Docker path**. You need to configure it for your system.
+
+#### Step 1: Review the Example
+
+Look at `.claude/mcp/config.json` to understand the structure.
+
+#### Step 2: Remove My Configuration
+
+```bash
+claude mcp remove --scope project phpunit
+```
+
+#### Step 3: Add Your Own MCP Server
+
+**Important**: You need the **full path** to your Docker executable!
+
+Find your Docker path:
+```bash
+which docker
+```
+
+Common paths:
+- macOS: `/usr/local/bin/docker`
+- Linux: `/usr/bin/docker`
+- Windows WSL: `/usr/bin/docker`
+
+Then add the MCP server:
+
+```bash
+claude mcp add --transport stdio --scope project phpunit -- \
+  /usr/local/bin/docker exec -i quickapps5-web php vendor/bin/mcp-phpunit-server
+```
+
+**Replace** `/usr/local/bin/docker` with your actual Docker path!
+
+#### Step 4: Restart Claude Code
+
+Close and restart Claude Code to load the MCP server.
+
+#### Step 5: Verify Connection
+
+Run this command in Claude Code:
+```
+/mcp
+```
+
+You should see:
+```
+✅ phpunit - Connected
+```
+
+### 🚨 Troubleshooting
+
+If something goes wrong:
+- ❌ MCP shows "Disconnected" → Check your Docker path
+- ❌ Container not found → Verify container name: `docker ps`
+- ❌ MCP command fails → Contact me directly, I'll help!
+
+**Need help?** Reach out to me personally - I'll make sure you get it working!
+
+---
+
+## 🧪 Your Challenge
+
+Now repeat the **exact same task** from Part 1, but this time AI will use MCP instead of bash commands.
+
+### 📝 Prompt Template
+
+```
+Please re-read the project config file, run the tests using mcp phpunit, and fix any failures you find.
+```
+
+### 🤔 What to Observe
+
+Compare this experience with Part 1:
+
+- **Speed**: Is it faster than bash?
+- **Confirmations**: Did you need fewer approvals?
+- **AI behavior**: Does AI use `mcp__phpunit_*` tools?
+- **Output clarity**: Are results easier to understand?
+
+### ✅ Success Criteria
+
+- [ ] AI uses MCP tools (look for `mcp__phpunit_run` or similar)
+- [ ] Tests run successfully through MCP
+- [ ] All 21 tests pass
+- [ ] Process feels smoother than Part 1
+
+### 🚨 Red Flags
+
+- ❌ AI falls back to bash instead of using MCP
+- ❌ MCP connection fails during execution
+- ❌ You needed MORE confirmations than Part 1
+
+---
+
+## 📊 Part 1 vs Part 2 Comparison
+
+Fill in this table after completing both parts:
+
+| Aspect | Part 1 (Bash) | Part 2 (MCP) |
+|--------|---------------|--------------|
+| **Tools used** | `docker exec ... phpunit` | `mcp__phpunit_*` |
+| **Confirmations needed** | ??? (your count) | ??? (your count) |
+| **Time taken** | ??? minutes | ??? minutes |
+| **Ease of setup** | Easy | Requires MCP setup |
+| **Ease of use** | ??? | ??? |
+
+---
+
+## 📝 Reflection Questions
+
+After completing this exercise, discuss:
+
+1. **Performance**: Was MCP noticeably faster in execution?
+2. **Developer experience**: Which approach felt better?
+3. **Setup complexity**: Was MCP setup worth the effort?
+4. **Reliability**: Did MCP handle the task more smoothly?
+5. **Future use**: Would you use MCP for your projects?
+
+---
+
+## 🎓 Key Takeaway
+
+> 💡 **MCP transforms AI from a command executor to a specialized tool user**
+>
+> Instead of parsing text output, MCP gives AI direct access to development tools through structured APIs. This makes AI faster, more reliable, and more autonomous.
+
+---
+
+## 🚀 Ready for Next Section?
+
+When you've successfully completed the MCP exercise, switch to the next branch:
+
+```bash
+git checkout workshop5-3
+```
+
+---
+
+**⏱️ Time for Part 2**: ~15-20 minutes (including MCP setup)
+**Key metric**: Compare confirmation counts - Part 1 vs Part 2!
+
+---

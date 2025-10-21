@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "phpunit": {
+      "type": "stdio",
+      "command": "/usr/local/bin/docker",
+      "args": [
+        "exec",
+        "-i",
+        "quickapps5-web",
+        "php",
+        "vendor/bin/mcp-phpunit-server"
+      ],
+      "env": {}
+    }
+  }
+}

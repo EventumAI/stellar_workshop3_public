@@ -4,6 +4,12 @@
     "homepage": "https://cakephp.org",
     "type": "project",
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/lunetics/php-mcp-phpunit"
+        }
+    ],
     "require": {
         "php": ">=8.1",
         "cakephp/cakephp": "^5.0.0",
@@ -16,8 +22,9 @@
         "cakephp/cakephp-codesniffer": "^5.0",
         "cakephp/debug_kit": "^5.0.0",
         "josegonzalez/dotenv": "^4.0",
+        "php-mcp/phpunit": "dev-feature/enhance-documentation",
         "phpstan/phpstan": "^2.1",
-        "phpunit/phpunit": "^10.1.0",
+        "phpunit/phpunit": "^11.5 || ^12.0",
         "vimeo/psalm": "^6.13"
     },
     "suggest": {
