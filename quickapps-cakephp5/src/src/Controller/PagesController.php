@@ -16,11 +16,14 @@ declare(strict_types=1);
  */
 namespace App\Controller;
 
+use App\Service\VacationCalculator;
 use Cake\Core\Configure;
 use Cake\Http\Exception\ForbiddenException;
 use Cake\Http\Exception\NotFoundException;
 use Cake\Http\Response;
+use Cake\I18n\DateTime;
 use Cake\View\Exception\MissingTemplateException;
+use Exception;
 
 /**
  * Static content controller
@@ -31,6 +34,72 @@ use Cake\View\Exception\MissingTemplateException;
  */
 class PagesController extends AppController
 {
+    /**
+     * Home page with vacation calculator
+     *
+     * @return void
+     */
+    public function home()
+    {
+        $result = null;
+        $errors = [];
+
+        // Process form submission
+        if ($this->request->is('post')) {
+            $data = $this->request->getData();
+
+            try {
+                // Validate and parse input data
+                $hireDate = new DateTime($data['hire_date'] ?? '');
+                $baseDaysPerYear = (int)($data['base_days'] ?? 20);
+                $calculationDate = !empty($data['calculation_date'])
+                    ? new DateTime($data['calculation_date'])
+                    : new DateTime('now');
+
+                // Create calculator and perform calculation
+                $calculator = new VacationCalculator();
+                $availableDays = $calculator->calculateAvailableDays(
+                    $hireDate,
+                    $baseDaysPerYear,
+                    $calculationDate,
+                );
+
+                // Calculate detailed information for display
+                $interval = $hireDate->diff($calculationDate);
+                $yearsWorked = $interval->y;
+                $monthsWorked = $interval->m;
+                $totalMonths = ($yearsWorked * 12) + $monthsWorked;
+                if ($interval->d > 0) {
+                    $totalMonths++;
+                }
+
+                // Calculate base days (proportional)
+                $effectiveMonths = min($totalMonths, 12);
+                $daysPerMonth = (float)$baseDaysPerYear / 12.0;
+                $baseDays = (int)round($daysPerMonth * (float)$effectiveMonths);
+
+                // Calculate seniority bonus
+                $seniorityMilestones = (int)floor($yearsWorked / 5);
+                $seniorityBonus = $seniorityMilestones * 5;
+
+                $result = [
+                    'hire_date' => $hireDate->i18nFormat('Y-MM-dd'),
+                    'calculation_date' => $calculationDate->i18nFormat('Y-MM-dd'),
+                    'years_worked' => $yearsWorked,
+                    'months_worked' => $monthsWorked,
+                    'base_days_per_year' => $baseDaysPerYear,
+                    'base_days' => $baseDays,
+                    'seniority_bonus' => $seniorityBonus,
+                    'total_days' => $availableDays,
+                ];
+            } catch (Exception $e) {
+                $errors[] = 'Calculation error: ' . $e->getMessage();
+            }
+        }
+
+        $this->set(compact('result', 'errors'));
+    }
+
     /**
      * Displays a view
      *

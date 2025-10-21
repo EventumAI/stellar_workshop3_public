@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <psalm
-    errorLevel="2"
+    errorLevel="4"
     resolveFromConfigFile="true"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns="https://getpsalm.org/schema/config"
@@ -12,4 +12,40 @@
             <directory name="vendor" />
         </ignoreFiles>
     </projectFiles>
+
+    <issueHandlers>
+        <!-- Suppress UnusedClass for framework-managed classes -->
+        <UnusedClass>
+            <errorLevel type="suppress">
+                <!-- Controllers are used via routing -->
+                <directory name="src/Controller" />
+                <!-- Views are instantiated by CakePHP -->
+                <directory name="src/View" />
+                <!-- Application/Installer are used via composer hooks -->
+                <file name="src/Application.php" />
+                <file name="src/Console/Installer.php" />
+            </errorLevel>
+        </UnusedClass>
+
+        <!-- Don't enforce final classes in framework code -->
+        <ClassMustBeFinal>
+            <errorLevel type="suppress">
+                <directory name="src" />
+            </errorLevel>
+        </ClassMustBeFinal>
+
+        <!-- Override attribute only available in PHP 8.3+ -->
+        <MissingOverrideAttribute>
+            <errorLevel type="suppress">
+                <directory name="src" />
+            </errorLevel>
+        </MissingOverrideAttribute>
+
+        <!-- ErrorController has looser return types than parent (allows Response|null instead of just null) -->
+        <ImplementedReturnTypeMismatch>
+            <errorLevel type="suppress">
+                <file name="src/Controller/ErrorController.php" />
+            </errorLevel>
+        </ImplementedReturnTypeMismatch>
+    </issueHandlers>
 </psalm>

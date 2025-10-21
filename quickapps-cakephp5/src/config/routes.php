@@ -52,10 +52,9 @@ return function (RouteBuilder $routes): void {
     $routes->scope('/', function (RouteBuilder $builder): void {
         /*
          * Here, we are connecting '/' (base path) to a controller called 'Pages',
-         * its action called 'display', and we pass a param to select the view file
-         * to use (in this case, templates/Pages/home.php)...
+         * its action called 'home' which handles the vacation calculator...
          */
-        $builder->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
+        $builder->connect('/', ['controller' => 'Pages', 'action' => 'home']);
 
         /*
          * ...and connect the rest of 'Pages' controller's URLs.

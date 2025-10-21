@@ -16,7 +16,9 @@
         "cakephp/cakephp-codesniffer": "^5.0",
         "cakephp/debug_kit": "^5.0.0",
         "josegonzalez/dotenv": "^4.0",
-        "phpunit/phpunit": "^10.1.0"
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^10.1.0",
+        "vimeo/psalm": "^6.13"
     },
     "suggest": {
         "markstory/asset_compress": "An asset compression plugin which provides file concatenation and a flexible filter system for preprocessing and minification.",
@@ -40,11 +42,14 @@
         "post-create-project-cmd": "App\\Console\\Installer::postInstall",
         "check": [
             "@test",
-            "@cs-check"
+            "@cs-check",
+            "@stan",
+            "@psalm"
         ],
         "cs-check": "phpcs --colors -p",
         "cs-fix": "phpcbf --colors -p",
         "stan": "phpstan analyse",
+        "psalm": "psalm --no-progress",
         "test": "phpunit --colors=always"
     },
     "prefer-stable": true,
