@@ -56,12 +56,19 @@ class PagesController extends AppController
                     ? new DateTime($data['calculation_date'])
                     : new DateTime('now');
 
+                // Parse carryover parameter (optional)
+                $daysUsedLastYear = null;
+                if (isset($data['days_used_last_year']) && $data['days_used_last_year'] !== '') {
+                    $daysUsedLastYear = (int)$data['days_used_last_year'];
+                }
+
                 // Create calculator and perform calculation
                 $calculator = new VacationCalculator();
                 $availableDays = $calculator->calculateAvailableDays(
                     $hireDate,
                     $baseDaysPerYear,
                     $calculationDate,
+                    $daysUsedLastYear,
                 );
 
                 // Calculate detailed information for display
@@ -82,6 +89,12 @@ class PagesController extends AppController
                 $seniorityMilestones = (int)floor($yearsWorked / 5);
                 $seniorityBonus = $seniorityMilestones * 5;
 
+                // Calculate carryover days (if provided)
+                $carryoverDays = null;
+                if ($daysUsedLastYear !== null) {
+                    $carryoverDays = max(0, $baseDaysPerYear - $daysUsedLastYear);
+                }
+
                 $result = [
                     'hire_date' => $hireDate->i18nFormat('Y-MM-dd'),
                     'calculation_date' => $calculationDate->i18nFormat('Y-MM-dd'),
@@ -90,6 +103,8 @@ class PagesController extends AppController
                     'base_days_per_year' => $baseDaysPerYear,
                     'base_days' => $baseDays,
                     'seniority_bonus' => $seniorityBonus,
+                    'carryover_days' => $carryoverDays,
+                    'days_used_last_year' => $daysUsedLastYear,
                     'total_days' => $availableDays,
                 ];
             } catch (Exception $e) {

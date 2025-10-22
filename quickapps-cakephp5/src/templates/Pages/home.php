@@ -211,6 +211,19 @@
                 <p class="help-text">Date for which to calculate vacation days (defaults to today)</p>
             </div>
 
+            <div class="form-group">
+                <label for="days_used_last_year">Days Used Last Year</label>
+                <input
+                    type="number"
+                    id="days_used_last_year"
+                    name="days_used_last_year"
+                    min="0"
+                    max="365"
+                    value="<?= $this->request->getData('days_used_last_year') ?? '' ?>"
+                >
+                <p class="help-text">Days you used in the previous year (leave empty to skip carryover calculation)</p>
+            </div>
+
             <button type="submit">Calculate</button>
         </form>
 
@@ -254,6 +267,16 @@
                         <?php endif; ?>
                     </div>
                 </div>
+
+                <?php if ($result['carryover_days'] !== null): ?>
+                    <div class="result-item">
+                        <div class="result-label">Carryover Days</div>
+                        <div class="result-value">
+                            +<?= h($result['carryover_days']) ?> days
+                            <small style="color: #7f8c8d;">(unused from previous year)</small>
+                        </div>
+                    </div>
+                <?php endif; ?>
 
                 <div class="result-total">
                     <div class="label">Total Available Vacation Days</div>
