@@ -24,11 +24,37 @@ Testing is crucial, but running tests, analyzing results, and fixing code style 
 
 This workshop uses a **unique git-based approach**. Instead of multiple files, you'll work with **one evolving document** that grows as you progress through branches:
 
-- **workshop5-1**: Introduction + Testing Basics
-- **workshop5-2**: Static Analysis
-- **workshop5-3**: Debugging Test Failures
-- **workshop5-4**: Advanced Testing Workflows
-- **workshop5-final**: Complete reference with all sections
+### 📖 Workshop Structure (9 Parts)
+
+**Foundation & Unit Testing:**
+- **workshop5-warmup**: Environment verification (you are here!)
+- **workshop5-1**: Finding Bugs with Corner Case Testing
+- **workshop5-2**: Supercharging AI with MCP PHPUnit
+- **workshop5-3**: 🔴 Red Phase TDD - Writing Failing Tests (Unit)
+- **workshop5-4**: 🟢 Green Phase TDD - Making Tests Pass (Unit)
+- **workshop5-5**: 🔵 Refactor Phase - Improving Code Quality
+
+**E2E Testing & Automation:**
+- **workshop5-6**: AI-Assisted Edge Case Discovery
+- **workshop5-7**: 🔴 Red Phase E2E - Playwright Browser Tests
+- **workshop5-8**: 🟢 Green Phase E2E - Full-Stack Implementation
+
+**Final & Bonus:**
+- **workshop5-final**: Complete reference + Bonus Skills Section
+
+### 🎓 Two Learning Paths
+
+**Path 1: Step-by-Step (Recommended for learning)** ⏱️ ~3-4 hours
+- Start with `workshop5-warmup` (this branch)
+- Progress through each part sequentially
+- Build muscle memory for TDD workflow
+- Understand the "why" behind each step
+
+**Path 2: Jump to the End (For reference/review)** ⏱️ ~30 minutes
+- Jump directly to `workshop5-final` branch
+- See the complete workshop with all 9 parts
+- Includes bonus section on creating reusable Skills
+- Perfect for quick reference or second pass
 
 Each branch adds new content to this same file. This mirrors how real projects evolve over time!
 
@@ -92,11 +118,11 @@ Instead of manually reading docs, remembering Docker commands, and running tests
 
 ## 🚀 Ready to Continue?
 
-Now that your environment is verified, let's begin the workshop!
+Now that your environment is verified, choose your learning path:
 
-### Next Steps
+### Path 1: Step-by-Step Learning (Recommended)
 
-Switch to branch `workshop5-1` to start learning about AI-assisted testing:
+Follow the workshop sequentially to build understanding:
 
 ```bash
 git checkout workshop5-1
@@ -104,11 +130,30 @@ git checkout workshop5-1
 
 Then open this file again - you'll see new content has been added!
 
+### Path 2: Jump to Final (Quick Reference)
+
+If you want to see the complete workshop or review all sections:
+
+```bash
+git checkout workshop5-final
+```
+
+This branch contains all 9 parts plus a bonus section on creating reusable TDD Skills.
+
+**💡 Tip**: First-timers should use Path 1. Path 2 is best for review or if you want to understand the final state before diving into details.
+
 ---
 
+<<<<<<< HEAD
 # Part 1: Finding Bugs with Corner Case Testing
 
 **Branch**: `workshop5-1`
+=======
+**⏱️ Time for warm-up**: ~5 minutes
+**Total workshop time**:
+- Path 1 (Sequential): ~3-4 hours
+- Path 2 (Final review): ~30 minutes
+>>>>>>> 3549c40 (Workshop5 Update workshop structure: Add complete 9-part outline and two learning paths)
 
 ---
 
