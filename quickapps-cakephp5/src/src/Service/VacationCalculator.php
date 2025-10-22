@@ -30,12 +30,14 @@ class VacationCalculator
      * @param \DateTimeInterface $hireDate Employee's hire date
      * @param int $baseDaysPerYear Base vacation days per year (e.g., 20)
      * @param \DateTimeInterface $calculationDate Date to calculate vacation days for (usually today)
+     * @param int|null $daysUsedLastYear Days used in the previous year (for carryover calculation)
      * @return int Total available vacation days
      */
     public function calculateAvailableDays(
         DateTimeInterface $hireDate,
         int $baseDaysPerYear,
         DateTimeInterface $calculationDate,
+        ?int $daysUsedLastYear = null,
     ): int {
         // Validate: calculation date must be on or after hire date
         if ($calculationDate < $hireDate) {
@@ -56,7 +58,13 @@ class VacationCalculator
         // Calculate seniority bonus
         $seniorityBonus = $this->calculateSeniorityBonus($hireDate, $calculationDate);
 
-        return $baseDays + $seniorityBonus;
+        // Calculate carryover days (only if tracking previous year usage)
+        $carryoverDays = 0;
+        if ($daysUsedLastYear !== null) {
+            $carryoverDays = max(0, $baseDaysPerYear - $daysUsedLastYear);
+        }
+
+        return $baseDays + $seniorityBonus + $carryoverDays;
     }
 
     /**

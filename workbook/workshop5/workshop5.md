@@ -680,3 +680,194 @@ git checkout workshop5-5
 **Key metric**: How simple was the implementation?
 
 ---
+
+# Part 5: Refactor Phase - Improving Code Quality
+
+**Branch**: `workshop5-5`
+
+---
+
+## 🎯 What We'll Do
+
+You've made the tests pass with simple code. Now it's time for the **Refactor phase** - improving code quality while keeping all tests green.
+
+## 🔵 The Refactor Phase Philosophy
+
+Now that tests are green, you can safely improve the code:
+
+> **Make the code better WITHOUT breaking tests**
+
+The Refactor phase is where you:
+- ✅ Improve code structure
+- ✅ Extract magic numbers to constants
+- ✅ Improve naming
+- ✅ Add documentation
+- ✅ Fix static analysis issues
+- ✅ Ensure code quality standards
+
+**The safety net**: Tests! After each change, run tests to ensure nothing broke.
+
+## 📋 Current Status
+
+From Part 4, you should have:
+- 🟢 All 23 tests passing
+- ✅ Working carryover functionality
+- 📝 Simple implementation (maybe too simple?)
+- ⚠️ Possibly some code quality issues
+
+## 🧪 Your Challenge
+
+Use AI to refactor the code while keeping all tests green. This is where static analyzers and quality tools shine!
+
+### 📝 Prompt Template
+
+```
+REFACTOR Phase: Improve code quality while keeping tests green.
+
+1. Run: composer check
+2. Fix all issues found by static analyzers
+3. Run tests via MCP after each fix (must stay GREEN)
+4. Refactor code:
+   - Extract magic numbers (5, 20) to constants
+   - Improve naming if needed
+   - Add missing type hints/docblocks
+
+After each change: run composer check + tests.
+Everything must pass.
+```
+
+### 🤔 What to Observe
+
+As AI refactors the code, notice:
+
+- **Safety**: Does AI run tests after each change?
+- **Quality tools**: Does AI use composer check, PHPStan, Psalm?
+- **Incremental**: Does AI make small changes or big ones?
+- **Tests**: Do tests stay green throughout?
+- **Code quality**: Does code become clearer?
+
+### ✅ Success Criteria
+
+- [ ] AI ran `composer check` to find quality issues
+- [ ] All static analysis issues fixed (PHPStan, Psalm, PHPCS)
+- [ ] Magic numbers extracted to class constants
+- [ ] All tests still pass (no regressions!)
+- [ ] AI verified tests after each refactoring step
+- [ ] Code is cleaner and more maintainable
+- [ ] Documentation improved (docblocks, type hints)
+
+### 🚨 Red Flags
+
+- ❌ AI breaks tests during refactoring
+- ❌ AI doesn't run tests after changes
+- ❌ AI skips quality checks
+- ❌ AI makes huge changes without verification
+- ❌ Tests become flaky
+
+---
+
+## 📊 Example Refactorings
+
+### Before: Magic Numbers
+```php
+private const SENIORITY_BONUS_DAYS = 5;
+private const SENIORITY_MILESTONE_YEARS = 5;
+```
+
+### After: Clear Constants
+```php
+/**
+ * Days added per seniority milestone
+ */
+private const SENIORITY_BONUS_DAYS = 5;
+
+/**
+ * Years required for each seniority bonus milestone
+ */
+private const SENIORITY_MILESTONE_YEARS = 5;
+
+/**
+ * Default base vacation days per year
+ */
+private const DEFAULT_BASE_DAYS_PER_YEAR = 20;
+```
+
+---
+
+## 🔄 Refactor Workflow
+
+The ideal refactoring workflow:
+
+```
+1. Run composer check → Find issues
+2. Fix ONE issue
+3. Run tests → Verify green
+4. Commit (optional)
+5. Repeat
+```
+
+**Small steps = Safe refactoring**
+
+---
+
+## 📊 Quality Metrics Progression
+
+Track code quality improvements:
+
+| Metric | Before Refactor | After Refactor |
+|--------|----------------|----------------|
+| Tests passing | 23 ✅ | 23 ✅ |
+| PHPStan errors | ??? | 0 ✅ |
+| Psalm errors | ??? | 0 ✅ |
+| PHPCS violations | ??? | 0 ✅ |
+| Magic numbers | Several | 0 ✅ |
+| Documentation | Minimal | Complete ✅ |
+
+---
+
+## 📝 Reflection Questions
+
+After AI completes the refactoring, discuss:
+
+1. **Safety**: Did tests provide confidence during refactoring?
+2. **Quality**: Is the code clearer and more maintainable?
+3. **Tools**: Which quality tool found the most issues?
+4. **Process**: Was incremental refactoring safer than big changes?
+5. **TDD benefit**: Could you refactor this confidently without tests?
+
+---
+
+## 🎓 Key Takeaway
+
+> 💡 **Tests enable fearless refactoring**
+>
+> With comprehensive tests, you can improve code structure, extract constants, rename variables, and fix quality issues with confidence. Tests tell you immediately if something breaks.
+
+---
+
+## 🎯 The Complete TDD Cycle
+
+You've now experienced all three phases:
+
+1. ✅ **Red Phase** (Part 3): Write failing tests for new feature
+2. ✅ **Green Phase** (Part 4): Simple implementation to pass tests
+3. ✅ **Refactor Phase** (Part 5): Improve quality while keeping tests green
+
+**This is TDD!** Red → Green → Refactor → Repeat
+
+---
+
+## 🚀 Ready for Next Section?
+
+When all refactoring is complete and everything passes, switch to the next branch:
+
+```bash
+git checkout workshop5-6
+```
+
+---
+
+**⏱️ Time for Part 5**: ~15-20 minutes
+**Key metric**: How many quality issues were found and fixed?
+
+---
