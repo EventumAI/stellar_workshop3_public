@@ -1281,3 +1281,236 @@ git checkout workshop5-8
 **Key metric**: How many E2E tests failed vs passed?
 
 ---
+
+# Part 8: GREEN Phase E2E - Making Tests Pass
+
+**Branch**: `workshop5-8`
+
+---
+
+## 🎯 What We'll Do
+
+E2E tests are failing (RED phase complete). Now implement the **minimal UI changes** to make all tests pass (GREEN phase).
+
+## 🟢 GREEN Phase for E2E
+
+The GREEN phase for E2E is different from unit tests:
+- **Unit tests**: Just fix the function
+- **E2E tests**: Fix form + controller + results display
+
+But the principle is the same: **Make the simplest changes to pass tests**.
+
+## 📋 Current Status
+
+From Part 7, you have:
+- ❌ 5 E2E tests failing (expected!)
+- ✅ 1 E2E test passing (optional field scenario)
+- ✅ All unit tests passing (backend works)
+
+**What's missing:** UI implementation for carryover feature.
+
+## 🧪 Your Challenge
+
+Implement the UI for carryover functionality. Keep it simple - just make tests green.
+
+### 📝 Prompt Template
+
+```
+GREEN Phase E2E: Implement carryover UI to make tests pass.
+
+Requirements:
+1. Add "Days Used Last Year" field to form (optional)
+2. Update controller to pass parameter to service
+3. Display carryover in results (only when provided)
+
+Keep it SIMPLE. Just make tests green.
+Run E2E tests via Playwright after changes.
+Run unit tests via MCP PHPUnit to verify no regressions.
+```
+
+### 🤔 What to Observe
+
+As AI implements the UI, notice:
+
+- **Simplicity**: Does AI keep changes minimal?
+- **Testing**: Does AI run tests after each change?
+- **Completeness**: Are all three parts implemented?
+- **Backward compatibility**: Do old tests still pass?
+- **MCP usage**: Does AI use both Playwright and PHPUnit MCP?
+
+### ✅ Success Criteria
+
+- [ ] Form field added (optional number input, 0-365 range)
+- [ ] Controller updated (parse parameter, pass to service)
+- [ ] Results display updated (show carryover section)
+- [ ] All 11 E2E tests pass (6 new + 5 old)
+- [ ] All 25 unit tests pass (no regressions)
+- [ ] AI verified with both Playwright and MCP PHPUnit
+
+### 🚨 Red Flags
+
+- ❌ AI over-engineers the solution
+- ❌ AI breaks existing functionality
+- ❌ AI doesn't test after implementation
+- ❌ Implementation is incomplete (missing one of three parts)
+
+---
+
+## 📊 What Gets Implemented
+
+### 1. Form Field (templates/Pages/home.php)
+
+```php
+<div class="form-group">
+    <label for="days_used_last_year">Days Used Last Year</label>
+    <input
+        type="number"
+        id="days_used_last_year"
+        name="days_used_last_year"
+        min="0"
+        max="365"
+        value="<?= $this->request->getData('days_used_last_year') ?? '' ?>"
+    >
+    <p class="help-text">Days you used in the previous year (leave empty to skip carryover calculation)</p>
+</div>
+```
+
+**Key features:**
+- Optional (no `required` attribute)
+- Number input with validation (0-365)
+- Help text explains usage
+- Preserves value on form resubmit
+
+### 2. Controller Logic (Controller/PagesController.php)
+
+```php
+// Parse carryover parameter (optional)
+$daysUsedLastYear = null;
+if (isset($data['days_used_last_year']) && $data['days_used_last_year'] !== '') {
+    $daysUsedLastYear = (int)$data['days_used_last_year'];
+}
+
+// Pass to service
+$availableDays = $calculator->calculateAvailableDays(
+    $hireDate,
+    $baseDaysPerYear,
+    $calculationDate,
+    $daysUsedLastYear,  // NEW parameter
+);
+
+// Calculate carryover for display
+$carryoverDays = null;
+if ($daysUsedLastYear !== null) {
+    $carryoverDays = max(0, $baseDaysPerYear - $daysUsedLastYear);
+}
+
+$result = [
+    // ... existing fields ...
+    'carryover_days' => $carryoverDays,
+    'days_used_last_year' => $daysUsedLastYear,
+];
+```
+
+**Key logic:**
+- Check if parameter exists and not empty
+- Convert to int or leave as null
+- Calculate carryover for display (same logic as service)
+
+### 3. Results Display (templates/Pages/home.php)
+
+```php
+<?php if ($result['carryover_days'] !== null): ?>
+    <div class="result-item">
+        <div class="result-label">Carryover Days</div>
+        <div class="result-value">
+            +<?= h($result['carryover_days']) ?> days
+            <small style="color: #7f8c8d;">(unused from previous year)</small>
+        </div>
+    </div>
+<?php endif; ?>
+```
+
+**Key features:**
+- Only shows when carryover provided
+- Matches existing result-item styling
+- Clear labeling with explanation
+
+---
+
+## 📊 Expected Test Results
+
+### After Implementation:
+
+| Test Suite | Before | After | Status |
+|------------|--------|-------|--------|
+| E2E Tests (Playwright) | 1/6 pass | 11/11 pass | ✅ All green |
+| Unit Tests (PHPUnit) | 25/25 pass | 25/25 pass | ✅ No regressions |
+| **Total** | **26/31** | **36/36** | **🎉 100%** |
+
+---
+
+## 🔄 Testing Workflow
+
+AI should follow this workflow:
+
+1. **Implement form field** → Run Playwright tests
+2. **Update controller** → Run Playwright tests
+3. **Add results display** → Run Playwright tests
+4. **Final verification** → Run both Playwright AND PHPUnit tests
+
+**Why test after each step?** Catch issues early, not at the end.
+
+---
+
+## 📝 Reflection Questions
+
+After implementation is complete, discuss:
+
+1. **Simplicity**: Was the implementation as simple as possible?
+2. **Testing confidence**: Did passing tests give you confidence?
+3. **E2E value**: Did E2E tests catch issues unit tests missed?
+4. **Development speed**: How fast was the RED → GREEN cycle?
+5. **Real-world**: Would you use this TDD approach in production?
+
+---
+
+## 🎓 Key Takeaway
+
+> 💡 **E2E tests drive full-stack implementation**
+>
+> Unlike unit tests that test one function, E2E tests require changes across multiple layers (UI, controller, service). This ensures the entire feature works together. TDD with E2E tests provides confidence that users can actually use the feature.
+
+---
+
+## 🎯 Complete TDD Cycle Achieved
+
+You've now completed the full TDD cycle at **two levels**:
+
+### Unit Test TDD (Parts 3-5):
+1. 🔴 **RED**: Write failing unit tests
+2. 🟢 **GREEN**: Implement service logic
+3. 🔵 **REFACTOR**: Improve code quality
+
+### E2E Test TDD (Parts 7-8):
+1. 🔴 **RED**: Write failing E2E tests
+2. 🟢 **GREEN**: Implement full UI
+3. 🔵 **REFACTOR**: (Not needed, kept it simple!)
+
+**This is comprehensive TDD!** Tests at multiple levels, all driving development.
+
+---
+
+## 🚀 Ready for Final Section?
+
+When all tests pass and the feature works, switch to the final branch:
+
+```bash
+git checkout workshop5-final
+```
+
+---
+
+**⏱️ Time for Part 8**: ~15-20 minutes
+**Key metric**: Did all 36 tests pass?
+
+---
