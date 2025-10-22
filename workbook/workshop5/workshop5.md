@@ -871,3 +871,181 @@ git checkout workshop5-6
 **Key metric**: How many quality issues were found and fixed?
 
 ---
+
+# Part 6: AI-Assisted Edge Case Discovery
+
+**Branch**: `workshop5-6`
+
+---
+
+## 🎯 What We'll Do
+
+You've built a working feature with tests. Now let's use AI's analytical abilities to find **edge cases** we might have missed.
+
+## 🔍 Why Edge Cases Matter
+
+Edge cases are scenarios that:
+- Occur rarely but can break your application
+- Are easy to overlook during development
+- Often reveal design flaws
+- Are critical for production stability
+
+**AI is excellent at finding edge cases** because it can systematically analyze code logic and identify boundary conditions.
+
+## 📋 Current Status
+
+From Part 5, you should have:
+- 🟢 All tests passing
+- ✅ Clean, refactored code
+- 📊 Working carryover functionality
+- 🤔 But are we covering all scenarios?
+
+## 🧪 Your Challenge
+
+Use AI to analyze the code and discover edge cases we haven't tested yet.
+
+### 📝 Prompt Template
+
+```
+Analyze VacationBalanceTracker carryover logic for edge cases.
+
+What scenarios might break? Consider:
+- Boundary conditions
+- Invalid inputs
+- Year transitions
+- Unusual combinations
+
+Write PHPUnit tests for 3 most critical edge cases you find.
+Run via MCP.
+```
+
+### 🤔 What to Observe
+
+As AI analyzes the code, notice:
+
+- **Analysis depth**: Does AI systematically review the logic?
+- **Edge case creativity**: What unusual scenarios does AI find?
+- **Prioritization**: Does AI focus on critical vs trivial cases?
+- **Test quality**: Are the edge case tests realistic?
+- **Explanation**: Does AI explain WHY each case is important?
+
+### ✅ Success Criteria
+
+- [ ] AI analyzed the code systematically
+- [ ] AI identified at least 3 edge cases
+- [ ] Each edge case has clear explanation of the risk
+- [ ] Tests are written for all identified edge cases
+- [ ] Tests are executed via MCP
+- [ ] You understand why each edge case matters
+
+### 🚨 Red Flags
+
+- ❌ AI suggests unrealistic edge cases
+- ❌ Tests are overly complex
+- ❌ AI doesn't explain why cases are risky
+- ❌ Edge cases are trivial (not actually edge cases)
+
+---
+
+## 📊 Examples of Edge Cases to Consider
+
+Here are some categories AI might explore:
+
+### Boundary Conditions
+- What if carryover days = 0?
+- What if carryover days are negative?
+- What if carryover exceeds annual allowance?
+
+### Invalid Inputs
+- What if calculation date is before hire date?
+- What if base days per year is 0 or negative?
+- What if dates are null?
+
+### Year Transitions
+- What happens on leap years?
+- Calculation exactly on hire anniversary?
+- Multiple carryovers across years?
+
+### Unusual Combinations
+- New employee with carryover (shouldn't happen?)
+- Carryover + maximum seniority bonus
+- Very large carryover amounts (999 days?)
+
+---
+
+## 📝 Example Edge Case Test
+
+```php
+/**
+ * Test carryover exceeds maximum allowed
+ *
+ * EDGE CASE: Employee somehow has 50 carried-over days
+ * This might indicate data corruption or system bug
+ * Should we cap carryover? Or allow unlimited?
+ */
+public function testExcessiveCarryoverDays(): void
+{
+    $hireDate = new DateTime('2020-01-01');
+    $calculationDate = new DateTime('2024-01-01');
+    $excessiveCarryover = 50; // Unusual amount!
+
+    $result = $this->calculator->calculateAvailableDays(
+        $hireDate,
+        20,
+        $calculationDate,
+        $excessiveCarryover
+    );
+
+    // Current implementation allows it, but should we?
+    // 20 (current year) + 5 (seniority) + 50 (carryover) = 75 days
+    $this->assertEquals(75, $result);
+}
+```
+
+---
+
+## 🎯 AI's Strength: Systematic Analysis
+
+AI can methodically check:
+1. **Function parameters**: What if each parameter has extreme values?
+2. **Logic branches**: What inputs trigger each code path?
+3. **Assumptions**: What does the code assume that might not always be true?
+4. **Math operations**: Division by zero? Integer overflow?
+5. **Date logic**: Timezone issues? Leap years? DST?
+
+---
+
+## 📝 Reflection Questions
+
+After AI discovers edge cases, discuss:
+
+1. **Surprises**: Which edge cases did you not think of?
+2. **Business logic**: Should some edge cases be prevented vs allowed?
+3. **Risk assessment**: Which edge cases pose the highest risk?
+4. **Coverage**: Do we now have comprehensive test coverage?
+5. **AI capability**: Could AI find cases humans might miss?
+
+---
+
+## 🎓 Key Takeaway
+
+> 💡 **AI excels at systematic edge case discovery**
+>
+> Humans think of happy paths. AI systematically explores boundaries, invalid inputs, and unusual combinations. Use AI to find the scenarios you didn't think to test.
+
+---
+
+## 🚀 Ready for Next Section?
+
+When you've discovered and tested edge cases, switch to the next branch:
+
+```bash
+git checkout workshop5-7
+```
+
+---
+
+**⏱️ Time for Part 6**: ~10-15 minutes
+**Key metric**: How many edge cases did AI discover?
+
+---
