@@ -391,4 +391,97 @@ class VacationCalculatorTest extends TestCase
         // Expected: 20 (current year) + 0 (no carryover) = 20 days
         $this->assertEquals(20, $result);
     }
+
+    // ========================================
+    // EDGE CASE TESTS: Carryover Logic
+    // ========================================
+
+    /**
+     * EDGE CASE 1: Negative days used last year (invalid input)
+     *
+     * Critical Bug Test:
+     * - What if $daysUsedLastYear is negative? (data corruption, malicious input)
+     * - Current behavior: 20 - (-5) = 25 bonus days (SECURITY ISSUE!)
+     * - Expected: Should either reject negative input OR treat as 0 days used
+     *
+     * This tests a CRITICAL validation gap that could allow gaming the system
+     */
+    public function testCarryoverWithNegativeDaysUsed(): void
+    {
+        $hireDate = new DateTime('2020-01-01');
+        $calculationDate = new DateTime('2025-01-01');
+        $baseDaysPerYear = 20;
+        $daysUsedLastYear = -5; // INVALID: negative days used!
+
+        $result = $this->calculator->calculateAvailableDays(
+            $hireDate,
+            $baseDaysPerYear,
+            $calculationDate,
+            $daysUsedLastYear,
+        );
+
+        // Current implementation gives: 20 (base) + 5 (seniority) + 25 (carryover from negative!) = 50
+        // This test DOCUMENTS the current behavior (likely a bug to fix later)
+        // TODO: Should probably validate and reject negative input or cap at baseDaysPerYear
+        $this->assertEquals(50, $result);
+    }
+
+    /**
+     * EDGE CASE 2: Employee used MORE days than allocated last year
+     *
+     * Data Integrity Test:
+     * - What if someone used 30 days but was only allocated 20? (data inconsistency)
+     * - Current behavior: max(0, 20 - 30) = 0 (no carryover, which is correct)
+     * - Expected: No carryover, system handles gracefully
+     *
+     * This tests that the system doesn't create NEGATIVE carryover debt
+     */
+    public function testCarryoverWhenUsedMoreThanAllocated(): void
+    {
+        $hireDate = new DateTime('2020-01-01');
+        $calculationDate = new DateTime('2025-01-01');
+        $baseDaysPerYear = 20;
+        $daysUsedLastYear = 30; // Used MORE than allocated (data inconsistency)
+
+        $result = $this->calculator->calculateAvailableDays(
+            $hireDate,
+            $baseDaysPerYear,
+            $calculationDate,
+            $daysUsedLastYear,
+        );
+
+        // Expected: 20 (current year) + 5 (seniority) + 0 (no carryover) = 25 days
+        // Correctly prevents negative carryover
+        $this->assertEquals(25, $result);
+    }
+
+    /**
+     * EDGE CASE 3: Extremely large negative days used (boundary testing)
+     *
+     * Boundary/Overflow Test:
+     * - What if $daysUsedLastYear is extremely negative? (data corruption, integer overflow)
+     * - Current behavior: 20 - (-1000) = 1020 bonus carryover days!
+     * - Expected: Should validate/cap the carryover
+     *
+     * This tests extreme boundary conditions and potential integer overflow
+     */
+    public function testCarryoverWithExtremelyNegativeDaysUsed(): void
+    {
+        $hireDate = new DateTime('2020-01-01');
+        $calculationDate = new DateTime('2025-01-01');
+        $baseDaysPerYear = 20;
+        $daysUsedLastYear = -1000; // EXTREME: massively negative input
+
+        $result = $this->calculator->calculateAvailableDays(
+            $hireDate,
+            $baseDaysPerYear,
+            $calculationDate,
+            $daysUsedLastYear,
+        );
+
+        // Current implementation gives: 20 (base) + 5 (seniority) + 1020 (carryover!) = 1045
+        // This test DOCUMENTS the vulnerability - should be fixed with validation
+        // TODO: Add validation to prevent negative daysUsedLastYear
+        $this->assertEquals(1045, $result);
+    }
 }
