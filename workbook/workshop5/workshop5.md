@@ -368,3 +368,164 @@ git checkout workshop5-3
 **Key metric**: Compare confirmation counts - Part 1 vs Part 2!
 
 ---
+
+# Part 3: Red Phase TDD - Writing Failing Tests First
+
+**Branch**: `workshop5-3`
+
+---
+
+## 🎯 What We'll Do
+
+Welcome to **Test-Driven Development (TDD)**! In this section, you'll experience the **Red phase** - writing tests for functionality that doesn't exist yet.
+
+## 🔴 The Red-Green-Refactor Cycle
+
+TDD follows a simple three-step process:
+
+1. 🔴 **Red**: Write a failing test for new functionality
+2. 🟢 **Green**: Write minimal code to make the test pass
+3. 🔵 **Refactor**: Improve the code while keeping tests green
+
+Today, we focus on the **Red phase** - writing tests that deliberately fail.
+
+## 📋 New Feature Request
+
+**Business Requirement**: Vacation days should carry over from year to year.
+
+Currently, our `VacationCalculator`:
+- ✅ Calculates proportional vacation days based on months worked
+- ✅ Adds seniority bonuses
+- ❌ **Does NOT** track unused vacation days from previous years
+
+**New requirement**:
+- Employees get 20 days per year
+- Unused days from previous years should carry over
+- Example: 3 unused days from 2023 + 20 new days in 2024 = 23 total days
+
+## 🧪 Your Challenge
+
+Use AI to write **failing tests** for this new feature. The tests should fail because the feature doesn't exist yet!
+
+### 📝 Prompt Template
+
+```
+Write PHPUnit tests for vacation carryover functionality. Requirements:
+- Unused days carry over to next year
+- Employee gets 20 days annually
+- Current implementation does NOT support carryover yet
+
+Write tests that will FAIL with current code. Include:
+1. Basic carryover (3 unused days → carry 3)
+2. Edge case of your choice
+
+Run tests via MCP and show they fail.
+```
+
+### 🤔 What to Observe
+
+As AI works on this task, notice:
+
+- **Test design**: Does AI understand the business requirements?
+- **Test quality**: Are tests clear and focused?
+- **Edge cases**: What edge case does AI choose?
+- **Expectations**: Are assertions realistic?
+- **Red phase**: Do tests actually fail as expected?
+
+### ✅ Success Criteria
+
+- [ ] AI wrote at least 2 new tests for carryover functionality
+- [ ] Tests are well-documented with clear expectations
+- [ ] Tests use MCP PHPUnit to run
+- [ ] All new tests FAIL (this is good - it's the Red phase!)
+- [ ] Failure messages clearly show what's missing
+- [ ] You understand what needs to be implemented
+
+### 🚨 Red Flags
+
+- ❌ AI tries to implement the feature (we're only writing tests!)
+- ❌ Tests pass immediately (they should fail!)
+- ❌ Tests are unclear or poorly documented
+- ❌ AI doesn't use MCP to run tests
+
+---
+
+## 📊 Example Test Structure
+
+Here's what a good failing test might look like:
+
+```php
+/**
+ * Test basic vacation carryover from previous year
+ *
+ * Employee had 3 unused days from 2023
+ * In 2024, they should have: 20 (new) + 3 (carryover) = 23 days
+ */
+public function testBasicVacationCarryover(): void
+{
+    $hireDate = new DateTime('2023-01-01');
+    $calculationDate = new DateTime('2024-01-01');
+    $unusedDaysFromPreviousYear = 3;
+
+    $result = $this->calculator->calculateAvailableDays(
+        $hireDate,
+        20, // base days per year
+        $calculationDate,
+        $unusedDaysFromPreviousYear // NEW parameter
+    );
+
+    // Expected: 20 (current year) + 3 (carried over) = 23
+    $this->assertEquals(23, $result);
+}
+```
+
+**This test will FAIL** because `calculateAvailableDays()` doesn't accept a 4th parameter yet!
+
+---
+
+## 📝 Reflection Questions
+
+After AI writes the failing tests, discuss:
+
+1. **Test clarity**: Are the tests easy to understand?
+2. **Requirements coverage**: Do tests cover the business requirements?
+3. **Edge cases**: What edge case did AI choose? Is it realistic?
+4. **Failure messages**: Do error messages clearly show what's missing?
+5. **Next steps**: What code changes would make these tests pass?
+
+---
+
+## 🎓 Key Takeaway
+
+> 💡 **Write the test first, then write the code**
+>
+> TDD forces you to think about requirements and design before implementation. Failing tests are not a problem - they're a roadmap for what to build next!
+
+---
+
+## 🎯 What Happens Next?
+
+In a real TDD workflow, the next step would be:
+
+1. ✅ You've written failing tests (Red phase) ← **You are here**
+2. ⏭️ Implement minimal code to pass tests (Green phase)
+3. ⏭️ Refactor while keeping tests green (Refactor phase)
+
+**For this workshop**, we stop at the Red phase to demonstrate AI-assisted test writing. In a real project, you'd continue to Green!
+
+---
+
+## 🚀 Ready for Next Section?
+
+When you've successfully written failing tests, switch to the next branch:
+
+```bash
+git checkout workshop5-4
+```
+
+---
+
+**⏱️ Time for Part 3**: ~10-15 minutes
+**Key metric**: How well did AI understand the requirements?
+
+---
