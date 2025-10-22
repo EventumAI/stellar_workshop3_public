@@ -352,15 +352,13 @@ class VacationCalculatorTest extends TestCase
         $hireDate = new DateTime('2020-01-01');
         $calculationDate = new DateTime('2025-01-01');
         $baseDaysPerYear = 20;
-        $daysUsedLastYear = 17;
-        $carryoverDays = 3; // 20 - 17 = 3 unused
+        $daysUsedLastYear = 17; // 20 - 17 = 3 unused days will carry over
 
-        // This method doesn't exist yet - test will fail!
         $result = $this->calculator->calculateAvailableDays(
             $hireDate,
             $baseDaysPerYear,
             $calculationDate,
-            $daysUsedLastYear
+            $daysUsedLastYear,
         );
 
         // Expected: 20 (current year) + 3 (carryover) + 5 (seniority bonus for 5 years) = 28 days
@@ -387,7 +385,7 @@ class VacationCalculatorTest extends TestCase
             $hireDate,
             $baseDaysPerYear,
             $calculationDate,
-            $daysUsedLastYear
+            $daysUsedLastYear,
         );
 
         // Expected: 20 (current year) + 0 (no carryover) = 20 days

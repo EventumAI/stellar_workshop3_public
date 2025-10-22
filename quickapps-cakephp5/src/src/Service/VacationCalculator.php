@@ -11,6 +11,7 @@ use DateTimeInterface;
  * Calculates available vacation days for employees based on:
  * - Base vacation days per year (proportional to months worked)
  * - Seniority bonus: +5 days for every 5 years of employment
+ * - Carryover days: unused vacation days from the previous year
  */
 class VacationCalculator
 {
@@ -25,12 +26,23 @@ class VacationCalculator
     private const SENIORITY_MILESTONE_YEARS = 5;
 
     /**
+     * Number of months in a year
+     */
+    private const MONTHS_PER_YEAR = 12;
+
+    /**
      * Calculate available vacation days for an employee
+     *
+     * Calculates the total vacation days available by combining:
+     * - Proportional base days (based on months worked this year)
+     * - Seniority bonus (based on years of employment)
+     * - Carryover days (unused vacation from previous year, if provided)
      *
      * @param \DateTimeInterface $hireDate Employee's hire date
      * @param int $baseDaysPerYear Base vacation days per year (e.g., 20)
      * @param \DateTimeInterface $calculationDate Date to calculate vacation days for (usually today)
-     * @param int|null $daysUsedLastYear Days used in the previous year (for carryover calculation)
+     * @param int|null $daysUsedLastYear Days used in the previous year (for carryover calculation).
+     *                                   If null, no carryover is calculated.
      * @return int Total available vacation days
      */
     public function calculateAvailableDays(
@@ -58,7 +70,9 @@ class VacationCalculator
         // Calculate seniority bonus
         $seniorityBonus = $this->calculateSeniorityBonus($hireDate, $calculationDate);
 
-        // Calculate carryover days (only if tracking previous year usage)
+        // Calculate carryover days from previous year
+        // Only applied when $daysUsedLastYear is provided (not null)
+        // Carryover = unused days from last year (cannot be negative)
         $carryoverDays = 0;
         if ($daysUsedLastYear !== null) {
             $carryoverDays = max(0, $baseDaysPerYear - $daysUsedLastYear);
@@ -77,7 +91,7 @@ class VacationCalculator
     private function calculateMonthsWorked(DateTimeInterface $hireDate, DateTimeInterface $calculationDate): int
     {
         $interval = $hireDate->diff($calculationDate);
-        $totalMonths = ($interval->y * 12) + $interval->m;
+        $totalMonths = ($interval->y * self::MONTHS_PER_YEAR) + $interval->m;
 
         // Add 1 if there are any days in the partial month
         if ($interval->d > 0) {
@@ -101,10 +115,10 @@ class VacationCalculator
     private function calculateProportionalDays(int $baseDaysPerYear, int $monthsWorked): int
     {
         // Cap at 12 months for annual calculation
-        $effectiveMonths = min($monthsWorked, 12);
+        $effectiveMonths = min($monthsWorked, self::MONTHS_PER_YEAR);
 
         // Calculate proportional days (rounded)
-        $daysPerMonth = (float)$baseDaysPerYear / 12.0;
+        $daysPerMonth = (float)$baseDaysPerYear / (float)self::MONTHS_PER_YEAR;
 
         return (int)round($daysPerMonth * (float)$effectiveMonths);
     }
