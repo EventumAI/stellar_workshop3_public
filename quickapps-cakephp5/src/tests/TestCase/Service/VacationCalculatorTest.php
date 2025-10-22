@@ -333,4 +333,64 @@ class VacationCalculatorTest extends TestCase
         // Should get 20 base days (capped at 12 months)
         $this->assertEquals(20, $result);
     }
+
+    // ========================================
+    // Carryover Functionality Tests
+    // (These tests will FAIL - carryover not implemented yet!)
+    // ========================================
+
+    /**
+     * Test basic carryover: 3 unused days from previous year
+     *
+     * Scenario:
+     * - Employee gets 20 days annually
+     * - Previous year: used 17 days, 3 days unused
+     * - Current year: should have 20 (new) + 3 (carried over) = 23 days
+     */
+    public function testBasicCarryoverThreeUnusedDays(): void
+    {
+        $hireDate = new DateTime('2020-01-01');
+        $calculationDate = new DateTime('2025-01-01');
+        $baseDaysPerYear = 20;
+        $daysUsedLastYear = 17;
+        $carryoverDays = 3; // 20 - 17 = 3 unused
+
+        // This method doesn't exist yet - test will fail!
+        $result = $this->calculator->calculateAvailableDays(
+            $hireDate,
+            $baseDaysPerYear,
+            $calculationDate,
+            $daysUsedLastYear
+        );
+
+        // Expected: 20 (current year) + 3 (carryover) + 5 (seniority bonus for 5 years) = 28 days
+        $this->assertEquals(28, $result);
+    }
+
+    /**
+     * Test edge case: Employee used ALL vacation days last year (no carryover)
+     *
+     * Scenario:
+     * - Employee gets 20 days annually
+     * - Previous year: used all 20 days (no unused days)
+     * - Current year: should have only 20 new days (no carryover)
+     */
+    public function testCarryoverWithZeroUnusedDays(): void
+    {
+        $hireDate = new DateTime('2023-01-01');
+        $calculationDate = new DateTime('2025-01-01');
+        $baseDaysPerYear = 20;
+        $daysUsedLastYear = 20; // Used all days
+
+        // This method doesn't exist yet - test will fail!
+        $result = $this->calculator->calculateAvailableDays(
+            $hireDate,
+            $baseDaysPerYear,
+            $calculationDate,
+            $daysUsedLastYear
+        );
+
+        // Expected: 20 (current year) + 0 (no carryover) = 20 days
+        $this->assertEquals(20, $result);
+    }
 }

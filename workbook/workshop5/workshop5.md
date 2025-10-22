@@ -529,3 +529,154 @@ git checkout workshop5-4
 **Key metric**: How well did AI understand the requirements?
 
 ---
+
+# Part 4: Green Phase TDD - Making Tests Pass
+
+**Branch**: `workshop5-4`
+
+---
+
+## 🎯 What We'll Do
+
+You've written failing tests in the Red phase. Now it's time for the **Green phase** - writing the simplest code possible to make those tests pass.
+
+## 🟢 The Green Phase Philosophy
+
+The Green phase has one rule:
+
+> **Write the SIMPLEST code that makes the tests pass**
+
+Don't think about:
+- ❌ Perfect design
+- ❌ Future features
+- ❌ Performance optimization
+- ❌ Beautiful code
+
+Just think about:
+- ✅ Making the tests pass
+- ✅ Minimum code necessary
+- ✅ Getting to green as fast as possible
+
+**Why?** Because the next phase (Refactor) is where we improve the code. First, make it work. Then, make it good.
+
+## 📋 Current Status
+
+From Part 3, you should have:
+- 🔴 2+ failing tests for vacation carryover functionality
+- 📝 Clear requirements about what needs to be implemented
+- ❌ Tests that fail because `calculateAvailableDays()` doesn't support carryover
+
+## 🧪 Your Challenge
+
+Use AI to implement the carryover functionality with the **simplest possible code**.
+
+### 📝 Prompt Template
+
+```
+GREEN Phase: Implement carryover functionality.
+
+Write the SIMPLEST code to make all tests pass.
+Don't over-engineer. Just make tests green.
+
+Run tests via MCP and confirm all pass.
+```
+
+### 🤔 What to Observe
+
+As AI implements the feature, notice:
+
+- **Simplicity**: Does AI keep it simple or over-engineer?
+- **Focus**: Does AI only change what's necessary?
+- **Testing**: Does AI run tests to verify success?
+- **All tests**: Do both old AND new tests still pass?
+- **Completion**: Are all tests green?
+
+### ✅ Success Criteria
+
+- [ ] AI added a 4th parameter to `calculateAvailableDays()` for carryover days
+- [ ] Implementation is simple and straightforward
+- [ ] All NEW tests pass (carryover tests)
+- [ ] All OLD tests still pass (no regressions!)
+- [ ] Total test count increased by 2+
+- [ ] AI used MCP to verify tests pass
+- [ ] No over-engineering or unnecessary complexity
+
+### 🚨 Red Flags
+
+- ❌ AI adds complex logic that wasn't in requirements
+- ❌ AI breaks existing tests (regression!)
+- ❌ AI adds features beyond carryover
+- ❌ Code is overly complicated for the simple requirement
+- ❌ AI doesn't verify tests pass
+
+---
+
+## 📊 Expected Implementation
+
+The simplest implementation should be something like:
+
+```php
+public function calculateAvailableDays(
+    DateTimeInterface $hireDate,
+    int $baseDaysPerYear,
+    DateTimeInterface $calculationDate,
+    int $carriedOverDays = 0  // NEW parameter with default value
+): int {
+    // ... existing logic ...
+
+    return $baseDays + $seniorityBonus + $carriedOverDays;  // Just add it!
+}
+```
+
+**That's it!** Simple addition. No complex tracking, no date ranges, no database. Just make the tests pass.
+
+---
+
+## 🔄 Test Count Progression
+
+Track how tests evolve:
+
+| Phase | Test Count | Passing | Failing |
+|-------|------------|---------|---------|
+| Before Part 3 | 21 tests | 21 ✅ | 0 ❌ |
+| After Part 3 (Red) | 23 tests | 21 ✅ | 2 ❌ |
+| After Part 4 (Green) | 23 tests | 23 ✅ | 0 ❌ |
+
+**Goal**: All tests green! 🟢
+
+---
+
+## 📝 Reflection Questions
+
+After AI implements the feature, discuss:
+
+1. **Simplicity**: Was the implementation as simple as possible?
+2. **Confidence**: Do passing tests give you confidence the feature works?
+3. **Regression**: Did any old tests break? How did you catch it?
+4. **Speed**: How fast did AI go from Red to Green?
+5. **TDD value**: What's the advantage of writing tests first?
+
+---
+
+## 🎓 Key Takeaway
+
+> 💡 **Make it work first, make it beautiful later**
+>
+> TDD's Green phase is about rapid implementation. Get to green fast with simple code. The Refactor phase (which we don't cover in this workshop) is where you improve design while keeping tests green.
+
+---
+
+## 🚀 Ready for Next Section?
+
+When all tests are passing, switch to the next branch:
+
+```bash
+git checkout workshop5-5
+```
+
+---
+
+**⏱️ Time for Part 4**: ~10 minutes
+**Key metric**: How simple was the implementation?
+
+---
