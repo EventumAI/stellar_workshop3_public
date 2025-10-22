@@ -138,10 +138,41 @@ Each plugin has its own:
 - **Scope**: `src/` directory only
 
 ### Testing
-- **Framework**: PHPUnit 10.x
+- **Framework**: PHPUnit 11.x / 12.x
 - **Configuration**: `phpunit.xml.dist`
 - **Test location**: `tests/TestCase/`
 - **Plugin tests**: `plugins/*/tests/`
+
+## MCP PHPUnit Integration
+
+This project has **PHPUnit MCP** configured for enhanced AI-assisted testing workflows.
+
+### Important Notes for MCP Usage
+
+**CRITICAL**: When using MCP PHPUnit tools, do NOT pass absolute paths to test files or directories. The MCP server runs inside the Docker container at `/var/www/html`, so paths are already relative to the working directory.
+
+✅ **Correct MCP usage**:
+```
+# Run all tests
+mcp__phpunit_run_tests()
+
+# Run specific test file (relative path)
+mcp__phpunit_run_tests(path: "tests/TestCase/Service/VacationCalculatorTest.php")
+
+# Run specific test class
+mcp__phpunit_run_tests(filter: "VacationCalculatorTest")
+```
+
+❌ **Incorrect MCP usage**:
+```
+# DO NOT use absolute paths from host machine
+mcp__phpunit_run_tests(path: "/Users/alex/work/projects/.../tests/...")
+```
+
+### MCP vs Bash Commands
+
+- **MCP tools**: Use relative paths (tests are already in `/var/www/html`)
+- **Bash commands**: Use absolute paths inside container (`/var/www/html/tests/...`)
 
 ## Common Development Workflows
 
