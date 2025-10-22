@@ -484,4 +484,167 @@ class VacationCalculatorTest extends TestCase
         // TODO: Add validation to prevent negative daysUsedLastYear
         $this->assertEquals(1045, $result);
     }
+
+    // ========================================
+    // Holiday Tracking Tests (RED PHASE)
+    // (These tests will FAIL - holiday tracking not implemented yet!)
+    // ========================================
+
+    /**
+     * Test calculating actual vacation days used excluding holidays
+     *
+     * Scenario:
+     * - Employee requests 5 vacation days (Mon-Fri, Jan 6-10, 2025)
+     * - Wednesday Jan 8 is a public holiday
+     * - Actual vacation days used should be 4 (excluding the holiday)
+     *
+     * EXPECTED TO FAIL: calculateVacationDaysUsed() method doesn't exist yet!
+     */
+    public function testVacationDaysExcludingOneHoliday(): void
+    {
+        $startDate = new DateTime('2025-01-06'); // Monday
+        $endDate = new DateTime('2025-01-10');   // Friday
+        $holidays = [
+            new DateTime('2025-01-08'), // Wednesday is a holiday
+        ];
+
+        // This method doesn't exist yet - test will fail!
+        $result = $this->calculator->calculateVacationDaysUsed($startDate, $endDate, $holidays);
+
+        // Expected: 5 requested days - 1 holiday = 4 actual vacation days used
+        $this->assertEquals(4, $result);
+    }
+
+    /**
+     * Test vacation period with no holidays
+     *
+     * Scenario:
+     * - Employee requests 3 vacation days
+     * - No holidays in the period
+     * - Should return full number of days
+     */
+    public function testVacationDaysWithNoHolidays(): void
+    {
+        $startDate = new DateTime('2025-02-03'); // Monday
+        $endDate = new DateTime('2025-02-05');   // Wednesday
+        $holidays = []; // No holidays
+
+        $result = $this->calculator->calculateVacationDaysUsed($startDate, $endDate, $holidays);
+
+        // Expected: 3 days, no holidays to subtract
+        $this->assertEquals(3, $result);
+    }
+
+    /**
+     * Test vacation period with multiple holidays
+     *
+     * Scenario:
+     * - Employee requests 10 vacation days (2 weeks)
+     * - 3 public holidays fall within the period
+     * - Actual vacation days used: 10 - 3 = 7 days
+     */
+    public function testVacationDaysWithMultipleHolidays(): void
+    {
+        $startDate = new DateTime('2025-12-22'); // Monday
+        $endDate = new DateTime('2026-01-02');   // Friday (spans 2 weeks)
+        $holidays = [
+            new DateTime('2025-12-25'), // Christmas
+            new DateTime('2025-12-26'), // Boxing Day
+            new DateTime('2026-01-01'), // New Year's Day
+        ];
+
+        $result = $this->calculator->calculateVacationDaysUsed($startDate, $endDate, $holidays);
+
+        // Expected: 12 calendar days (Dec 22-Jan 2) - 3 holidays = 9 actual days
+        // Note: This assumes only business days count, may need adjustment
+        $this->assertEquals(9, $result);
+    }
+
+    /**
+     * EDGE CASE: Entire vacation period is holidays
+     *
+     * Scenario:
+     * - Employee "requests" time off during a holiday week
+     * - All days in the period are holidays
+     * - No actual vacation days should be used (0 days)
+     */
+    public function testVacationPeriodEntirelyHolidays(): void
+    {
+        $startDate = new DateTime('2025-12-25'); // Christmas
+        $endDate = new DateTime('2025-12-26');   // Boxing Day
+        $holidays = [
+            new DateTime('2025-12-25'),
+            new DateTime('2025-12-26'),
+        ];
+
+        $result = $this->calculator->calculateVacationDaysUsed($startDate, $endDate, $holidays);
+
+        // Expected: 0 vacation days used (all days are holidays)
+        $this->assertEquals(0, $result);
+    }
+
+    /**
+     * EDGE CASE: Holiday outside of vacation period
+     *
+     * Scenario:
+     * - Employee takes vacation Jan 6-8
+     * - Holiday is on Jan 10 (outside the period)
+     * - Holiday shouldn't affect calculation
+     */
+    public function testHolidayOutsideVacationPeriod(): void
+    {
+        $startDate = new DateTime('2025-01-06');
+        $endDate = new DateTime('2025-01-08');
+        $holidays = [
+            new DateTime('2025-01-10'), // Holiday AFTER vacation period
+            new DateTime('2025-01-03'), // Holiday BEFORE vacation period
+        ];
+
+        $result = $this->calculator->calculateVacationDaysUsed($startDate, $endDate, $holidays);
+
+        // Expected: 3 days (holidays outside period don't affect calculation)
+        $this->assertEquals(3, $result);
+    }
+
+    /**
+     * EDGE CASE: Start date is a holiday
+     *
+     * Scenario:
+     * - Vacation starts on a holiday
+     * - Should not count the holiday as vacation day
+     */
+    public function testVacationStartsOnHoliday(): void
+    {
+        $startDate = new DateTime('2025-01-01'); // New Year's Day (holiday)
+        $endDate = new DateTime('2025-01-03');   // Friday
+        $holidays = [
+            new DateTime('2025-01-01'), // Start date is holiday
+        ];
+
+        $result = $this->calculator->calculateVacationDaysUsed($startDate, $endDate, $holidays);
+
+        // Expected: 3 calendar days - 1 holiday = 2 vacation days
+        $this->assertEquals(2, $result);
+    }
+
+    /**
+     * EDGE CASE: End date is a holiday
+     *
+     * Scenario:
+     * - Vacation ends on a holiday
+     * - Should not count the holiday as vacation day
+     */
+    public function testVacationEndsOnHoliday(): void
+    {
+        $startDate = new DateTime('2025-12-23'); // Tuesday
+        $endDate = new DateTime('2025-12-25');   // Christmas (holiday)
+        $holidays = [
+            new DateTime('2025-12-25'), // End date is holiday
+        ];
+
+        $result = $this->calculator->calculateVacationDaysUsed($startDate, $endDate, $holidays);
+
+        // Expected: 3 calendar days - 1 holiday = 2 vacation days
+        $this->assertEquals(2, $result);
+    }
 }

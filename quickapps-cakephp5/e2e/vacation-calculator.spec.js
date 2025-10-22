@@ -407,3 +407,184 @@ test.describe('Vacation Calculator - Carryover Feature (RED PHASE)', () => {
     await expect(page.locator('.result-total .value')).toHaveText('36');
   });
 });
+
+/**
+ * E2E Tests for Holiday Tracking (RED PHASE)
+ *
+ * These tests will FAIL because holiday tracking UI hasn't been implemented yet!
+ */
+test.describe('Vacation Calculator - Holiday Tracking (RED PHASE)', () => {
+  test.beforeEach(async ({ page }) => {
+    await page.goto(BASE_URL);
+    await expect(page.getByRole('heading', { name: 'Vacation Calculator' })).toBeVisible();
+  });
+
+  /**
+   * Test that vacation request form includes holiday tracking fields
+   *
+   * EXPECTED TO FAIL: These form fields don't exist yet!
+   */
+  test('should display vacation request form with holiday tracking fields', async ({ page }) => {
+    // EXPECTED TO FAIL: These fields don't exist yet
+    await expect(page.getByLabel('Vacation Start Date')).toBeVisible();
+    await expect(page.getByLabel('Vacation End Date')).toBeVisible();
+
+    // Help text should explain holiday exclusion
+    await expect(page.locator('text=Public holidays will be automatically excluded')).toBeVisible();
+  });
+
+  /**
+   * Test calculating vacation days with one holiday in the period
+   *
+   * Scenario:
+   * - Employee requests Jan 6-10, 2025 (5 days)
+   * - Jan 8 (Wednesday) is a public holiday
+   * - Actual vacation days used: 4 days
+   */
+  test('should calculate vacation days excluding one holiday', async ({ page }) => {
+    // Fill vacation request form
+    await page.getByLabel('Vacation Start Date').fill('2025-01-06');
+    await page.getByLabel('Vacation End Date').fill('2025-01-10');
+
+    // Submit
+    await page.getByRole('button', { name: 'Calculate Vacation Days' }).click();
+
+    // Wait for results
+    await expect(page.locator('.vacation-result')).toBeVisible();
+
+    // Verify calculation breakdown
+    await expect(page.locator('.result-item').filter({ hasText: 'Requested Days' })).toContainText('5 days');
+    await expect(page.locator('.result-item').filter({ hasText: 'Holidays in Period' })).toContainText('1 day');
+    await expect(page.locator('.result-item').filter({ hasText: 'Holiday Date' })).toContainText('2025-01-08');
+
+    // Total: 5 requested - 1 holiday = 4 actual vacation days
+    await expect(page.locator('.result-total .value')).toHaveText('4');
+    await expect(page.locator('.result-total .label')).toContainText('Actual Vacation Days Used');
+  });
+
+  /**
+   * Test vacation period with multiple holidays
+   *
+   * Scenario:
+   * - Employee requests Dec 22, 2025 - Jan 2, 2026 (12 days)
+   * - Holidays: Dec 25 (Christmas), Dec 26 (Boxing Day), Jan 1 (New Year)
+   * - Actual vacation days: 12 - 3 = 9 days
+   */
+  test('should calculate vacation days with multiple holidays', async ({ page }) => {
+    // Fill vacation request form
+    await page.getByLabel('Vacation Start Date').fill('2025-12-22');
+    await page.getByLabel('Vacation End Date').fill('2026-01-02');
+
+    // Submit
+    await page.getByRole('button', { name: 'Calculate Vacation Days' }).click();
+
+    // Wait for results
+    await expect(page.locator('.vacation-result')).toBeVisible();
+
+    // Verify calculation breakdown
+    await expect(page.locator('.result-item').filter({ hasText: 'Requested Days' })).toContainText('12 days');
+    await expect(page.locator('.result-item').filter({ hasText: 'Holidays in Period' })).toContainText('3 days');
+
+    // Verify individual holidays are listed
+    await expect(page.locator('.holiday-list')).toContainText('2025-12-25'); // Christmas
+    await expect(page.locator('.holiday-list')).toContainText('2025-12-26'); // Boxing Day
+    await expect(page.locator('.holiday-list')).toContainText('2026-01-01'); // New Year
+
+    // Total: 12 - 3 = 9 actual vacation days
+    await expect(page.locator('.result-total .value')).toHaveText('9');
+  });
+
+  /**
+   * Test vacation period with no holidays
+   *
+   * Scenario:
+   * - Employee requests Feb 3-5, 2025 (3 days)
+   * - No public holidays in this period
+   * - Actual vacation days: 3 days
+   */
+  test('should show full days when no holidays in period', async ({ page }) => {
+    // Fill vacation request form
+    await page.getByLabel('Vacation Start Date').fill('2025-02-03');
+    await page.getByLabel('Vacation End Date').fill('2025-02-05');
+
+    // Submit
+    await page.getByRole('button', { name: 'Calculate Vacation Days' }).click();
+
+    // Wait for results
+    await expect(page.locator('.vacation-result')).toBeVisible();
+
+    // Verify calculation
+    await expect(page.locator('.result-item').filter({ hasText: 'Requested Days' })).toContainText('3 days');
+    await expect(page.locator('.result-item').filter({ hasText: 'Holidays in Period' })).toContainText('0 days');
+
+    // Total: 3 days (no holidays to subtract)
+    await expect(page.locator('.result-total .value')).toHaveText('3');
+
+    // Should show message about no holidays
+    await expect(page.locator('text=No public holidays in this period')).toBeVisible();
+  });
+
+  /**
+   * EDGE CASE: Entire vacation period is holidays
+   *
+   * Scenario:
+   * - Employee "requests" Dec 25-26, 2025 (Christmas and Boxing Day)
+   * - Both days are public holidays
+   * - Actual vacation days: 0 (no vacation days consumed)
+   */
+  test('should show zero days when entire period is holidays', async ({ page }) => {
+    // Fill vacation request form
+    await page.getByLabel('Vacation Start Date').fill('2025-12-25');
+    await page.getByLabel('Vacation End Date').fill('2025-12-26');
+
+    // Submit
+    await page.getByRole('button', { name: 'Calculate Vacation Days' }).click();
+
+    // Wait for results
+    await expect(page.locator('.vacation-result')).toBeVisible();
+
+    // Verify calculation
+    await expect(page.locator('.result-item').filter({ hasText: 'Requested Days' })).toContainText('2 days');
+    await expect(page.locator('.result-item').filter({ hasText: 'Holidays in Period' })).toContainText('2 days');
+
+    // Total: 0 vacation days (all days are holidays!)
+    await expect(page.locator('.result-total .value')).toHaveText('0');
+
+    // Should show special message
+    await expect(page.locator('text=No vacation days will be used')).toBeVisible();
+    await expect(page.locator('.alert-info')).toContainText('entire period consists of public holidays');
+  });
+
+  /**
+   * Test holiday list display
+   *
+   * UI should show a list of upcoming public holidays for reference
+   */
+  test('should display upcoming public holidays for reference', async ({ page }) => {
+    // Holiday list should be visible on the page (sidebar or section)
+    await expect(page.locator('.holiday-calendar')).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Public Holidays 2025' })).toBeVisible();
+
+    // Should list major holidays
+    await expect(page.locator('.holiday-item').filter({ hasText: 'New Year' })).toBeVisible();
+    await expect(page.locator('.holiday-item').filter({ hasText: 'Christmas' })).toBeVisible();
+
+    // Each holiday should show date
+    await expect(page.locator('.holiday-date')).toContainText('2025-01-01');
+  });
+
+  /**
+   * Test form validation for vacation dates
+   */
+  test('should validate vacation date inputs', async ({ page }) => {
+    // Try to submit with end date before start date
+    await page.getByLabel('Vacation Start Date').fill('2025-01-10');
+    await page.getByLabel('Vacation End Date').fill('2025-01-05'); // Before start!
+
+    await page.getByRole('button', { name: 'Calculate Vacation Days' }).click();
+
+    // Should show validation error
+    await expect(page.locator('.error-message')).toBeVisible();
+    await expect(page.locator('.error-message')).toContainText('End date must be after start date');
+  });
+});
