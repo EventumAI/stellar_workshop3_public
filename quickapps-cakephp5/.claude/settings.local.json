@@ -1,14 +1,22 @@
 {
-  "enableAllProjectMcpServers": true,
-  "enabledMcpjsonServers": [
-    "phpunit"
-  ],
   "permissions": {
     "allow": [
       "mcp__phpunit__run_tests",
       "mcp__phpunit__run_specific_test",
       "mcp__phpunit__list_tests",
-      "mcp__phpunit__get_configuration"
+      "mcp__phpunit__get_configuration",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_type",
+      "mcp__playwright__browser_click",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright__browser_close",
+      "mcp__context7__resolve-library-id",
+      "mcp__context7__get-library-docs",
+      "Bash(npx playwright test:*)"
     ]
-  }
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "phpunit"
+  ]
 }

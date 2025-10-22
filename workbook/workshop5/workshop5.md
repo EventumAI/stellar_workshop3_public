@@ -1049,3 +1049,235 @@ git checkout workshop5-7
 **Key metric**: How many edge cases did AI discover?
 
 ---
+
+# Part 7: E2E Testing with Playwright MCP
+
+**Branch**: `workshop5-7`
+
+---
+
+## 🎯 What We'll Do
+
+Unit tests verify individual functions work correctly. But does the **entire application** work? That's where **End-to-End (E2E) tests** come in. We'll use Playwright with MCP to test the complete user workflow.
+
+## 🌐 What is E2E Testing?
+
+**E2E tests** simulate real user interactions:
+- Opening the browser
+- Filling out forms
+- Clicking buttons
+- Verifying results on the page
+
+**Why E2E matters:**
+- ✅ Unit tests passed, but UI might be broken
+- ✅ Integration issues between frontend and backend
+- ✅ User experience validation
+- ✅ Real browser environment
+
+## 🎭 Playwright MCP Capabilities
+
+The **Playwright MCP server** gives AI powerful browser automation:
+
+### Navigation & Control
+- `browser_navigate` - go to URLs
+- `browser_click` - interact with elements
+- `browser_type` - fill forms
+- `browser_snapshot` - capture page state
+
+### Testing & Verification
+- `browser_take_screenshot` - visual snapshots
+- `browser_console_messages` - check for JS errors
+- `browser_network_requests` - monitor API calls
+- `browser_wait_for` - wait for elements
+
+### Smart Features
+- Uses accessibility tree (better than DOM selectors)
+- Handles async operations automatically
+- Multi-browser support (Chromium, Firefox, WebKit)
+
+## 📋 Current Status
+
+From Part 6, you have:
+- 🟢 Unit tests with edge cases
+- ✅ Backend carryover logic implemented
+- ❌ But UI doesn't have carryover field yet!
+
+**Perfect scenario for E2E testing!** Unit tests pass, but the feature isn't usable.
+
+## 🧪 Your Challenge
+
+Write E2E tests that verify the carryover functionality works in the browser. These tests will FAIL (RED phase) because the UI isn't implemented yet.
+
+### 📝 Prompt Template
+
+```
+Write E2E tests for vacation carryover feature using Playwright.
+
+Use Context7 to get latest Playwright documentation.
+
+Tests should verify:
+- "Days Used Last Year" field exists in form
+- Carryover calculation works correctly
+- Results display carryover breakdown
+- Optional field behavior (can be left empty)
+- Edge cases (negative values, excess usage)
+
+Run tests via MCP Playwright. They should FAIL (RED phase).
+```
+
+### 🤔 What to Observe
+
+As AI writes E2E tests, notice:
+
+- **Context7 usage**: Does AI fetch latest Playwright docs?
+- **Test structure**: Are tests clear and maintainable?
+- **Selectors**: Does AI use semantic selectors (roles, labels)?
+- **Assertions**: Are expectations realistic?
+- **MCP integration**: Does AI run tests via MCP?
+- **Failure analysis**: Does AI explain WHY tests fail?
+
+### ✅ Success Criteria
+
+- [ ] AI used Context7 to get Playwright documentation
+- [ ] 5-6 E2E tests written for carryover feature
+- [ ] Tests use semantic selectors (getByLabel, getByRole)
+- [ ] Tests executed via MCP Playwright
+- [ ] 5 tests FAIL as expected (RED phase)
+- [ ] 1 test PASSES (optional field scenario)
+- [ ] AI explains what's missing in UI
+
+### 🚨 Red Flags
+
+- ❌ AI uses fragile selectors (CSS classes, IDs)
+- ❌ AI tries to implement UI (should only write tests!)
+- ❌ Tests are too complex or coupled
+- ❌ AI doesn't run tests to verify they fail
+
+---
+
+## 📊 Expected Test Results
+
+### Tests That Should FAIL (5):
+
+1. ❌ **Field existence**: "Days Used Last Year" field doesn't exist
+2. ❌ **Basic carryover**: Can't test calculation without field
+3. ❌ **Zero carryover**: Can't fill field that doesn't exist
+4. ❌ **Edge cases**: No UI to test edge cases
+5. ❌ **Results display**: No carryover section in results
+
+### Test That Should PASS (1):
+
+✅ **Optional field**: Form works without carryover field (current behavior)
+
+## 🎓 E2E vs Unit Testing
+
+| Aspect | Unit Tests | E2E Tests |
+|--------|-----------|-----------|
+| **Scope** | Single function | Entire workflow |
+| **Speed** | Fast (milliseconds) | Slower (seconds) |
+| **Isolation** | Isolated | Integrated |
+| **Catches** | Logic bugs | Integration issues |
+| **When to run** | Every save | Before deploy |
+| **Example** | `calculateAvailableDays()` returns 23 | User sees "23 days" on page |
+
+**Both are essential!** Unit tests for logic, E2E tests for user experience.
+
+---
+
+## 📝 Example E2E Test
+
+```javascript
+test('should calculate carryover when employee has unused vacation days', async ({ page }) => {
+  // Navigate to calculator
+  await page.goto('http://localhost:8090');
+
+  // Fill form
+  await page.getByLabel('Hire Date *').fill('2020-01-01');
+  await page.getByLabel('Base Vacation Days Per Year *').fill('20');
+  await page.getByLabel('Days Used Last Year').fill('17'); // WILL FAIL - field doesn't exist
+
+  // Submit
+  await page.getByRole('button', { name: 'Calculate' }).click();
+
+  // Verify results
+  await expect(page.locator('.result-item').filter({ hasText: 'Carryover Days' }))
+    .toContainText('+3 days'); // WILL FAIL - no carryover in results
+});
+```
+
+**This test documents what SHOULD work**, even though it doesn't yet.
+
+---
+
+## 🔧 Using Context7 for Documentation
+
+AI can fetch the latest Playwright docs to ensure tests use current best practices:
+
+```
+Use Context7 to get latest Playwright documentation for:
+- Form interactions
+- Assertions
+- Waiting for elements
+- Semantic selectors
+```
+
+**Benefits:**
+- Always up-to-date API usage
+- Best practices from official docs
+- No outdated examples
+
+---
+
+## 📝 Reflection Questions
+
+After writing E2E tests, discuss:
+
+1. **Coverage**: What issues can E2E catch that unit tests can't?
+2. **Maintenance**: Are E2E tests harder to maintain than unit tests?
+3. **Failure clarity**: When E2E test fails, is it clear what's broken?
+4. **MCP value**: Did MCP Playwright make testing easier?
+5. **Documentation**: How helpful was Context7 for getting current docs?
+
+---
+
+## 🎓 Key Takeaway
+
+> 💡 **E2E tests verify the user experience, not just the code**
+>
+> Unit tests passing doesn't mean users can use the feature. E2E tests simulate real user interactions and catch integration issues. With MCP Playwright, AI can write and run browser tests automatically.
+
+---
+
+## 🎯 The Testing Pyramid
+
+```
+       /\
+      /E2E\      ← Few, slow, broad coverage
+     /------\
+    /Integration\ ← Medium number, medium speed
+   /------------\
+  /  Unit Tests  \ ← Many, fast, focused
+ /----------------\
+```
+
+**This workshop covered:**
+- ✅ **Unit tests**: VacationCalculator logic
+- ✅ **E2E tests**: Full user workflow
+- ⏭️ **Integration tests**: Not covered, but sit in the middle
+
+---
+
+## 🚀 Ready for Next Section?
+
+When E2E tests are written and failing (RED phase confirmed), switch to the next branch:
+
+```bash
+git checkout workshop5-8
+```
+
+---
+
+**⏱️ Time for Part 7**: ~15-20 minutes
+**Key metric**: How many E2E tests failed vs passed?
+
+---
