@@ -37,6 +37,16 @@ class VacationCalculator
         int $baseDaysPerYear,
         DateTimeInterface $calculationDate,
     ): int {
+        // Validate: calculation date must be on or after hire date
+        if ($calculationDate < $hireDate) {
+            return 0;
+        }
+
+        // Validate: base days per year cannot be negative
+        if ($baseDaysPerYear < 0) {
+            $baseDaysPerYear = 0;
+        }
+
         // Calculate months worked
         $monthsWorked = $this->calculateMonthsWorked($hireDate, $calculationDate);
 

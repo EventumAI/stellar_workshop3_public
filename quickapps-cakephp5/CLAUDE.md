@@ -6,6 +6,37 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a CakePHP 5.x application skeleton that is part of a migration project from CakePHP 3 (QuickAppsCMS) to CakePHP 5. The application includes migrated plugins from the legacy QuickAppsCMS system.
 
+### IMPORTANT: Project Structure and File Paths
+
+**The CakePHP application root is in the `src/` subdirectory!**
+
+```
+quickapps-cakephp5/              <- Working directory (where Claude Code runs)
+├── CLAUDE.md                    <- This file
+├── docker-compose.yml
+└── src/                         <- CakePHP application root
+    ├── composer.json
+    ├── phpunit.xml.dist
+    ├── tests/                   <- PHPUnit tests
+    │   └── TestCase/
+    │       └── Service/
+    │           └── VacationCalculatorTest.php
+    ├── src/                     <- Application source code
+    │   ├── Controller/
+    │   ├── Model/
+    │   └── Service/
+    │       └── VacationCalculator.php
+    └── ...
+```
+
+**When working with files, always use paths relative to the working directory:**
+- ✅ `src/tests/TestCase/Service/VacationCalculatorTest.php`
+- ✅ `src/src/Service/VacationCalculator.php`
+- ✅ `src/composer.json`
+- ❌ `tests/TestCase/Service/VacationCalculatorTest.php` (missing `src/` prefix!)
+
+**Note**: Yes, there is `src/src/` - this is intentional. The outer `src/` is the CakePHP app root, the inner `src/` contains PHP source files.
+
 ## Development Environment
 
 ### Local Development (Docker)
